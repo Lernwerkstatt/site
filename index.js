@@ -1,5 +1,4 @@
 const express = require('express');
-const http = require('http');
 const morgan = require('morgan');
 
 const hostname = 'localhost';
@@ -16,8 +15,4 @@ app.use((req, res, next) => {
     res.end('<html><body><h1>Sorry, this page does not exist.</h1></body></html>');
 });
 
-const server = http.createServer(app);
-
-server.listen(port, hostname, () => {
-    console.log(`Server running at http://${hostname}:${port}`);
-});
+app.listen(port, hostname);
