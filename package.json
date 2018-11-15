@@ -1,0 +1,24 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "Lernwerkstatt Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lernwerkstatt/site.git"
+  },
+  "author": "Team Lernwerkstatt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lernwerkstatt/site/issues"
+  },
+  "homepage": "https://github.com/Lernwerkstatt/site#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
+  }
+}
