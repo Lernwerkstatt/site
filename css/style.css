@@ -1,9 +1,22 @@
-.footer {
-    position:absolute;
-    bottom:0;
-    width:100%;    
- }
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
 
- .headline {
+.headline {
      text-align: center;
  }
+
+ .fab {
+    padding-top: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+main {
+    margin-top: 60px;
+}
