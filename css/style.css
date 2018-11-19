@@ -1,5 +1,4 @@
-.footer {
-    
+.footer {    
     bottom: 0px; 
     width: 100%;   
     text-align: center;    
@@ -14,10 +13,6 @@
     padding-left: 10px;
 }
 
-.headline {
-     text-align: center;
- }
-
  .fab {
     padding-top: 10px;
     font-size: 20px;
@@ -30,3 +25,5 @@
 main {
     margin-top: 60px;
 }
+
+
