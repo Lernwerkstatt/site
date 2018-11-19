@@ -1,8 +1,7 @@
 const express = require('express');
 const morgan = require('morgan');
 
-const hostname = 'localhost';
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const app = express();
 app.use(morgan('dev'));
@@ -25,4 +24,4 @@ app.get('/',(req, res, next) => {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-app.listen(port, hostname);
+app.listen(port);
