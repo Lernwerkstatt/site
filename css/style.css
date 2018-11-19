@@ -1,0 +1,32 @@
+.footer {
+    
+    bottom: 0px; 
+    width: 100%;   
+    text-align: center;    
+    background-color: lightseagreen;
+    
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.headline {
+     text-align: center;
+ }
+
+ .fab {
+    padding-top: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+main {
+    margin-top: 60px;
+}
