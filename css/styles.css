@@ -23,7 +23,14 @@
 }
 
 main {
-    margin-top: 60px;
+    margin-top: 90px;
+}
+
+.brand {
+    width: 4%;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 5px;
 }
 
 
