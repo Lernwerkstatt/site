@@ -12,24 +12,25 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
     crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
-
   <title>Die Lernwerkstatt</title>
 </head>
 
 <body>
   <div class="container">
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="/">Die Lernwerkstatt</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <img style="height: 100px; width: 100px; display: block;" class="brand" src="https://res.cloudinary.com/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/v1/253787/6b3c1ba6-333a-4dfb-80b1-686bd4b9e0db_s4dlam.png">
+          <a class="navbar-brand" href="/">Die Lernwerkstatt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
       <div class="collapse navbar-collapse" id="navbarColor03">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="/home">Home</span></a>
+            <a class="nav-link" href="/home">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Lernen</a>
@@ -41,27 +42,38 @@
             <a class="nav-link" href="#">Workshops</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about">About<span class="sr-only">(current)</a>
+            <a class="nav-link" href="/about">About</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="text" placeholder="Search">
           <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
         </form>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <!-- ./Header -->
 
     <!-- Main -->
+  <div class="container"></div>
     <main>
     <h2 class="headline">Das Team</h2>
     <div class="column">
       <div class="card">
         <div class="container">
-          <img style="height: 225px; width: 225px; display: block;" 
+          <img style="height: 225px; width: 225px; display: block;" class="imageh"
           src="http://localhost:3000/team/ale.jpg" alt="Alejandro"> 
-          <h4>Alejandro</h4>
+          <div class="middle">
+            <div class="text">Alejandro</div>
+          </div>
         </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <img src="http://localhost:3000/team/ale.jpg" alt="Alejandro" class="imageh" 
+      style="height: 225px; width: 225px; display: block;">
+      <div class="middle">
+          <div class="text">Alejandro</div>
       </div>
     </div>
 
@@ -73,11 +85,12 @@
           <h4>André</h4>
         </div>
       </div>
-    </main>  
+    </main>
+  </div>  
     <!-- ./Main -->
   
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer text-center">
       <div>
         <a href="#">Kontakt</a>
         <a href="#">Schenken</a>
