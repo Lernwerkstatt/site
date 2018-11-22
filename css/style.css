@@ -1,0 +1,36 @@
+.footer {    
+    bottom: 0px; 
+    width: 100%;   
+       
+    background-color: lightseagreen;
+    
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+ .fab {
+    padding-top: 10px;
+    font-size: 20px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+main {
+    margin-top: 90px;
+}
+
+.brand {
+    width: auto;
+    height: 7vh;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+
