@@ -1,7 +1,8 @@
-.footer {    
+.footer {
+    
     bottom: 0px; 
     width: 100%;   
-       
+    text-align: center;
     background-color: lightseagreen;
     
 }
@@ -13,7 +14,7 @@
     padding-left: 10px;
 }
 
- .fab {
+.fab {
     padding-top: 10px;
     font-size: 20px;
     width: 30px;
@@ -32,5 +33,3 @@ main {
     border-radius: 50%;
     margin-right: 5px;
 }
-
-
