@@ -1,14 +1,16 @@
 const express = require('express');
 const morgan = require('morgan');
 const exphbs = require('express-handlebars');
+const path = require('path');
 
-const hostname = 'localhost';
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 const app = express();
 app.use(morgan('dev'));
 app.engine('handlebar', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
+
+app.use(express.static(__dirname + '/css'));
 
 app.get('/home',(req, res, next) => {
     res.statusCode = 200;
@@ -28,4 +30,4 @@ app.get('/',(req, res, next) => {
     res.sendFile(__dirname + '/public/index.html');
 });
 
-app.listen(port, hostname);
+app.listen(port);
