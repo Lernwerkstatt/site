@@ -27,4 +27,7 @@ app.get('/',(req, res, next) => {
     res.sendFile(__dirname + '/public/index.html');
 });
 
+var publicDir = require('path').join(__dirname,'/images');
+app.use(express.static(publicDir));
+
 app.listen(port);
