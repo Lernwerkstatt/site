@@ -10,7 +10,7 @@ app.use(morgan('dev'));
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
-app.use(express.static(__dirname + '/css'));
+app.use(express.static(__dirname + '/static/css'));
 
 app.get('/home',(req, res, next) => {
     res.render('home');
@@ -24,7 +24,7 @@ app.get('/',(req, res, next) => {
     res.render('home');
 });
 
-var publicDir = require('path').join(__dirname,'/images');
+var publicDir = require('path').join(__dirname,'/static/img');
 app.use(express.static(publicDir));
 
 app.listen(port);
