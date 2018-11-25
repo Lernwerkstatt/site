@@ -23,8 +23,11 @@
     border-radius: 50%;
 }
 
-main {
-    margin-top: 90px;
+.homeheader {	
+	padding: 70px 30px 70px 30px;
+    margin: 80px auto;
+    background: #5c6670;
+    color: floralwhite;
 }
 
 .brand {
