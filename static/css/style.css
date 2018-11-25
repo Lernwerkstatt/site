@@ -1,10 +1,8 @@
 .footer {
-    
     bottom: 0px; 
     width: 100%;   
     text-align: center;
     background-color: lightseagreen;
-    
 }
 
 .footer a {
@@ -12,6 +10,10 @@
     text-decoration: none;
     padding-bottom: 10px;
     padding-left: 10px;
+}
+
+.copyright {
+	background-color: #1b9891;
 }
 
 .fab {
@@ -25,7 +27,7 @@
 
 .homeheader {	
 	padding: 70px 30px 70px 30px;
-    margin: 80px auto;
+    margin: 55px auto;
     background: #5c6670;
     color: floralwhite;
 }
@@ -98,3 +100,15 @@
 .hvrbox.active .hvrbox-text_mobile {
 	display: block;
 }
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.hannes {
+	width: 30%;
+}
+
