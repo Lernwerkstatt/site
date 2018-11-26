@@ -1,4 +1,8 @@
-.footer {
+.content {
+	min-height: 100vh;
+}
+
+.footer {	
     bottom: 0px; 
     width: 100%;   
     text-align: center;
@@ -8,6 +12,10 @@
 .footer a {
     color: white;
     text-decoration: none;    
+}
+
+.footer-row-1 {
+	padding-bottom: 10px;
 }
 
 .copyright {
