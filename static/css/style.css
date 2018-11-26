@@ -32,17 +32,10 @@
 }
 
 .homeheader {	
-	padding: 70px 30px 70px 30px;
+	padding: 30px 30px 30px 30px;
     margin: 55px auto;
     background: #5c6670;
     color: floralwhite;
-}
-
-.brand {
-    width: auto;
-    height: 7vh;
-    border-radius: 50%;
-    margin-right: 5px;
 }
 
 .hvrbox,
