@@ -17,6 +17,17 @@
     "url": "https://github.com/Lernwerkstatt/site/issues"
   },
   "homepage": "https://github.com/Lernwerkstatt/site#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,html}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
   "dependencies": {
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
