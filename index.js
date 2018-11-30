@@ -24,7 +24,7 @@ app.get("/", (req, res, next) => {
   res.render("home");
 });
 
-var publicDir = require("path").join(__dirname, "/images");
+var publicDir = require("path").join(__dirname, "/data/img");
 app.use(express.static(publicDir));
 
 app.listen(port);
