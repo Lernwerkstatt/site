@@ -1,6 +1,13 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
 .content {
-  height: calc(100vh - 68px);
-  overflow-y: auto;
+  flex: 1;
 }
 
 .footer {
