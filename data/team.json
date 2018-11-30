@@ -1,59 +1,57 @@
-{
-  "team": [
-    {
-      "name": "André Brötz",
-      "img": "http://localhost:3000/team/andre.jpg",
-      "description": "placeholder"
-    },
-    {
-      "name": "Bianca Geburek",
-      "img": "http://localhost:3000/team/bianca.jpg",
-      "description": null
-    },
-    {
-      "name": "Basel Nasri",
-      "img": "http://localhost:3000/team/basel.jpg",
-      "description": null
-    },
-    {
-      "name": "Michaela Schmidt",
-      "img": "http://localhost:3000/team/michaela.jpg",
-      "description": null
-    },
-    {
-      "name": "Kevin Machura",
-      "img": "http://localhost:3000/team/kevin.jpg",
-      "description": null
-    },
-    {
-      "name": "Ursula Seeger",
-      "img": "http://localhost:3000/team/ursula.jpg",
-      "description": null
-    }
-    {
-      "name": "Alejandro Reyes",
-      "img": "http://localhost:3000/team/ale.jpg",
-      "description": null
-    },
-    {
-      "name": "Miriam Haerer",
-      "img": "http://localhost:3000/team/miriam.jpg",
-      "description": null
-    },
-    {
-      "name": "Ihab Al-Sabbah",
-      "img": "http://localhost:3000/team/ihab.jpg",
-      "description": null
-    },
-    {
-      "name": "Olzhas Askar",
-      "img": "http://localhost:3000/team/olzhas.jpg",
-      "description": null
-    },
-    {
-      "name": "Julia Brötz",
-      "img": "http://localhost:3000/team/julia.jpg",
-      "description": null
-    }
-  ]
-}
+[
+  {
+    "name": "André Brötz",
+    "img": "/data/img/team/andre.jpg",
+    "description": "placeholder"
+  },
+  {
+    "name": "Bianca Geburek",
+    "img": "/data/img/team/bianca.jpg",
+    "description": null
+  },
+  {
+    "name": "Basel Nasri",
+    "img": "/data/img/team/basel.jpg",
+    "description": null
+  },
+  {
+    "name": "Michaela Schmidt",
+    "img": "/data/img/team/michaela.jpg",
+    "description": null
+  },
+  {
+    "name": "Kevin Machura",
+    "img": "/data/img/team/kevin.jpg",
+    "description": null
+  },
+  {
+    "name": "Ursula Seeger",
+    "img": "/data/img/team/ursula.jpg",
+    "description": null
+  },
+  {
+    "name": "Alejandro Reyes",
+    "img": "/data/img/team/ale.jpg",
+    "description": null
+  },
+  {
+    "name": "Miriam Haerer",
+    "img": "/data/img/team/miriam.jpg",
+    "description": null
+  },
+  {
+    "name": "Ihab Al-Sabbah",
+    "img": "/data/img/team/ihab.jpg",
+    "description": null
+  },
+  {
+    "name": "Olzhas Askar",
+    "img": "/data/img/team/olzhas.jpg",
+    "description": null
+  },
+  {
+    "name": "Julia Brötz",
+    "img": "/data/img/team/julia.jpg",
+    "description": null
+  }
+]
