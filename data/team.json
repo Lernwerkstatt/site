@@ -1,0 +1,59 @@
+{
+  "team": [
+    {
+      "name": "André Brötz",
+      "img": "http://localhost:3000/team/andre.jpg",
+      "description": "placeholder"
+    },
+    {
+      "name": "Bianca Geburek",
+      "img": "http://localhost:3000/team/bianca.jpg",
+      "description": null
+    },
+    {
+      "name": "Basel Nasri",
+      "img": "http://localhost:3000/team/basel.jpg",
+      "description": null
+    },
+    {
+      "name": "Michaela Schmidt",
+      "img": "http://localhost:3000/team/michaela.jpg",
+      "description": null
+    },
+    {
+      "name": "Kevin Machura",
+      "img": "http://localhost:3000/team/kevin.jpg",
+      "description": null
+    },
+    {
+      "name": "Ursula Seeger",
+      "img": "http://localhost:3000/team/ursula.jpg",
+      "description": null
+    }
+    {
+      "name": "Alejandro Reyes",
+      "img": "http://localhost:3000/team/ale.jpg",
+      "description": null
+    },
+    {
+      "name": "Miriam Haerer",
+      "img": "http://localhost:3000/team/miriam.jpg",
+      "description": null
+    },
+    {
+      "name": "Ihab Al-Sabbah",
+      "img": "http://localhost:3000/team/ihab.jpg",
+      "description": null
+    },
+    {
+      "name": "Olzhas Askar",
+      "img": "http://localhost:3000/team/olzhas.jpg",
+      "description": null
+    },
+    {
+      "name": "Julia Brötz",
+      "img": "http://localhost:3000/team/julia.jpg",
+      "description": null
+    }
+  ]
+}
