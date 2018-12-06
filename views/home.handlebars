@@ -11,7 +11,20 @@
       </div>
     </div>
   </div>
-
+  <hr>
+  <h1>{{name}}</h1>
+  <div>
+    <span>Date: </span>
+    {{#each date}}
+    <span>{{this}}</span>
+    {{/each}}
+    <span>Time: </span>
+    {{#each time}}
+    <span>{{this}}</span>
+    {{/each}}
+  </div>
+  <a href="{{eventlink}}" target="_blank">Event</a>
+  <hr>
   <div class="container">
     <main>
       <div class="row">

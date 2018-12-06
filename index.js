@@ -2,6 +2,15 @@ const express = require("express");
 const morgan = require("morgan");
 const exphbs = require("express-handlebars");
 const path = require("path");
+const readJson = require("fs");
+
+
+var cal = readJson.readFileSync("data/calendar.json", (err, data) => {
+ if (err) throw err;
+ 
+});
+
+var calJson = JSON.parse(cal);
 
 const port = process.env.PORT || 3000;
 
@@ -13,7 +22,7 @@ app.set("view engine", "handlebars");
 app.use(express.static(__dirname + "/css"));
 
 app.get("/home", (req, res, next) => {
-  res.render("home");
+  res.render("home", calJson[0]);
 });
 
 app.get("/about", (req, res, next) => {
