@@ -2,6 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const exphbs = require("express-handlebars");
 const path = require("path");
+const fs = require("fs");
 
 const port = process.env.PORT || 3000;
 
@@ -16,8 +17,25 @@ app.get("/home", (req, res, next) => {
   res.render("home");
 });
 
+function readJSON(filepath) {
+  fs.readFile(filepath, function(err, data) {
+    if (err) {
+      return err;
+    }
+    var teamData;
+    try {
+      teamData = JSON.parse(data);
+    } catch (exception) {
+      return exception;
+    }
+    return teamData;
+  });
+}
+
 app.get("/about", (req, res, next) => {
-  res.render("about");
+  var team = readJSON("data/team.json");
+  debugger;
+  res.render("about", team);
 });
 
 app.get("/", (req, res, next) => {
