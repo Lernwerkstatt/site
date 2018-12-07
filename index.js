@@ -17,6 +17,7 @@ app.get("/home", (req, res, next) => {
   res.render("home");
 });
 
+/*
 function readJSON(filepath) {
   fs.readFile(filepath, function(err, data) {
     if (err) {
@@ -31,9 +32,17 @@ function readJSON(filepath) {
     return teamData;
   });
 }
+*/
+
+var calTeam = fs.readFileSync("data/team.json", (err, data) => {
+  if (err) throw err;
+});
+
+var team = JSON.parse(calTeam);
 
 app.get("/about", (req, res, next) => {
-  var team = readJSON("data/team.json");
+  //var team = readJSON("data/team.json");
+  //console.log(team);
   debugger;
   res.render("about", team);
 });
