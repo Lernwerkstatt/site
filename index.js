@@ -30,7 +30,8 @@ app.get("/about", (req, res, next) => {
 });
 
 app.get("/", (req, res, next) => {
-  res.render("home");
+  console.log(calJson);
+  res.render("home", calJson);
 });
 
 var publicDir = require("path").join(__dirname, "/images");

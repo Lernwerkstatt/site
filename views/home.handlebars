@@ -15,17 +15,15 @@
     <div class="card bg-primary text-white">
       <div class="card-body">
         <h2 class="text-center">Our Calendar</h2>
+        {{#each this}}
         <h4>{{name}}</h4>
         <div>
           <span>Date: </span>
-          {{#each date}}
-          <span>{{this}}</span>
-          {{/each}}
+          {{date}}
           <span>Time: </span>
-          {{#each time}}
-          <span>{{this}}</span>
-          {{/each}}
+          <span>{{time}}</span>
         </div>
+        {{/each}}
         <a href="{{eventlink}}" target="_blank" style="color: white">Event</a>
       </div>
     </div>
