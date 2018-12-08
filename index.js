@@ -21,16 +21,15 @@ app.set("view engine", "handlebars");
 
 app.use(express.static(__dirname + "/css"));
 
-app.get("/home", (req, res, next) => {
-  res.render("home", calJson[0]);
+app.get("/home", (req, res, next) => {  
+  res.render("home", calJson);
 });
 
 app.get("/about", (req, res, next) => {
   res.render("about");
 });
 
-app.get("/", (req, res, next) => {
-  console.log(calJson);
+app.get("/", (req, res, next) => {  
   res.render("home", calJson);
 });
 
