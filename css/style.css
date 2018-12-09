@@ -44,6 +44,13 @@ body {
   margin: 55px auto;
   background: #5c6670;
   color: floralwhite;
+  height: 50vh;
+}
+
+.cal-equal {
+  margin: 55px auto;
+  height: 50vh;
+  overflow: auto;
 }
 
 .hvrbox,
@@ -118,3 +125,6 @@ body {
 .hannes {
   width: 30%;
 }
+
+
+
