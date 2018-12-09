@@ -2,33 +2,33 @@
   "calendar" : [
   {
     "name": "Live Session",
-    "date": ["23", "11", "2018"],
-    "time": ["17", "20"],
+    "date": "23.11.2018",
+    "time": "17 Uhr - 20 Uhr",
     "eventlink": "https://github.com/Lernwerkstatt/site"
   },
   {
     "name": "Concert",
-    "date": ["26", "11", "2018"],
-    "time": ["12", "15"],
+    "date": "26.11.2018",
+    "time": "12 Uhr - 15 Uhr",
     "eventlink": "https://github.com/Lernwerkstatt/site"
   },
   {
     "name": "Hackathon",
-    "date": ["1", "12", "2018"],
-    "time": ["8:30", "21:30"],
+    "date": "1.12.2018",
+    "time": "8:30 Uhr - 21:30 Uhr",
     "eventlink": "https://github.com/Lernwerkstatt/site"
   },
   {
     "name": "Movie Evening",
-    "date": ["6", "12", "2018"],
-    "time": ["18:30", "22"],
+    "date": "6.12.2018",
+    "time": "18:30 Uhr - 22 Uhr",
     "eventlink": "https://github.com/Lernwerkstatt/site"
   },
   {
     "name": "Cooking",
-    "date": ["21", "12", "2018"],
-    "time": ["19", "23"],
-    "eventlink": "eventlink"
+    "date": "21.12.2018",
+    "time": "19 Uhr - 23 Uhr",
+    "eventlink": "https://github.com/Lernwerkstatt/site"
   }
 ]
 }

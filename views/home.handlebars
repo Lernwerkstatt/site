@@ -12,14 +12,11 @@
           <div class="card-body">
             <h2 class="text-center">Kalender</h2>
             {{#each calendar}}
-            <h4>{{name}}</h4>
+            <h4 class="mt-2">{{name}}</h4>
             <div>
-              <span>Datum: </span>
-              {{date}}
-              <span>Zeit: </span>
-              <span>{{time}}</span>
-              <br>
-              <a href="{{eventlink}}" target="_blank" style="color: white">Event</a>
+              <p class="m-0">Datum: {{date}}</p>
+              <p class="m-0">Zeit: {{time}}</p>
+              <a href="{{eventlink}}" target="_blank" style="color: black">Eventlink</a>
             </div>
             {{/each}}
           </div>
