@@ -17,13 +17,12 @@ app.get("/home", (req, res, next) => {
   res.render("home");
 });
 
-var calTeam = fs.readFileSync("data/team.json", (err, data) => {
-  if (err) throw err;
-});
-
-var team = JSON.parse(calTeam);
-
 app.get("/about", (req, res, next) => {
+  var calTeam = fs.readFileSync("data/team.json", (err, data) => {
+    if (err) throw err;
+  });
+
+  var team = JSON.parse(calTeam);
   res.render("about", team);
 });
 
@@ -31,11 +30,12 @@ app.get("/", (req, res, next) => {
   res.render("home");
 });
 
-var publicDir = require("path").join(__dirname, "/data/img");
+var publicDir = require("path").join(__dirname, "/static/img");
 app.use(express.static(publicDir));
 
 app.listen(port);
 
+// Please ignore. Just leaving this here for now to ask a question in class
 // function readJSON(filepath) {
 //   fs.readFileSync(filepath, function(err, data) {
 //     debugger;
