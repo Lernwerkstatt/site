@@ -17,23 +17,6 @@ app.get("/home", (req, res, next) => {
   res.render("home");
 });
 
-/*
-function readJSON(filepath) {
-  fs.readFile(filepath, function(err, data) {
-    if (err) {
-      return err;
-    }
-    var teamData;
-    try {
-      teamData = JSON.parse(data);
-    } catch (exception) {
-      return exception;
-    }
-    return teamData;
-  });
-}
-*/
-
 var calTeam = fs.readFileSync("data/team.json", (err, data) => {
   if (err) throw err;
 });
@@ -41,9 +24,6 @@ var calTeam = fs.readFileSync("data/team.json", (err, data) => {
 var team = JSON.parse(calTeam);
 
 app.get("/about", (req, res, next) => {
-  //var team = readJSON("data/team.json");
-  //console.log(team);
-  debugger;
   res.render("about", team);
 });
 
@@ -55,3 +35,20 @@ var publicDir = require("path").join(__dirname, "/data/img");
 app.use(express.static(publicDir));
 
 app.listen(port);
+
+// function readJSON(filepath) {
+//   fs.readFileSync(filepath, function(err, data) {
+//     debugger;
+//     if (err) {
+//       return err;
+//     }
+//     var teamData;
+//     try {
+//       teamData = JSON.parse(data);
+//     } catch (exception) {
+//       return exception;
+//     }
+//     return teamData;
+//   });
+// }
+// var team = readJSON("data/team.json");
