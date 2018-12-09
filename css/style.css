@@ -122,9 +122,12 @@ body {
   padding: 10px;
 }
 
-.hannes {
-  width: 30%;
+.easy {
+  transition: all 1.0s ease;
 }
 
+.easy:hover {
+  transform: scale(1.1);
+}
 
 
