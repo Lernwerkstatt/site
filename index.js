@@ -21,6 +21,8 @@ app.set("view engine", "handlebars");
 
 app.use(express.static(__dirname + "/css"));
 
+
+
 app.get("/home", (req, res, next) => {  
   res.render("home", calJson);
 });
