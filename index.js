@@ -18,11 +18,11 @@ app.get("/home", (req, res, next) => {
 });
 
 app.get("/about", (req, res, next) => {
-  var calTeam = fs.readFileSync("data/team.json", (err, data) => {
+  const teamData = fs.readFileSync("data/team.json", (err, data) => {
     if (err) throw err;
   });
 
-  var team = JSON.parse(calTeam);
+  const team = JSON.parse(teamData);
   res.render("about", team);
 });
 
@@ -30,7 +30,7 @@ app.get("/", (req, res, next) => {
   res.render("home");
 });
 
-var publicDir = require("path").join(__dirname, "/static/img");
+const publicDir = require("path").join(__dirname, "/static/img");
 app.use(express.static(publicDir));
 
 app.listen(port);
