@@ -2,9 +2,9 @@ const express = require("express");
 const morgan = require("morgan");
 const exphbs = require("express-handlebars");
 const path = require("path");
-const readJson = require("fs");
+const fs = require("fs");
 
-const getCalendar = readJson.readFileSync("data/calendar.json", (err, data) => {
+const getCalendar = fs.readFileSync("data/calendar.json", (err, data) => {
   if (err) throw err;
 });
 
@@ -23,7 +23,12 @@ app.get("/home", (req, res, next) => {
 });
 
 app.get("/about", (req, res, next) => {
-  res.render("about");
+  var calTeam = fs.readFileSync("data/team.json", (err, data) => {
+    if (err) throw err;
+  });
+
+  var team = JSON.parse(calTeam);
+  res.render("about", team);
 });
 
 app.get("/", (req, res, next) => {
@@ -46,7 +51,25 @@ app.get("/support", (req, res, next) => {
   res.render("support");
 });
 
-const publicDir = require("path").join(__dirname, "/images");
+const publicDir = require("path").join(__dirname, "/static/img");
 app.use(express.static(publicDir));
 
 app.listen(port);
+
+// Please ignore. Just leaving this here for now to ask a question in class
+// function readJSON(filepath) {
+//   fs.readFileSync(filepath, function(err, data) {
+//     debugger;
+//     if (err) {
+//       return err;
+//     }
+//     var teamData;
+//     try {
+//       teamData = JSON.parse(data);
+//     } catch (exception) {
+//       return exception;
+//     }
+//     return teamData;
+//   });
+// }
+// var team = readJSON("data/team.json");
