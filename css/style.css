@@ -47,7 +47,7 @@ body {
   height: 50vh;
 }
 
-.cal-equal {
+.calendar-equal {
   margin: 55px auto;
   height: 50vh;
   overflow: auto;
@@ -123,7 +123,7 @@ body {
 }
 
 .easy {
-  transition: all 1.0s ease;
+  transition: all 1s ease;
 }
 
 .easy:hover {
