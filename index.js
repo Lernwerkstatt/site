@@ -35,12 +35,12 @@ app.get("/", (req, res, next) => {
   res.render("home", convertToJson);
 });
 
-app.get("/lernen", (req, res, next) => {
-  res.render("lernen");
+app.get("/learn", (req, res, next) => {
+  res.render("learn");
 });
 
-app.get("/kurse", (req, res, next) => {
-  res.render("kurse");
+app.get("/course", (req, res, next) => {
+  res.render("course");
 });
 
 app.get("/workshops", (req, res, next) => {
@@ -49,6 +49,18 @@ app.get("/workshops", (req, res, next) => {
 
 app.get("/support", (req, res, next) => {
   res.render("support");
+});
+
+app.get("/error", (req, res, next) => {
+  res.render("error");
+});
+
+app.get("/blog", (req, res, next) => {
+  res.render("blog");
+});
+
+app.get("/contact", (req, res, next) => {
+  res.render("contact");
 });
 
 const publicDir = require("path").join(__dirname, "/static/img");
