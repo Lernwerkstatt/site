@@ -4,11 +4,12 @@ const exphbs = require("express-handlebars");
 const path = require("path");
 const fs = require("fs");
 
-const getCalendar = fs.readFileSync("data/calendar.json", (err, data) => {
+let getCalendar;
+fs.readFile("data/calendar.json", "utf8", function(err, data) {
   if (err) throw err;
+  getCalendar = JSON.parse(data);
 });
 
-const convertToJson = JSON.parse(getCalendar);
 const port = process.env.PORT || 3000;
 const app = express();
 
@@ -19,7 +20,7 @@ app.set("view engine", "handlebars");
 app.use(express.static(__dirname + "/css"));
 
 app.get("/home", (req, res, next) => {
-  res.render("home", convertToJson);
+  res.render("home", getCalendar);
 });
 
 app.get("/about", (req, res, next) => {
@@ -32,7 +33,7 @@ app.get("/about", (req, res, next) => {
 });
 
 app.get("/", (req, res, next) => {
-  res.render("home", convertToJson);
+  res.render("home", getCalendar);
 });
 
 app.get("/learn", (req, res, next) => {
