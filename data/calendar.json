@@ -1,34 +1,60 @@
 {
-  "calendar" : [
-  {
-    "name": "Live Session",
-    "date": "23.11.2018",
-    "time": "17 Uhr - 20 Uhr",
-    "eventlink": "https://github.com/Lernwerkstatt/site"
-  },
-  {
-    "name": "Concert",
-    "date": "26.11.2018",
-    "time": "12 Uhr - 15 Uhr",
-    "eventlink": "https://github.com/Lernwerkstatt/site"
-  },
-  {
-    "name": "Hackathon",
-    "date": "1.12.2018",
-    "time": "8:30 Uhr - 21:30 Uhr",
-    "eventlink": "https://github.com/Lernwerkstatt/site"
-  },
-  {
-    "name": "Movie Evening",
-    "date": "6.12.2018",
-    "time": "18:30 Uhr - 22 Uhr",
-    "eventlink": "https://github.com/Lernwerkstatt/site"
-  },
-  {
-    "name": "Cooking",
-    "date": "21.12.2018",
-    "time": "19 Uhr - 23 Uhr",
-    "eventlink": "https://github.com/Lernwerkstatt/site"
-  }
-]
+  "calendar": [
+    {
+      "name": "English Evening",
+      "dayicon": "https://img.icons8.com/office/30/000000/monday.png",
+      "date": "10.12.2018",
+      "time": "18:00-20:00 Uhr",
+      "eventlink": "https://github.com/Lernwerkstatt/site"
+    },
+    {
+      "name": "Arabisch Abend",
+      "dayicon": "https://img.icons8.com/office/30/000000/monday.png",
+      "date": "10.12.2018",
+      "time": "19:30-21:30 Uhr",
+      "eventlink": "https://github.com/Lernwerkstatt/site"
+    },
+    {
+      "name": "Freilerner Aktivtreffen",
+      "dayicon": "https://img.icons8.com/office/30/000000/tuesday.png",
+      "date": "11.12.2018",
+      "time": "11:00-13:00 Uhr",
+      "eventlink": "https://github.com/Lernwerkstatt/site"
+    },
+    {
+      "name": "Französisch:",
+      "dayicon": "https://img.icons8.com/office/30/000000/tuesday.png",
+      "date": "11.12.2018",
+      "time": "18:00-20:00 Uhr",
+      "eventlink": "https://github.com/Lernwerkstatt/site"
+    },
+    {
+      "name": "Deutsch spielend reden! Sprachcafé Deutschsname",
+      "dayicon": "https://img.icons8.com/office/30/000000/wednesday.png",
+      "date": "12.12.2018",
+      "time": "18:30-20:15 Uhr",
+      "eventlink": "https://github.com/Lernwerkstatt/site"
+    },
+    {
+      "name": "Lernberatung",
+      "dayicon": "https://img.icons8.com/office/30/000000/thursday.png",
+      "date": "13.12.2018",
+      "time": "16:00-18:00 Uhr",
+      "eventlink": "https://github.com/Lernwerkstatt/site"
+    },
+    {
+      "name": "Lernwerkstatt Website",
+      "dayicon": "https://img.icons8.com/office/30/000000/thursday.png",
+      "date": "13.12.2018",
+      "time": "18:00-20:00 Uhr",
+      "eventlink": "https://github.com/Lernwerkstatt/site"
+    },
+    {
+      "name": "\"Ich bin hier\" - Jahresabschluß",
+      "dayicon": "https://img.icons8.com/office/30/000000/saturday.png",
+      "date": "15.12.2018",
+      "time": "14:00-17:00 Uhr",
+      "eventlink": "https://github.com/Lernwerkstatt/site"
+    }
+  ]
 }
