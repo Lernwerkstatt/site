@@ -52,16 +52,17 @@ app.get("/support", (req, res, next) => {
   res.render("support");
 });
 
-app.get("/error", (req, res, next) => {
-  res.render("error");
-});
-
 app.get("/blog", (req, res, next) => {
   res.render("blog");
 });
 
 app.get("/contact", (req, res, next) => {
   res.render("contact");
+});
+
+//The 404 Route (ALWAYS Keep this as the last route)
+app.get('*', function(req, res){
+  res.render("error");
 });
 
 const publicDir = require("path").join(__dirname, "/static/img");
