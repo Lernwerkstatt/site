@@ -19,6 +19,9 @@ app.set("view engine", "handlebars");
 
 app.use(express.static(__dirname + "/css"));
 
+const publicDir = require("path").join(__dirname, "/static/img");
+app.use(express.static(publicDir));
+
 app.get("/home", (req, res, next) => {
   res.render("home", getCalendar);
 });
@@ -64,9 +67,6 @@ app.get("/contact", (req, res, next) => {
 app.get('*', function(req, res){
   res.render("error");
 });
-
-const publicDir = require("path").join(__dirname, "/static/img");
-app.use(express.static(publicDir));
 
 app.listen(port);
 
