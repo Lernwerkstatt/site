@@ -19,20 +19,11 @@ app.set("view engine", "handlebars");
 app.use(express.static(__dirname + "/css"));
 app.use(express.static(__dirname + "/static/img"));
 
-app.get("/home", (req, res, next) => {
+app.get("/", (req, res, next) => {
   res.render("home", getCalendar);
 });
 
-app.get("/about", (req, res, next) => {
-  var calTeam = fs.readFileSync("data/team.json", (err, data) => {
-    if (err) throw err;
-  });
-
-  var team = JSON.parse(calTeam);
-  res.render("about", team);
-});
-
-app.get("/", (req, res, next) => {
+app.get("/home", (req, res, next) => {
   res.render("home", getCalendar);
 });
 
@@ -48,16 +39,25 @@ app.get("/workshops", (req, res, next) => {
   res.render("workshops");
 });
 
+app.get("/about", (req, res, next) => {
+  var calTeam = fs.readFileSync("data/team.json", (err, data) => {
+    if (err) throw err;
+  });
+
+  var team = JSON.parse(calTeam);
+  res.render("about", team);
+});
+
+app.get("/contact", (req, res, next) => {
+  res.render("contact");
+});
+
 app.get("/support", (req, res, next) => {
   res.render("support");
 });
 
 app.get("/blog", (req, res, next) => {
   res.render("blog");
-});
-
-app.get("/contact", (req, res, next) => {
-  res.render("contact");
 });
 
 //The 404 Route (ALWAYS Keep this as the last route)
