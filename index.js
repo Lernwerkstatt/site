@@ -66,21 +66,3 @@ app.get('*', function(req, res){
 });
 
 app.listen(port);
-
-// Please ignore. Just leaving this here for now to ask a question in class
-// function readJSON(filepath) {
-//   fs.readFileSync(filepath, function(err, data) {
-//     debugger;
-//     if (err) {
-//       return err;
-//     }
-//     var teamData;
-//     try {
-//       teamData = JSON.parse(data);
-//     } catch (exception) {
-//       return exception;
-//     }
-//     return teamData;
-//   });
-// }
-// var team = readJSON("data/team.json");
