@@ -1,7 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
 const exphbs = require("express-handlebars");
-const path = require("path");
 const fs = require("fs");
 
 let getCalendar;
@@ -18,9 +17,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 app.use(express.static(__dirname + "/css"));
-
-const publicDir = require("path").join(__dirname, "/static/img");
-app.use(express.static(publicDir));
+app.use(express.static(__dirname + "/static/img"));
 
 app.get("/home", (req, res, next) => {
   res.render("home", getCalendar);
