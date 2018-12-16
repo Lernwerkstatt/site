@@ -6,6 +6,7 @@ const fs = require("fs");
 const port = process.env.PORT || 3000;
 const app = express();
 
+
 app.use(morgan("dev"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
@@ -16,7 +17,7 @@ app.use(express.static(__dirname + "/static/img"));
 app.get("/", (req, res, next) => {
 fs.readFile("data/calendar.json", (err, data) => {
   if (err) throw err;
-  res.render("home", JSON.parse(data));
+     res.render("home", JSON.parse(data));
 });
 });
 
