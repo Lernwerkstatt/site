@@ -27,11 +27,11 @@ app.get("/home", (req, res, next) => {
 });
 
 app.get("/about", (req, res, next) => {
-  var calTeam = fs.readFileSync("data/team.json", (err, data) => {
+  const teamData = fs.readFileSync("data/team.json", (err, data) => {
     if (err) throw err;
   });
 
-  var team = JSON.parse(calTeam);
+  const team = JSON.parse(teamData);
   res.render("about", team);
 });
 
@@ -69,21 +69,3 @@ app.get('*', function(req, res){
 });
 
 app.listen(port);
-
-// Please ignore. Just leaving this here for now to ask a question in class
-// function readJSON(filepath) {
-//   fs.readFileSync(filepath, function(err, data) {
-//     debugger;
-//     if (err) {
-//       return err;
-//     }
-//     var teamData;
-//     try {
-//       teamData = JSON.parse(data);
-//     } catch (exception) {
-//       return exception;
-//     }
-//     return teamData;
-//   });
-// }
-// var team = readJSON("data/team.json");
