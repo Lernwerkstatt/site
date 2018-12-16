@@ -40,11 +40,11 @@ app.get("/workshops", (req, res, next) => {
 });
 
 app.get("/about", (req, res, next) => {
-  var calTeam = fs.readFileSync("data/team.json", (err, data) => {
+  const calTeam = fs.readFileSync("data/team.json", (err, data) => {
     if (err) throw err;
   });
 
-  var team = JSON.parse(calTeam);
+  const team = JSON.parse(calTeam);
   res.render("about", team);
 });
 
