@@ -3,12 +3,6 @@ const morgan = require("morgan");
 const exphbs = require("express-handlebars");
 const fs = require("fs");
 
-let getCalendar;
-fs.readFile("data/calendar.json", "utf8", function(err, data) {
-  if (err) throw err;
-  getCalendar = JSON.parse(data);
-});
-
 const port = process.env.PORT || 3000;
 const app = express();
 
@@ -20,11 +14,17 @@ app.use(express.static(__dirname + "/css"));
 app.use(express.static(__dirname + "/static/img"));
 
 app.get("/", (req, res, next) => {
-  res.render("home", getCalendar);
+fs.readFile("data/calendar.json", (err, data) => {
+  if (err) throw err;
+  res.render("home", JSON.parse(data));
+});
 });
 
 app.get("/home", (req, res, next) => {
-  res.render("home", getCalendar);
+  fs.readFile("data/calendar.json", "utf8", (err, data) => {
+    if (err) throw err;
+    res.render("home", JSON.parse(data));
+  });
 });
 
 app.get("/learn", (req, res, next) => {
@@ -40,11 +40,9 @@ app.get("/workshops", (req, res, next) => {
 });
 
 app.get("/about", (req, res, next) => {
-  let team;
   fs.readFile("data/team.json", (err, data) => {
     if (err) throw err;
-    team = JSON.parse(data);
-    res.render("about", team);
+    res.render("about", JSON.parse(data));
   });
 });
 
