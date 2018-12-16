@@ -43,8 +43,8 @@ app.get("/learn", (req, res, next) => {
   res.render("learn");
 });
 
-app.get("/course", (req, res, next) => {
-  res.render("course");
+app.get("/courses", (req, res, next) => {
+  res.render("courses");
 });
 
 app.get("/workshops", (req, res, next) => {
