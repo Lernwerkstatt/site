@@ -11,7 +11,7 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 app.use(express.static(__dirname + "/css"));
-app.use(express.static(__dirname + "/static/img"));
+app.use(express.static(__dirname + "/static"));
 
 app.get("/", (req, res, next) => {
   fs.readFile("data/calendar.json", (err, data) => {
@@ -21,7 +21,7 @@ app.get("/", (req, res, next) => {
 });
 
 app.get("/home", (req, res, next) => {
-  fs.readFile("data/calendar.json", "utf8", (err, data) => {
+  fs.readFile("data/calendar.json", (err, data) => {
     if (err) throw err;
     res.render("home", JSON.parse(data));
   });

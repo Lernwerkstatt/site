@@ -2,57 +2,57 @@
   "team": [
     {
       "name": "André Brötz",
-      "img": "//localhost:3000/team/andre.jpg",
+      "img": "img/team/andre.jpg",
       "description": "placeholder"
     },
     {
       "name": "Bianca Geburek",
-      "img": "//localhost:3000/team/bianca.jpg",
+      "img": "img/team/bianca.jpg",
       "description": null
     },
     {
       "name": "Basel Nasri",
-      "img": "//localhost:3000/team/basel.jpg",
+      "img": "img/team/basel.jpg",
       "description": null
     },
     {
       "name": "Michaela Schmidt",
-      "img": "//localhost:3000/team/michaela.jpg",
+      "img": "img/team/michaela.jpg",
       "description": null
     },
     {
       "name": "Kevin Machura",
-      "img": "//localhost:3000/team/kevin.jpg",
+      "img": "img/team/kevin.jpg",
       "description": null
     },
     {
       "name": "Ursula Seeger",
-      "img": "//localhost:3000/team/ursula.jpg",
+      "img": "img/team/ursula.jpg",
       "description": null
     },
     {
       "name": "Alejandro Reyes",
-      "img": "//localhost:3000/team/ale.jpg",
+      "img": "img/team/ale.jpg",
       "description": null
     },
     {
       "name": "Miriam Haerer",
-      "img": "//localhost:3000/team/miriam.jpg",
+      "img": "img/team/miriam.jpg",
       "description": null
     },
     {
       "name": "Ihab Al-Sabbah",
-      "img": "//localhost:3000/team/ihab.jpg",
+      "img": "img/team/ihab.jpg",
       "description": null
     },
     {
       "name": "Olzhas Askar",
-      "img": "//localhost:3000/team/olzhas.jpg",
+      "img": "img/team/olzhas.jpg",
       "description": null
     },
     {
       "name": "Julia Brötz",
-      "img": "//localhost:3000/team/julia.jpg",
+      "img": "img/team/julia.jpg",
       "description": null
     }
   ]
