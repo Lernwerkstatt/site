@@ -4,9 +4,15 @@ const exphbs = require("express-handlebars");
 const path = require("path");
 const fs = require("fs");
 
-const port = process.env.PORT || 3000;
+let getCalendar;
+fs.readFile("data/calendar.json", "utf8", function(err, data) {
+  if (err) throw err;
+  getCalendar = JSON.parse(data);
+});
 
+const port = process.env.PORT || 3000;
 const app = express();
+
 app.use(morgan("dev"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
@@ -14,7 +20,7 @@ app.set("view engine", "handlebars");
 app.use(express.static(__dirname + "/css"));
 
 app.get("/home", (req, res, next) => {
-  res.render("home");
+  res.render("home", getCalendar);
 });
 
 app.get("/about", (req, res, next) => {
@@ -27,10 +33,38 @@ app.get("/about", (req, res, next) => {
 });
 
 app.get("/", (req, res, next) => {
-  res.render("home");
+  res.render("home", getCalendar);
 });
 
-var publicDir = require("path").join(__dirname, "/static/img");
+app.get("/learn", (req, res, next) => {
+  res.render("learn");
+});
+
+app.get("/course", (req, res, next) => {
+  res.render("course");
+});
+
+app.get("/workshops", (req, res, next) => {
+  res.render("workshops");
+});
+
+app.get("/support", (req, res, next) => {
+  res.render("support");
+});
+
+app.get("/error", (req, res, next) => {
+  res.render("error");
+});
+
+app.get("/blog", (req, res, next) => {
+  res.render("blog");
+});
+
+app.get("/contact", (req, res, next) => {
+  res.render("contact");
+});
+
+const publicDir = require("path").join(__dirname, "/static/img");
 app.use(express.static(publicDir));
 
 app.listen(port);

@@ -44,6 +44,13 @@ body {
   margin: 55px auto;
   background: #5c6670;
   color: floralwhite;
+  height: 50vh;
+}
+
+.calendar-equal {
+  margin: 55px auto;
+  height: 50vh;
+  overflow: auto;
 }
 
 .hvrbox,
@@ -115,8 +122,13 @@ body {
   padding: 10px;
 }
 
-.hannes {
-  width: 30%;
+.easy {
+  transition: all 1s ease;
+}
+
+.easy:hover {
+  transform: scale(1.1);
+  border: 1px solid gray;
 }
 
 .hvrbox,
@@ -192,4 +204,12 @@ body {
   margin-right: -15px;
   margin-left: -15px;
   justify-content: center;
+}
+
+.fa-envelope {
+  color: white;
+}
+
+.fa-phone {
+  color: white;
 }
