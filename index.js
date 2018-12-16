@@ -19,6 +19,9 @@ app.set("view engine", "handlebars");
 
 app.use(express.static(__dirname + "/css"));
 
+const publicDir = require("path").join(__dirname, "/static/img");
+app.use(express.static(publicDir));
+
 app.get("/home", (req, res, next) => {
   res.render("home", getCalendar);
 });
@@ -52,10 +55,6 @@ app.get("/support", (req, res, next) => {
   res.render("support");
 });
 
-app.get("/error", (req, res, next) => {
-  res.render("error");
-});
-
 app.get("/blog", (req, res, next) => {
   res.render("blog");
 });
@@ -64,8 +63,10 @@ app.get("/contact", (req, res, next) => {
   res.render("contact");
 });
 
-const publicDir = require("path").join(__dirname, "/static/img");
-app.use(express.static(publicDir));
+//The 404 Route (ALWAYS Keep this as the last route)
+app.get('*', function(req, res){
+  res.render("error");
+});
 
 app.listen(port);
 
