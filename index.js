@@ -19,7 +19,7 @@ app.set("view engine", "handlebars");
 
 app.use(express.static(__dirname + "/css"));
 
-const publicDir = require("path").join(__dirname, "/static/img");
+const publicDir = require("path").join(__dirname, "/static");
 app.use(express.static(publicDir));
 
 app.get("/home", (req, res, next) => {
@@ -64,7 +64,7 @@ app.get("/contact", (req, res, next) => {
 });
 
 //The 404 Route (ALWAYS Keep this as the last route)
-app.get('*', function(req, res){
+app.get("*", function(req, res) {
   res.render("error");
 });
 
