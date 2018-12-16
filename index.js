@@ -6,7 +6,6 @@ const fs = require("fs");
 const port = process.env.PORT || 3000;
 const app = express();
 
-
 app.use(morgan("dev"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
@@ -15,10 +14,10 @@ app.use(express.static(__dirname + "/css"));
 app.use(express.static(__dirname + "/static/img"));
 
 app.get("/", (req, res, next) => {
-fs.readFile("data/calendar.json", (err, data) => {
-  if (err) throw err;
-     res.render("home", JSON.parse(data));
-});
+  fs.readFile("data/calendar.json", (err, data) => {
+    if (err) throw err;
+    res.render("home", JSON.parse(data));
+  });
 });
 
 app.get("/home", (req, res, next) => {
@@ -60,7 +59,7 @@ app.get("/blog", (req, res, next) => {
 });
 
 //The 404 Route (ALWAYS Keep this as the last route)
-app.get('*', function(req, res){
+app.get("*", function(req, res) {
   res.render("error");
 });
 
