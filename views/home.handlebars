@@ -1,135 +1,66 @@
 <div class="content">
-  <div class="container homeheader">
+  <div class="container">
     <div class="row row-header">
-      <div class="col-12 col-sm-7">
+      <div class="col-sm-8 homeheader text-center">
         <h1>Die Lernwerkstatt-Berlin/Treptow</h1>
         <p>Die Lernwerkstatt ist ein altersübergreifender Lernort für Lernende in, außerhalb oder neben der Schule.</p>
-      </div>
-      <div class="col-12 col-sm align-self-center">
         <img src="https://res.cloudinary.com/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/v1/253787/6b3c1ba6-333a-4dfb-80b1-686bd4b9e0db_s4dlam.png"
           class="img-fluid rounded-circle" alt="Lernwerkstatt Logo">
+      </div>
+      <div class="col-sm-4 calendar-equal">
+        <div class="card bg-primary text-white">
+          <div class="card-body">
+            <h2 class="text-center">Kalender</h2>
+            {{#each calendar}}
+            <h4 class="mt-2"><img src="{{dayicon}}"> {{name}}</h4>
+            <div>
+              <p>{{date}} - {{time}}</p>
+              <a href="{{eventlink}}" target="_blank" style="color: black">Eventlink</a>
+            </div>
+            {{/each}}
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="container">
-    <main>
-      <div class="row">
-        <ul class="nav nav-pills">
-          <li class="nav-item">
-            <a class="nav-link active" href="#aktuell" role="tab" data-toggle="tab">Aktuelles</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#mitgestalten" role="tab" data-toggle="tab">Mitgestalten</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#termine" role="tab" data-toggle="tab">nächste Termine</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#vorschau" role="tab" data-toggle="tab">Vorschau</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#unterstuetzen" role="tab" data-toggle="tab">Unterstützung</a>
-          </li>
-        </ul>
-      </div>
-      <div class="tab-content">
-        <div role="tabpanel" class="tab-pane fade show active" id="aktuell">
-          <img class="img-fluid hannes" src="https://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/v1/253787/f42aedaf-92f3-489d-9c1f-d6d9e20b2749_bv7vfa.jpg"
-            alt="" title="">
-          <p><span class="badge badge-danger">NEU</span><strong> Workshop &amp; Konzert mit Hannes Kreuziger</strong><br>Wir
-            freuen uns auf den Workshop "Musiker Selbstmanagement" mit anschließendem Konzert von Hannes Kreuziger!
-            Wer
-            dabei sein möchte, sollte sich unbedingt vorab anmelden. Alle weiteren Infos hier:</p>
-          <p>18.11. 15-18 Uhr <a href="https://www.facebook.com/events/2045037582224072/">Workshop
-              "Musiker Selbstmanagement"</a></p>
-          <p>18.11. 18 Uhr (Einlass), 19-21 Uhr <a href="https://www.facebook.com/events/252374522127481/">Konzert</a></p>
-
+    <div class="row">
+      <div class="card-deck text-center">
+        <div class="card easy">
+          <div class="card-body">
+            <card-title>
+              <h3>Aktuelles</h3>
+            </card-title>
+            <div class="card-text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint
+                laboriosam voluptates.</p>
+            </div>
+          </div>
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="mitgestalten">
-          <p><strong>Möchtest Du Die Lernwerkstatt mitgestalten?</strong></p>
-          <p>Du bist herzlich eingeladen ein Praktikum oder Engagement mit uns zu machen! Wir suchen ab sofort nach
-            Unterstützung in folgenden Bereichen: <a href="https://uploads.strikinglycdn.com/files/0812b18c-e12a-45ba-bced-6783e242a262/Die Lernwerkstatt - Community Management Ausschreibung.pdf">Community
-              Management</a>, <a href="https://uploads.strikinglycdn.com/files/0812b18c-e12a-45ba-bced-6783e242a262/Die Lernwerkstatt - Storytelling Ausschreibung.pdf">Storytelling</a>
-            und <a href="https://uploads.strikinglycdn.com/files/0812b18c-e12a-45ba-bced-6783e242a262/Die Lernwerkstatt - Schenken (Gifting) Ausschreibung.pdf">Schenken
-              (Gifting)</a>. Hast Du noch andere Ideen, wie Du mitmachen könntest...dann melde Dich auf Initiative
-            bei uns! Wir freuen uns auf Dich!</p>
-          <p>Wir beschäftigen uns u.a. mit Sprachen, Programmieren &amp; Multimedia, Mathe,
-            Naturwissenschaften, Musik, Kunst &amp; Kultur - und alternativen Lernformen.</p>
-          <p>Dabei schaffen wir einen Raum für schulbezogene Lernbegleitung, regelmäßige Treffen zu verschiedenen
-            Themen, zum Ausprobieren eigener Workshops, für Diskussionsrunden und Lerntandems.</p>
-          <p>&nbsp;</p>
-          <p>Kommt doch mal vorbei, wir freuen uns auf euch!</p>
-          <p>&nbsp;</p>
+        <div class="card easy">
+          <div class="card-body">
+            <card-title>
+              <h3>Kommende Termine</h3>
+            </card-title>
+            <div class="card-text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint
+                laboriosam voluptates.</p>
+            </div>
+          </div>
         </div>
-        <div role="tabpanel" class="tab-pane fade" id="termine">
-          <p><strong>Die nächsten Termine (checkt auch unsere <a target="_blank" href="https://www.facebook.com/dielernwerkstatt/events/">Facebook-Seite</a>):
-            </strong></p>
-          <p><strong>KW47</strong></p>
-          <ul>
-            <li>diesen Montag:<ul>
-                <li>English Evening: 18:00-20:00 Uhr</li>
-                <li>Arabisch-Abend: 19:30-21:30 Uhr</li>
-              </ul>
-            </li>
-            <li>diesen Dienstag:<ul>
-                <li>Freilerner Aktivtreffen: 11:00-12:00 Uhr</li>
-                <li>Französisch: 18:00-20:00 Uhr</li>
-              </ul>
-            </li>
-            <li>diesen Mittwoch<ul>
-                <li>Keine Veranstaltung</li>
-              </ul>
-            </li>
-            <li>diesen Donnerstag<ul>
-                <li>Lernberatung: 16:00-18:00 Uhr</li>
-              </ul>
-            </li>
-            <li>diesen Freitag<ul>
-                <li>Keine Veranstaltung</li>
-              </ul>
-            </li>
-            <li>diesen Samstag<ul>
-                <li>Keine Veranstaltung</li>
-              </ul>
-            </li>
-            <li>diesen Sonntag<ul>
-                <li>Keine Veranstaltung</li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-        <div role="tabpanel" class="tab-pane fade" id="vorschau">
-          <p><strong>Vorschau: </strong></p>
-          <ul>
-            <li>Sonntag, 18.11.: <a target="_blank" href="https://www.facebook.com/events/2045037582224072/">Workshop</a>
-              "Musiker Selbstmanagement" &amp; <a target="_blank" href="https://www.facebook.com/events/252374522127481/">Konzert</a>
-              mit <a href="https://hanneskreuziger.de/"><strong>Hannes Kreuziger</strong></a></li>
-            <li>Samstag, 8.12.: <a target="_blank" href="https://www.facebook.com/events/254415875496552/"><strong>Öffentliche
-                  Mitgliederversammlung</strong></a></li>
-            <li>Samstag, 8.12.: <a href="https://www.facebook.com/events/772085036476990/">WE
-                SING Gesangsworkshop</a></li>
-          </ul>
-        </div>
-        <div role="tabpanel" class="tab-pane fade" id="unterstuetzen">
-          <p><strong>Unterstützen Sie uns!</strong></p>
-          <p>Durch Ihre Spende unterstützen Sie gemeinschaftliches, kreatives
-            &amp; selbstbestimmtes Lernen und sichern so das Fortbestehen des Vereins. <a href="#7">Weitere
-              Möglichkeiten, die Lernwerkstatt zu unterstützen.</a></p>
-          <p>&nbsp;</p>
-          <p><strong>Die Lernwerkstatt - lernen &amp; lernen lassen e.V.</strong></p>
-          <p><strong>IBAN: DE69 4306 0967 1175 1344 00</strong></p>
-          <p><strong>BIC: GENODEM1GLS</strong></p>
-          <p>&nbsp;</p>
-          <p>Wir sind ein gemeinnütziger Verein, daher sind alle Spenden
-            steuerlich absetzbar! Bis zu 200 Euro reicht ein vereinfachter Nachweis. Ab 200 Euro senden wir Ihnen
-            gerne
-            eine Zuwendungsbestätigung zu!</p>
-          <p>&nbsp;</p>
-          <p>&nbsp;</p>
+        <div class="card easy">
+          <div class="card-body">
+            <card-title>
+              <h3>Mitgestaltung</h3>
+            </card-title>
+            <div class="card-text">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint
+                laboriosam voluptates.</p>
+            </div>
+          </div>
         </div>
       </div>
-    </main>
+    </div>
   </div>
-
 </div>
