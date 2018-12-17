@@ -8,6 +8,7 @@ body {
 }
 .content {
   flex: 1;
+  margin: 70px auto;
 }
 
 .footer {
@@ -26,10 +27,6 @@ body {
   padding-bottom: 10px;
 }
 
-.copyright {
-  background-color: #1b9891;
-}
-
 .fab {
   padding-top: 10px;
   font-size: 20px;
@@ -41,7 +38,6 @@ body {
 
 .homeheader {
   padding: 30px 30px 30px 30px;
-  margin: 55px auto;
   background: #5c6670;
   color: floralwhite;
   height: 50vh;
