@@ -96,6 +96,8 @@ body {
 
 .team-box {
   display: inline-block;
+  margin-right: 25px;
+  padding-bottom: 20px;
 }
 
 .team-row {
