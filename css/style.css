@@ -8,6 +8,7 @@ body {
 }
 .content {
   flex: 1;
+  margin: 70px auto;
 }
 
 .footer {
@@ -41,14 +42,12 @@ body {
 
 .homeheader {
   padding: 30px 30px 30px 30px;
-  margin: 55px auto;
   background: #5c6670;
   color: floralwhite;
   height: 50vh;
 }
 
 .calendar-equal {
-  margin: 55px auto;
   height: 50vh;
   overflow: auto;
 }
