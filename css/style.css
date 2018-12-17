@@ -44,7 +44,6 @@ body {
 }
 
 .calendar-equal {
-  margin: 55px auto;
   height: 50vh;
   overflow: auto;
 }
