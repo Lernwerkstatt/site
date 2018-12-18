@@ -8,6 +8,7 @@ body {
 }
 .content {
   flex: 1;
+  padding-top: 50px;
 }
 
 .footer {
@@ -37,14 +38,6 @@ body {
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-}
-
-.homeheader {
-  padding: 30px 30px 30px 30px;
-  margin: 55px auto;
-  background: #5c6670;
-  color: floralwhite;
-  height: 50vh;
 }
 
 .tab-content {
@@ -79,21 +72,13 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.easy {
-  transition: all 1s ease;
-}
-
-.easy:hover {
-  transform: scale(1.1);
-  border: 1px solid gray;
-}
-
 .calendar-equal {
   margin: 55px auto;
   height: 50vh;
   overflow: auto;
 }
 
+/* TEAM PAGE */
 .team-box {
   display: inline-block;
   margin-right: 25px;
@@ -106,4 +91,28 @@ body {
   margin-right: -15px;
   margin-left: -15px;
   justify-content: center;
+}
+
+/* HOME PAGE */
+.card-calendar {
+  overflow: auto;
+  height: 100%;
+}
+
+.homeheader {
+  padding: 30px 30px 30px 30px;
+  margin: 55px auto;
+  background: #5c6670;
+  color: floralwhite;
+  height: 50vh;
+  border-radius: 0.25rem;
+}
+
+.easy {
+  transition: all 0.3s ease;
+}
+
+.easy:hover {
+  transform: scale(1.1);
+  border: 1px solid gray;
 }

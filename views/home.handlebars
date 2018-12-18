@@ -11,19 +11,23 @@
           class="img-fluid rounded-circle" alt="Lernwerkstatt Logo" />
       </div>
       <div class="col-sm-4 calendar-equal">
-        <div class="card bg-primary text-white">
-          <div class="card-body">
+        <div class="card bg-primary text-white card-calendar">
+          <div class="card-header">
             <h2 class="text-center">Kalender</h2>
-            {{#each calendar}}
-            <h3 class="mt-2">
-              <img src="{{ dayicon }}" />
-              <a href="{{ eventlink }}" target="_blank" style="color: black">
-                {{ name }}
-              </a>
-            </h3>
-            <p>{{ date }} - {{ time }}</p>
-            {{/each}}
           </div>
+          <ul class="list-group list-group-flush">
+            {{#each calendar}}
+            <li class="list-group-item">
+              <a href="{{ eventlink }}" target="_blank">
+                <p class="h5">
+                  <img src="{{ dayicon }}" />
+                  {{ name }}
+                </p>
+                <small class="text-muted">{{ date }} - {{ time }}</small>
+              </a>
+            </li>
+            {{/each}}
+          </ul>
         </div>
       </div>
     </div>
