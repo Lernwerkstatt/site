@@ -3,17 +3,25 @@
     <div class="row row-header">
       <div class="col-sm-8 homeheader text-center">
         <h1>Die Lernwerkstatt-Berlin/Treptow</h1>
-        <p>Die Lernwerkstatt ist ein altersübergreifender Lernort für Lernende in, außerhalb oder neben der Schule.</p>
+        <p>
+          Die Lernwerkstatt ist ein altersübergreifender Lernort für Lernende
+          in, außerhalb oder neben der Schule.
+        </p>
         <img src="https://res.cloudinary.com/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/v1/253787/6b3c1ba6-333a-4dfb-80b1-686bd4b9e0db_s4dlam.png"
-          class="img-fluid rounded-circle" alt="Lernwerkstatt Logo">
+          class="img-fluid rounded-circle" alt="Lernwerkstatt Logo" />
       </div>
       <div class="col-sm-4 calendar-equal">
         <div class="card bg-primary text-white">
           <div class="card-body">
             <h2 class="text-center">Kalender</h2>
             {{#each calendar}}
-            <h3 class="mt-2"><img src="{{dayicon}}"> <a href="{{eventlink}}" target="_blank" style="color: black">{{name}}</a></h3>
-            <p>{{date}} - {{time}}</p>
+            <h3 class="mt-2">
+              <img src="{{ dayicon }}" />
+              <a href="{{ eventlink }}" target="_blank" style="color: black">
+                {{ name }}
+              </a>
+            </h3>
+            <p>{{ date }} - {{ time }}</p>
             {{/each}}
           </div>
         </div>
@@ -30,8 +38,10 @@
               <h3>Aktuelles</h3>
             </card-title>
             <div class="card-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint
-                laboriosam voluptates.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis ea consequatur quibusdam sint laboriosam voluptates.
+              </p>
             </div>
           </div>
         </div>
@@ -41,8 +51,10 @@
               <h3>Kommende Termine</h3>
             </card-title>
             <div class="card-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint
-                laboriosam voluptates.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis ea consequatur quibusdam sint laboriosam voluptates.
+              </p>
             </div>
           </div>
         </div>
@@ -52,8 +64,10 @@
               <h3>Mitgestaltung</h3>
             </card-title>
             <div class="card-text">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint
-                laboriosam voluptates.</p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Veritatis ea consequatur quibusdam sint laboriosam voluptates.
+              </p>
             </div>
           </div>
         </div>
