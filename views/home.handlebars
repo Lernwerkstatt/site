@@ -12,7 +12,7 @@
           <div class="card-body">
             <h2 class="text-center">Kalender</h2>
             {{#each calendar}}
-            <h3 class="mt-2"><img src="{{dayicon}}"> <a href="{{eventlink}}" target="_blank" style="color: black">{{name}}</a></h3>
+            <h5 class="mt-2"><img src="{{dayicon}}"> <a href="{{eventlink}}" target="_blank" style="color: black">{{name}}</a></h5>
             <p>{{date}} - {{time}}</p>
             {{/each}}
           </div>
@@ -21,7 +21,7 @@
     </div>
   </div>
 
-  <div class="container">
+  <div class="container mt-5">
     <div class="row">
       <div class="card-deck text-center">
         <div class="card easy">
