@@ -3,6 +3,8 @@ const morgan = require("morgan");
 const exphbs = require("express-handlebars");
 const fs = require("fs");
 
+const homeRouter = require("./src/routes/home.js");
+
 const port = process.env.PORT || 3000;
 const app = express();
 
@@ -12,19 +14,7 @@ app.set("view engine", "handlebars");
 
 app.use(express.static(__dirname + "/static"));
 
-app.get("/", (req, res, next) => {
-  fs.readFile("data/calendar.json", (err, data) => {
-    if (err) throw err;
-    res.render("home", JSON.parse(data));
-  });
-});
-
-app.get("/home", (req, res, next) => {
-  fs.readFile("data/calendar.json", (err, data) => {
-    if (err) throw err;
-    res.render("home", JSON.parse(data));
-  });
-});
+app.use("/", homeRouter);
 
 app.get("/learn", (req, res, next) => {
   res.render("learn");
