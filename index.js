@@ -10,7 +10,6 @@ app.use(morgan("dev"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-app.use(express.static(__dirname + "/css"));
 app.use(express.static(__dirname + "/static"));
 
 app.get("/", (req, res, next) => {
