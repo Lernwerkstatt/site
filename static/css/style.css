@@ -9,6 +9,7 @@ body {
 .content {
   flex: 1;
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .footer {
