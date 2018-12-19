@@ -27,10 +27,6 @@ body {
   padding-bottom: 10px;
 }
 
-.copyright {
-  background-color: #1b9891;
-}
-
 .fab {
   padding-top: 10px;
   font-size: 50px;
@@ -46,10 +42,6 @@ body {
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 10px;
-}
-
-.hannes {
-  width: 30%;
 }
 
 .fa-home {
