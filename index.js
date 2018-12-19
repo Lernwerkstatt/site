@@ -23,13 +23,14 @@ app.set("view engine", "handlebars");
 app.use(express.static(__dirname + "/static"));
 
 app.use("/", homeRouter);
-app.use("/", aboutRouter);
-app.use("/", blogRouter);
-app.use("/", contactRouter);
-app.use("/", coursesRouter);
-app.use("/", learnRouter);
-app.use("/", supportRouter);
-app.use("/", workshopsRouter);
-app.use("/", errorRouter);
+app.use("/home", homeRouter);
+app.use("/about", aboutRouter);
+app.use("/blog", blogRouter);
+app.use("/contact", contactRouter);
+app.use("/courses", coursesRouter);
+app.use("/learn", learnRouter);
+app.use("/support", supportRouter);
+app.use("/workshops", workshopsRouter);
+app.use("/error", errorRouter);
 
 app.listen(port);
