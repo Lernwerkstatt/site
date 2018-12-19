@@ -4,6 +4,14 @@ const exphbs = require("express-handlebars");
 const fs = require("fs");
 
 const homeRouter = require("./src/routes/home.js");
+const aboutRouter = require("./src/routes/about.js");
+const blogRouter = require("./src/routes/blog.js");
+const contactRouter = require("./src/routes/contact.js");
+const coursesRouter = require("./src/routes/courses.js");
+const learnRouter = require("./src/routes/learn.js");
+const supportRouter = require("./src/routes/support.js");
+const workshopsRouter = require("./src/routes/workshops.js");
+const errorRouter = require("./src/routes/error.js");
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -15,41 +23,13 @@ app.set("view engine", "handlebars");
 app.use(express.static(__dirname + "/static"));
 
 app.use("/", homeRouter);
-
-app.get("/learn", (req, res, next) => {
-  res.render("learn");
-});
-
-app.get("/courses", (req, res, next) => {
-  res.render("courses");
-});
-
-app.get("/workshops", (req, res, next) => {
-  res.render("workshops");
-});
-
-app.get("/about", (req, res, next) => {
-  fs.readFile("data/team.json", (err, data) => {
-    if (err) throw err;
-    res.render("about", JSON.parse(data));
-  });
-});
-
-app.get("/contact", (req, res, next) => {
-  res.render("contact");
-});
-
-app.get("/support", (req, res, next) => {
-  res.render("support");
-});
-
-app.get("/blog", (req, res, next) => {
-  res.render("blog");
-});
-
-//The 404 Route (ALWAYS Keep this as the last route)
-app.get("*", function(req, res) {
-  res.render("error");
-});
+app.use("/", aboutRouter);
+app.use("/", blogRouter);
+app.use("/", contactRouter);
+app.use("/", coursesRouter);
+app.use("/", learnRouter);
+app.use("/", supportRouter);
+app.use("/", workshopsRouter);
+app.use("/", errorRouter);
 
 app.listen(port);
