@@ -2,6 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const exphbs = require("express-handlebars");
 const fs = require("fs");
+const browserSync = require("browser-sync");
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -62,4 +63,14 @@ app.get("*", function(req, res) {
   res.render("error");
 });
 
-app.listen(port);
+app.listen(port, function() {
+  if (app.get("env") === "development") {
+    browserSync({
+      files: ["static/**/*.css", "views/**/*.handlebars"],
+      online: false,
+      port: port + 1,
+      proxy: "localhost:" + port,
+      ui: false
+    });
+  }
+});
