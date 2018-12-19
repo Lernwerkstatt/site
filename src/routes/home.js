@@ -9,7 +9,8 @@ const calendarPath = path.join(rootPath, "data/calendar.json");
 router.get("/", (req, res) => {
   fs.readFile(calendarPath, (err, data) => {
     if (err) throw err;
-    res.render("home", JSON.parse(data));
+    let input = JSON.parse(data);
+    res.render("home", createDayiconLink(input));
   });
 });
 
@@ -20,4 +21,10 @@ router.get("/home", (req, res) => {
   });
 });
 
+function createDayiconLink(data) {
+  return data;
+}
+
 module.exports = router;
+
+// "dayicon": "https://img.icons8.com/office/30/000000/monday.png",
