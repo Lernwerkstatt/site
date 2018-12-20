@@ -31,6 +31,6 @@ app.use("/courses", coursesRouter);
 app.use("/learn", learnRouter);
 app.use("/support", supportRouter);
 app.use("/workshops", workshopsRouter);
-app.use("/error", errorRouter);
+app.use("*", errorRouter);
 
 app.listen(port);
