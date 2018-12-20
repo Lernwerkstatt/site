@@ -35,14 +35,16 @@ app.use((req, res) => {
   res.status(404).render("error");
 });
 
-app.listen(port, function() {
-  if (app.get("env") === "development") {
-    browserSync({
-      files: ["static/**/*.css", "views/**/*.handlebars"],
-      online: false,
-      port: port + 1,
-      proxy: "localhost:" + port,
-      ui: false
-    });
-  }
-});
+// app.listen(port, function() {
+//   if (app.get("env") === "development") {
+//     browserSync({
+//       files: ["static/**/*.css", "views/**/*.handlebars"],
+//       online: false,
+//       port: port + 1,
+//       proxy: "localhost:" + port,
+//       ui: false
+//     });
+//   }
+// });
+
+app.listen(port);
