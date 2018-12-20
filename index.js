@@ -11,7 +11,6 @@ const coursesRouter = require("./src/routes/courses.js");
 const learnRouter = require("./src/routes/learn.js");
 const supportRouter = require("./src/routes/support.js");
 const workshopsRouter = require("./src/routes/workshops.js");
-const errorRouter = require("./src/routes/error.js");
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -22,15 +21,17 @@ app.set("view engine", "handlebars");
 
 app.use(express.static(__dirname + "/static"));
 
-app.use("/", homeRouter);
-app.use("/home", homeRouter);
-app.use("/about", aboutRouter);
-app.use("/blog", blogRouter);
-app.use("/contact", contactRouter);
-app.use("/courses", coursesRouter);
-app.use("/learn", learnRouter);
-app.use("/support", supportRouter);
-app.use("/workshops", workshopsRouter);
-app.use("*", errorRouter);
+app.use(homeRouter);
+app.use(aboutRouter);
+app.use(blogRouter);
+app.use(contactRouter);
+app.use(coursesRouter);
+app.use(learnRouter);
+app.use(supportRouter);
+app.use(workshopsRouter);
+
+app.use((req, res) => {
+  res.status(404).render("error");
+});
 
 app.listen(port);

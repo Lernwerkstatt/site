@@ -13,4 +13,11 @@ router.get("/", (req, res) => {
   });
 });
 
+router.get("/home", (req, res) => {
+  fs.readFile(calendarPath, (err, data) => {
+    if (err) throw err;
+    res.render("home", JSON.parse(data));
+  });
+});
+
 module.exports = router;
