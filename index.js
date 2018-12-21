@@ -2,7 +2,6 @@ const express = require("express");
 const morgan = require("morgan");
 const exphbs = require("express-handlebars");
 const fs = require("fs");
-//const browserSync = require("browser-sync");
 
 const homeRouter = require("./src/routes/home.js");
 const aboutRouter = require("./src/routes/about.js");
@@ -35,16 +34,15 @@ app.use((req, res) => {
   res.status(404).render("error");
 });
 
-// app.listen(port, function() {
-//   if (app.get("env") === "development") {
-//     browserSync({
-//       files: ["static/**/*.css", "views/**/*.handlebars"],
-//       online: false,
-//       port: port + 1,
-//       proxy: "localhost:" + port,
-//       ui: false
-//     });
-//   }
-// });
-
-app.listen(port);
+app.listen(port, function() {
+  if (app.get("env") === "development") {
+    const browserSync = require("browser-sync");
+    browserSync({
+      files: ["static/**/*.css", "views/**/*.handlebars"],
+      online: false,
+      port: port + 1,
+      proxy: "localhost:" + port,
+      ui: false
+    });
+  }
+});
