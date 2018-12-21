@@ -12,7 +12,19 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid text-center">
-      <p>Lorem ipsum</p>
+  <div class="container-fluid">
+    <div class="row">
+      {{#each courses}}
+      <div class="box">
+        <img src={{img}} alt={{name}} style="height: 200px">
+        <p class="lead" style="width: 400px">{{name}}</p>
+        <p class="text" style="width: 400px">{{header}}</p>
+        <p class="text" style="width: 400px">{{description}}</p>
+        <p class="text" style="width: 400px">{{additional}}</p>
+        <p class="text" style="width: 400px">{{time}}</p>
+        <br>
+      </div>
+      {{/each}}
+    </div>
   </div>
 </div>
