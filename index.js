@@ -2,7 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const exphbs = require("express-handlebars");
 const fs = require("fs");
-const browserSync = require("browser-sync");
+//const browserSync = require("browser-sync");
 
 const homeRouter = require("./src/routes/home.js");
 const aboutRouter = require("./src/routes/about.js");
