@@ -13,10 +13,12 @@
     </div>
   </div>
   <div class="container-fluid">
-    <div class="row">
+    <div class="courses-row">
       {{#each courses}}
-      <div class="box">
-        <img src={{img}} alt={{name}} style="height: 200px">
+      <div class="courses-box">
+        <a href="{{furtherLink}}" target="_blank">
+          <img src={{img}} alt={{name}} style="height: 200px">
+        </a>
         <p class="lead" style="width: 400px">{{name}}</p>
         <p class="text" style="width: 400px">{{header}}</p>
         <p class="text" style="width: 400px">{{description}}</p>
