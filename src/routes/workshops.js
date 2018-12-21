@@ -3,8 +3,7 @@ const path = require("path");
 const fs = require("fs");
 const router = express.Router();
 
-const rootPath = path.join(__dirname, "../", "../");
-const workshopsPath = path.join(rootPath, "data/workshops.json");
+const workshopsPath = path.join(__dirname, "../../data/workshops.json");
 
 router.get("/workshops", (req, res) => {
   fs.readFile(workshopsPath, (err, data) => {
