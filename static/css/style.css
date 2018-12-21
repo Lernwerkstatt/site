@@ -64,6 +64,21 @@ body {
   justify-content: center;
 }
 
+/* COURSES PAGE */
+.courses-box {
+  display: inline-block;
+  margin-right: 25px;
+  padding-bottom: 20px;
+}
+
+.courses-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+  justify-content: center;
+}
+
 /* HOME PAGE */
 .card-calendar {
   overflow: auto;
