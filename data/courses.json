@@ -1,0 +1,112 @@
+{
+  "courses": [
+    {
+      "name": "Deutsch als Fremdsprache",
+      "img": "img/courses/DeutschAbend.png",
+      "header": "\"Wir reden spielend Deutsch - mach mit!\"",
+      "description": "Ihr habt ein wenig Deutsch gelernt und möchtet es nun gerne anwenden und weiter ausbauen? \n In einer lockeren Atmosphäre werden wir viel Sprechen, Diskutieren, Sprach-Spiele anwenden und bestimmt auch mal zusammen deutsche Lieder singen ;-). Hier geht es um viel Praxis! Sprechen kann jeder! Wir werden uns nach Euren Wünschen richten und oft in kleinen Gruppen arbeiten. \n Dieser Kurs richtet sich an Leute, die ihre mündlichen Deutschkenntnisse ausbauen möchten. Grammatikübungen sind nicht ein Bestandteil des Sprach-Cafés.",
+      "additional": "Ergänzend wird gelegentlich ein DAF-Frühstück angeboten, zu dem jeder etwas beisteuern kann, das einfach nur zum Plaudern auf Deutsch bei frischen Schrippen und O-Saft einlädt. Die genauen Termine findet ihr bei Facebook auch bei Meetup",
+      "furtherLink": "https://www.meetup.com/German-Language-Events-Lernwerkstatt-Berlin/",
+      "time": "Immer am letzten Mittwoch des Monats 19-20:30 Uhr"
+    },
+    {
+      "name": "Lernbegleitung",
+      "img": "img/courses/Lernbegleitung.png",
+      "header": "in Mathe, Naturwissenschaften, Englisch, und Deutsch für alle Lernende ab der 7. Klasse.",
+      "description": "Lernbegleitung ist unser schulbegleitendes Angebot. In altersgemischten Kleingruppen von maximal 7 Lernenden werden wöchentlich Inhalte aus der Schule in einer spielerischen und aktiven Lernatmosphäre aufbereitet. Im Fokus steht nicht nur eine Notenverbesserung, sondern vor allem die Begleitung des individuellen Lernprozesses. \n Unsere LernbegleiterInnen kommen aus unterschiedlichen Disziplinen und sind alle Experten in ihren jeweiligen Fächern. Sie bringen zusätzlich zur fachlichen Erfahrung auch viel Welterfahrung mit. Sie sind eingebunden in diverse Aktivitäten innerhalb, sowie außerhalb von Berlin. Diese Erfahrung bereichert die Lernbegleitung.",
+      "additional": "Mit einer kurzen Mail an info@die-lernwerkstatt.org kannst du heute einen Erstermin vereinbaren. Für eine wöchentliche Unterstützung wird eine Mitgliedschaft, mit einem monatlichen Beitrag von 20 Euro, empfohlen.",
+      "furtherLink": "#",
+      "time": ""
+    },
+    {
+      "name": "Lerngruppen zu euren Themen",
+      "img": "img/courses/Lerngruppen.png",
+      "header": "",
+      "description": "Für Menschen aller Altersgruppen ist die Lernwerkstatt ein ideeller und realer Raum zum Bearbeiten gemeinsamer Themen. Das kann in Form von Workshops, einmaligen Abendveranstaltungen, fortlaufenden Gruppen, Diskussionen und vielem mehr sein. Ebenso breit gefächert ist das Themenspektrum: Mathematik & Naturwissenschaften, Programmieren & Multimedia, Sprachen, Philosophie, alternative Bildung, u.v.m.",
+      "additional": "",
+      "furtherLink": "#",
+      "time": ""
+    },
+    {
+      "name": "Englisch als Fremdsprache",
+      "img": "img/courses/EnglischFremdsprache.png",
+      "header": "",
+      "description": "Verbessert eure Englisch-Konversationsfähigkeit mit unserem regelmäßgen Angebot: Ziel ist es, dass ihr euch in der englischen Sprache wohlfühlt und sicher im Sprechen werdet. Hier geht's um Sprachspiele, praktische und anregende Themen sowie die Entwicklung einer unterstützenden Lernumgebung. Ihr bestimmt mit, wie der Kurs strukturiert wird und wächst, um bestmöglich den Bedürfnissen aller zu entsprechen. Alle Stufen an Vorkenntnissen willkommen",
+      "additional": "",
+      "furtherLink": "#",
+      "time": "Jeden Montag 18-19:30 Uhr (mit Alejandro)"
+    },
+    {
+      "name": "Arabischer Koch-Kultur-Abend",
+      "img": "img/courses/ArabischerKulturAbend.png",
+      "header": "",
+      "description": "Wir wollen euch nicht nur die Arabische Sprache nahebringen, sondern auch die Kultur. Nebenbei kochen wir alle zusammen eine Menge leckere arabische Gerichte. Alle sind willkommen, komm einfach vorbei! Wir freuen uns auf deinen Besuch! Bring Stifte und Papier mit, und wenn du Vorkenntnisse hast, auch dein Lernmaterial.",
+      "additional": "",
+      "furtherLink": "#",
+      "time": "Dieser Abend findet unregelmäßig statt."
+    },
+    {
+      "name": "M.E.N.A. Club",
+      "img": "img/courses/MENA.png",
+      "header": "",
+      "description": "Das Ziel aller M.E.N.A. (Middle East & Northern Africa) Veranstaltungen ist es Menschen unterschiedlicher Herkünfte und Kulturen zusammenzubringen, um die Diversität der Region zu zelebrieren und um viel zu tanzen. Im Vordergrund stehen nicht Politik und Religion, sondern eher neue Freundschaften und Vielfalt!",
+      "additional": "",
+      "furtherLink": "#",
+      "time": ""
+    },
+    {
+      "name": "Programmieren",
+      "img": "img/courses/Programmieren.png",
+      "header": "",
+      "description": "Professionelle, autodidaktische Programmierer bringen dir die Sprachen Ruby, C#, und JavaScript bei. Jeder kann einfach programmieren lernen. Ohne besondere Begabungen mitbringen zu müssen. Und vor allem: Mit jeder Menge Spaß. \n Der letzte Kurs \"Programming for Job Seekers\" ist bereits beendet. Wenn du an zukünftigen Veranstaltungen zum Thema Programmieren Interesse hast, meld dich gern mit einer kurzen Mail an info@die-lernwerkstatt.org.",
+      "additional": "",
+      "furtherLink": "#",
+      "time": ""
+    },
+    {
+      "name": "Arabisch-Abend",
+      "img": "img/courses/ArabischAbend.jpg",
+      "header": "",
+      "description": "Wir bringen euch die Arabische Sprache nahe. Der Abend ist vor allem für Anfänger gedacht und findet montags um 19:30 Uhr statt. Aktuelle Termine sind ganz oben auf dieser Website zu finden.",
+      "additional": "",
+      "furtherLink": "#",
+      "time": ""
+    },
+    {
+      "name": "Spanisch-Abend",
+      "img": "img/courses/SpanischAbend.png",
+      "header": "",
+      "description": "Zur Zeit findet kein Spanisch-Abend statt, da wir dafür keine KursleiterInnen haben.",
+      "additional": "Möchtest Du Spanisch in der Lernwerkstatt vermitteln? Dann melde Dich bei uns!",
+      "furtherLink": "mailto:info@die-lernwerkstatt.org",
+      "time": ""
+    },
+    {
+      "name": "Frei sich bilden",
+      "img": "img/courses/FreiSichBilden.png",
+      "header": "",
+      "description": "Die Lernwerkstatt ist ein Ort für Menschen, die sich frei bilden möchten. Was das ist und was wir euch anbieten, erfahrt ihr auf dieser Seite: \n Frei sich bilden in der Lernwerkstatt",
+      "additional": "",
+      "furtherLink": "http://freisichbilden.strikingly.com/",
+      "time": ""
+    },
+    {
+      "name": "Französisch-Abend",
+      "img": "img/courses/FranzösischAbend.png",
+      "header": "",
+      "description": "\"Conversation Française\" ist nicht ohne Grund Name des Programms, es geht ums Sprechen! Eine sehr motivierte Französin namens Sabine wird euch dabei unterstützen. Unterhaltet euch über die Themen eurer Wahl, worüber ist egal, hauptsache auf Französisch!",
+      "additional": "",
+      "furtherLink": "#",
+      "time": "Dienstags um 18 Uhr"
+    },
+    {
+      "name": "Offene Lernzeit | Kostenlose Beratung zu Bildungsfragen",
+      "img": "img/courses/OffeneLernzeit.png",
+      "header": "",
+      "description": "Was möchtest du lernen? Wie möchtest du lernen? Das sind die zentralen Fragen, die wir dir stellen, wenn du in die offene Lernzeit kommst. \n Die Frage, die sich anschließt ist: Was brauchst du dazu? Wir haben einen guten Überblick über (offene) Lernangebote in Berlin und unterstützen dich auch gern bei der Suche nach geeigneten Mentor*innen. Wir geben dir die Möglichkeit, Diskussions-Abende, Workshops und mehr in unseren Räumen zu veranstalten.",
+      "additional": "Gern könnt ihr vorab mit uns Kontakt aufnehmen. Ihr könnt aber auch einfach so donnerstags zwischen 16 und 18 Uhr (oder nach Vereinbarung an anderen Tagen/Zeiten) vorbei kommen.",
+      "furtherLink": "#",
+      "time": ""
+    }
+  ]
+}
