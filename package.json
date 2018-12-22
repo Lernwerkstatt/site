@@ -26,8 +26,8 @@
   "lint-staged": {
     "*.{js,css}": [
       "prettier --write",
-      "eslint --fix",
-      "stylelint",
+      "eslint --fix --config ./config/.eslintrc.json",
+      "stylelint --config ./config/.stylelintrc.json",
       "git add"
     ]
   },
