@@ -10,25 +10,28 @@ const calendarPath = path.join(rootPath, "data/calendar.json");
 router.get("/", (req, res) => {
   fs.readFile(calendarPath, (err, data) => {
     if (err) throw err;
-    let input = JSON.parse(data);
-    res.render("home", addDayiconLink(input));
+    res.render("home", prepareCalendar(data));
   });
 });
 
 router.get("/home", (req, res) => {
   fs.readFile(calendarPath, (err, data) => {
     if (err) throw err;
-    let input = JSON.parse(data);
-    res.render("home", addDayiconLink(input));
+    res.render("home", prepareCalendar(data));
   });
 });
 
-function addDayiconLink(data) {
-  data.calendar.forEach(element => {
-    let weekday = moment(element.date, "DD.MM.YYYY").format("dddd");
+function prepareCalendar(data) {
+  let result = JSON.parse(data);
+
+  result.calendar.forEach(element => {
+    let weekday = moment(element.date, "DD.MM.YYYY")
+      .format("dddd")
+      .toLowerCase();
     element["dayicon"] = `img/calendar/${weekday}.png`;
   });
-  return data;
+
+  return result;
 }
 
 module.exports = router;
