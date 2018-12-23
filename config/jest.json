@@ -1,6 +1,6 @@
 {
   "rootDir": "../",
   "transform": {
-    "\\.handlebars$": "<rootDir>/config/handlebarsLoader.js"
+    "\\.hbs$": "<rootDir>/config/handlebarsLoader.js"
   }
 }
