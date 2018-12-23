@@ -17,15 +17,7 @@
           </div>
           <ul class="list-group list-group-flush">
             {{#each calendar}}
-            <li class="list-group-item">
-              <a href="{{ eventlink }}" target="_blank">
-                <p class="h5">
-                  <img src="{{ dayicon }}" />
-                  {{ name }}
-                </p>
-                <small class="text-muted">{{ date }} - {{ time }}</small>
-              </a>
-            </li>
+            {{> home/event this}}
             {{/each}}
           </ul>
         </div>
