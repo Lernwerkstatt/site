@@ -24,8 +24,10 @@
     }
   },
   "lint-staged": {
-    "*.{js,json,css,md}": [
+    "*.{js,css}": [
       "prettier --write",
+      "eslint --fix --config ./config/.eslintrc.json",
+      "stylelint --config ./config/.stylelintrc.json",
       "git add"
     ]
   },
@@ -37,9 +39,19 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "cross-env": "^5.2.0",
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.0",
     "husky": "^1.2.0",
     "lint-staged": "^8.1.0",
     "nodemon": "^1.18.7",
-    "prettier": "^1.15.3"
+    "prettier": "^1.15.3",
+    "prettier-eslint": "^8.8.2",
+    "stylelint": "^9.9.0",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-config-recommended": "^2.1.0",
+    "stylelint-prettier": "^1.0.5"
   }
 }
