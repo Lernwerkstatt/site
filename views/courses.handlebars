@@ -1,32 +1,31 @@
-<div class="content">
-  <div class="jumbotron">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-sm-7">
-          <h1>Kurse &amp; Lernbegleitung</h1>
-          <p>Unser Lernangebot</p>
-        </div>
-        <div class="col-12 col-sm-5 align-self-center">
-          <img src="https://res.cloudinary.com/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/v1/253787/6b3c1ba6-333a-4dfb-80b1-686bd4b9e0db_s4dlam.png" class="img-fluid rounded-circle" alt="Lernwerkstatt Logo">
-        </div>
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-7">
+        <h1>Kurse &amp; Lernbegleitung</h1>
+        <p>Unser Lernangebot</p>
+      </div>
+      <div class="col-12 col-sm-5 align-self-center">
+        <img src="https://res.cloudinary.com/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/v1/253787/6b3c1ba6-333a-4dfb-80b1-686bd4b9e0db_s4dlam.png"
+          class="img-fluid rounded-circle" alt="Lernwerkstatt Logo">
       </div>
     </div>
   </div>
-  <div class="container">
-    <div class="row">
-      {{#each courses}}
-      <div class="col-sm">
-        <a href="{{furtherLink}}" target="_blank">
-          <img src={{img}} alt={{name}} style="height: 200px">
-        </a>
-        <p class="lead" style="width: 400px">{{name}}</p>
-        <p class="text" style="width: 400px">{{header}}</p>
-        <p class="text" style="width: 400px">{{description}}</p>
-        <p class="text" style="width: 400px">{{additional}}</p>
-        <p class="text" style="width: 400px">{{time}}</p>
-        <br>
-      </div>
-      {{/each}}
+</div>
+<div class="container">
+  <div class="row">
+    {{#each courses}}
+    <div class="col-sm">
+      <a href="{{furtherLink}}" target="_blank">
+        <img src={{img}} alt={{name}} style="height: 200px">
+      </a>
+      <p class="lead" style="width: 400px">{{name}}</p>
+      <p class="text" style="width: 400px">{{header}}</p>
+      <p class="text" style="width: 400px">{{description}}</p>
+      <p class="text" style="width: 400px">{{additional}}</p>
+      <p class="text" style="width: 400px">{{time}}</p>
+      <br>
     </div>
+    {{/each}}
   </div>
 </div>
