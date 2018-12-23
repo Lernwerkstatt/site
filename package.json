@@ -34,12 +34,13 @@
   "dependencies": {
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
+    "moment": "^2.23.0",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "cross-env": "^5.2.0",
-    "eslint": "^5.10.0",
+    "eslint": "^5.11.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-import": "^2.14.0",

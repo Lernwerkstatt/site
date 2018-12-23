@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("path");
 const fs = require("fs");
+
 const router = express.Router();
 
 const coursesPath = path.join(__dirname, "../../data/courses.json");
