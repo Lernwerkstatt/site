@@ -1,6 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
-const exphbs = require("express-handlebars");
+const hbs = require("express-handlebars");
 
 const homeRouter = require("./src/routes/home.js");
 const aboutRouter = require("./src/routes/about.js");
@@ -15,8 +15,8 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 app.use(morgan("dev"));
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+app.set("view engine", "hbs");
+app.engine("hbs", hbs({ extname: "hbs", defaultLayout: "main" }));
 
 app.use(express.static(`${__dirname}/static`));
 
