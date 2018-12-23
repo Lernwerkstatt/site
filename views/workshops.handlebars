@@ -13,15 +13,24 @@
     </div>
   </div>
   <div class="container text-center">
-    {{#each workshops}}
-    <p class="lead">{{name}}</p>
-    <p class="text">{{description}}</p>
-    {{/each}}
-  </div>
-  <div class="container text-center">
-      <p class="lead">Vergangene Veranstaltungen (bei Interesse an einem dieser Themen, tragt euch in den Newsletter ganz unten auf der Seite ein oder schreibt uns eine E-Mail):</p>
-      <p class="text">Tag der offenen Lernwerkstatt, Deutsche Gebärdensprache, Wie erstelle ich eine eigene Website?, Netzwerke (in der Natur), Stop-Motion Film, Russisch &amp; mehr, Visuelle Notizen, Mathe x Zeit, Mathe x Kunst, Biomimikry, Entrepreneure (Vortrag), Programmieren, Natürlich lernen (Vortrag und Gespräch mit Stefanie Mohsennia), Art Journaling Workshop</p>
-      <p class="text">Weitere Workshops werden laufend hier und auf unserer <a href="https://www.facebook.com/dielernwerkstatt" target="_blank">Facebook-Seite</a> angekündigt. </p>
-      <p class="lead">Wenn du selbst einen Workshop bei uns halten willst, schreib uns!</p>
+    <div class="card-columns">
+      {{#each workshops}}
+      <div class="card">
+        <a href="{{link1}}" target="_blank">
+          <h5 class="card-title">{{name}}</h5>
+        </a>
+        <p class="card-text">{{description}}</p>
+        <p class="card-text">{{link2}}</p>
+        <p class="card-text">{{link3}}</p>
+        <p class="card-text">{{link4}}</p>
+        <p class="card-text">{{additional}}</p>
+      </div>
+      {{/each}}
+    </div>
+    <br>
+    <p class="lead">Vergangene Veranstaltungen (bei Interesse an einem dieser Themen, tragt euch in den Newsletter ganz unten auf der Seite ein oder schreibt uns eine E-Mail):</p>
+    <p class="text">Tag der offenen Lernwerkstatt, Deutsche Gebärdensprache, Wie erstelle ich eine eigene Website?, Netzwerke (in der Natur), Stop-Motion Film, Russisch &amp; mehr, Visuelle Notizen, Mathe x Zeit, Mathe x Kunst, Biomimikry, Entrepreneure (Vortrag), Programmieren, Natürlich lernen (Vortrag und Gespräch mit Stefanie Mohsennia), Art Journaling Workshop</p>
+    <p class="text">Weitere Workshops werden laufend hier und auf unserer <a href="https://www.facebook.com/dielernwerkstatt" target="_blank">Facebook-Seite</a> angekündigt. </p>
+    <p class="lead">Wenn du selbst einen Workshop bei uns halten willst, schreib uns!</p>
   </div>
 </div>
