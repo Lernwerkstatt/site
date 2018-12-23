@@ -1,10 +1,7 @@
 const express = require("express");
-const path = require("path");
 const fs = require("fs");
-const router = express.Router();
 
-const rootPath = path.join(__dirname, "../", "../");
-const calendarPath = path.join(rootPath, "data/team.json");
+const router = express.Router();
 
 router.get("/about", (req, res) => {
   fs.readFile("data/team.json", (err, data) => {
