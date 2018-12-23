@@ -1,7 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
 const exphbs = require("express-handlebars");
-const fs = require("fs");
 
 const homeRouter = require("./src/routes/home.js");
 const aboutRouter = require("./src/routes/about.js");
@@ -19,7 +18,7 @@ app.use(morgan("dev"));
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-app.use(express.static(__dirname + "/static"));
+app.use(express.static(`${__dirname}/static`));
 
 app.use(homeRouter);
 app.use(aboutRouter);
@@ -34,14 +33,14 @@ app.use((req, res) => {
   res.status(404).render("error");
 });
 
-app.listen(port, function() {
+app.listen(port, () => {
   if (app.get("env") === "development") {
-    const browserSync = require("browser-sync");
+    const browserSync = require("browser-sync"); // eslint-disable-line
     browserSync({
       files: ["static/**/*.css", "views/**/*.handlebars"],
       online: false,
       port: port + 1,
-      proxy: "localhost:" + port,
+      proxy: `localhost:${port}`,
       ui: false
     });
   }
