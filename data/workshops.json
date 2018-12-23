@@ -2,9 +2,10 @@
   "workshops": [
     {
       "name": "Ich bin hier!",
-      "description": "Ich bin hier! ist ein neues Projekt, an dem die Lernwerkstatt als einer von drei Partnervereinen beteiligt ist (mit Loesje e.V. und SanaD e.V.) Es richtet sich an junge Menschen zwischen 13 und 18 Jahren, die sich für Medien & Kultur interessieren. Bis Ende 2019 wird es eine Reihe von Workshops geben - die ersten Termine sind online!",
-      "link1": "http://www.loesje.org/berlin",
-      "link2": "https://www.sanad-ev.org/"
+      "description": "Ich bin hier! ist ein neues Projekt, an dem die Lernwerkstatt als einer von drei Partnervereinen beteiligt ist (mit Loesje e.V. und SanaD e.V.) Es richtet sich an junge Menschen zwischen 13 und 18 Jahren, die sich für Medien & Kultur interessieren. Bis Ende 2019 wird es eine Reihe von Workshops geben - die ersten Termine sind online! \n Unsere Partner:",
+      "link1": "https://www.ich-bin-hier.berlin/",
+      "link2": "http://www.loesje.org/berlin",
+      "link3": "https://www.sanad-ev.org/"
     },
     {
       "name": "Freilerner/schulfrei Berlin Treffen",
