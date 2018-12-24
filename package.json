@@ -24,9 +24,13 @@
     }
   },
   "lint-staged": {
-    "*.{js,css}": [
+    "*.{js}": [
       "prettier --write",
       "eslint --fix --config ./config/.eslintrc.json",
+      "git add"
+    ],
+    "*.{css}": [
+      "prettier --write",
       "stylelint --config ./config/.stylelintrc.json",
       "git add"
     ]
