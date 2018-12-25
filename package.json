@@ -24,9 +24,13 @@
     }
   },
   "lint-staged": {
-    "*.{js,css}": [
+    "*.{js}": [
       "prettier --write",
       "eslint --fix --config ./config/.eslintrc.json",
+      "git add"
+    ],
+    "*.{css}": [
+      "prettier --write",
       "stylelint --config ./config/.stylelintrc.json",
       "git add"
     ]
@@ -35,7 +39,8 @@
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "moment": "^2.23.0",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
