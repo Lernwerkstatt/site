@@ -1,8 +1,7 @@
 const express = require("express");
 const morgan = require("morgan");
-const exphbs = require("express-handlebars");
+const hbs = require("express-handlebars");
 const favicon = require("serve-favicon");
-const path = require("path");
 
 const homeRouter = require("./src/routes/home.js");
 const aboutRouter = require("./src/routes/about.js");
@@ -16,13 +15,12 @@ const workshopsRouter = require("./src/routes/workshops.js");
 const port = process.env.PORT || 3000;
 const app = express();
 
-app.use(favicon(path.join(__dirname, "static", "img", "favicon.ico")));
-
 app.use(morgan("dev"));
-app.engine("handlebars", exphbs({ defaultLayout: "main" }));
-app.set("view engine", "handlebars");
+app.set("view engine", "hbs");
+app.engine("hbs", hbs({ extname: "hbs", defaultLayout: "main" }));
 
 app.use(express.static(`${__dirname}/static`));
+app.use(favicon(`${__dirname}/static/img/favicon.ico`));
 
 app.use(homeRouter);
 app.use(aboutRouter);
