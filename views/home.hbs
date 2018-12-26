@@ -1,23 +1,25 @@
-<div class="container">
-  <div class="row row-header mt-5">
-    <div class="col-sm-8 homeheader text-center">
-      <h1>Die Lernwerkstatt-Berlin/Treptow</h1>
-      <p>
-        Die Lernwerkstatt ist ein altersübergreifender Lernort für Lernende
-        in, außerhalb oder neben der Schule.
-      </p>
-      <img src="img/home/home_logo.png" class="img-fluid rounded-circle" alt="Lernwerkstatt Logo" />
-    </div>
-    <div class="col-sm-4 calendar-equal">
-      <div class="card bg-primary text-white card-calendar">
-        <div class="card-header">
-          <h2 class="text-center">Kalender</h2>
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 homeheader text-center">
+        <h1>Die Lernwerkstatt-Berlin/Treptow</h1>
+        <p>
+          Die Lernwerkstatt ist ein altersübergreifender Lernort für Lernende
+          in, außerhalb oder neben der Schule.
+        </p>
+        <img src="img/home/home_logo.png" class="img-fluid rounded-circle" alt="Lernwerkstatt Logo" />
+      </div>
+      <div class="col-sm-4 calendar-equal">
+        <div class="card bg-primary text-white card-calendar">
+          <div class="card-header">
+            <h2 class="text-center">Kalender</h2>
+          </div>
+          <ul class="list-group list-group-flush">
+            {{#each calendar}}
+            {{> home/event this}}
+            {{/each}}
+          </ul>
         </div>
-        <ul class="list-group list-group-flush">
-          {{#each calendar}}
-          {{> home/event this}}
-          {{/each}}
-        </ul>
       </div>
     </div>
   </div>
