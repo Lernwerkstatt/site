@@ -3,22 +3,28 @@
     {
       "name": "Ich bin hier!",
       "description": "Ich bin hier! ist ein neues Projekt, an dem die Lernwerkstatt als einer von drei Partnervereinen beteiligt ist (mit Loesje e.V. und SanaD e.V.) Es richtet sich an junge Menschen zwischen 13 und 18 Jahren, die sich für Medien & Kultur interessieren. Bis Ende 2019 wird es eine Reihe von Workshops geben - die ersten Termine sind online! \n Unsere Partner:",
-      "link1": "https://www.ich-bin-hier.berlin/",
-      "link2": "http://www.loesje.org/berlin",
-      "link3": "https://www.sanad-ev.org/"
+      "mainLink": "https://www.ich-bin-hier.berlin/",
+      "link1": "http://www.loesje.org/berlin",
+      "link2": "https://www.sanad-ev.org/",
+      "link3": "",
+      "additional": ""
     },
     {
       "name": "Freilerner/schulfrei Berlin Treffen",
       "description": "Frei lernende und daran interessierte Menschen begegnen sich, lernen sich kennen, stellen Fragen und spielen miteinander. Keine Kosten; Spenden an die mitwirkenden Vereine sind gern gesehen:",
-      "link1": "http://freisichbilden.strikingly.com/",
-      "link2": "http://www.die-lernwerkstatt.org/",
-      "link3": "http://www.bvnl.de/",
-      "link4": "http://www.schulfrei-bewegung.de/"
+      "mainLink": "http://freisichbilden.strikingly.com/",
+      "link1": "http://www.die-lernwerkstatt.org/",
+      "link2": "http://www.bvnl.de/",
+      "link3": "http://www.schulfrei-bewegung.de/",
+      "additional": ""
     },
     {
       "name": "Mathe x Kunst Projekt",
       "description": "Das Ziel des Projekts liegt darin, Formate für Workshops und Schulen zu entwickeln, die sich am Schnittpunkt von Mathe/NaWi und Kunst bewegen. Wir wollen einen spielerischen, sinnlichen und anschaulichen Zugang zu den scheinbar trockenen und ungeliebten „Fächern“ Mathematik und Naturwissenschaften wagen.",
-      "link1": "https://www.mathe-x-kunst.de/",
+      "mainLink": "https://www.mathe-x-kunst.de/",
+      "link1": "",
+      "link2": "",
+      "link3": "",
       "additional": "Wir suchen momentan weitere WorkshopleiterInnen...hast du Lust mitzumachen? Dann melde dich bei uns: info@mathe-x-kunst.de!"
     }
   ]
