@@ -5,8 +5,20 @@ const moment = require("moment");
 
 const router = express.Router();
 
-const rootPath = path.join(__dirname, "../", "../");
-const calendarPath = path.join(rootPath, "data/calendar.json");
+const calendarPath = path.join(__dirname, "../../data/calendar.json");
+
+function prepareCalendar(data) {
+  const result = JSON.parse(data);
+
+  result.calendar.forEach(element => {
+    const weekday = moment(element.date, "DD.MM.YYYY")
+      .format("dddd")
+      .toLowerCase();
+    element.dayicon = `img/calendar/${weekday}.png`;
+  });
+
+  return result;
+}
 
 function prepareCalendar(data) {
   const result = JSON.parse(data);
