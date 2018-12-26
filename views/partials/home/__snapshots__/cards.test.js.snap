@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`cards.hbs should match the snapshot 1`] = `
+"<div class=\\"card easy\\">
+  <div class=\\"card-body\\">
+    <card-title>
+      <h3>Aktuelles</h3>
+    </card-title>
+    <div class=\\"card-text\\">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint laboriosam voluptates.</p>
+    </div>
+  </div>
+</div>
+"
+`;
