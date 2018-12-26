@@ -5,9 +5,9 @@ const moment = require("moment");
 
 const router = express.Router();
 
-const calendarPath = path.join(__dirname, "../../data/calendar.json");
+const homePath = path.join(__dirname, "../../data/home.json");
 
-function prepareCalendar(data) {
+function prepareHome(data) {
   const result = JSON.parse(data);
 
   result.calendar.forEach(element => {
@@ -21,16 +21,16 @@ function prepareCalendar(data) {
 }
 
 router.get("/", (req, res) => {
-  fs.readFile(calendarPath, (err, data) => {
+  fs.readFile(homePath, (err, data) => {
     if (err) throw err;
-    res.render("home", prepareCalendar(data));
+    res.render("home", prepareHome(data));
   });
 });
 
 router.get("/home", (req, res) => {
   fs.readFile(calendarPath, (err, data) => {
     if (err) throw err;
-    res.render("home", prepareCalendar(data));
+    res.render("home", prepareHome(data));
   });
 });
 
