@@ -28,7 +28,7 @@ router.get("/", (req, res) => {
 });
 
 router.get("/home", (req, res) => {
-  fs.readFile(calendarPath, (err, data) => {
+  fs.readFile(homePath, (err, data) => {
     if (err) throw err;
     res.render("home", prepareHome(data));
   });
