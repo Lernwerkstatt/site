@@ -47,7 +47,7 @@ main {
 
 .calendar-equal {
   height: 50vh;
-  overflow: auto;
+  overflow: hidden;
 }
 
 /* TEAM PAGE */
@@ -69,6 +69,7 @@ main {
 .card-calendar {
   overflow: auto;
   height: 100%;
+  border: 0;
 }
 
 .homeheader {
