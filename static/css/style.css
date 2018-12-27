@@ -65,12 +65,6 @@ main {
   justify-content: center;
 }
 
-/* WORKSHOPS PAGE */
-
-.workshops-links {
-  display: block;
-}
-
 /* HOME PAGE */
 .card-calendar {
   overflow: auto;

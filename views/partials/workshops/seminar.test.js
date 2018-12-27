@@ -1,6 +1,6 @@
-const workshop = require("./seminars.hbs");
+const workshop = require("./seminar.hbs");
 
-describe("seminars.hbs", () => {
+describe("seminar.hbs", () => {
   it("should match the snapshot", () => {
     expect(
       workshop({
