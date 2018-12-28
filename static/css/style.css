@@ -88,3 +88,8 @@ main {
   transform: scale(1.1);
   border: 1px solid gray;
 }
+
+#mapid { 
+  margin: auto;
+  width: 60%;
+  height: 320px; }
