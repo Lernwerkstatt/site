@@ -15,15 +15,7 @@
   <div class="team-row">
     <div class="col-sm-10" id="team">
       {{#each team}}
-      <div class="team-box" data-toggle="collapse" data-target="#{{id}}">
-        <img src={{img}} alt={{name}} class="img-fluid rounded-circle" style="height: 160px; width: 160px;">
-        <p class="lead">{{name}}</p>
-      </div>
-      <div id="{{id}}" class="collapse" data-parent="#team">
-        <div class="card-body team-description">
-          {{description}}
-        </div>
-      </div>
+      {{> about/member this}}
       {{/each}}
     </div>
   </div>
