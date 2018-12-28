@@ -20,19 +20,6 @@ function prepareHome(data) {
   return result;
 }
 
-function prepareCalendar(data) {
-  const result = JSON.parse(data);
-
-  result.calendar.forEach(element => {
-    const weekday = moment(element.date, "DD.MM.YYYY")
-      .format("dddd")
-      .toLowerCase();
-    element.dayicon = `img/calendar/${weekday}.png`;
-  });
-
-  return result;
-}
-
 router.get("/", (req, res) => {
   fs.readFile(homePath, (err, data) => {
     if (err) throw err;
