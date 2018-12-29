@@ -17,14 +17,3 @@ const marker = L.marker([52.49065, 13.44831], {
   alt: "Lernwerkstatt"
 }).addTo(mymap);
 marker.bindPopup("<b>Hello!</b><br>Please visit me!").openPopup();
-
-const popup = L.popup();
-
-function onMapClick(e) {
-  popup
-    .setLatLng(e.latlng)
-    .setContent(`You clicked the map at ${  e.latlng.toString()}`)
-    .openOn(mymap);
-}
-
-mymap.on("click", onMapClick);
