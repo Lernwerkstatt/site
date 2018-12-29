@@ -16,4 +16,4 @@ const marker = L.marker([52.49065, 13.44831], {
   title: "Lernwerkstatt",
   alt: "Lernwerkstatt"
 }).addTo(mymap);
-marker.bindPopup("<b>Hello!</b><br>Please visit me!").openPopup();
+marker.bindPopup("<b>Hallo!</b><br>Besuch uns mal!").openPopup();
