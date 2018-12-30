@@ -6,20 +6,16 @@
         <p>Wir sind Die Lernwerkstatt</p>
       </div>
       <div class="col-12 col-sm-5 align-self-center">
-        <img src="https://res.cloudinary.com/hrscywv4p/image/upload/c_fill,fl_lossy,h_200,w_200,f_auto,g_faces:auto,q_auto/v1/253787/6b3c1ba6-333a-4dfb-80b1-686bd4b9e0db_s4dlam.png"
-          class="img-fluid rounded-circle" alt="Die Lernwerkstatt Logo">
+        <img src="img/logo.png" class="img-fluid rounded-circle" alt="Lernwerkstatt Logo">
       </div>
     </div>
   </div>
 </div>
 <div class="container-fluid text-center">
-  <div class="team-row text-center">
-    <div class="col-sm-10">
+  <div class="team-row">
+    <div class="col-sm-10" id="team">
       {{#each team}}
-      <div class="team-box">
-        <img src={{img}} alt={{name}} class="img-fluid rounded-circle" style="height: 160px; width: 160px;">
-        <p class="lead">{{name}}</p>
-      </div>
+      {{> about/member this}}
       {{/each}}
     </div>
   </div>

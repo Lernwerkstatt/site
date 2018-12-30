@@ -2,58 +2,69 @@
   "team": [
     {
       "name": "André Brötz",
-      "img": "/img/team/andre.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "id": "andre",
+      "img": "img/team/andre.jpg",
+      "description": "André ist 27 Jahre alt, studiert Maschinenbau (Master) an der TU Berlin und unterrichtet seit 2009 hauptsächlich Mathe, Physik und Englisch. Er hat schon Menschen von 5 bis 55 Jahre unterrichtet, u.a. auch in Istanbul und Kuala Lumpur. Lernen ist seine große Leidenschaft. Er interessiert sich für beinahe alles und er glaubt fest daran, dass mit der richtigen Einstellung und den richtigen Lernmethoden nichts unmöglich ist zu lernen.  Die Lernwerkstatt ist für ihn eine Chance seine Freude am Lernen und am Ausprobieren mit anderen Menschen zu teilen. Er wünscht sich einen Ort, wo eine aktive Lerngemeinde entsteht, wo offen und ehrlich mit einander umgegangen wird. André betreut die Lernbegleitung, Mathe & Naturwissenschaften, die Projektfinanzierung und allgemeine Projektkoordination."
     },
     {
       "name": "Bianca Geburek",
-      "img": "/img/team/bianca.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "id": "bianca",
+      "img": "img/team/bianca.jpg",
+      "description": "Bianca ist 28 Jahre alt, studiert Politikwissenschaften und Deutsche Philologie an der FU Berlin und unterrichtet seit 2011 freiberuflich Deutsch als Fremd-/Zweitsprache. Lernen beschäftigt sie aus zwei Perspektiven: in Reflexion ihrer eigenen Schul-, Studien- und Selbstlernerfahrungen sowie im Hinblick auf die Zukunft des Lernens und sich-bildens ihrer kleinen Tochter.   Die Lernwerkstatt ist ihr eine Herzensangelegenheit. Sie wünscht sich einen Ort des Ausprobierens alternativer Lern- und Lehrkonzepte, der Menschen mitreißt und zusammen bringt. \"Lasst uns die Freude am Lernen teilen.\" \n Bianca kümmert sich um die Bereiche Deutsch lernen, Bildungsfreiheit/frei sich bilden und allgemeine Projektkoordination."
     },
     {
       "name": "Basel Nasri",
-      "img": "/img/team/basel.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "id": "basel",
+      "img": "img/team/basel.jpg",
+      "description": "Basel ist 27 Jahre alt, Zahnarzt aus Aleppo, Syrien und hat zwei Jahre in Syrien und Istanbul, Türkei als Zahnarzt gearbeitet. Er musste wegen des Krieges flüchten und ist im Oktober 2015 nach Deutschland gekommen. Seitdem lernt er Deutsch und gibt aus Leidenschaft Arabischunterricht für Anfänger und Fortgeschrittene. Er interessiert sich für Sprachen, Geschichte, Elektronik, Naturwissenschaften und neuen Technologien. Die Lernwerkstatt ist für ihn eine Möglichkeit hier anzukommen, die arabische Sprache zu unterrichten sowie die arabische Kultur zu vermitteln. Basel unterichtet jeden Donnerstagabend Arabisch in der Lernwerkstatt. Alle Interessierten sind herzlich willkommen!"
     },
     {
       "name": "Michaela Schmidt",
-      "img": "/img/team/michaela.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "id": "michaela",
+      "img": "img/team/michaela.jpg",
+      "description": "Michaela ist 22 Jahre alt und studiert Bauingenieurwesen (Bachelor) an der TU Berlin. Sie hat vor fünf Jahren begonnen Nachhilfe zu geben und sich seit dem nicht mehr davon lösen können. Sie hat sehr viel Freude daran Schüler zu unterrichten und zu unterstützen. Seit ihrem work&travel Jahr in Neuseeland gehört auch Reisen zu ihren großen Leidenschaften. Sie war vor kurzem auch ein halbes Jahr in Kanada. Im sportlichen Bereich ist sie ebenso engagiert und ist ehrenamtlich als Trainerin in einem Kung Fu Verein tätig. \n Die Lernwerkstatt sieht sie als Chance allen Kindern und Jugendlichen die Möglichkeit zu geben Lernbegleitung in Anspruch zu nehmen, unabhängig von finanziellen Mitteln. Außerdem wäre es großartig wenn man es schaffe Begeisterung fürs Lernen außerhalb der Schule ins Leben zu rufen."
     },
     {
       "name": "Kevin Machura",
-      "img": "/img/team/kevin.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "id": "kevin",
+      "img": "img/team/kevin.jpg",
+      "description": "Kevin ist 26 Jahre alt. Nach Abschluss seines Masterstudiums in Economics und Studienerfahrungen in Großbritannien sammelt er gegenwärtig Berufserfahrung in Saudi-Arabien. Vielfältige negative Erfahrungen mit den einzelnen Bildungssystemen und deren Engstirnigkeit in Bezug alternative Lernmodelle motivieren ihn für Entwicklung und Anwendung neuer Lernkonzepte. Den daraus erwachsenden Mehrwert für jeden Einzelnen konnte er sowohl bei privater Nachhilfe in den Fächern Englisch und Französisch als auch als studentischer Tutor an der Universität fördern. \n Die Lernwerkstatt ist in seinen Augen ein Ort, wo die Pflichten und Annehmlichkeiten des Lebens in harmonischen Einklang gebracht werden. Neben der Koordination interner Büroangelegenheiten engagiert er sich bei der Planung und Konzeptualisierung von neuen Veranstaltungen und der langfristigen Finanzierung der Lernwerkstatt."
     },
     {
       "name": "Ursula Seeger",
-      "img": "/img/team/ursula.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "id": "ursula",
+      "img": "img/team/ursula.jpg",
+      "description": "Ursula hat Kommunikationsdesign, Kunstvermittlung und Deutsch als Fremdsprache studiert. Sie interessiert sich schon lange für das Thema Bildung und hat schon mehrere Jahre als Nachhilfelehrerin in Deutsch, Mathematik und Englisch gearbeitet und seit 2014 auch Deutsch als Fremdsprache unterrichtet. Kunst unterrichtet sie in Arbeitsgemeinschaften oder in außerschulischen Projekten, hauptsächlich Trickfilm und Schattentheater. \n Sie interessiert sich für alternative und kreative Lernformen, insbesondere für fächerübergreifendes und selbstbestimmtes Lernen. Schnittstellen zwischen Kunst und Naturwissenschaften hat sie schon in ihrem Studium erforscht und ist bei der Lernwerkstatt in dem Projekt „Mathe x Kunst“ mit dabei. Sonst ist sie in der Lernwerkstatt als Lernbegleiterin aktiv und hilft dabei, Angebote für Deutsch-Lerner und Neuankömmlinge in Deutschland zu organisieren."
     },
     {
       "name": "Alejandro Reyes",
-      "img": "/img/team/ale.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "id": "ale",
+      "img": "img/team/ale.jpg",
+      "description": "Alejandro ist 28 Jahre alt und kommt aus Costa Rica. Nach Abschluss seines Masterstudiums in Menschenrechte und Friedenserziehung sammelte er mehr als 5 Jahre Erfahrung als Sprachenlehrer und NGO-Consultant. Seine Motivation erwächst daraus neue Methoden zum alternativen Denken und zur Selbstentwicklung zu konzipieren, welche in Trainings und Coachings der Lernwerkstatt zur Anwendung kommen. \n Alejandro ist davon überzeugt, dass konventionelle Lernmethoden die geistige Entwicklung einschränken. Die Lernwerkstatt stellt ihn nicht nur selbst vor zahlreiche Herausforderungen, sondern gibt ihm die Möglichkeit engagierte Freilerner kennenzulernen und gemeinsam neue Konzepte und Techniken auszuprobieren. \n Derzeit begleitet Alejandro den wöchentlichen Englisch-Abend."
     },
     {
       "name": "Miriam Haerer",
-      "img": "/img/team/miriam.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "id": "miriam",
+      "img": "img/team/miriam.jpg",
+      "description": "Miriam beschäftigt sich mit den Themen Bildungsfreiheit/frei sich bilden. Das Thema Lernen begleitet sich schon ihr ganzes Leben. Sie ist von Natur aus ein neugieriger und lernbegeisterter Mensch, der Lernen schon immer als Bereicherung empfunden hat. Bildung hat für sie nichts mit Institutionen zu tun, sondern ist ein ganz natürlicher Bestandteil des menschlichen Seins. Deshalb setzt sie sich auch aktiv für alternative Bildungsformen wie das Freilernen ein. Sie veranstaltet zusammen mit Bianca die monatlichen Freilernertreffen und den Freilernerstammtisch."
     },
     {
       "name": "Ihab Al-Sabbah",
-      "img": "/img/team/ihab.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "id": "ihab",
+      "img": "img/team/ihab.jpg",
+      "description": "Ihab aus Palästina ist Computertechniker und arbeitet als Jugendarbeiter und -trainer für Erasmus+ in lokalen und internationalen Projekten seit 2013. Seit 2016 ist er Projektkoordinator bei Loesje Berlin und organisiert interkulturelle und andere Events für die Lernwerkstatt. Er ist Mitgründer des M.E.N.A. Clubs und begeistert mit seinen Tanzabenden \"Yallah, Dabka!\""
     },
     {
       "name": "Olzhas Askar",
-      "img": "/img/team/olzhas.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "id": "olzhas",
+      "img": "img/team/olzhas.jpg",
+      "description": "Olzhas ist 27 Jahre alt. Er kommt aus Kasachstan.  In Berlin ist er in einem Startup als Software Engineer tätig.  Die Lernwerkstatt entdeckte er, als er die Einladung zu den Arabischkursen von Ihab und Basel sah.  Ihab und seine Freunde interessierten sich für Programmierung, und so ist \"Programming for Job Seekers\" entstanden."
     },
     {
       "name": "Julia Brötz",
-      "img": "/img/team/julia.jpg",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      "id": "julia",
+      "img": "img/team/julia.jpg",
+      "description": "Julia ist 32 Jahre alt und arbeitet als Journalistin. Aktuell leitet sie für den Community-Sender ALEX Berlin im Auftrag der Medienanstalt Berlin-Brandenburg ein Integrationsvolontariat für Exiljournalisten. Als Medienwissenschaftlerin forscht Julia auf www.thisisnotawebsite.de zu Themen rund um das Internet und den digitalen Wandel. Die Idee zur Gründung der Lernwerkstatt hatte ihr Bruder André auf Julias Couch. Seitdem begleitet sie durch Rat und Tat das Projekt: mal hinter der Kamera, mal bei Workshops und vielleicht schon bald mit einem eigenen Multimedia-Projekt."
     }
   ]
 }
