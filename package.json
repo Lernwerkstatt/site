@@ -1,7 +1,7 @@
 {
   "name": "site",
   "version": "1.0.0",
-  "description": "Lernwerkstatt Website",
+  "description": "Die Lernwerkstatt Website",
   "main": "index.js",
   "scripts": {
     "test": "jest --config config/jest.json",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/Lernwerkstatt/site.git"
   },
-  "author": "Team Lernwerkstatt",
+  "author": "Team Die Lernwerkstatt",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Lernwerkstatt/site/issues"
