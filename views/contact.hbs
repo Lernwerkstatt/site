@@ -16,26 +16,27 @@
     </p>
     <img src="img/contact/contact-map.png" alt="map of lernwerkstatt" style="width: 42%" />
   </div>
-  <form class="col-5 offset-3">
+  <form class="col-5 offset-3 mt-5">
+    <h4 class="bg-primary text-white text-center pb-3 pt-3 rounded">Kontaktiere uns</h4>
     <div class="form-group m-0">
       <label for="name"></label>
-      <input type="text" class="form-control" id="name" placeholder="Name">
+      <input type="text" class="form-control" id="name" placeholder="Name" required>
     </div>
     <div class="form-group m-0">
       <label for="email"></label>
-      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-Mail">
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="E-Mail" required>
     </div>
     <div class="form-group">
       <label for="message"></label>
-      <textarea type="text" class="form-control" id="message" placeholder="Nachricht"></textarea>
+      <textarea type="text" class="form-control" id="message" placeholder="Nachricht" required></textarea>
     </div>
     <div class="form-check">
-      <input type="checkbox" class="form-check-input" id="contact-check" onclick="checker();">
+      <input type="checkbox" class="form-check-input" id="contact-check" required>
       <label class="form-check-label" for="contact-check"><span>Hiermit bestätige ich meine Übereinstimmung mit <a href="#"
             data-toggle="modal" data-target="#termsModal">Terms
             &amp; Conditions</a> und <a href="#" data-toggle="modal" data-target="#privacyModal">Privacy Policy</a>.</span></label>
     </div>
-    <button id="submit-button" type="submit" class="btn btn-primary mt-2" disabled>Abschicken</button>
+    <button id="submit-button" type="submit" class="btn btn-primary mt-2">Abschicken</button>
   </form>
 </div>
 <!-- Modal -->
@@ -207,4 +208,3 @@ Diese Datenschutzerklärung wurde durch den Datenschutzerklärungs-Generator der
     </div>
   </div>
 </div>
-<script src="js/contact.js"></script>
