@@ -13,7 +13,7 @@ L.tileLayer(
 ).addTo(mymap);
 
 const marker = L.marker([52.49065, 13.44831], {
-  title: "Lernwerkstatt",
-  alt: "Lernwerkstatt"
+  title: "Die Lernwerkstatt",
+  alt: "Die Lernwerkstatt"
 }).addTo(mymap);
 marker.bindPopup("<b>Hallo!</b><br>Besuch uns mal!").openPopup();
