@@ -16,7 +16,7 @@ exports[`modal.hbs should match the snapshot 1`] = `
         <pre style=\\"white-space: pre-wrap;\\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint laboriosam voluptates.</pre>
       </div>
       <div class=\\"modal-footer\\">
-        <button type=\\"button\\" class=\\"btn btn-secondary\\" data-dismiss=\\"modal\\">Close</button>
+        <button type=\\"button\\" class=\\"btn btn-secondary\\" data-dismiss=\\"modal\\">Schließen</button>
       </div>
     </div>
   </div>
