@@ -20,13 +20,13 @@
 </head>
 
 <body>
-  {{> header}}
+  {{> main/header}}
 
   <main>
     {{{body}}}
   </main>
 
-  {{> footer}}
+  {{> main/footer}}
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -40,7 +40,7 @@
     if (window.console) {
       console.log(
         `%c#######################################################
-                Awesome console message                
+                Awesome console message
 #######################################################`,
         'background: #222; color: #bada55',
       );
