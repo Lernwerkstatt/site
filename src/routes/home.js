@@ -7,7 +7,7 @@ const router = express.Router();
 
 const homePath = path.join(__dirname, "../../data/home.json");
 
-function prepareHome(data) {
+let testFunc = function prepareHome(data) {
   const result = JSON.parse(data);
 
   result.calendar.forEach(element => {
@@ -18,20 +18,20 @@ function prepareHome(data) {
   });
 
   return result;
-}
+};
 
 router.get("/", (req, res) => {
   fs.readFile(homePath, (err, data) => {
     if (err) throw err;
-    res.render("home", prepareHome(data));
+    res.render("home", testFunc(data));
   });
 });
 
 router.get("/home", (req, res) => {
   fs.readFile(homePath, (err, data) => {
     if (err) throw err;
-    res.render("home", prepareHome(data));
+    res.render("home", testFunc(data));
   });
 });
 
-module.exports = router;
+module.exports = testFunc;
