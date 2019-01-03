@@ -27,6 +27,6 @@ describe("Test data", () => {
   };
 
   test("check dayicon", () => {
-    expect(home(stringifyData)).toEqual(dataExpected);
+    expect(home.prepareHome(stringifyData)).toEqual(dataExpected);
   });
 });
