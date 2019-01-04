@@ -23,7 +23,7 @@ app.engine("hbs", hbs({ extname: "hbs", defaultLayout: "main" }));
 app.use(express.static(`${__dirname}/static`));
 app.use(favicon(`${__dirname}/static/img/favicon.ico`));
 
-app.use(homeRouter);
+app.use(homeRouter.router);
 app.use(aboutRouter);
 app.use(blogRouter);
 app.use(contactRouter);

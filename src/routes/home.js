@@ -34,4 +34,4 @@ router.get("/home", (req, res) => {
   });
 });
 
-module.exports = router;
+module.exports = { prepareHome, router };
