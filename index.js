@@ -11,6 +11,7 @@ const coursesRouter = require("./src/routes/courses.js");
 const learnRouter = require("./src/routes/learn.js");
 const supportRouter = require("./src/routes/support.js");
 const workshopsRouter = require("./src/routes/workshops.js");
+const subscribeRouter = require("./src/routes/subscribe.js");
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -30,6 +31,7 @@ app.use(coursesRouter);
 app.use(learnRouter);
 app.use(supportRouter);
 app.use(workshopsRouter);
+app.use(subscribeRouter);
 
 app.use((req, res) => {
   res.status(404).render("error");
