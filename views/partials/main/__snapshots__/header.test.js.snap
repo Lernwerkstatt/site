@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`header.hbs should match the snapshot 1`] = `
+"<header>
+  <nav class=\\"navbar fixed-top navbar-expand-lg navbar-dark bg-dark\\">
+    <a class=\\"navbar-brand\\" href=\\"/\\">Die Lernwerkstatt</a>
+    <button class=\\"navbar-toggler\\" type=\\"button\\" data-toggle=\\"collapse\\" data-target=\\"#navbarColor03\\" aria-controls=\\"navbarColor03\\"
+      aria-expanded=\\"false\\" aria-label=\\"Toggle navigation\\">
+      <span class=\\"navbar-toggler-icon\\"></span>
+    </button>
+    <div class=\\"collapse navbar-collapse\\" id=\\"navbarColor03\\">
+      <ul class=\\"navbar-nav mr-auto\\">
+        <li class=\\"nav-item\\">
+          <a class=\\"nav-link\\" href=\\"/home\\">Home</a>
+        </li>
+        <li class=\\"nav-item\\">
+          <a class=\\"nav-link\\" href=\\"/learn\\">Lernen</a>
+        </li>
+        <li class=\\"nav-item\\">
+          <a class=\\"nav-link\\" href=\\"/courses\\">Kurse</a>
+        </li>
+        <li class=\\"nav-item\\">
+          <a class=\\"nav-link\\" href=\\"/workshops\\">Workshops</a>
+        </li>
+        <li class=\\"nav-item\\">
+          <a class=\\"nav-link\\" href=\\"/about\\">About</a>
+        </li>
+      </ul>
+      <form class=\\"form-inline my-2 my-lg-0\\">
+        <input class=\\"form-control mr-sm-2\\" type=\\"text\\" placeholder=\\"Search\\">
+        <button class=\\"btn btn-secondary my-2 my-sm-0\\" type=\\"submit\\">Search</button>
+      </form>
+  </nav>
+</header>
+"
+`;
