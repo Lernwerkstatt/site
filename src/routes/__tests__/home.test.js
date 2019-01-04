@@ -1,7 +1,7 @@
 const home = require("../home");
 
-describe("Test data", () => {
-  const dataOriginal = {
+describe("function should get right icon from date", () => {
+  const originalData = {
     calendar: [
       {
         name: "Webkurs",
@@ -12,9 +12,9 @@ describe("Test data", () => {
     ]
   };
 
-  const stringifyData = JSON.stringify(dataOriginal);
+  const stringifiedData = JSON.stringify(originalData);
 
-  const dataExpected = {
+  const expectedData = {
     calendar: [
       {
         name: "Webkurs",
@@ -25,7 +25,7 @@ describe("Test data", () => {
       }
     ]
   };
-  const dataWrong = {
+  const falseData = {
     calendar: [
       {
         name: "Webkurs",
@@ -38,7 +38,7 @@ describe("Test data", () => {
   };
 
   test("check dayicon", () => {
-    expect(home.prepareHome(stringifyData)).toEqual(dataExpected);
-    expect(home.prepareHome(stringifyData)).not.toEqual(dataWrong);
+    expect(home.prepareHome(stringifiedData)).toEqual(expectedData);
+    expect(home.prepareHome(stringifiedData)).not.toEqual(falseData);
   });
 });
