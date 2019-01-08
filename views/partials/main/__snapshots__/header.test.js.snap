@@ -26,9 +26,19 @@ exports[`header.hbs should match the snapshot 1`] = `
           <a class=\\"nav-link\\" href=\\"/about\\">About</a>
         </li>
       </ul>
-      <form class=\\"form-inline my-2 my-lg-0\\">
-        <input class=\\"form-control mr-sm-2\\" type=\\"text\\" placeholder=\\"Search\\">
-        <button class=\\"btn btn-secondary my-2 my-sm-0\\" type=\\"submit\\">Search</button>
+      <form class=\\"form-inline my-2 my-lg-0\\" action=\\"https://duckduckgo.com/\\">
+        <div class=\\"form-group\\">
+          <div class=\\"input-group\\">
+            <input type=\\"search\\" class=\\"form-control mr-sm-2\\" placeholder=\\"Suche via DuckDuckGo\\" name=\\"q\\">
+            <input type=\\"hidden\\" value=\\"https://lernwerkstatt-site.azurewebsites.net/\\" name=\\"sites\\">
+            <input type=\\"hidden\\" value=\\"1\\" name=\\"kh\\">
+            <input type=\\"hidden\\" value=\\"1\\" name=\\"kn\\">
+            <input type=\\"hidden\\" value=\\"1\\" name=\\"kac\\">
+            <span class=\\"input-group-btn\\"><button class=\\"btn btn-secondary my-2 my-sm-0\\" type=\\"submit\\">
+                <i class=\\"fa fa-search\\" aria-hidden=\\"true\\"></i></button>
+            </span>
+          </div>
+        </div>
       </form>
   </nav>
 </header>

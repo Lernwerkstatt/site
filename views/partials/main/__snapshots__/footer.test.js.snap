@@ -7,6 +7,7 @@ exports[`footer.hbs should match the snapshot 1`] = `
       <div class=\\"col-md-6 text-left\\">
         <a href=\\"/support\\" class=\\"mr-3\\">Support</a>
         <a href=\\"/contact\\" class=\\"mr-3\\">Kontakt</a>
+        <a href=\\"/subscribe\\" class=\\"mr-3\\">Subscribe</a>
         <a href=\\"/blog\\" class=\\"mr-3\\">Blog</a>
       </div>
       <div class=\\"col-md-6 text-right\\">

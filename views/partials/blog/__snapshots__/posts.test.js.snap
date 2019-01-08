@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`posts.hbs should match the snapshot 1`] = `
+"<img src=\\"/img/logo.png\\" alt=\\"\\">
+<p>01.01.2000 unknown</p>
+<hr>
+<h2>Blogpost</h2>
+<br>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint laboriosam voluptates.</p>
+"
+`;
