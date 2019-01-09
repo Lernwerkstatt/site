@@ -94,7 +94,22 @@ main {
   border: 1px solid gray;
 }
 
-#mapid { 
+#mapid {
   margin: auto;
   width: 60%;
-  height: 320px; }
+  height: 320px;
+ }
+
+ .img-blog {
+  border-radius: 40%;
+  width: 15rem;
+  height: auto;
+ }
+
+ .side-pattern-blog {
+  width: 100%;
+  height: auto;
+  background-image: url('/img/blog/morocco-blue.png');
+  background-repeat: repeat-y;
+  margin-bottom: -3.2rem;
+ }
