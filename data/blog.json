@@ -1,60 +1,68 @@
 {
   "blogposts": [
     {
+      "id": 1,
       "title": "Wohnzimmergespräche",
       "date": "24.01.2018",
       "author": "Janina",
       "blogpost": "Wohnzimmergespräche Wenn ihr öfters in die Lernwerkstatt kommt, seid ihr vielleicht schon mal Janina begegnet. Sie bietet manchmal spontane Gesprächszeit an, besucht einen Koch-Abend, oder arbeitet gerade mit unserer Bürokollegin Carla bei Lakunabi. Wir teilen mit Janina eine Vorstellung von...",
-      "imagelink": "/img/logo.png"
+      "imagelink": "/img/blog/1.jpg"
     },
     {
+      "id": 2,
       "title": "Lernen ohne Schule? In Deutschland? Ja.",
       "date": "10.01.2018",
       "author": "Miriam Haerer",
       "blogpost": "Lernen ohne Schule? In Deutschland? Ja. Die Lernwerkstatt ist eine Anlaufstelle für Menschen, die ihren Lernprozess selbstbestimmt, kreativ und gemeinschaftlich in die Hand nehmen. Wie geht das, wenn man als junger Mensch in Deutschland per Schulgesetz zum Schulbesuch verpflichtet ist? Darüber...",
-      "imagelink": "/img/logo.png"
+      "imagelink": "/img/blog/2.jpg"
     },
     {
+      "id": 3,
       "title": "Mathe - Teil II",
       "date": "12.05.2016",
       "author": "Dre",
       "blogpost": "In meinem Artikel Mathe – Teil I habe ich versucht zu verdeutlichen, wie der rein methodische Ansatz die Förderung von Mathe und Naturwissenschaften (NaWi) eher zurückhält, als vorantreibt. Hat man diese Erkenntnis erst einmal verinnerlicht, stellt sich als nächstes die goldene Frage: Wie kann es...",
-      "imagelink": "/img/logo.png"
+      "imagelink": "/img/blog/3.jpg"
     },
     {
+      "id": 4,
       "title": "Mathe - Teil I",
       "date": "09.05.2016",
       "author": "Dre",
       "blogpost": "Wir haben ein großes Problem. Jeden Tag verlieren zahlreiche junge Menschen das Interesse an der Mathematik und an den Naturwissenschaften. Sie erleben diese „Fächer“ * als frustrierend, langweilig, trocken und manchmal als etwas beinahe Unmögliches. Das traurige ist: Diese jungen Menschen haben...",
-      "imagelink": "/img/logo.png"
+      "imagelink": "/img/blog/4.jpg"
     },
     {
+      "id": 5,
       "title": "Lernen zu lernen",
       "date": "23.05.2015",
       "author": "Dre",
       "blogpost": "In der Lernwerkstatt lernen wir zu lernen. Doch was bedeutet das überhaupt? Der Begriff „lernen zu lernen“ ist mir das erste Mal begegnet, als ich das Buch „Der Anfang von Himmel und Erde hat keinen Namen“ von Heinz von Foerster las.  Von Foerster sagt:  Und weiter:  Das „Warum“ ist ...",
-      "imagelink": "/img/logo.png"
+      "imagelink": "/img/blog/5.jpg"
     },
     {
+      "id": 6,
       "title": "Prüfungen, Gelassenheit",
       "date": "19.03.2015",
       "author": "Dre",
       "blogpost": "Als Lehrer, Lernbegleiter und Universitätsstudent sind Prüfungen für mich an der Tagesordnung. Bei meinen Schülern sehe ich immer, was für einen enormen Druck Schulprüfungen auslösen können. Einerseits bereitet es mir große Sorgen zu sehen, wie schwer sich Jugendliche damit tun, aber es erinnert mich auch immer wieder daran, dass ich es selber auch geschafft habe dieses Druckgefühl zu überwinden. Es muss nicht so sein und ich gebe mein Bestes das hier irgendwie zu verdeutlichen. Ich werde ein paar wichtige Fragen stellen und jeweils meine Antworten erläutern, die bei mir letztendlich dazu geführt haben, dass ich heute mit hundertprozentiger Gelassenheit in jede Prüfung gehe.",
-      "imagelink": "/img/logo.png"
+      "imagelink": "/img/blog/6.jpg"
     },
     {
+      "id": 7,
       "title": "Die #dclass conference.",
       "date": "25.02.2015",
       "author": "Bca",
       "blogpost": "Speakout. Ideen fliegen auf mich zu, ein ausgesprochenes Wort löst einen Funkenregen an Einfällen aus, es ist, als würde in meinem Hirn eine Lawine von Synapsensprüngen losgetreten; die können das - die sind jung, wie ich - die machen das einfach - die setzen um, wovon sie träumen - die machen die Welt, wie sie ihnen gefällt ",
-      "imagelink": "/img/logo.png"
+      "imagelink": "/img/blog/7.png"
     },
     {
+      "id": 8,
       "title": "Emotionale Intelligenz",
       "date": "20.02.2015",
       "author": "Dre",
       "blogpost": "Ich unterrichte jetzt schon seit ca. 6 Jahren und bin seit meiner Einschulung mit 5 ½ durchgängig ein Student gewesen (zur Zeit bin ich 25), erst in der Schule und dann in der Universität. Inzwischen denke ich, dass ich einen ziemlich guten Überblick über die Vor- und Nachteile unseres Schulsystems habe. Ich habe schon in den Vereinigten Staaten, Russland, Vereinigte Arabische Emirate, Türkei, Malaysia und in mehreren Städten in Deutschland gelebt. Egal wo man hingeht, der allgemeine Ansatz der Schulen ist gleich. Unser globalisiertes Schulsystem setzt einen klaren Schwerpunkt auf Lesen, Schreiben und Rechnen. Viele Kinder/Jugendliche die in diesen Fähigkeiten Mängel aufweisen werden als ungebildet und oft sogar als Versager eingestuft.",
-      "imagelink": "/img/logo.png"
+      "imagelink": "/img/blog/8.jpg"
     }
   ]
 }
