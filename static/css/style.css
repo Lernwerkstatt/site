@@ -101,9 +101,13 @@ main {
  }
 
  .img-blog {
-  border-radius: 40%;
-  width: 15rem;
-  height: auto;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 15px;
  }
 
  .side-pattern-blog {

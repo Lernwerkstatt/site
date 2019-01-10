@@ -1,6 +1,8 @@
-<img src="{{ imagelink }}" alt="" class="img-blog">
-<p>{{ date }} {{ author }}</p>
 <hr>
-<h2>{{ title }}</h2>
+<img src="{{ imagelink }}" alt="{{ title }}" class="img-blog">
+<a href="/singlepost/?id={{ id }}">
+  <h3>{{ title }}</h3>
+</a>
 <br>
 <p>{{ blogpost }}</p>
+<p>{{ date }} - {{ author }}</p>
