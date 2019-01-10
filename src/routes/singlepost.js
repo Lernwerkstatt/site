@@ -10,8 +10,9 @@ router.get("/singlepost", (req, res) => {
   fs.readFile(blogPath, (err, data) => {
     if (err) throw err;
     const result = JSON.parse(data);
+    console.log(result);
     const query = req.query.id;
-    res.render("singlepost", result[query - 1]);
+    res.render("singlepost", result.blogposts[query - 1]);
   });
 });
 
