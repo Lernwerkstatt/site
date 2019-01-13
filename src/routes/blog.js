@@ -13,4 +13,13 @@ router.get("/blog", (req, res) => {
   });
 });
 
+router.get("/singlepost", (req, res) => {
+  fs.readFile(blogPath, (err, data) => {
+    if (err) throw err;
+    const result = JSON.parse(data);
+    const query = req.query.id;
+    res.render("singlepost", result.blogposts[query - 1]);
+  });
+});
+
 module.exports = router;
