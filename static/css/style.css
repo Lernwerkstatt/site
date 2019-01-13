@@ -109,11 +109,3 @@ main {
   background-size: cover;
   margin-bottom: 15px;
  }
-
- .side-pattern-blog {
-  width: 100%;
-  height: auto;
-  background-image: url('/img/blog/morocco-blue.png');
-  background-repeat: repeat-y;
-  margin-bottom: -3.2rem;
- }
