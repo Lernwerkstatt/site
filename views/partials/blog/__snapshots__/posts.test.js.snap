@@ -8,7 +8,7 @@ exports[`posts.hbs should match the snapshot 1`] = `
 </a>
 <p>01.01.2000 - unknown</p>
 <br>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint laboriosam voluptates.</p>
+<p></p>
 <br>
 "
 `;
