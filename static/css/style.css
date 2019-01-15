@@ -50,26 +50,6 @@ main {
   overflow: hidden;
 }
 
-/* TEAM PAGE */
-.team-box {
-  display: inline-block;
-  margin-right: 25px;
-  padding-bottom: 20px;
-}
-
-.team-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-  justify-content: center;
-}
-
-.team-description {
-  margin-top: -30px;
-  margin-bottom: 20px;
-}
-
 /* HOME PAGE */
 .card-calendar {
   overflow: auto;
