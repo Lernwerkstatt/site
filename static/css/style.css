@@ -9,8 +9,6 @@ body {
 
 main {
   flex: 1;
-  /* padding-top: 50px;
-  padding-bottom: 50px; */
 }
 
 .footer {
@@ -47,6 +45,10 @@ main {
 .calendar-equal {
   height: 40vh;
   overflow: hidden;
+}
+
+.jumbotron {
+  padding: 2rem 1rem;
 }
 
 /* HOME PAGE */
