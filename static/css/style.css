@@ -9,14 +9,13 @@ body {
 
 main {
   flex: 1;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /* padding-top: 50px;
+  padding-bottom: 50px; */
 }
 
 .footer {
   bottom: 0px;
   width: 100%;
-  text-align: center;
   background-color: lightseagreen;
 }
 
@@ -46,7 +45,7 @@ main {
 }
 
 .calendar-equal {
-  height: 50vh;
+  height: 40vh;
   overflow: hidden;
 }
 
@@ -61,7 +60,7 @@ main {
   padding: 30px 30px 30px 30px;
   background: #5c6670;
   color: floralwhite;
-  height: 50vh;
+  height: 40vh;
   border-radius: 0.25rem;
 }
 

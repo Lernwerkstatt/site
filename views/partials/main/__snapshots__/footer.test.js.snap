@@ -2,18 +2,18 @@
 
 exports[`footer.hbs should match the snapshot 1`] = `
 "<footer class=\\"footer\\">
-  <div class=\\"container text-center\\">
+  <div class=\\"container\\">
     <div class=\\"row mt-3 mb-3\\">
-      <div class=\\"col-md-6 text-left\\">
+      <div class=\\"col-md-6\\">
         <a href=\\"/support\\" class=\\"mr-3\\">Support</a>
         <a href=\\"/contact\\" class=\\"mr-3\\">Kontakt</a>
         <a href=\\"/subscribe\\" class=\\"mr-3\\">Subscribe</a>
         <a href=\\"/blog\\" class=\\"mr-3\\">Blog</a>
       </div>
       <div class=\\"col-md-6 text-right\\">
-        <a href=\\"https://www.facebook.com/dielernwerkstatt/\\" class=\\"fab fa-facebook fa-2x mr-1\\"></a>
-        <a href=\\"https://www.instagram.com/die_lernwerkstatt\\" class=\\"fab fa-instagram fa-2x mr-1\\"></a>
-        <a href=\\"mailto:info@die-lernwerkstatt.de\\" class=\\"far fa-envelope fa-2x\\"></a>
+        <a href=\\"https://www.facebook.com/dielernwerkstatt/\\" class=\\"fab fa-facebook mr-1\\"></a>
+        <a href=\\"https://www.instagram.com/die_lernwerkstatt\\" class=\\"fab fa-instagram mr-1\\"></a>
+        <a href=\\"mailto:info@die-lernwerkstatt.de\\" class=\\"far fa-envelope\\"></a>
       </div>
     </div>
   </div>
