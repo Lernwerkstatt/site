@@ -45,7 +45,7 @@ app.listen(port, () => {
       online: false,
       port: port + 1,
       proxy: `localhost:${port}`,
-      ui: false
+      ui: false,
     });
   }
 });
