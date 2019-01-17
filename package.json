@@ -25,13 +25,13 @@
   },
   "lint-staged": {
     "*.{js}": [
-      "prettier --write",
+      "prettier-eslint --write",
       "eslint --fix --config ./config/.eslintrc.json",
       "git add"
     ],
     "*.{css}": [
-      "prettier --write",
-      "stylelint --config ./config/.stylelintrc.json",
+      "prettier-stylelint --write ",
+      "stylelint --fix --config ./config/.stylelintrc.json",
       "git add"
     ]
   },
@@ -56,6 +56,7 @@
     "nodemon": "^1.18.7",
     "prettier": "^1.15.3",
     "prettier-eslint": "^8.8.2",
+    "prettier-stylelint": "^0.4.2",
     "stylelint": "^9.9.0",
     "stylelint-config-prettier": "^4.0.0",
     "stylelint-config-recommended": "^2.1.0",
