@@ -2,11 +2,6 @@ const express = require("express");
 const morgan = require("morgan");
 const hbs = require("express-handlebars");
 const favicon = require("serve-favicon");
-const MongoClient = require("mongodb").MongoClient;
-const url = require("./config/secrets");
-const dboper = require("./operations");
-
-const dbname = "lernwerkstatt";
 
 const homeRouter = require("./src/routes/home.js");
 const aboutRouter = require("./src/routes/about.js");
