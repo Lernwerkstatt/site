@@ -6,16 +6,20 @@ const router = express.Router();
 
 const blogPath = path.join(__dirname, "../../data/blog.json");
 
-router.get("/blog", (req, res) => {
+router.route("/blog").get((req, res) => {
   fs.readFile(blogPath, (err, data) => {
     if (err) throw err;
     const result = JSON.parse(data);
-    const query = req.query.id;
-    if (req.query.id) {
-      res.render("blog", result.blogposts[query - 1]);
-    } else {
-      res.render("blog", result);
-    }
+    res.render("blog", result);
+  });
+});
+
+router.route("/blog/:id").get((req, res) => {
+  fs.readFile(blogPath, (err, data) => {
+    if (err) throw err;
+    const result = JSON.parse(data);
+    const query = req.params.id;
+    res.render("blog", result.blogposts[query - 1]);
   });
 });
 
