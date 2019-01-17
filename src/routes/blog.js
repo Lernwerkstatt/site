@@ -12,7 +12,7 @@ router.get("/blog", (req, res) => {
     const result = JSON.parse(data);
     const query = req.query.id;
     if (req.query.id) {
-      res.render("singlepost", result.blogposts[query - 1]);
+      res.render("blog", result.blogposts[query - 1]);
     } else {
       res.render("blog", result);
     }
