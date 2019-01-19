@@ -22,6 +22,9 @@ const blogpostSchema = new Schema(
       type: String,
       required: true
     },
+    summary: {
+      type: String
+    },
     content: {
       type: String,
       required: true

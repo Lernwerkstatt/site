@@ -1,26 +1,22 @@
 const express = require("express");
-const path = require("path");
-const fs = require("fs");
-
-const { MongoClient } = require("mongodb");
+const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
+const Blogposts = require("../../models/blogposts");
 const dbUrl = require("../../config/secrets");
 
-const dbname = "lernwerkstatt";
+const connect = mongoose.connect(dbUrl);
 
-MongoClient.connect(
-  dbUrl,
-  { useNewUrlParser: true }
-)
-  .then(client => {
-    const db = client.db(dbname);
-    const coll = db.collection("elite");
-    coll.insertOne({ name: "Beta", level: 7 });
-  })
-  .catch(err => console.log(err));
+connect.then(
+  db => {
+    console.log("Connected!");
+  },
+  err => {
+    console.log(err);
+  }
+);
 
 const router = express.Router();
-
-const blogPath = path.join(__dirname, "../../data/blog.json");
+router.use(bodyParser.json());
 
 function checkForWhitespace(post) {
   let counter = 320;
@@ -28,15 +24,14 @@ function checkForWhitespace(post) {
   while (post.charAt(counter) !== " " && counter <= post.length) {
     counter++;
   }
-
   return counter;
 }
 
 function addSummary(blogpost) {
-  blogpost.blogposts.forEach(element => {
-    element.summary = element.blogpost.substring(
+  blogpost.forEach(element => {
+    element.summary = element.content.substring(
       0,
-      checkForWhitespace(element.blogpost)
+      checkForWhitespace(element.content)
     );
     element.summary += " ...";
   });
@@ -45,21 +40,20 @@ function addSummary(blogpost) {
 }
 
 router.route("/blog").get((req, res) => {
-  fs.readFile(blogPath, (err, data) => {
-    if (err) throw err;
-    const postWithSummary = addSummary(JSON.parse(data));
-
-    res.render("blog", postWithSummary);
-  });
+  Blogposts.find({})
+    .then(blogposts => {
+      const postWithSummary = addSummary(blogposts);
+      res.render("blog", postWithSummary);
+    })
+    .catch(err => console.log(err));
 });
 
 router.route("/blog/:id").get((req, res) => {
-  fs.readFile(blogPath, (err, data) => {
-    if (err) throw err;
-    const result = JSON.parse(data);
-    const query = req.params.id;
-    res.render("blog", result.blogposts[query - 1]);
-  });
+  Blogposts.find({ id: req.params.id })
+    .then(result => {
+      res.render("blog", result);
+    })
+    .catch(err => console.log(err));
 });
 
 module.exports = router;
