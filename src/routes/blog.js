@@ -6,15 +6,6 @@ const dbUrl = require("../../config/secrets");
 
 const connect = mongoose.connect(dbUrl);
 
-// connect.then(
-//   db => {
-//     console.log("Connected!");
-//   },
-//   err => {
-//     console.log(err);
-//   }
-// );
-
 const router = express.Router();
 router.use(bodyParser.json());
 
