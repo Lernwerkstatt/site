@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const Blogposts = require("../../models/blogposts");
 const dbUrl = require("../../config/secrets");
 
-const connect = mongoose.connect(dbUrl);
+mongoose.connect(dbUrl);
 
 const router = express.Router();
 router.use(bodyParser.json());
@@ -13,7 +13,7 @@ function checkForWhitespace(post) {
   let counter = 320;
 
   while (post.charAt(counter) !== " " && counter <= post.length) {
-    counter++;
+    counter += 1;
   }
   return counter;
 }
