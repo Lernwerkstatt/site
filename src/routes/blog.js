@@ -6,14 +6,14 @@ const dbUrl = require("../../config/secrets");
 
 const connect = mongoose.connect(dbUrl);
 
-connect.then(
-  db => {
-    console.log("Connected!");
-  },
-  err => {
-    console.log(err);
-  }
-);
+// connect.then(
+//   db => {
+//     console.log("Connected!");
+//   },
+//   err => {
+//     console.log(err);
+//   }
+// );
 
 const router = express.Router();
 router.use(bodyParser.json());
@@ -43,7 +43,8 @@ router.route("/blog").get((req, res) => {
   Blogposts.find({})
     .then(blogposts => {
       const postWithSummary = addSummary(blogposts);
-      res.render("blog", postWithSummary);
+      const addObject = { blogs: postWithSummary };
+      res.render("blog", addObject);
     })
     .catch(err => console.log(err));
 });
@@ -51,7 +52,7 @@ router.route("/blog").get((req, res) => {
 router.route("/blog/:id").get((req, res) => {
   Blogposts.find({ id: req.params.id })
     .then(result => {
-      res.render("blog", result);
+      res.render("blog", result[0]);
     })
     .catch(err => console.log(err));
 });

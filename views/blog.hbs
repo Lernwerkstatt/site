@@ -3,14 +3,14 @@
     <div class="col-3">
     </div>
     <div class="col-6">
-      {{#if this}}
+      {{#if blogs}}
       <h1 class="mt-3">Der Blog</h1>
       <h5>übers Lernen. Was sonst?</h5>
-      {{#each this}}
-      {{> blog/posts this}}
+      {{#each blogs}}
+      {{> blog/posts}}
       {{/each}}
       {{else}}
-      {{> blog/single }}
+      {{> blog/single this}}
       {{/if}}
     </div>
     <div class="col-3">
