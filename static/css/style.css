@@ -77,4 +77,20 @@ main {
 #mapid {
   margin: auto;
   width: 60%;
-  height: 320px; }
+  height: 320px;
+ }
+
+ .img-blog {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 15px;
+ }
+
+ .img-singlepost {
+   width: 23rem;
+   height: auto;
+ }
