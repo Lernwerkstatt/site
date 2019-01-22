@@ -1,13 +1,14 @@
 const express = require("express");
-const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const Blogposts = require("../../models/blogposts");
 const dbUrl = require("../../config/secrets");
 
-mongoose.connect(dbUrl);
+mongoose.connect(
+  dbUrl,
+  { useNewUrlParser: true }
+);
 
 const router = express.Router();
-router.use(bodyParser.json());
 
 function checkForWhitespace(post) {
   let counter = 320;
