@@ -2,6 +2,7 @@ const express = require("express");
 const morgan = require("morgan");
 const hbs = require("express-handlebars");
 const favicon = require("serve-favicon");
+const bodyParser = require("body-parser");
 
 const homeRouter = require("./src/routes/home.js");
 const aboutRouter = require("./src/routes/about.js");
@@ -17,6 +18,7 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 app.use(morgan("dev"));
+app.use(bodyParser.json());
 app.set("view engine", "hbs");
 app.engine("hbs", hbs({ extname: "hbs", defaultLayout: "main" }));
 

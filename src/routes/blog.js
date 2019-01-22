@@ -1,24 +1,52 @@
 const express = require("express");
-const { MongoClient } = require("mongodb");
+const mongoose = require("mongoose");
+const Blogposts = require("../../models/blogposts");
 const dbUrl = require("../../config/secrets");
 
-const dbname = "lernwerkstatt";
-
-MongoClient.connect(
+mongoose.connect(
   dbUrl,
   { useNewUrlParser: true }
-)
-  .then(client => {
-    const db = client.db(dbname);
-    const coll = db.collection("elite");
-    coll.insertOne({ name: "Beta", level: 7 });
-  })
-  .catch(err => console.log(err));
+);
 
 const router = express.Router();
 
-router.get("/blog", (req, res) => {
-  res.render("blog");
+function checkForWhitespace(post) {
+  let counter = 320;
+
+  while (post.charAt(counter) !== " " && counter <= post.length) {
+    counter += 1;
+  }
+  return counter;
+}
+
+function addSummary(blogpost) {
+  blogpost.forEach(element => {
+    element.summary = element.content.substring(
+      0,
+      checkForWhitespace(element.content)
+    );
+    element.summary += " ...";
+  });
+
+  return blogpost;
+}
+
+router.route("/blog").get((req, res) => {
+  Blogposts.find({})
+    .then(blogposts => {
+      const postWithSummary = addSummary(blogposts);
+      const addObject = { blogs: postWithSummary };
+      res.render("blog", addObject);
+    })
+    .catch(err => console.log(err));
+});
+
+router.route("/blog/:id").get((req, res) => {
+  Blogposts.find({ id: req.params.id })
+    .then(result => {
+      res.render("blog", result[0]);
+    })
+    .catch(err => console.log(err));
 });
 
 module.exports = router;
