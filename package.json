@@ -25,14 +25,18 @@
   },
   "lint-staged": {
     "*.{js}": [
-      "prettier --write",
+      "prettier-eslint --write",
       "eslint --fix --config ./config/.eslintrc.json",
       "git add"
     ],
     "*.{css}": [
-      "prettier --write",
-      "stylelint --config ./config/.stylelintrc.json",
+      "prettier-stylelint --write ",
+      "stylelint --fix --config ./config/.stylelintrc.json",
       "git add"
+    ],
+    "*.{hbs}": [
+      "git add",
+      "jest --config config/jest.json --bail --findRelatedTests"
     ]
   },
   "dependencies": {

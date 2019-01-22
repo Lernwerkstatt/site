@@ -4,7 +4,7 @@ body {
 }
 body {
   display: flex;
-  flex-direction: column;
+  flex-direction:     column;
 }
 
 main {
@@ -59,7 +59,7 @@ main {
 }
 
 .homeheader {
-  padding: 30px 30px 30px 30px;
+  padding: 30px 30px 30px   30px;
   background: #5c6670;
   color: floralwhite;
   height: 40vh;
