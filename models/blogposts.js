@@ -1,8 +1,6 @@
 const mongoose = require("mongoose");
 
-const { Schema } = mongoose;
-
-const blogpostSchema = new Schema(
+const blogpostSchema = new mongoose.Schema(
   {
     id: {
       type: Number,
