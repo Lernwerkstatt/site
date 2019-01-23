@@ -7,10 +7,10 @@
       <h1 class="mt-3">Der Blog</h1>
       <h5>übers Lernen. Was sonst?</h5>
       {{#each blogs}}
-      {{> blog/posts}}
+      {{> blogs/posts}}
       {{/each}}
       {{else}}
-      {{> blog/single this}}
+      {{> blogs/single this}}
       {{/if}}
     </div>
     <div class="col-3">
