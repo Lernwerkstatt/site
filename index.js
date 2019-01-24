@@ -6,7 +6,7 @@ const bodyParser = require("body-parser");
 
 const homeRouter = require("./src/routes/home.js");
 const aboutRouter = require("./src/routes/about.js");
-const blogRouter = require("./src/routes/blog.js");
+const blogsRouter = require("./src/routes/blogs.js");
 const contactRouter = require("./src/routes/contact.js");
 const coursesRouter = require("./src/routes/courses.js");
 const learnRouter = require("./src/routes/learn.js");
@@ -27,7 +27,7 @@ app.use(favicon(`${__dirname}/static/img/favicon.ico`));
 
 app.use(homeRouter.router);
 app.use(aboutRouter);
-app.use(blogRouter);
+app.use(blogsRouter);
 app.use(contactRouter);
 app.use(coursesRouter);
 app.use(learnRouter);

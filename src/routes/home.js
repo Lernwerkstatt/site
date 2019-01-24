@@ -27,11 +27,4 @@ router.get("/", (req, res) => {
   });
 });
 
-router.get("/home", (req, res) => {
-  fs.readFile(homePath, (err, data) => {
-    if (err) throw err;
-    res.render("home", prepareHome(data));
-  });
-});
-
 module.exports = { prepareHome, router };
