@@ -4,11 +4,16 @@ body {
 }
 body {
   display: flex;
-  flex-direction:     column;
+  flex-direction: column;
+  padding-top: 55px;
 }
 
 main {
   flex: 1;
+}
+
+.calendar-list {
+  max-height: 300px;
 }
 
 .footer {
@@ -42,30 +47,6 @@ main {
   transform: translate(-50%, -50%);
 }
 
-.calendar-equal {
-  height: 40vh;
-  overflow: hidden;
-}
-
-.jumbotron {
-  padding: 2rem 1rem;
-}
-
-/* HOME PAGE */
-.card-calendar {
-  overflow: auto;
-  height: 100%;
-  border: 0;
-}
-
-.homeheader {
-  padding: 30px 30px 30px   30px;
-  background: #5c6670;
-  color: floralwhite;
-  height: 40vh;
-  border-radius: 0.25rem;
-}
-
 .easy {
   transition: all 0.3s ease;
 }
@@ -79,9 +60,9 @@ main {
   margin: auto;
   width: 60%;
   height: 320px;
- }
+}
 
- .img-blog {
+.img-blog {
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -89,9 +70,17 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 15px;
- }
+}
 
- .img-singlepost {
+.img-singlepost {
    width: 23rem;
    height: auto;
- }
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
