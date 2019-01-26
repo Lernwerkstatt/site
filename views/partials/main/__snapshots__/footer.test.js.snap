@@ -8,7 +8,7 @@ exports[`footer.hbs should match the snapshot 1`] = `
         <a href=\\"/support\\" class=\\"mr-3\\">Support</a>
         <a href=\\"/contact\\" class=\\"mr-3\\">Kontakt</a>
         <a href=\\"/subscribe\\" class=\\"mr-3\\">Subscribe</a>
-        <a href=\\"/blog\\" class=\\"mr-3\\">Blog</a>
+        <a href=\\"/blogs\\" class=\\"mr-3\\">Blog</a>
       </div>
       <div class=\\"col-md-6 text-right\\">
         <a href=\\"https://www.facebook.com/dielernwerkstatt/\\" class=\\"fab fa-facebook mr-1\\"></a>

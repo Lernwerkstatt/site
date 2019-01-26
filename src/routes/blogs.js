@@ -31,20 +31,20 @@ function addSummary(blogpost) {
   return blogpost;
 }
 
-router.route("/blog").get((req, res) => {
+router.route("/blogs").get((req, res) => {
   Blogposts.find({})
     .then(blogposts => {
       const postWithSummary = addSummary(blogposts);
       const addObject = { blogs: postWithSummary };
-      res.render("blog", addObject);
+      res.render("blogs", addObject);
     })
     .catch(err => console.log(err));
 });
 
-router.route("/blog/:id").get((req, res) => {
+router.route("/blogs/:id").get((req, res) => {
   Blogposts.find({ id: req.params.id })
     .then(result => {
-      res.render("blog", result[0]);
+      res.render("blogs", result[0]);
     })
     .catch(err => console.log(err));
 });
