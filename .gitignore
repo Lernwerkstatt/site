@@ -81,3 +81,6 @@ typings/
 
 # Secrets
 secrets.js
+
+# MacOS files
+.DS_Store
