@@ -3,12 +3,10 @@
 exports[`card.hbs should match the snapshot 1`] = `
 "<div class=\\"card easy\\">
   <div class=\\"card-body\\">
-    <card-title>
-      <h3>Aktuelles</h3>
-    </card-title>
-    <div class=\\"card-text\\">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint laboriosam voluptates.</p>
-    </div>
+    <h3 class=\\"card-title\\">Aktuelles</h3>
+    <p class=\\"card-text\\">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint laboriosam voluptates.
+    </p>
   </div>
 </div>
 "

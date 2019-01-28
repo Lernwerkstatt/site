@@ -1,26 +1,21 @@
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-8 homeheader text-center">
-        <h1>Die Lernwerkstatt-Berlin/Treptow</h1>
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron px-1 py-2 mb-0 h-100 text-center">
+        <h1 class="h3">Die Lernwerkstatt-Berlin/Treptow</h1>
         <p>
           Die Lernwerkstatt ist ein altersübergreifender Lernort für Lernende
           in, außerhalb oder neben der Schule.
         </p>
         <img src="img/logo.png" class="img-fluid rounded-circle" alt="Die Lernwerkstatt Logo" />
       </div>
-      <div class="col-sm-4 calendar-equal">
-        <div class="card bg-primary text-white card-calendar">
-          <div class="card-header">
-            <h2 class="text-center">Kalender</h2>
-          </div>
-          <ul class="list-group list-group-flush">
-            {{#each calendar}}
-            {{> home/event this}}
-            {{/each}}
-          </ul>
-        </div>
-        <ul class="list-group list-group-flush">
+    </div>
+    <div class="col-sm-4">
+      <div class="card bg-primary text-white overflow-hidden">
+        <p class="card-header text-center">
+          Kalender
+        </p>
+        <ul class="list-group list-group-flush overflow-auto calendar-list">
           {{#each calendar}}
           {{> home/event this}}
           {{/each}}
@@ -28,14 +23,13 @@
       </div>
     </div>
   </div>
-</div>
-
-<div class="container">
-  <div class="row mt-5">
-    <div class="card-deck text-center">
-      {{#each card}}
-      {{> home/card this}}
-      {{/each}}
+  <div class="row my-2">
+    <div class="col-sm-12">
+      <div class="card-deck text-center">
+        {{#each card}}
+        {{> home/card this}}
+        {{/each}}
+      </div>
     </div>
   </div>
 </div>

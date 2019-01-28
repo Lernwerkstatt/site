@@ -1,19 +1,7 @@
-<div class="jumbotron">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-sm-7">
-        <h1>Das Team</h1>
-        <p>Wir sind Die Lernwerkstatt</p>
-      </div>
-      <div class="col-12 col-sm-5 align-self-center">
-        <img src="img/logo.png" class="img-fluid rounded-circle" alt="Lernwerkstatt Logo">
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid text-center">
+{{> main/title title="Menschen" subtitle="Wir sind Die Lernwerkstatt"}}
+<div class="container text-center">
   <div class="d-flex flex-wrap justify-content-center">
-    <div class="col-sm-10" id="team">
+    <div class="col" id="team">
       {{#each team}}
       {{> about/member this}}
       {{/each}}

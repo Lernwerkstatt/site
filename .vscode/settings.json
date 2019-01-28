@@ -2,5 +2,9 @@
   "prettier.eslintIntegration": true,
   "prettier.stylelintIntegration": true,
   "prettier.singleQuote": false,
-  "eslint.options": { "configFile": "./config/.eslintrc.json" }
+  "prettier.trailingComma": "none",
+  "eslint.options": {
+    "configFile": "./config/.eslintrc.json"
+  },
+  "editor.formatOnSave": true
 }
