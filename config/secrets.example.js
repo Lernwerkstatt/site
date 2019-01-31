@@ -1,3 +1,4 @@
 const dbUrl = "put stuff here";
+const facebookToken = "facebook token";
 
-module.exports = dbUrl;
+module.exports = { dbUrl, facebookToken };
