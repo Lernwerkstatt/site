@@ -4,7 +4,8 @@ const hbs = require("express-handlebars");
 const favicon = require("serve-favicon");
 const bodyParser = require("body-parser");
 const helmet = require("helmet");
-const routes = require("./src/routes.js");
+
+const routes = require("./routes");
 
 const port = process.env.PORT || 3000;
 const app = express();
@@ -31,10 +32,19 @@ app.use(helmet.frameguard({ action: "deny" }));
 app.use(helmet.ieNoOpen());
 
 app.set("view engine", "hbs");
-app.engine("hbs", hbs({ extname: "hbs", defaultLayout: "main" }));
+app.set("views", `${__dirname}/views/`);
+app.engine(
+  "hbs",
+  hbs({
+    extname: "hbs",
+    defaultLayout: "main",
+    partialsDir: `${__dirname}/views/partials/`,
+    layoutsDir: `${__dirname}/views/layouts/`
+  })
+);
 
-app.use(express.static(`${__dirname}/static`));
-app.use(favicon(`${__dirname}/static/img/favicon.ico`));
+app.use(express.static(`${__dirname}/../static`));
+app.use(favicon(`${__dirname}/../static/img/favicon.ico`));
 
 app.use(routes);
 
