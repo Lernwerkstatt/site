@@ -3,6 +3,7 @@
   "prettier.stylelintIntegration": true,
   "prettier.singleQuote": false,
   "prettier.trailingComma": "none",
+  "prettier.endOfLine": "lf",
   "eslint.options": {
     "configFile": "./config/.eslintrc.json"
   },
