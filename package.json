@@ -50,7 +50,8 @@
     "mongodb": "^3.1.12",
     "mongoose": "^5.4.5",
     "morgan": "^1.9.1",
-    "serve-favicon": "^2.5.0"
+    "serve-favicon": "^2.5.0",
+    "showdown": "^1.9.0"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
