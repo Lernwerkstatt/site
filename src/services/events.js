@@ -13,7 +13,10 @@ FB.api(`/${facebookPageId}/events`, "get", {}, res => {
   console.log(events);
 });
 
-const extractNearestDate = event => {};
+const extractNearestDate = event => ({
+  start_time: event.start_time,
+  end_time: event.end_time
+});
 
 module.exports = {
   extractNearestDate
