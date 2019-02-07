@@ -1,34 +1,43 @@
-<div class="container mt-2">
-  <div class="row">
-    <div class="col-sm-8">
-      <div class="jumbotron px-1 py-2 mb-0 h-100 text-center">
-        <h1 class="h3">Die Lernwerkstatt-Berlin/Treptow</h1>
-        <p>
-          Die Lernwerkstatt ist ein altersübergreifender Lernort für Lernende
-          in, außerhalb oder neben der Schule.
-        </p>
-        <img src="img/logo.png" class="img-fluid rounded-circle" alt="Die Lernwerkstatt Logo" />
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="card bg-primary text-white overflow-hidden">
-        <p class="card-header text-center">
-          Kalender
-        </p>
-        <ul class="list-group list-group-flush overflow-auto calendar-list">
-          {{#each calendar}}
-          {{> home/event this}}
-          {{/each}}
-        </ul>
+<div class="home-bg">
+  <div class="jumbotron-fluid">
+    <div class="container py-2">
+      <div class="row">
+        <div class="col-sm-8">
+          <h1 class="home-logo">
+            <span class="home-logo-d">Die</span>
+            <span class="home-logo-l">Lern
+              <img class="home-logo-img" src="/img/home/logo.png">
+            </span>
+            <span class="home-logo-w">werkstatt</span>
+          </h1>
+          <p class="home-subtitle">
+            Die Lernwerkstatt ist ein altersübergreifender Lernort für Lernende
+            in, außerhalb oder neben der Schule.
+          </p>
+        </div>
+        <div class="col-sm-4">
+          <div class="card bg-primary text-white overflow-hidden">
+            <p class="card-header text-center">
+              Kalender
+            </p>
+            <ul class="list-group list-group-flush overflow-auto calendar-list">
+              {{#each calendar}}
+              {{> home/event this}}
+              {{/each}}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="row my-2">
-    <div class="col-sm-12">
-      <div class="card-deck text-center">
-        {{#each card}}
-        {{> home/card this}}
-        {{/each}}
+  <div class="container">
+    <div class="row mt-2 mb-3">
+      <div class="col-sm-12">
+        <div class="card-deck text-center">
+          {{#each card}}
+          {{> home/card this}}
+          {{/each}}
+        </div>
       </div>
     </div>
   </div>
