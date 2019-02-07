@@ -13,10 +13,26 @@ FB.api(`/${facebookPageId}/events`, "get", {}, res => {
   console.log(events);
 });
 
-const extractNearestDate = event => ({
-  start_time: event.start_time,
-  end_time: event.end_time
-});
+const extractNearestDate = event => {
+  const result = {
+    start_time: event.start_time,
+    end_time: event.end_time
+  };
+
+  if (event.event_times) {
+    const upcoming = event.event_times.filter(
+      t => new Date(t.start_time) > new Date()
+    );
+    const sorted = upcoming.sort(
+      (a, b) => new Date(a.start_time) - new Date(b.start_time)
+    );
+
+    result.start_time = sorted[0].start_time;
+    result.end_time = sorted[0].end_time;
+  }
+
+  return result;
+};
 
 module.exports = {
   extractNearestDate
