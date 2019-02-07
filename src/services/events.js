@@ -1,5 +1,4 @@
 const fb = require("fb");
-
 const { facebookToken, facebookPageId } = require("../../config/secrets");
 
 const FB = new fb.Facebook({ version: "v3.2" });
@@ -13,3 +12,9 @@ FB.api(`/${facebookPageId}/events`, "get", {}, res => {
   const events = res;
   console.log(events);
 });
+
+const extractNearestDate = event => {};
+
+module.exports = {
+  extractNearestDate
+};
