@@ -9,8 +9,7 @@ router.route("/blogs").get((req, res) => {
 
 router.route("/blogs/:id").get((req, res) => {
   const single = posts.singlePosts(req.params.id);
-  console.log(single);
-  // res.render("blogs", single[0]);
+  res.render("blogs", single[0]);
 });
 
 module.exports = router;
