@@ -1,18 +1,16 @@
 const express = require("express");
-const allPosts = require("../services/database");
+const posts = require("../services/database");
 
 const router = express.Router();
 
 router.route("/blogs").get((req, res) => {
-  allPosts.then(data => res.render("blogs", data));
+  posts.allPosts.then(data => res.render("blogs", data));
 });
 
-/* router.route("/blogs/:id").get((req, res) => {
-  Blogposts.find({ id: req.params.id })
-    .then(result => {
-      res.render("blogs", result[0]);
-    })
-    .catch(err => console.log(err));
-}); */
+router.route("/blogs/:id").get((req, res) => {
+  const single = posts.singlePosts(req.params.id);
+  console.log(single);
+  // res.render("blogs", single[0]);
+});
 
 module.exports = router;
