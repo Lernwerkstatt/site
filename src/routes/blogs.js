@@ -8,8 +8,7 @@ router.route("/blogs").get((req, res) => {
 });
 
 router.route("/blogs/:id").get((req, res) => {
-  const single = posts.singlePosts(req.params.id);
-  res.render("blogs", single[0]);
+  posts.singlePosts(req.params.id).then(data => res.render("blogs", data[0]));
 });
 
 module.exports = router;
