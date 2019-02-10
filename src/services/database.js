@@ -37,13 +37,12 @@ const allPosts = Blogposts.find({})
   })
   .catch(err => console.log(err));
 
-const singlePosts = paramsId => {
+const singlePosts = paramsId =>
   Blogposts.find({ id: paramsId })
     .then(result => {
       console.log(result);
       return result;
     })
     .catch(err => console.log(err));
-};
 
 module.exports = { allPosts, singlePosts };
