@@ -40,7 +40,10 @@ app.listen(port, () => {
   if (app.get("env") === "development") {
     const browserSync = require("browser-sync"); // eslint-disable-line
     browserSync({
-      files: ["static/**/*.css", "views/**/*.handlebars"],
+      files: [
+        `${__dirname}/../static/css/*.css`,
+        `${__dirname}/views/**/*.hbs`
+      ],
       online: false,
       port: port + 1,
       proxy: `localhost:${port}`,

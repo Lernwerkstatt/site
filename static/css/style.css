@@ -12,6 +12,58 @@ main {
   flex: 1;
 }
 
+.home-bg {
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.home-bg:after {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.3;
+  background-image: url(../img/home/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.home-logo {
+  font-family: 'Roboto Slab', serif;
+  line-height: 1;
+  font-size: 60px;
+  font-weight: 300;
+  padding: 0 20px;
+  margin: 30px 0;
+}
+.home-logo-d {
+  display: block;
+  font-size: 40px;
+  text-indent: -20px;
+}
+.home-logo-l {
+  display: block;
+  color: #E27270;
+}
+.home-logo-w {
+  display: block;
+}
+.home-logo-img {
+  height: 50px;
+}
+.home-subtitle {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  max-width: 5 00px;
+}
+
 .calendar-list {
   max-height: 300px;
 }
@@ -19,7 +71,7 @@ main {
 .footer {
   bottom: 0px;
   width: 100%;
-  background-color: lightseagreen;
+  background-color: #87C6C0;
 }
 
 .footer a {
