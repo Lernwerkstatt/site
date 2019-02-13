@@ -1,10 +1,14 @@
-<form action="/blogs" method="post" autocomplete="off">
+<form action="/blogs" method="post" autocomplete="off" enctype="application/json">
+  <input name="id" type="hidden" value=" ">
   Title:<br>
   <input type="text" name="title" required><br>
+  <input id="today" name="date" type="hidden" value=" ">
   Author:<br>
   <input type="text" name="author" required><br>
   Content:<br>
-  <input type="text" name="content" required><br>
+  <textarea name="content" style="width:200px; height:50px;">
+  </textarea><br>
+  <input name="imagelink" type="hidden" value=" ">
   <input type="submit" formtarget="_blank" value="Submit">
   <input type="reset">
 </form>
