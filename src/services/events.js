@@ -1,5 +1,6 @@
 const fb = require("fb");
 const { facebookToken, facebookPageId } = require("../../config/secrets");
+const moment = require("moment");
 
 const FB = new fb.Facebook({ version: "v3.2" });
 FB.setAccessToken(facebookToken);
@@ -34,6 +35,22 @@ const extractNearestDate = event => {
   return result;
 };
 
+const stringifyEventDate = eventDate => {
+  let result = "";
+  const start = moment(eventDate.start_time);
+  const end = moment(eventDate.end_time);
+
+  if (start.diff(end, "days") === 0) {
+    result = `${start.format("DD.MM.YYYY HH:mm")} - ${end.format("HH:mm")}`;
+  } else {
+    result = `${start.format("DD.MM.YYYY HH:mm")} - ${end.format(
+      "DD.MM.YYYY HH:mm"
+    )}`;
+  }
+  return result;
+};
+
 module.exports = {
-  extractNearestDate
+  extractNearestDate,
+  stringifyEventDate
 };

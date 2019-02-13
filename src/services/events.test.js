@@ -81,3 +81,26 @@ describe("Unify facebook event dates", () => {
     expect(actual).toEqual(expected);
   });
 });
+
+describe("Stringify event date and time", () => {
+  it("should return as is, if lasts longer than a day", () => {
+    const eventDate = {
+      start_time: "2019-02-27T18:30:00+0100",
+      end_time: "2019-03-01T10:10:00+0100"
+    };
+
+    const expected = "27.02.2019 18:30 - 01.03.2019 10:10";
+    const actual = events.stringifyEventDate(eventDate);
+    expect(actual).toEqual(expected);
+  });
+  it("should return simplified date", () => {
+    const eventDate = {
+      start_time: "2019-02-27T18:30:00+0100",
+      end_time: "2019-02-27T20:15:00+0100"
+    };
+
+    const expected = "27.02.2019 18:30 - 20:15";
+    const actual = events.stringifyEventDate(eventDate);
+    expect(actual).toEqual(expected);
+  });
+});
