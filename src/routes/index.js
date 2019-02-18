@@ -11,6 +11,7 @@ const learnRouter = require("./learn.js");
 const supportRouter = require("./support.js");
 const workshopsRouter = require("./workshops.js");
 const subscribeRouter = require("./subscribe.js");
+const blogformRouter = require("./blogform.js");
 
 router.use(homeRouter.router);
 router.use(aboutRouter);
@@ -21,5 +22,6 @@ router.use(learnRouter);
 router.use(supportRouter);
 router.use(workshopsRouter);
 router.use(subscribeRouter);
+router.use(blogformRouter);
 
 module.exports = router;
