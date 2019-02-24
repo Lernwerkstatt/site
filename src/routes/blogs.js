@@ -11,4 +11,16 @@ router.route("/blogs/:id").get((req, res) => {
   posts.singlePosts(req.params.id).then(data => res.render("blogs", data[0]));
 });
 
+router
+  .route("/blogform")
+  .get((req, res) => {
+    res.render("blogform");
+  })
+  .post((req, res) => {
+    posts.newPosts(req.body).then(newBlogpost => {
+      res.setHeader("Content-Type", "application/json");
+      res.json(newBlogpost);
+    });
+  });
+
 module.exports = router;
