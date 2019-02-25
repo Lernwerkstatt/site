@@ -7,12 +7,8 @@ router.route("/blogs").get((req, res) => {
   posts.allPosts.then(data => res.render("blogs", data));
 });
 
-router.route("/blogs/:id").get((req, res) => {
-  posts.singlePosts(req.params.id).then(data => res.render("blogs", data[0]));
-});
-
 router
-  .route("/blogform")
+  .route("/blogs/create")
   .get((req, res) => {
     res.render("blogform");
   })
@@ -22,5 +18,9 @@ router
       res.json(newBlogpost);
     });
   });
+
+router.route("/blogs/:id").get((req, res) => {
+  posts.singlePosts(req.params.id).then(data => res.render("blogs", data[0]));
+});
 
 module.exports = router;
