@@ -32,9 +32,9 @@ function addSummary(blogpost) {
 
 function convertMarkdown(newBlogpost) {
   const converter = new showdown.Converter();
-  newBlogpost = converter.makeHtml(newBlogpost);
+  const convertedBlogpost = converter.makeHtml(newBlogpost);
 
-  return newBlogpost;
+  return convertedBlogpost;
 }
 
 const allPosts = Blogposts.find({})
