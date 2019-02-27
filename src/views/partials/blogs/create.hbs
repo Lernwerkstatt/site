@@ -1,20 +1,22 @@
 <form action="/blogs/create" method="post" autocomplete="off" enctype="application/json">
   <input name="id" type="hidden" value=" ">
-  <div class="form-group">
+  <div class="form-group col-md-6">
     <label for="title">Title:</label>
-    <input type="text" class="form-control" id="title" name="title" style="width:700px" required>
+    <input type="text" class="form-control" id="title" name="title" required>
   </div>
   <input id="today" name="date" type="hidden" value=" ">
-  <div class="form-group">
+  <div class="form-group col-md-6">
     <label for="author">Author:</label>
-    <input type="text" class="form-control" id="title" name="author" style="width:700px" required>
+    <input type="text" class="form-control" id="title" name="author" required>
   </div>
-  <div class="form-group">
+  <div class="form-group col-md-6">
     <label for="content">Content:</label>
-    <textarea name="content" class="form-control" id="content" style="width:700px; height:300px;">
+    <textarea name="content" class="form-control" id="content" rows="10">
   </textarea>
   </div>
-  <input name="imagelink" type="hidden" value=" ">
-  <input type="submit" value="Submit">
-  <input type="reset">
+  <div class="col-md-6">
+    <input name="imagelink" type="hidden" value=" ">
+    <input type="submit" value="Submit">
+    <input type="reset">
+  </div>
 </form>
