@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`create.hbs should match the snapshot 1`] = `
+"<form action=\\"/blogs/create\\" method=\\"post\\" autocomplete=\\"off\\" enctype=\\"application/json\\">
+  <input name=\\"id\\" type=\\"hidden\\" value=\\" \\">
+  <div class=\\"form-group\\">
+    <label for=\\"title\\">Title:</label>
+    <input type=\\"text\\" class=\\"form-control\\" id=\\"title\\" name=\\"title\\" style=\\"width:700px\\" required>
+  </div>
+  <input id=\\"today\\" name=\\"date\\" type=\\"hidden\\" value=\\" \\">
+  <div class=\\"form-group\\">
+    <label for=\\"author\\">Author:</label>
+    <input type=\\"text\\" class=\\"form-control\\" id=\\"title\\" name=\\"author\\" style=\\"width:700px\\" required>
+  </div>
+  <div class=\\"form-group\\">
+    <label for=\\"content\\">Content:</label>
+    <textarea name=\\"content\\" class=\\"form-control\\" id=\\"content\\" style=\\"width:700px; height:300px;\\">
+  </textarea>
+  </div>
+  <input name=\\"imagelink\\" type=\\"hidden\\" value=\\" \\">
+  <input type=\\"submit\\" value=\\"Submit\\">
+  <input type=\\"reset\\">
+</form>
+"
+`;
