@@ -17,6 +17,7 @@ router
       res.setHeader("Content-Type", "application/json");
       res.json(newBlogpost);
     });
+    res.redirect("/blogs");
   });
 
 router.route("/blogs/:id").get((req, res) => {
