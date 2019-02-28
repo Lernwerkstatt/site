@@ -99,3 +99,13 @@ describe("Stringify event date and time", () => {
     expect(actual).toEqual(expected);
   });
 });
+
+describe("Create link", () => {
+  it("should create a link", () => {
+    const id = "313587609361599";
+
+    const expected = "https://www.facebook.com/events/313587609361599";
+    const actual = events.createEventLink(id);
+    expect(actual).toEqual(expected);
+  });
+});

@@ -50,7 +50,9 @@ const stringifyEventDate = eventDate => {
   return result;
 };
 
+const createEventLink = id => `https://www.facebook.com/events/${id}`;
 module.exports = {
   extractNearestDate,
-  stringifyEventDate
+  stringifyEventDate,
+  createEventLink
 };
