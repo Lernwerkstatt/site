@@ -38,7 +38,7 @@ const allPosts = Blogposts.find({})
   .catch(err => console.log(err));
 
 const singlePosts = paramsId =>
-  Blogposts.find({ id: paramsId })
+  Blogposts.find({ _id: paramsId })
     .then(result => result)
     .catch(err => console.log(err));
 
