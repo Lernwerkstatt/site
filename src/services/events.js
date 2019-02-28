@@ -1,18 +1,11 @@
+/* eslint camelcase: "off" */
+
 const fb = require("fb");
 const moment = require("moment");
 const { facebookToken, facebookPageId } = require("../../config/secrets");
 
 const FB = new fb.Facebook({ version: "v3.2" });
 FB.setAccessToken(facebookToken);
-
-FB.api(`/${facebookPageId}/events`, "get", {}, res => {
-  if (!res || res.error) {
-    console.log(!res ? "error occurred" : res.error);
-    return;
-  }
-  const events = res;
-  console.log(events);
-});
 
 const extractNearestDate = event => {
   const result = {
@@ -51,6 +44,24 @@ const stringifyEventDate = eventDate => {
 };
 
 const createEventLink = id => `https://www.facebook.com/events/${id}`;
+
+FB.api(`/${facebookPageId}/events`, "get", {}, res => {
+  if (!res || res.error) {
+    console.log(!res ? "error occurred" : res.error);
+    return;
+  }
+  const { data: events } = res;
+
+  const { id, name, description, start_time, end_time } = events[0];
+  const date = stringifyEventDate(extractNearestDate({ start_time, end_time }));
+  const eventLink = createEventLink(id);
+
+  console.log(name);
+  console.log(date);
+  console.log(eventLink);
+  console.log(description);
+});
+
 module.exports = {
   extractNearestDate,
   stringifyEventDate,
