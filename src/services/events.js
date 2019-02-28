@@ -1,6 +1,6 @@
 const fb = require("fb");
-const { facebookToken, facebookPageId } = require("../../config/secrets");
 const moment = require("moment");
+const { facebookToken, facebookPageId } = require("../../config/secrets");
 
 const FB = new fb.Facebook({ version: "v3.2" });
 FB.setAccessToken(facebookToken);
