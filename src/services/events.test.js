@@ -60,22 +60,17 @@ describe("Unify facebook event dates", () => {
           end_time: "2042-02-06T20:15:00+0100"
         },
         {
-          id: "367250617382262",
-          start_time: "2042-01-30T18:30:00+0100",
-          end_time: "2042-01-30T20:15:00+0100"
-        },
-        {
           id: "367250614048929",
-          start_time: "2042-01-16T18:30:00+0100",
-          end_time: "2042-01-16T20:15:00+0100"
+          start_time: "2042-09-16T18:30:00+0100",
+          end_time: "2042-09-16T20:15:00+0100"
         }
       ],
       id: "367250607382263"
     };
 
     const expected = {
-      start_time: "2042-02-27T18:30:00+0100",
-      end_time: "2042-02-27T20:15:00+0100"
+      start_time: "2042-02-06T18:30:00+0100",
+      end_time: "2042-02-06T20:15:00+0100"
     };
     const actual = events.extractNearestDate(event);
     expect(actual).toEqual(expected);
