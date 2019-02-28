@@ -50,16 +50,20 @@ FB.api(`/${facebookPageId}/events`, "get", {}, res => {
     console.log(!res ? "error occurred" : res.error);
     return;
   }
-  const { data: events } = res;
 
-  const { id, name, description, start_time, end_time } = events[0];
-  const date = stringifyEventDate(extractNearestDate({ start_time, end_time }));
-  const eventLink = createEventLink(id);
+  const result = [];
 
-  console.log(name);
-  console.log(date);
-  console.log(eventLink);
-  console.log(description);
+  res.data.forEach(event => {
+    const { id, name, description, start_time, end_time } = event;
+    const date = stringifyEventDate(
+      extractNearestDate({ start_time, end_time })
+    );
+    const link = createEventLink(id);
+
+    result.push({ name, date, link, description });
+  });
+
+  console.log(result);
 });
 
 module.exports = {
