@@ -20,7 +20,8 @@
   "homepage": "https://github.com/Lernwerkstatt/site#readme",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged"
+      "pre-commit": "lint-staged",
+      "pre-push": "jest --config config/jest.json"
     }
   },
   "lint-staged": {
@@ -30,7 +31,7 @@
       "git add"
     ],
     "*.{css}": [
-      "prettier-stylelint --write ",
+      "prettier-stylelint --write",
       "stylelint --fix --config ./config/.stylelintrc.json",
       "git add"
     ],
