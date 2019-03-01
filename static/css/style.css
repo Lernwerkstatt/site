@@ -43,6 +43,10 @@ main {
   margin: 30px 0;
 }
 
+.navbar-logo {
+  height: 24px;
+}
+
 .home-logo-img {
   height: 210px;
 }
