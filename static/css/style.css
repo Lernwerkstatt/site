@@ -40,23 +40,15 @@ main {
   line-height: 1;
   font-size: 60px;
   font-weight: 300;
-  padding: 0 20px;
   margin: 30px 0;
 }
-.home-logo-d {
-  display: block;
-  font-size: 40px;
-  text-indent: -20px;
+
+.navbar-logo {
+  height: 24px;
 }
-.home-logo-l {
-  display: block;
-  color: #E27270;
-}
-.home-logo-w {
-  display: block;
-}
+
 .home-logo-img {
-  height: 50px;
+  height: 210px;
 }
 .home-subtitle {
   font-family: 'Roboto Slab', serif;
