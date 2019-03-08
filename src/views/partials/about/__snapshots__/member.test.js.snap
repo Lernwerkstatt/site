@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`member.hbs should match the snapshot 1`] = `
-"<div class=\\"d-inline-block mr-3 pb-3\\" data-toggle=\\"collapse\\" data-target=\\"#max\\">
+"<div class=\\"d-inline-block mr-3 pb-3 cursor-pointer\\" data-toggle=\\"collapse\\" data-target=\\"#max\\">
   <img src=img/logo.png alt=Max Muster class=\\"img-fluid rounded-circle\\" style=\\"height: 160px; width: 160px;\\">
   <p class=\\"lead\\">Max Muster</p>
 </div>
