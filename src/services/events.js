@@ -18,7 +18,7 @@ const extractNearestDate = event => {
       t => new Date(t.start_time) > new Date()
     );
     const sorted = upcoming.sort(
-      (a, b) => new Date(a.start_time) - new Date(b.start_time)
+      (a, b) => new Date(a.start_time) > new Date(b.start_time)
     );
 
     result.start_time = sorted[0].start_time;
@@ -45,29 +45,43 @@ const stringifyEventDate = eventDate => {
 
 const createEventLink = id => `https://www.facebook.com/events/${id}`;
 
-FB.api(`/${facebookPageId}/events`, "get", {}, res => {
-  if (!res || res.error) {
-    console.log(!res ? "error occurred" : res.error);
-    return;
-  }
+const getEvents = () =>
+  new Promise((resolve, reject) => {
+    FB.api(
+      `/${facebookPageId}/events`,
+      "get",
+      { time_filter: "upcoming" },
+      res => {
+        if (!res || res.error) {
+          console.log(!res ? "error occurred" : res.error);
+          reject(res);
+        }
 
-  const result = [];
+        const result = [];
 
-  res.data.forEach(event => {
-    const { id, name, description, start_time, end_time } = event;
-    const date = stringifyEventDate(
-      extractNearestDate({ start_time, end_time })
+        res.data.forEach(event => {
+          const { id, name, description } = event;
+          const nearestDate = extractNearestDate(event);
+          const date = stringifyEventDate(nearestDate);
+          const link = createEventLink(id);
+
+          result.push({ name, nearestDate, date, link, description });
+        });
+
+        result.sort(
+          (a, b) =>
+            new Date(a.nearestDate.start_time) >
+            new Date(b.nearestDate.start_time)
+        );
+        result.forEach(event => delete event.nearestDate);
+        resolve(result);
+      }
     );
-    const link = createEventLink(id);
-
-    result.push({ name, date, link, description });
   });
-
-  console.log(result);
-});
 
 module.exports = {
   extractNearestDate,
   stringifyEventDate,
-  createEventLink
+  createEventLink,
+  getEvents
 };

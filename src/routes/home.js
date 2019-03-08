@@ -2,8 +2,11 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const moment = require("moment");
+const { promisify } = require("util");
+const events = require("../services/events");
 
 const router = express.Router();
+const readFile = promisify(fs.readFile);
 
 const homePath = path.join(__dirname, "../../data/home.json");
 
@@ -20,11 +23,17 @@ function prepareHome(data) {
   return result;
 }
 
-router.get("/", (req, res) => {
-  fs.readFile(homePath, (err, data) => {
-    if (err) throw err;
-    res.render("home", prepareHome(data));
-  });
+router.get("/", async (req, res) => {
+  try {
+    const calendar = await events.getEvents();
+    const homeFile = await readFile(homePath, { encoding: "UTF-8" });
+    console.log(homeFile);
+    const home = JSON.parse(homeFile);
+
+    res.render("home", { calendar, card: home.card });
+  } catch (err) {
+    console.log(err);
+  }
 });
 
 module.exports = { prepareHome, router };
