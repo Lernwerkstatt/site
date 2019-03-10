@@ -1,19 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`footer.hbs should match the snapshot 1`] = `
-"<footer class=\\"footer bg-secondary\\">
+"<footer class=\\"bg-secondary\\">
   <div class=\\"container\\">
-    <div class=\\"row mt-3 mb-3\\">
+    <div class=\\"row\\">
       <div class=\\"col-md-6\\">
-        <a href=\\"/support\\" class=\\"mr-3\\">Support</a>
-        <a href=\\"/contact\\" class=\\"mr-3\\">Kontakt</a>
-        <a href=\\"/subscribe\\" class=\\"mr-3\\">Subscribe</a>
-        <a href=\\"/blogs\\" class=\\"mr-3\\">Blog</a>
+        <ul class=\\"nav\\">
+          <li class=\\"nav-item\\">
+            <a href=\\"/support\\" class=\\"nav-link text-light\\">Support</a>
+          </li>
+          <li class=\\"nav-item\\">
+            <a href=\\"/contact\\" class=\\"nav-link text-light\\">Kontakt</a>
+          </li>
+          <li class=\\"nav-item\\">
+            <a href=\\"/subscribe\\" class=\\"nav-link text-light\\">Subscribe</a>
+          </li>
+          <li class=\\"nav-item\\">
+            <a href=\\"/blogs\\" class=\\"nav-link text-light\\">Blog</a>
+          </li>
+        </ul>
       </div>
-      <div class=\\"col-md-6 text-right\\">
-        <a href=\\"https://www.facebook.com/dielernwerkstatt/\\" class=\\"fab fa-facebook mr-1\\"></a>
-        <a href=\\"https://www.instagram.com/die_lernwerkstatt\\" class=\\"fab fa-instagram mr-1\\"></a>
-        <a href=\\"mailto:info@die-lernwerkstatt.de\\" class=\\"far fa-envelope\\"></a>
+      <div class=\\"col-md-6\\">
+        <ul class=\\"nav justify-content-end\\">
+          <li class=\\"nav-item\\">
+            <a href=\\"https://www.facebook.com/dielernwerkstatt/\\" class=\\"nav-link text-light\\">
+              <span class=\\"fab fa-facebook\\"></span>
+            </a>
+          </li>
+          <li class=\\"nav-item\\">
+            <a href=\\"https://www.instagram.com/die_lernwerkstatt\\" class=\\"nav-link text-light\\">
+              <span class=\\"fab fa-instagram\\"></span>
+            </a>
+          </li>
+          <li class=\\"nav-item\\">
+            <a href=\\"mailto:info@die-lernwerkstatt.de\\" class=\\"nav-link text-light\\">
+              <span class=\\"far fa-envelope\\"></span>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
