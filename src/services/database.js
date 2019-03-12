@@ -58,4 +58,4 @@ const newPosts = postBody =>
     })
     .catch(err => console.log(err));
 
-module.exports = { allPosts, singlePosts, newPosts };
+module.exports = { allPosts, singlePosts, newPosts, convertMarkdown };
