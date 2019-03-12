@@ -8,18 +8,21 @@ const router = express.Router();
 
 const homePath = path.join(__dirname, "../../data/home.json");
 
-async function prepareHome(res, data) {
-  try {
-    const result = JSON.parse(data);
+function prepareHome(data) {
+  const result = JSON.parse(data);
+  result.calendar.forEach(element => {
+    const weekday = moment(element.date, "DD.MM.YYYY")
+      .format("dddd")
+      .toLowerCase();
+    element.dayicon = `img/calendar/${weekday}.png`;
+  });
+  return result;
+}
 
-    result.calendar.forEach(element => {
-      const weekday = moment(element.date, "DD.MM.YYYY")
-        .format("dddd")
-        .toLowerCase();
-      element.dayicon = `img/calendar/${weekday}.png`;
-    });
-    const latestBlogPost = await posts.allPosts;
-    result.card[2].text = latestBlogPost.blogs[0].summary;
+async function latestBlogPost(res, result) {
+  try {
+    const post = await posts.allPosts;
+    result.card[2].text = post.blogs[0].summary;
     res.render("home", result);
   } catch (error) {
     console.log(error);
@@ -29,7 +32,7 @@ async function prepareHome(res, data) {
 router.get("/", (req, res) => {
   fs.readFile(homePath, (err, data) => {
     if (err) throw err;
-    prepareHome(res, data);
+    latestBlogPost(res, prepareHome(data));
   });
 });
 
