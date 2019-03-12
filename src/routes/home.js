@@ -20,12 +20,39 @@ function prepareHome(data) {
   return result;
 }
 
+function generateCard(result, postsArray) {
+  let latestPost = postsArray.blogs[0];
+  for (let i = 1; i < postsArray.blogs.length; i++) {
+    if (
+      latestPost.date.substring(6, 10) <
+      postsArray.blogs[i].date.substring(6, 10)
+    ) {
+      latestPost = postsArray.blogs[i];
+    } else if (
+      latestPost.date.substring(6, 10) ===
+        postsArray.blogs[i].date.substring(6, 10) &&
+      latestPost.date.substring(3, 5) < postsArray.blogs[i].date.substring(3, 5)
+    ) {
+      latestPost = postsArray.blogs[i];
+    } else if (
+      latestPost.date.substring(6, 10) ===
+        postsArray.blogs[i].date.substring(6, 10) &&
+      latestPost.date.substring(3, 5) ===
+        postsArray.blogs[i].date.substring(3, 5) &&
+      latestPost.date.substring(0, 2) < postsArray.blogs[i].date.substring(0, 2)
+    ) {
+      latestPost = postsArray.blogs[i];
+    }
+  }
+  result.card[2].blogtitle = latestPost.title;
+  result.card[2].author = latestPost.author;
+  result.card[2].date = latestPost.date;
+}
+
 async function latestBlogPost(res, result) {
   try {
-    const post = await posts.allPosts;
-    result.card[2].blogtitle = post.blogs[0].title;
-    result.card[2].author = post.blogs[0].author;
-    result.card[2].date = post.blogs[0].date;
+    const postsArray = await posts.allPosts;
+    generateCard(result, postsArray);
     res.render("home", result);
   } catch (error) {
     console.log(error);
