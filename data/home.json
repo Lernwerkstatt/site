@@ -56,11 +56,16 @@
     },
     {
       "title": "Kommender Termin",
-      "text": "test erfolgreich"
+      "name": "Name",
+      "date": "Date",
+      "time": "Time"
     },
     {
       "title": "Letzter Blogeintrag",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint laboriosam voluptates."
+      "blogtitle": "Blogtitle",
+      "date": "Date",
+      "author": "Author",
+      "summary": "Summary"
     }
   ]
 }

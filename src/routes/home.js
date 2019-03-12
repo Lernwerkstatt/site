@@ -16,13 +16,16 @@ function prepareHome(data) {
       .toLowerCase();
     element.dayicon = `img/calendar/${weekday}.png`;
   });
+
   return result;
 }
 
 async function latestBlogPost(res, result) {
   try {
     const post = await posts.allPosts;
-    result.card[2].text = post.blogs[0].summary;
+    result.card[2].blogtitle = post.blogs[0].title;
+    result.card[2].author = post.blogs[0].author;
+    result.card[2].date = post.blogs[0].date;
     res.render("home", result);
   } catch (error) {
     console.log(error);
