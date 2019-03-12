@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const blogpostSchema = new mongoose.Schema(
   {
     id: {
-      type: Number,
+      type: String,
       required: true,
       unique: true
     },
@@ -25,7 +25,7 @@ const blogpostSchema = new mongoose.Schema(
     },
     imagelink: {
       type: String,
-      required: true
+      required: false
     }
   },
   {

@@ -2,12 +2,10 @@
 
 exports[`create.hbs should match the snapshot 1`] = `
 "<form action=\\"/blogs/create\\" method=\\"post\\" autocomplete=\\"off\\" enctype=\\"application/json\\">
-  <input name=\\"id\\" type=\\"hidden\\" value=\\" \\">
   <div class=\\"form-group col-md-6\\">
     <label>Title:</label>
     <input type=\\"text\\" class=\\"form-control\\" name=\\"title\\" required>
   </div>
-  <input id=\\"today\\" name=\\"date\\" type=\\"hidden\\" value=\\" \\">
   <div class=\\"form-group col-md-6\\">
     <label>Author:</label>
     <input type=\\"text\\" class=\\"form-control\\" name=\\"author\\" required>
@@ -16,10 +14,6 @@ exports[`create.hbs should match the snapshot 1`] = `
     <label>Content:</label>
     <textarea name=\\"content\\" class=\\"form-control\\" rows=\\"10\\">
   </textarea>
-  </div>
-  <div class=\\"form-group col-md-6\\">
-    <label>Image link:</label>
-    <input type=\\"text\\" class=\\"form-control\\" name=\\"imagelink\\" required>
   </div>
   <div class=\\"col-md-6\\">
     <input type=\\"submit\\" value=\\"Submit\\">
