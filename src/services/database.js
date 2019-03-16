@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
-const showdown = require("showdown");
 
+const converter = require("./converter");
 const Blogposts = require("../models/blogposts");
 const { dbUrl } = require("../../config/secrets");
 
@@ -30,13 +30,6 @@ function addSummary(blogpost) {
   return blogpost;
 }
 
-function convertMarkdown(newBlogpost) {
-  const converter = new showdown.Converter();
-  const convertedBlogpost = converter.makeHtml(newBlogpost);
-
-  return convertedBlogpost;
-}
-
 const allPosts = Blogposts.find({})
   .then(blogposts => {
     const postWithSummary = addSummary(blogposts);
@@ -53,9 +46,9 @@ const singlePosts = paramsId =>
 const newPosts = postBody =>
   Blogposts.create(postBody)
     .then(blogposts => {
-      const newBlogpost = convertMarkdown(blogposts);
+      const newBlogpost = converter.convertMarkdown(blogposts);
       return newBlogpost;
     })
     .catch(err => console.log(err));
 
-module.exports = { allPosts, singlePosts, newPosts, convertMarkdown };
+module.exports = { allPosts, singlePosts, newPosts };

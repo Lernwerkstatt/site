@@ -1,4 +1,4 @@
-const database = require("../database");
+const converter = require("../converter");
 
 describe("function should convert markdown to html", () => {
   const originalData = "**Something bold**";
@@ -6,6 +6,6 @@ describe("function should convert markdown to html", () => {
   const expectedData = "<p><strong>Something bold</strong></p>";
 
   test("check markdown converter", () => {
-    expect(database.convertMarkdown(originalData)).toEqual(expectedData);
+    expect(converter.convertMarkdown(originalData)).toEqual(expectedData);
   });
 });
