@@ -20,39 +20,12 @@ function prepareHome(data) {
   return result;
 }
 
-function generateCard(result, postsArray) {
-  let latestPost = postsArray.blogs[0];
-  for (let i = 1; i < postsArray.blogs.length; i++) {
-    if (
-      latestPost.date.substring(6, 10) <
-      postsArray.blogs[i].date.substring(6, 10)
-    ) {
-      latestPost = postsArray.blogs[i];
-    } else if (
-      latestPost.date.substring(6, 10) ===
-        postsArray.blogs[i].date.substring(6, 10) &&
-      latestPost.date.substring(3, 5) < postsArray.blogs[i].date.substring(3, 5)
-    ) {
-      latestPost = postsArray.blogs[i];
-    } else if (
-      latestPost.date.substring(6, 10) ===
-        postsArray.blogs[i].date.substring(6, 10) &&
-      latestPost.date.substring(3, 5) ===
-        postsArray.blogs[i].date.substring(3, 5) &&
-      latestPost.date.substring(0, 2) < postsArray.blogs[i].date.substring(0, 2)
-    ) {
-      latestPost = postsArray.blogs[i];
-    }
-  }
-  result.card[2].blogtitle = latestPost.title;
-  result.card[2].author = latestPost.author;
-  result.card[2].date = latestPost.date;
-}
-
-async function latestBlogPost(res, result) {
+async function getLatestPost(res, result) {
   try {
     const postsArray = await posts.allPosts;
-    generateCard(result, postsArray);
+    result.card[2].blogtitle = postsArray.blogs[0].title;
+    result.card[2].author = postsArray.blogs[0].author;
+    result.card[2].date = postsArray.blogs[0].date;
     res.render("home", result);
   } catch (error) {
     console.log(error);
@@ -62,7 +35,7 @@ async function latestBlogPost(res, result) {
 router.get("/", (req, res) => {
   fs.readFile(homePath, (err, data) => {
     if (err) throw err;
-    latestBlogPost(res, prepareHome(data));
+    getLatestPost(res, prepareHome(data));
   });
 });
 
