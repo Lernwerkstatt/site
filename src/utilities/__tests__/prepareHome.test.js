@@ -1,4 +1,4 @@
-const helper = require("../helpfunctions");
+const helper = require("../prepareHome");
 
 describe("function should get right icon from date", () => {
   const originalData = {

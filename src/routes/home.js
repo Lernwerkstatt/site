@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const posts = require("./posts");
-const helper = require("../utilities/helpfunctions");
+const helper = require("../utilities/prepareHome");
 
 const router = express.Router();
 

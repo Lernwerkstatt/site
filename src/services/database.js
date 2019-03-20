@@ -1,33 +1,12 @@
 const mongoose = require("mongoose");
-
 const Blogposts = require("../models/blogposts");
 const { dbUrl } = require("../../config/secrets");
+const addSummary = require("../utilities/addSummary");
 
 mongoose.connect(
   dbUrl,
   { useNewUrlParser: true }
 );
-
-function checkForWhitespace(post) {
-  let counter = 320;
-
-  while (post.charAt(counter) !== " " && counter <= post.length) {
-    counter += 1;
-  }
-  return counter;
-}
-
-function addSummary(blogpost) {
-  blogpost.forEach(element => {
-    element.summary = element.content.substring(
-      0,
-      checkForWhitespace(element.content)
-    );
-    element.summary += " ...";
-  });
-
-  return blogpost;
-}
 
 const allPosts = Blogposts.find({})
   .then(blogposts => {
