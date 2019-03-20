@@ -2,7 +2,7 @@ const express = require("express");
 const path = require("path");
 const fs = require("fs");
 const moment = require("moment");
-const posts = require("../services/database");
+const posts = require("./posts");
 
 const router = express.Router();
 
@@ -22,7 +22,7 @@ function prepareHome(data) {
 
 async function getLatestPost(res, result) {
   try {
-    const postsArray = await posts.allPosts;
+    const postsArray = await posts.getAllPosts();
     result.card[2].blogtitle = postsArray.blogs[0].title;
     result.card[2].author = postsArray.blogs[0].author;
     result.card[2].date = postsArray.blogs[0].date;

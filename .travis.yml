@@ -4,6 +4,3 @@ node_js:
 cache:
   directories:
     - node_modules
-before_install:
-  - openssl aes-256-cbc -K $encrypted_35514d510912_key -iv $encrypted_35514d510912_iv
-    -in secrets.js.enc -out config/secrets.js -d
