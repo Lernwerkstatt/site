@@ -12,4 +12,4 @@ function prepareHome(data) {
   return result;
 }
 
-module.exports = { prepareHome };
+module.exports = prepareHome;

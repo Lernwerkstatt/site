@@ -1,4 +1,4 @@
-const helper = require("../prepareHome");
+const prepareHome = require("../prepareHome");
 
 describe("function should get right icon from date", () => {
   const originalData = {
@@ -38,7 +38,7 @@ describe("function should get right icon from date", () => {
   };
 
   test("check dayicon", () => {
-    expect(helper.prepareHome(stringifiedData)).toEqual(expectedData);
-    expect(helper.prepareHome(stringifiedData)).not.toEqual(falseData);
+    expect(prepareHome(stringifiedData)).toEqual(expectedData);
+    expect(prepareHome(stringifiedData)).not.toEqual(falseData);
   });
 });

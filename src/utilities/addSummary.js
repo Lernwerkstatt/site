@@ -8,7 +8,6 @@ function addSummary(blogpost) {
     );
     element.summary += " ...";
   });
-
   return blogpost;
 }
 
