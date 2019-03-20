@@ -20,22 +20,12 @@ function prepareHome(data) {
   return result;
 }
 
-async function getLatestPost(res, result) {
-  try {
-    const postsArray = await posts.getAllPosts();
-    result.card[2].blogtitle = postsArray.blogs[0].title;
-    result.card[2].author = postsArray.blogs[0].author;
-    result.card[2].date = postsArray.blogs[0].date;
-    res.render("home", result);
-  } catch (error) {
-    console.log(error);
-  }
-}
-
 router.get("/", (req, res) => {
   fs.readFile(homePath, (err, data) => {
     if (err) throw err;
-    getLatestPost(res, prepareHome(data));
+    posts
+      .getLatestPost(prepareHome(data))
+      .then(result => res.render("home", result));
   });
 });
 
