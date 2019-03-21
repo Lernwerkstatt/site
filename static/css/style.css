@@ -117,3 +117,7 @@ main {
 .header-logo {
   font-size: 0px;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
