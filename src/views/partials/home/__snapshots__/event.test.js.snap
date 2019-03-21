@@ -2,7 +2,7 @@
 
 exports[`event.hbs should match the snapshot 1`] = `
 "<li class=\\"list-group-item\\">
-  <a href=\\"https://www.facebook.com/pg/dielernwerkstatt/events\\" target=\\"_blank\\">
+  <a href=\\"#\\" data-toggle=\\"modal\\" data-target=\\"#name\\">
     <p class=\\"lead mb-0\\">
       <img src=\\"img/calendar/sunday.png\\" />
       Webkurs
