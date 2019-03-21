@@ -9,7 +9,7 @@ const homePath = path.join(__dirname, "../../data/home.json");
 const getIndex = async (req, res) => {
   try {
     const data = await fs.readFile(homePath);
-    posts
+    await posts
       .getLatestPost(prepareHome(data))
       .then(result => res.render("home", result));
   } catch (error) {
