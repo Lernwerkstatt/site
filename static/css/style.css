@@ -40,11 +40,7 @@ main {
   line-height: 1;
   font-size: 60px;
   font-weight: 300;
-  margin: 30px 0;
-}
-
-.navbar-logo {
-  height: 24px;
+  margin-bottom: 30px;
 }
 
 .home-logo-img {
@@ -58,17 +54,6 @@ main {
 
 .calendar-list {
   max-height: 300px;
-}
-
-.footer {
-  bottom: 0px;
-  width: 100%;
-  background-color: #87C6C0;
-}
-
-.footer a {
-  color: white;
-  text-decoration: none;
 }
 
 .tab-content {
@@ -127,6 +112,10 @@ main {
 
 .overflow-auto {
   overflow: auto;
+}
+
+.header-logo {
+  font-size: 0px;
 }
 
 .cursor-pointer {
