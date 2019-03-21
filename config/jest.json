@@ -2,5 +2,6 @@
   "rootDir": "../",
   "transform": {
     "\\.hbs$": "<rootDir>/config/handlebarsLoader.js"
-  }
+  },
+  "testEnvironment": "node"
 }
