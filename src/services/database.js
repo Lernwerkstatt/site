@@ -3,32 +3,12 @@ const mongoose = require("mongoose");
 const converter = require("./converter");
 const Blogposts = require("../models/blogposts");
 const { dbUrl } = require("../../config/secrets");
+const addSummary = require("../utilities/addSummary");
 
 mongoose.connect(
   dbUrl,
   { useNewUrlParser: true }
 );
-
-function checkForWhitespace(post) {
-  let counter = 320;
-
-  while (post.charAt(counter) !== " " && counter <= post.length) {
-    counter += 1;
-  }
-  return counter;
-}
-
-function addSummary(blogpost) {
-  blogpost.forEach(element => {
-    element.summary = element.content.substring(
-      0,
-      checkForWhitespace(element.content)
-    );
-    element.summary += " ...";
-  });
-
-  return blogpost;
-}
 
 const allPosts = Blogposts.find({})
   .then(blogposts => {
@@ -38,8 +18,8 @@ const allPosts = Blogposts.find({})
   })
   .catch(err => console.log(err));
 
-const singlePosts = paramsId =>
-  Blogposts.find({ id: paramsId })
+const singlePost = paramsId =>
+  Blogposts.find({ _id: paramsId })
     .then(result => result)
     .catch(err => console.log(err));
 
@@ -51,4 +31,4 @@ const newPosts = postBody =>
     })
     .catch(err => console.log(err));
 
-module.exports = { allPosts, singlePosts, newPosts };
+module.exports = { allPosts, singlePost, newPosts };
