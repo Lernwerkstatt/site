@@ -113,3 +113,7 @@ main {
 .overflow-auto {
   overflow: auto;
 }
+
+.header-logo {
+  font-size: 0px;
+}
