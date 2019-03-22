@@ -5,19 +5,22 @@ exports[`modal.hbs should match the snapshot 1`] = `
   <div class=\\"modal-dialog\\" role=\\"document\\">
     <div class=\\"modal-content\\">
       <div class=\\"modal-header\\">
-        <h5 class=\\"modal-title text-primary\\" id=\\"\\">
+        <h5 class=\\"modal-title text-dark\\" id=\\"\\">
           
         </h5>
       </div>
-      <div class=\\"modal-body text-primary\\">
+      <div class=\\"modal-body text-dark\\">
         <p>
-           - 
+          Wann?
         </p>
-        <a href=\\"\\" target=\\"_blank\\">
-          Hier geht es zum Facebook Event
-        </a>
+        <p>
+           -  Uhr
+        </p>
+        </p>
       </div>
       <div class=\\"modal-footer\\">
+        <button type=\\"button\\" class=\\"btn btn-secondary\\" href=\\"\\" target=\\"_blank\\">
+          Mehr Infos auf Facebook</button>
         <button type=\\"button\\" class=\\"btn btn-secondary\\" data-dismiss=\\"modal\\">Schließen</button>
       </div>
     </div>

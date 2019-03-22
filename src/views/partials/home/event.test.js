@@ -1,5 +1,4 @@
 const event = require("./event.hbs");
-const modal = require("./modal.hbs");
 
 describe("event.hbs", () => {
   it("should match the snapshot", () => {
