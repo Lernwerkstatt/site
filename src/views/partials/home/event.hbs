@@ -1,12 +1,10 @@
 <li class="list-group-item">
-  <a href="#" data-toggle="modal" data-target="#name">
+  <a href="#" data-toggle="modal" data-target="#{{id}}">
     <p class="lead mb-0">
       <img src="{{ dayicon }}" />
       {{ name }}
     </p>
-    <small class="text-muted">{{ date }} - {{ time }}</small>
   </a>
-  {{#each name}}
-  {{>modal this}}
-  {{/each}}
+  <small class="text-muted">{{ date }} - {{ time }}</small>
+  {{> home/modal this}}
 </li>
