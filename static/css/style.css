@@ -12,6 +12,10 @@ main {
   flex: 1;
 }
 
+a {
+  color: #2B6550;
+}
+
 .home-bg {
   min-height: 100%;
   position: relative;
