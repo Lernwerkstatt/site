@@ -3,6 +3,7 @@ const uuidv1 = require("uuid/v1");
 const moment = require("moment");
 
 const posts = require("./posts");
+const database = require("../services/database");
 
 const router = express.Router();
 
@@ -24,7 +25,7 @@ router
     res.render("blogform");
   })
   .post((req, res) => {
-    posts
+    database
       .newPosts({
         id: uuidv1(),
         title: req.body.title,
