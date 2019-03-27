@@ -7,7 +7,15 @@ const posts = require("./posts");
 const router = express.Router();
 
 router.route("/blogs").get((req, res) => {
-  posts.getAllPosts().then(data => res.render("blogs", data));
+  posts
+    .getAllPosts()
+    .then(data => data.blogs.reverse())
+    .then(blogs => {
+      const result = {
+        blogs
+      };
+      res.render("blogs", result);
+    });
 });
 
 router
