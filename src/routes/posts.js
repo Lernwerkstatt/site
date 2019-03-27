@@ -21,9 +21,9 @@ const getSinglePost = async id => {
 const getLatestPost = async result => {
   try {
     const allPosts = await getAllPosts();
-    result.card[2].blogtitle = allPosts.blogs[0].title;
-    result.card[2].author = allPosts.blogs[0].author;
-    result.card[2].date = allPosts.blogs[0].date;
+    result.card[2].blogtitle = allPosts.blogs[allPosts.blogs.length - 1].title;
+    result.card[2].author = allPosts.blogs[allPosts.blogs.length - 1].author;
+    result.card[2].date = allPosts.blogs[allPosts.blogs.length - 1].date;
 
     return result;
   } catch (error) {

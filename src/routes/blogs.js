@@ -3,11 +3,20 @@ const uuidv1 = require("uuid/v1");
 const moment = require("moment");
 
 const posts = require("./posts");
+const database = require("../services/database");
 
 const router = express.Router();
 
 router.route("/blogs").get((req, res) => {
-  posts.getAllPosts().then(data => res.render("blogs", data));
+  posts
+    .getAllPosts()
+    .then(data => data.blogs.reverse())
+    .then(blogs => {
+      const result = {
+        blogs
+      };
+      res.render("blogs", result);
+    });
 });
 
 router
@@ -16,7 +25,7 @@ router
     res.render("blogform");
   })
   .post((req, res) => {
-    posts
+    database
       .newPosts({
         id: uuidv1(),
         title: req.body.title,

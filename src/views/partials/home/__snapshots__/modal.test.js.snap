@@ -16,7 +16,6 @@ exports[`modal.hbs should match the snapshot 1`] = `
         <p>
            -  Uhr
         </p>
-        </p>
       </div>
       <div class=\\"modal-footer\\">
         <button type=\\"button\\" class=\\"btn btn-secondary\\" href=\\"\\" target=\\"_blank\\">
