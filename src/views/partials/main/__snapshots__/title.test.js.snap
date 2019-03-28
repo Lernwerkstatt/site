@@ -1,14 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`title.hbs should match the snapshot 1`] = `
-"<div class=\\"jumbotron\\">
+"<div class=\\"container mb-2\\">
   <div class=\\"row\\">
-    <div class=\\"col-12 col-sm-7\\">
-      <h1 class=\\"h4\\"></h1>
-      <p></p>
-    </div>
-    <div class=\\"col-12 col-sm-5 align-self-center\\">
-      <img src=\\"img/logo.png\\" class=\\"img rounded-circle float-right\\" alt=\\"Die Lernwerkstatt Logo\\" style=\\"max-width:20%; height:auto\\">
+    <div class=\\"col-12\\">
+      <p class=\\"h1 font-italic my-4\\"></p>
+      <p class=\\"lead\\"></p>
+      <hr>
     </div>
   </div>
 </div>
