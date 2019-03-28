@@ -55,12 +55,17 @@
       "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint laboriosam voluptates."
     },
     {
-      "title": "Kommende Termine",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint laboriosam voluptates."
+      "title": "Kommender Termin",
+      "name": "Name",
+      "date": "Date",
+      "time": "Time"
     },
     {
-      "title": "Mitgestaltung",
-      "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint laboriosam voluptates."
+      "title": "Letzter Blogeintrag",
+      "blogtitle": "Blogtitle",
+      "date": "Date",
+      "author": "Author",
+      "summary": "Summary"
     }
   ]
 }

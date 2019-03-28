@@ -3,14 +3,13 @@ const mongoose = require("mongoose");
 const blogpostSchema = new mongoose.Schema(
   {
     id: {
-      type: Number,
+      type: String,
       required: true,
       unique: true
     },
     title: {
       type: String,
-      required: true,
-      unique: true
+      required: true
     },
     date: {
       type: String,
@@ -26,7 +25,7 @@ const blogpostSchema = new mongoose.Schema(
     },
     imagelink: {
       type: String,
-      required: true
+      required: false
     }
   },
   {
