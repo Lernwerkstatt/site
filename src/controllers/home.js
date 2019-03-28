@@ -3,7 +3,7 @@ const path = require("path");
 const posts = require("../routes/posts");
 const events = require("../services/events");
 
-const { prepareHome } = require("../modules/home/utilities");
+const prepareHome = require("../utilities/prepareHome");
 
 const homePath = path.join(__dirname, "../../data/home.json");
 
