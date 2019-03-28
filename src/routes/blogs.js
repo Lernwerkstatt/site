@@ -26,12 +26,12 @@ router
   })
   .post((req, res) => {
     database
-      .newPosts({
+      .newPost({
         id: uuidv1(),
         title: req.body.title,
         date: moment().format("DD.MM.YYYY"),
         author: req.body.author,
-        content: req.body.content,
+        content: database.convertPost(req.body.content),
         imagelink: req.body.imagelink
       })
       .then(newBlogpost => {

@@ -23,12 +23,22 @@ const singlePost = paramsId =>
     .then(result => result)
     .catch(err => console.log(err));
 
-const newPosts = postBody =>
-  Blogposts.create(postBody)
-    .then(blogposts => {
-      const newBlogpost = converter.convertMarkdown(blogposts);
-      return newBlogpost;
-    })
-    .catch(err => console.log(err));
+const newPost = convertedPost => {
+  try {
+    const createPost = Blogposts.create(convertedPost);
+    return createPost;
+  } catch (err) {
+    console.log(err);
+  }
+};
 
-module.exports = { allPosts, singlePost, newPosts };
+const convertPost = rawPost => {
+  try {
+    const convertedPost = converter.convertMarkdown(rawPost);
+    return convertedPost;
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+module.exports = { allPosts, singlePost, newPost, convertPost };
