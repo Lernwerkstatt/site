@@ -7,6 +7,12 @@
     {
       "type": "node",
       "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/src/index.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
       "name": "jest tests",
       "program": "${workspaceFolder}/node_modules/jest/bin/jest",
       "args": ["--runInBand", "--config=${workspaceFolder}\\config\\jest.json"],
