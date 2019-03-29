@@ -18,14 +18,10 @@ const getSinglePost = async id => {
   }
 };
 
-const getLatestPost = async result => {
+const getLatestPost = async () => {
   try {
     const allPosts = await getAllPosts();
-    result.card[2].blogtitle = allPosts.blogs[allPosts.blogs.length - 1].title;
-    result.card[2].author = allPosts.blogs[allPosts.blogs.length - 1].author;
-    result.card[2].date = allPosts.blogs[allPosts.blogs.length - 1].date;
-
-    return result;
+    return allPosts.blogs[allPosts.blogs.length - 1];
   } catch (error) {
     console.log({ message: "Can not read data", error });
   }

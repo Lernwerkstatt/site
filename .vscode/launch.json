@@ -6,10 +6,16 @@
   "configurations": [
     {
       "type": "node",
-      "name": "vscode-jest-tests",
       "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/src/index.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "jest tests",
       "program": "${workspaceFolder}/node_modules/jest/bin/jest",
-      "args": ["--runInBand"],
+      "args": ["--runInBand", "--config=${workspaceFolder}\\config\\jest.json"],
       "cwd": "${workspaceFolder}",
       "console": "integratedTerminal",
       "internalConsoleOptions": "neverOpen"

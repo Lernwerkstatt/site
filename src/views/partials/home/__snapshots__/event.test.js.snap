@@ -7,8 +7,8 @@ exports[`event.hbs should match the snapshot 1`] = `
       <img src=\\"img/calendar/sunday.png\\" />
       Webkurs
     </p>
+    <small class=\\"text-muted\\">13.12.2018</small>
   </a>
-  <small class=\\"text-muted\\">13.12.2018 - 18:00-20:00</small>
 </li>
 "
 `;

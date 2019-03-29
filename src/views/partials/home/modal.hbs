@@ -8,14 +8,14 @@
       </div>
       <div class="modal-body text-dark">
         <p>
-          Wann?
+          {{ date }} Uhr
         </p>
         <p>
-          {{ date }} - {{ time }} Uhr
+          {{ description }}
         </p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" href="{{ eventlink }}" target="_blank">
+        <button type="button" class="btn btn-secondary" href="{{ link }}" target="_blank">
           Mehr Infos auf Facebook</button>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
       </div>
