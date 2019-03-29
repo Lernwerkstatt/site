@@ -1,9 +1,19 @@
 <div class="d-inline-block mr-3 pb-3 cursor-pointer" data-toggle="collapse" data-target="#{{id}}">
   <img src={{img}} alt={{name}} class="img-fluid rounded-circle" style="height: 160px; width: 160px;">
-  <p class="lead">{{name}}</p>
+  <p class="lead text-center">{{name}}</p>
 </div>
-<div id="{{id}}" class="collapse" data-parent="#team">
-  <div class="card-body mt-n5 mb-2">
-    {{description}}
+<div id="{{id}}" class="collapse position-absolute" data-parent="#team">
+  <div class="card">
+    <div class="row no-gutters">
+      <div class="col-md-2">
+        <img src={{img}} class="card-img" alt="{{name}}">
+      </div>
+      <div class="col-md-10">
+        <div class="card-body">
+          <h5 class="card-title">{{name}}</h5>
+          <p class="card-text">{{description}}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
