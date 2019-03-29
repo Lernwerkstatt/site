@@ -6,6 +6,8 @@ function prepareHome(data) {
       .format("dddd")
       .toLowerCase();
     element.dayicon = `img/calendar/${weekday}.png`;
+    element.id = "id";
+    element.id += element.link.slice(32, 48);
   });
 
   return data;
