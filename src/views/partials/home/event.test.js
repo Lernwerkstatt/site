@@ -4,6 +4,7 @@ describe("event.hbs", () => {
   it("should match the snapshot", () => {
     expect(
       event({
+        id: "seven",
         name: "Webkurs",
         date: "13.12.2018",
         time: "18:00-20:00",

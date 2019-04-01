@@ -6,7 +6,7 @@ describe("function should get right icon from date", () => {
       name: "Webkurs",
       date: "13.12.2018",
       time: "18:00-20:00",
-      eventlink: "https://www.facebook.com/pg/dielernwerkstatt/events"
+      link: "https://www.facebook.com/events/1246693872156189"
     }
   ];
 
@@ -15,7 +15,8 @@ describe("function should get right icon from date", () => {
       name: "Webkurs",
       date: "13.12.2018",
       time: "18:00-20:00",
-      eventlink: "https://www.facebook.com/pg/dielernwerkstatt/events",
+      link: "https://www.facebook.com/events/1246693872156189",
+      id: "id1246693872156189",
       dayicon: "img/calendar/thursday.png"
     }
   ];
@@ -25,7 +26,8 @@ describe("function should get right icon from date", () => {
       name: "Webkurs",
       date: "13.12.2018",
       time: "18:00-20:00",
-      eventlink: "https://www.facebook.com/pg/dielernwerkstatt/events",
+      link: "https://www.facebook.com/events/1246693872156189",
+      id: "id1246693872156189",
       dayicon: "img/calendar/sunday.png"
     }
   ];

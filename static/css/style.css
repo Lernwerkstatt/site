@@ -121,3 +121,8 @@ main {
 .cursor-pointer {
   cursor: pointer;
 }
+
+.buttonlink, .buttonlink:hover {
+  text-decoration: none;
+  color: white;
+}

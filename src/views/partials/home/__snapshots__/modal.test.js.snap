@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`modal.hbs should match the snapshot 1`] = `
+"<div class=\\"modal fade\\" id= tabindex=\\"-1\\" role=\\"dialog\\" aria-labelledby=\\"\\" aria-hidden=\\"true\\">
+  <div class=\\"modal-dialog\\" role=\\"document\\">
+    <div class=\\"modal-content\\">
+      <div class=\\"modal-header\\">
+        <h5 class=\\"modal-title text-dark\\" id=>
+          
+        </h5>
+      </div>
+      <div class=\\"modal-body text-dark\\">
+        <p>
+           Uhr
+        </p>
+        <p>
+          
+        </p>
+      </div>
+      <div class=\\"modal-footer\\">
+        <button type=\\"button\\" class=\\"btn btn-secondary\\"><a class=\\"buttonlink\\" href=\\"\\" target=\\"_blank\\">
+            Mehr Infos auf Facebook</a></button>
+        <button type=\\"button\\" class=\\"btn btn-secondary\\" data-dismiss=\\"modal\\">Schließen</button>
+      </div>
+    </div>
+  </div>
+</div>
+"
+`;

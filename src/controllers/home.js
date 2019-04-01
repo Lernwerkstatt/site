@@ -9,7 +9,8 @@ const homePath = path.join(__dirname, "../../data/home.json");
 
 const getIndex = async (req, res) => {
   try {
-    const data = await fs.readFile(homePath, { encoding: "utf-8" });
+    const data = await fs.readFile(homePath);
+    // not working - const data = await fs.readFile(homePath, { encoding: "utf-8" });
     let calendar = await events.getEvents();
     calendar = prepareHome(calendar);
     const latestPost = await posts.getLatestPost();
