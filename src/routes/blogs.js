@@ -1,8 +1,8 @@
 const express = require("express");
 const uuidv1 = require("uuid/v1");
 const moment = require("moment");
-
 const posts = require("./posts");
+const converter = require("../services/converter");
 const database = require("../services/database");
 
 const router = express.Router();
@@ -31,8 +31,8 @@ router
         title: req.body.title,
         date: moment().format("DD.MM.YYYY"),
         author: req.body.author,
-        content: database.convertPost(req.body.content),
-        imagelink: req.body.imagelink
+        content: converter.convertPost(req.body.content),
+        imagelink: "/img/blogs/Platzhalter.jpg"
       })
       .then(newBlogpost => {
         res.setHeader("Content-Type", "application/json");

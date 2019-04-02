@@ -1,6 +1,4 @@
 const mongoose = require("mongoose");
-
-const converter = require("./converter");
 const Blogposts = require("../models/blogposts");
 const { dbUrl } = require("../../config/secrets");
 const addSummary = require("../utilities/addSummary");
@@ -32,13 +30,4 @@ const newPost = convertedPost => {
   }
 };
 
-const convertPost = rawPost => {
-  try {
-    const convertedPost = converter.convertMarkdown(rawPost);
-    return convertedPost;
-  } catch (err) {
-    console.log(err);
-  }
-};
-
-module.exports = { allPosts, singlePost, newPost, convertPost };
+module.exports = { allPosts, singlePost, newPost };
