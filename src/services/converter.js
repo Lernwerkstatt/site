@@ -1,10 +1,11 @@
 const showdown = require("showdown");
 
-function convertMarkdown(newBlogpost) {
-  const converter = new showdown.Converter();
-  const convertedBlogpost = converter.makeHtml(newBlogpost);
+const convertPost = rawPost => {
+  try {
+    return new showdown.Converter().makeHtml(rawPost);
+  } catch (err) {
+    console.log(err);
+  }
+};
 
-  return convertedBlogpost;
-}
-
-module.exports = { convertMarkdown };
+module.exports = { convertPost };
