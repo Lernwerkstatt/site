@@ -1,5 +1,5 @@
 const { getIndex } = require("./home");
-const { responseMock } = require("../tests/utilities");
+const { responseMock } = require("./__mocks__/utilities");
 
 describe("Home controller", function stupidRule() {
   beforeEach(() => {
