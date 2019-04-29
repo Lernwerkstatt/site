@@ -1,4 +1,4 @@
-const fbUtils = require("./fbUtils");
+const fbUtils = require("../facebook");
 
 describe("Unify facebook event dates", () => {
   it("should return start and end times for simple events", () => {
