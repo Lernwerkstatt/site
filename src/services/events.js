@@ -6,7 +6,7 @@ const {
   extractNearestDate,
   stringifyEventDate,
   createEventLink
-} = require("./fbUtils");
+} = require("../utilities/facebook");
 
 const FB = new fb.Facebook({ version: "v3.2" });
 FB.setAccessToken(facebookToken);
