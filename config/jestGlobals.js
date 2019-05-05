@@ -1,4 +1,4 @@
-const responseMock = {
+global.responseMock = {
   viewName: "",
   data: {},
   render: function render(view, viewData) {
@@ -6,5 +6,3 @@ const responseMock = {
     this.data = viewData;
   }
 };
-
-module.exports = { responseMock };

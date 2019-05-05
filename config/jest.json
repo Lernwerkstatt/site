@@ -3,5 +3,6 @@
   "transform": {
     "\\.hbs$": "<rootDir>/config/handlebarsLoader.js"
   },
-  "testEnvironment": "node"
+  "testEnvironment": "node",
+  "setupFiles": ["<rootDir>/config/jestGlobals.js"]
 }
