@@ -29,8 +29,8 @@ const extractNearestDate = event => {
 
 const stringifyEventDate = eventDate => {
   let result = "";
-  const start = moment(eventDate.start_time);
-  const end = moment(eventDate.end_time);
+  const start = moment(eventDate.start_time).local();
+  const end = moment(eventDate.end_time).local();
 
   if (start.diff(end, "days") === 0) {
     result = `${start.format("DD.MM.YYYY HH:mm")} - ${end.format("HH:mm")}`;
