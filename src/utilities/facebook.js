@@ -7,12 +7,18 @@ const extractNearestDate = event => {
   };
 
   if (event.event_times) {
-    const upcoming = event.event_times.filter(
-      t => new Date(t.start_time) > new Date()
-    );
-    const sorted = upcoming.sort(
-      (a, b) => new Date(a.start_time) > new Date(b.start_time)
-    );
+    const allEvents = [...event.event_times, result];
+    const upcoming = allEvents.filter(t => new Date(t.start_time) > new Date());
+    const sorted = upcoming.sort((a, b) => {
+      const first = new Date(a.start_time);
+      const second = new Date(b.start_time);
+
+      if (first === second) {
+        return 0;
+      }
+
+      return first > second ? 1 : -1;
+    });
 
     result.start_time = sorted[0].start_time;
     result.end_time = sorted[0].end_time;
