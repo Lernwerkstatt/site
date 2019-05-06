@@ -3,7 +3,7 @@ const path = require("path");
 const posts = require("../routes/posts");
 const events = require("../services/events");
 
-const prepareHome = require("../utilities/prepareHome");
+const facebook = require("../utilities/facebook");
 
 const homePath = path.join(__dirname, "../../data/home.json");
 
@@ -12,7 +12,7 @@ const getIndex = async (req, res) => {
     const data = await fs.readFile(homePath);
     // not working - const data = await fs.readFile(homePath, { encoding: "utf-8" });
     let calendar = await events.getEvents();
-    calendar = prepareHome(calendar);
+    calendar = facebook.addCalendarIcon(calendar);
     const latestPost = await posts.getLatestPost();
 
     const home = JSON.parse(data);

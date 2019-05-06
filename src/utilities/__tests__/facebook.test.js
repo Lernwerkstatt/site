@@ -109,3 +109,41 @@ describe("Create link", () => {
     expect(actual).toEqual(expected);
   });
 });
+
+describe("function should get right icon from date", () => {
+  const originalData = [
+    {
+      name: "Webkurs",
+      date: "13.12.2018",
+      time: "18:00-20:00",
+      link: "https://www.facebook.com/events/1246693872156189"
+    }
+  ];
+
+  const expectedData = [
+    {
+      name: "Webkurs",
+      date: "13.12.2018",
+      time: "18:00-20:00",
+      link: "https://www.facebook.com/events/1246693872156189",
+      id: "id1246693872156189",
+      dayicon: "img/calendar/thursday.png"
+    }
+  ];
+
+  const falseData = [
+    {
+      name: "Webkurs",
+      date: "13.12.2018",
+      time: "18:00-20:00",
+      link: "https://www.facebook.com/events/1246693872156189",
+      id: "id1246693872156189",
+      dayicon: "img/calendar/sunday.png"
+    }
+  ];
+
+  test("check dayicon", () => {
+    expect(facebook.addCalendarIcon(originalData)).toEqual(expectedData);
+    expect(facebook.addCalendarIcon(originalData)).not.toEqual(falseData);
+  });
+});
