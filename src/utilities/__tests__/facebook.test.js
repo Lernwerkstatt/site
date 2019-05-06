@@ -1,4 +1,4 @@
-const fbUtils = require("../facebook");
+const facebook = require("../facebook");
 
 describe("Unify facebook event dates", () => {
   it("should return start and end times for simple events", () => {
@@ -26,7 +26,7 @@ describe("Unify facebook event dates", () => {
       start_time: "2042-02-21T17:30:00+0100",
       end_time: "2042-02-21T20:00:00+0100"
     };
-    const actual = fbUtils.extractNearestDate(event);
+    const actual = facebook.extractNearestDate(event);
     expect(actual).toEqual(expected);
   });
 
@@ -72,7 +72,7 @@ describe("Unify facebook event dates", () => {
       start_time: "2042-02-06T18:30:00+0100",
       end_time: "2042-02-06T20:15:00+0100"
     };
-    const actual = fbUtils.extractNearestDate(event);
+    const actual = facebook.extractNearestDate(event);
     expect(actual).toEqual(expected);
   });
 });
@@ -85,7 +85,7 @@ describe("Stringify event date and time", () => {
     };
 
     const expected = "27.02.2042 18:30 - 01.03.2042 10:10";
-    const actual = fbUtils.stringifyEventDate(eventDate);
+    const actual = facebook.stringifyEventDate(eventDate);
     expect(actual).toEqual(expected);
   });
   it("should return simplified date", () => {
@@ -95,7 +95,7 @@ describe("Stringify event date and time", () => {
     };
 
     const expected = "27.02.2042 18:30 - 20:15";
-    const actual = fbUtils.stringifyEventDate(eventDate);
+    const actual = facebook.stringifyEventDate(eventDate);
     expect(actual).toEqual(expected);
   });
 });
@@ -105,7 +105,45 @@ describe("Create link", () => {
     const id = "313587609361599";
 
     const expected = "https://www.facebook.com/events/313587609361599";
-    const actual = fbUtils.createEventLink(id);
+    const actual = facebook.createEventLink(id);
     expect(actual).toEqual(expected);
+  });
+});
+
+describe("function should get right icon from date", () => {
+  const originalData = [
+    {
+      name: "Webkurs",
+      date: "13.12.2018",
+      time: "18:00-20:00",
+      link: "https://www.facebook.com/events/1246693872156189"
+    }
+  ];
+
+  const expectedData = [
+    {
+      name: "Webkurs",
+      date: "13.12.2018",
+      time: "18:00-20:00",
+      link: "https://www.facebook.com/events/1246693872156189",
+      id: "id1246693872156189",
+      dayicon: "img/calendar/thursday.png"
+    }
+  ];
+
+  const falseData = [
+    {
+      name: "Webkurs",
+      date: "13.12.2018",
+      time: "18:00-20:00",
+      link: "https://www.facebook.com/events/1246693872156189",
+      id: "id1246693872156189",
+      dayicon: "img/calendar/sunday.png"
+    }
+  ];
+
+  test("check dayicon", () => {
+    expect(facebook.addCalendarIcon(originalData)).toEqual(expectedData);
+    expect(facebook.addCalendarIcon(originalData)).not.toEqual(falseData);
   });
 });

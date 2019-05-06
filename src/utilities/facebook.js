@@ -38,8 +38,21 @@ const stringifyEventDate = eventDate => {
 
 const createEventLink = id => `https://www.facebook.com/events/${id}`;
 
+const addCalendarIcon = data => {
+  data.forEach(element => {
+    const weekday = moment(element.date, "DD.MM.YYYY")
+      .format("dddd")
+      .toLowerCase();
+    element.dayicon = `img/calendar/${weekday}.png`;
+    element.id = "id";
+    element.id += element.link.slice(32, 48);
+  });
+  return data;
+};
+
 module.exports = {
   extractNearestDate,
   stringifyEventDate,
-  createEventLink
+  createEventLink,
+  addCalendarIcon
 };
