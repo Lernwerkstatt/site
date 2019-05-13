@@ -1,4 +1,4 @@
-const converter = require("../converter");
+const converter = require("./converter");
 
 describe("function should convert markdown to html", () => {
   const originalData = "**Something bold**";

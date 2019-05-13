@@ -1,4 +1,4 @@
-const addSummary = require("../addSummary");
+const addSummary = require("./addSummary");
 
 describe("function should get the summary of a blogpost", () => {
   const originalData = [
