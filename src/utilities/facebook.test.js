@@ -69,8 +69,8 @@ describe("Unify facebook event dates", () => {
     };
 
     const expected = {
-      start_time: "2042-02-06T18:30:00+0100",
-      end_time: "2042-02-06T20:15:00+0100"
+      start_time: "2042-01-16T18:30:00+0100",
+      end_time: "2042-02-27T20:15:00+0100"
     };
     const actual = facebook.extractNearestDate(event);
     expect(actual).toEqual(expected);
