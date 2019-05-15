@@ -1,14 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`posts.hbs should match the snapshot 1`] = `
-"<hr>
-<img src=\\"/img/logo.png\\" alt=\\"Blogpost\\" class=\\"img-blog\\">
-<a href=\\"/blogs/\\">
-  <h3>Blogpost</h3>
-</a>
-<p>01.01.2000 - unknown</p>
-<br>
-<p></p>
-<br>
+"<div>
+  <img src=\\"/img/logo.png\\" alt=\\"Blogpost\\" class=\\"img-blog\\">
+  <a href=\\"/blogs/\\">
+    <h3>Blogpost</h3>
+  </a>
+  <div class=\\"mb-3\\">
+    <p>01.01.2000 - unknown</p>
+  </div>
+  <div class=\\"mb-5\\" style=\\"text-overflow:ellipsis; overflow:hidden; white-space:nowrap;\\">
+    
+  </div>
+</div>
 "
 `;

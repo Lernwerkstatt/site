@@ -1,9 +1,12 @@
-<hr>
-<img src="{{ imagelink }}" alt="{{ title }}" class="img-blog">
-<a href="/blogs/{{ _id }}">
-  <h3>{{ title }}</h3>
-</a>
-<p>{{ date }} - {{ author }}</p>
-<br>
-<p>{{{ summary }}}</p>
-<br>
+<div>
+  <img src="{{ imagelink }}" alt="{{ title }}" class="img-blog">
+  <a href="/blogs/{{ _id }}">
+    <h3>{{ title }}</h3>
+  </a>
+  <div class="mb-3">
+    <p>{{ date }} - {{ author }}</p>
+  </div>
+  <div class="mb-5" style="text-overflow:ellipsis; overflow:hidden; white-space:nowrap;">
+    {{{ content }}}
+  </div>
+</div>
