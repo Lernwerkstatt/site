@@ -1,10 +1,9 @@
 const mongoose = require("mongoose");
 const Blogposts = require("../models/blogposts");
-const { dbUrl } = require("../../config/secrets");
 const addSummary = require("../utilities/addSummary");
 
 mongoose.connect(
-  dbUrl,
+  process.env.DB_HOST,
   { useNewUrlParser: true }
 );
 
