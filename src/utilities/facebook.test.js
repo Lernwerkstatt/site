@@ -98,6 +98,16 @@ describe("Stringify event date and time", () => {
     const actual = facebook.stringifyEventDate(eventDate);
     expect(actual).toEqual(expected);
   });
+  it("should return simplified date, regardless of the timezone", () => {
+    const eventDate = {
+      start_time: "2042-02-27T18:30:00+0200",
+      end_time: "2042-02-27T20:15:00+0200"
+    };
+
+    const expected = "27.02.2042 18:30 - 20:15";
+    const actual = facebook.stringifyEventDate(eventDate);
+    expect(actual).toEqual(expected);
+  });
 });
 
 describe("Create link", () => {
