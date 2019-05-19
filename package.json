@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest --config config/jest.json",
-    "start": "cross-env NODE_ENV=development && nodemon index.js",
+    "start": "cross-env NODE_ENV=development && nodemon --exec 'node -r dotenv/config' src/index.js",
     "prod": "node index.js"
   },
   "repository": {
@@ -43,6 +43,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "dotenv": "^8.0.0",
     "express": "^4.16.4",
     "express-handlebars": "^3.0.0",
     "fb": "^2.0.0",
