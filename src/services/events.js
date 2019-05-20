@@ -1,7 +1,6 @@
 /* eslint camelcase: "off" */
 
 const fb = require("fb");
-const { facebookToken, facebookPageId } = require("../../config/secrets");
 const {
   extractNearestDate,
   stringifyEventDate,
@@ -9,12 +8,12 @@ const {
 } = require("../utilities/facebook");
 
 const FB = new fb.Facebook({ version: "v3.2" });
-FB.setAccessToken(facebookToken);
+FB.setAccessToken(process.env.FB_TOKEN);
 
 const getEvents = () =>
   new Promise((resolve, reject) => {
     FB.api(
-      `/${facebookPageId}/events`,
+      `/${process.env.FB_PAGE_ID}/events`,
       "get",
       { time_filter: "upcoming" },
       res => {

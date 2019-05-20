@@ -1,3 +1,7 @@
+const dotenv = require("dotenv");
+
+dotenv.config();
+
 global.responseMock = {
   viewName: "",
   data: {},
