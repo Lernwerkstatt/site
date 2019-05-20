@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`posts.hbs should match the snapshot 1`] = `
-"<div>
+"<div class=\\"d-block-flex\\" style=\\"flex-direction:column\\">
   <img src=\\"/img/logo.png\\" alt=\\"Blogpost\\" class=\\"img-blog\\">
   <a href=\\"/blogs/\\">
     <h3>Blogpost</h3>
