@@ -9,7 +9,7 @@ exports[`posts.hbs should match the snapshot 1`] = `
   <div class=\\"mb-3\\">
     <p>01.01.2000 - unknown</p>
   </div>
-  <div class=\\"mb-5\\" style=\\"text-overflow:ellipsis; overflow:hidden; white-space:nowrap;\\">
+  <div class=\\"mb-5\\" style=\\"text-overflow:ellipsis; overflow:hidden; height: 4.3em;\\">
     
   </div>
 </div>
