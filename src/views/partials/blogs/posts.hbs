@@ -1,12 +1,12 @@
 <div class="d-block-flex" style="flex-direction:column">
   <img src="{{ imagelink }}" alt="{{ title }}" class="img-blog">
-  <a href="/blogs/{{ _id }}">
+  <a class="text-decoration-none" href="/blogs/{{ _id }}">
     <h3>{{ title }}</h3>
+    <div class="mb-3 text-dark">
+      <p>{{ date }} - {{ author }}</p>
+    </div>
+    <div class="mb-5 blog-content text-dark">
+      {{{ content }}}
+    </div>
   </a>
-  <div class="mb-3">
-    <p>{{ date }} - {{ author }}</p>
-  </div>
-  <div class="mb-5" style="text-overflow:ellipsis; overflow:hidden; height: 4.3em;">
-    {{{ content }}}
-  </div>
 </div>

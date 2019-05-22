@@ -3,15 +3,15 @@
 exports[`posts.hbs should match the snapshot 1`] = `
 "<div class=\\"d-block-flex\\" style=\\"flex-direction:column\\">
   <img src=\\"/img/logo.png\\" alt=\\"Blogpost\\" class=\\"img-blog\\">
-  <a href=\\"/blogs/\\">
+  <a class=\\"text-decoration-none\\" href=\\"/blogs/\\">
     <h3>Blogpost</h3>
+    <div class=\\"mb-3 text-dark\\">
+      <p>01.01.2000 - unknown</p>
+    </div>
+    <div class=\\"mb-5 blog-content text-dark\\">
+      
+    </div>
   </a>
-  <div class=\\"mb-3\\">
-    <p>01.01.2000 - unknown</p>
-  </div>
-  <div class=\\"mb-5\\" style=\\"text-overflow:ellipsis; overflow:hidden; height: 4.3em;\\">
-    
-  </div>
 </div>
 "
 `;

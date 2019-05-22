@@ -126,3 +126,9 @@ main {
   text-decoration: none;
   color: white;
 }
+
+.blog-content {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 4.3em;
+}
