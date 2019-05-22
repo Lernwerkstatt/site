@@ -128,7 +128,7 @@ main {
 }
 
 .blog-content {
-  text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden;
-  height: 4.3em;
+  text-overflow: ellipsis;
 }
