@@ -7,7 +7,20 @@ People of all ages are welcome to join us!
 
 [Current website](http://en-die-lernwerkstatt.strikingly.com/)
 
-## Change style
+## Development
+
+1. Create `.env` and populate it with needed data.
+
+```
+DB_HOST=XXX
+FB_TOKEN=XXX
+FB_PAGE_ID=XXX
+```
+
+2. Install dependencies with `npm install`
+3. Run development server `npm start`
+
+### Change Bootsrtap style
 
 1. Import `/static/css/_variables.scss` to [Boostrap.build](https://bootstrap.build/app)
 2. Change style.
