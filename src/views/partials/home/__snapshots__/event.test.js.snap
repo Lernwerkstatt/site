@@ -2,13 +2,15 @@
 
 exports[`event.hbs should match the snapshot 1`] = `
 "<li class=\\"list-group-item\\">
-  <a href=\\"#\\" data-toggle=\\"modal\\" data-target=\\"#seven\\">
-    <p class=\\"lead mb-0\\">
-      <img src=\\"img/calendar/sunday.png\\" />
-      Webkurs
-    </p>
-    <small class=\\"text-muted\\">13.12.2018</small>
-  </a>
+  <div class=\\"media\\">
+    <img class=\\"align-self-center mr-2\\" src=\\"img/calendar/sunday.png\\" />
+    <div class=\\"media-body\\">
+      <a class=\\"lead\\" href=\\"#\\" data-toggle=\\"modal\\" data-target=\\"#seven\\">
+        Webkurs
+      </a>
+      <p class=\\"text-muted mb-0\\">13.12.2018</p>
+    </div>
+  </div>
 </li>
 "
 `;
