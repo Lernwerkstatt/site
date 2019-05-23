@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const Blogposts = require("../models/blogposts");
-const addSummary = require("../utilities/addSummary");
 
 mongoose.connect(
   process.env.DB_HOST,
@@ -9,8 +8,7 @@ mongoose.connect(
 
 const allPosts = Blogposts.find({})
   .then(blogposts => {
-    const postWithSummary = addSummary(blogposts);
-    const addObject = { blogs: postWithSummary };
+    const addObject = { blogs: blogposts };
     return addObject;
   })
   .catch(err => console.log(err));

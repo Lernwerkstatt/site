@@ -126,3 +126,31 @@ main {
   text-decoration: none;
   color: white;
 }
+
+.blog-content {
+  overflow: hidden;
+  position: relative;
+  line-height: 1.2em;
+  max-height: 3.6em;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.blog-content:after {
+  content: '…';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.blog-content:before {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 2em;
+  height: 1em;
+  margin-top: 0.2em;
+  background: white;
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgb(255, 255, 255) 50%);
+}
