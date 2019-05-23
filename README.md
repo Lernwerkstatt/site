@@ -5,8 +5,8 @@
 > „Die Lernwerkstatt“ (Learning Workshop) is a space where learning is a collaborative, creative and self-determined activity.
 > People of all ages are welcome to join us!
 
-- [Legacy(legacy) website](http://en-die-lernwerkstatt.strikingly.com/)
-- [New website](https://lernwerkstatt-site.azurewebsites.net/)
+- [Current(legacy) website](http://en-die-lernwerkstatt.strikingly.com/)
+- [New(developing) website](https://lernwerkstatt-site.azurewebsites.net/)
 
 ## Development
 
