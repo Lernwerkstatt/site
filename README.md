@@ -6,3 +6,9 @@
 People of all ages are welcome to join us!
 
 [Current website](http://en-die-lernwerkstatt.strikingly.com/)
+
+## Change style
+
+1. Import `/static/css/_variables.scss` to [Boostrap.build](https://bootstrap.build/app)
+2. Change style.
+3. Export everything to `/static/css` folder.
