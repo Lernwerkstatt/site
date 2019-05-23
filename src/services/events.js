@@ -25,20 +25,19 @@ const getEvents = () =>
         const result = [];
 
         res.data.forEach(event => {
-          const { id, name, description } = event;
+          const { name, description } = event;
           const nearestDate = extractNearestDate(event);
           const date = stringifyEventDate(nearestDate);
-          const link = createEventLink(id);
+          const link = createEventLink(nearestDate.id);
 
           result.push({ name, nearestDate, date, link, description });
         });
 
         result.sort(
           (a, b) =>
-            new Date(a.nearestDate.start_time) >
+            new Date(a.nearestDate.start_time) -
             new Date(b.nearestDate.start_time)
         );
-        result.forEach(event => delete event.nearestDate);
         resolve(result);
       }
     );
