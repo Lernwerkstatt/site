@@ -3,7 +3,8 @@ const moment = require("moment");
 const extractNearestDate = event => {
   const result = {
     start_time: event.start_time,
-    end_time: event.end_time
+    end_time: event.end_time,
+    id: event.id
   };
 
   if (event.event_times) {
@@ -22,6 +23,7 @@ const extractNearestDate = event => {
 
     result.start_time = sorted[0].start_time;
     result.end_time = sorted[0].end_time;
+    result.id = sorted[0].id;
   }
 
   return result;

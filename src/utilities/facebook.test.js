@@ -24,7 +24,8 @@ describe("Unify facebook event dates", () => {
 
     const expected = {
       start_time: "2042-02-21T17:30:00+0100",
-      end_time: "2042-02-21T20:00:00+0100"
+      end_time: "2042-02-21T20:00:00+0100",
+      id: "249785849283386"
     };
     const actual = facebook.extractNearestDate(event);
     expect(actual).toEqual(expected);
@@ -70,7 +71,8 @@ describe("Unify facebook event dates", () => {
 
     const expected = {
       start_time: "2042-01-16T18:30:00+0100",
-      end_time: "2042-02-27T20:15:00+0100"
+      end_time: "2042-02-27T20:15:00+0100",
+      id: "367250607382263"
     };
     const actual = facebook.extractNearestDate(event);
     expect(actual).toEqual(expected);
