@@ -31,40 +31,12 @@
     <div class="row mt-2 mb-3">
       <div class="col-sm-12">
         <div class="card-deck text-center">
-          <div class="card easy cursor-pointer">
-            <div class="card-body">
-              <h3 class="card-title">{{card.[0].title}}</h3>
-              <p class="card-text">
-                {{card.[0].text}}
-              </p>
-            </div>
-          </div>
-          <div class="card easy cursor-pointer">
-            <div class="card-body">
-              <h3 class="card-title">{{card.[1].title}}</h3>
-              <p class="card-text text-info">
-                {{calendar.[7].name}}
-              </p>
-              <p class="card-text">
-                {{calendar.[7].date}} -
-                {{calendar.[7].time}}
-              </p>
-            </div>
-          </div>
-          <div class="card easy cursor-pointer">
-            <div class="card-body">
-              <h3 class="card-title">{{card.[2].title}}</h3>
-              <p class="card-text text-info">
-                {{card.[2].date}} -
-                {{card.[2].author}}
-              </p>
-              <p class="card-text">
-                {{card.[2].blogtitle}}
-              </p>
-            </div>
-          </div>
+          {{#each card}}
+          {{> home/card this}}
+          {{/each}}
         </div>
       </div>
     </div>
   </div>
+</div>
 </div>

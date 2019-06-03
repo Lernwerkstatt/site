@@ -1,28 +1,35 @@
-const fs = require("fs").promises;
-const path = require("path");
 const posts = require("../routes/posts");
 const events = require("../services/events");
 
 const facebook = require("../utilities/facebook");
 
-const homePath = path.join(__dirname, "../../data/home.json");
-
 const getIndex = async (req, res) => {
   try {
-    const data = await fs.readFile(homePath);
-    // not working - const data = await fs.readFile(homePath, { encoding: "utf-8" });
     let calendar = await events.getEvents();
     calendar = facebook.addCalendarIcon(calendar);
     const latestPost = await posts.getLatestPost();
 
-    const home = JSON.parse(data);
-    home.card[2].blogtitle = latestPost.title;
-    home.card[2].author = latestPost.author;
-    home.card[2].date = latestPost.date;
+    const card = [
+      // First static block
+      {
+        title: "Lorem Ipsum 1",
+        text: "Doler sit amet."
+      },
+      // Second facebook block
+      {
+        title: calendar[0].name,
+        text: calendar[0].description
+      },
+      // Third blog block
+      {
+        title: latestPost.title,
+        text: latestPost.content
+      }
+    ];
 
     const result = {
       calendar,
-      card: home.card
+      card
     };
     res.render("home", result);
   } catch (error) {
