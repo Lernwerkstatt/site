@@ -7,7 +7,7 @@ const {
   createEventLink
 } = require("../utilities/facebook");
 
-const FB = new fb.Facebook({ version: "v3.2" });
+const FB = new fb.Facebook({ version: "v3.3" });
 FB.setAccessToken(process.env.FB_TOKEN);
 
 const getEvents = () =>
