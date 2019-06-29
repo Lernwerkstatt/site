@@ -77,11 +77,11 @@ main {
 }
 
 .easy {
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .easy:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
   border: 1px solid gray;
 }
 
@@ -156,5 +156,14 @@ main {
 }
 
 .home-card {
-  min-height: 200px;
+  min-height: 250px;
+  background-size: cover;
+}
+.home-card:hover .text-light {
+  transition: all 0.3s ease-in-out;
+  color: #373a3c !important;
+}
+.home-card:hover .bg-dark {
+  transition: all 0.3s ease-in-out;
+  background-color: #f8f9fa !important;
 }
