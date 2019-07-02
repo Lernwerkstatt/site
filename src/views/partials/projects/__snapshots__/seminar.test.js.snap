@@ -6,9 +6,9 @@ exports[`seminar.hbs should match the snapshot 1`] = `
     <h5 class=\\"card-title\\">Workshop</h5>
   </a>
   <p class=\\"card-text\\">This is a workshop</p>
-  <a class=\\"d-block\\" href=http://www.die-lernwerkstatt.org/ target=\\"_blank\\">http://www.die-lernwerkstatt.org/</a>
-  <a class=\\"d-block\\" href=http://www.die-lernwerkstatt.org/ target=\\"_blank\\">http://www.die-lernwerkstatt.org/</a>
-  <a class=\\"d-block\\" href=http://www.die-lernwerkstatt.org/ target=\\"_blank\\">http://www.die-lernwerkstatt.org/</a>
+  <a class=\\"d-block\\" href=\\"http://www.die-lernwerkstatt.org/\\" target=\\"_blank\\">http://www.die-lernwerkstatt.org/</a>
+  <a class=\\"d-block\\" href=\\"http://www.die-lernwerkstatt.org/\\" target=\\"_blank\\">http://www.die-lernwerkstatt.org/</a>
+  <a class=\\"d-block\\" href=\\"http://www.die-lernwerkstatt.org/\\" target=\\"_blank\\">http://www.die-lernwerkstatt.org/</a>
   <p class=\\"card-text\\">More information</p>
 </div>
 "
