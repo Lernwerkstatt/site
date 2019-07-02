@@ -1,12 +1,7 @@
-<div class="d-block-flex" style="flex-direction:column">
-  <img src="{{ imagelink }}" alt="{{ title }}" class="img-blog">
-  <a class="text-decoration-none" href="/blogs/{{ _id }}">
-    <h3>{{ title }}</h3>
-    <div class="mb-3 text-dark">
-      <p>{{ date }} - {{ author }}</p>
-    </div>
-    <div class="mb-5 blog-content text-dark">
-      {{{ content }}}
-    </div>
-  </a>
+<div class="card mt-5 mb-5">
+  <img class="card-img-top" src="{{ imagelink }}" alt="{{ title }}">
+  <div class="card-body">
+    <h3 class="card-title"><a href="/blogs/{{ _id }}">{{ title }}</a></h3>
+    <p class="card-text"><small class="text-muted">{{ author }}, {{ date }}</small></p>
+  </div>
 </div>
