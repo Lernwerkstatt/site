@@ -13,17 +13,24 @@ const getIndex = async (req, res) => {
       // First static block
       {
         title: "Lorem Ipsum 1",
-        text: "Doler sit amet."
+        text: "Doler sit amet.",
+        link: "/404"
+        // image: latestPost.imagelink
       },
       // Second facebook block
       {
         title: calendar[0].name,
-        text: calendar[0].description
+        text: calendar[0].date,
+        link: calendar[0].link
+        // image: latestPost.imagelink
       },
       // Third blog block
       {
         title: latestPost.title,
-        text: latestPost.content
+        text: `${latestPost.date} | ${latestPost.author}`,
+        // eslint-disable-next-line no-underscore-dangle
+        link: `/blogs/${latestPost._id}`,
+        image: latestPost.imagelink
       }
     ];
 
