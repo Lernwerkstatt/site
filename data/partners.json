@@ -3,37 +3,37 @@
     {
       "name": "BKJ Kultur Macht Stark",
       "id": "bkj",
-      "img": "img/partners/BKJ_KulturMachtStark.jpg",
+      "img": "img/partners/bkj.png"
     },
     {
       "name": "KPB Projektfonds Kulturelle Bildung",
       "id": "kpb",
-      "img": "img/partners/kpb-logo_projektfonds-kulturelle-bildung_pf.jpg",
+      "img": "img/partners/kpb.jpg"
     },
     {
       "name": "LottoStiftung",
       "id": "lotto",
-      "img": "img/partners/LOTTO-Stiftung_4c_Transparent.jpg",
+      "img": "img/partners/lotto.jpg"
     },
     {
       "name": "Paritaet",
       "id": "paritaet",
-      "img": "img/partners/Paritaet_Logo_klein.jpg",
+      "img": "img/partners/paritaet.jpg"
     },
     {
       "name": "QM Berlin Wortmarke",
       "id": "qm",
-      "img": "img/partners/qm_berlin_wortmarke_berlin.jpg",
+      "img": "img/partners/qm.jpg"
     },
     {
       "name": "Sen InArSo",
       "id": "seninarso",
-      "img": "img/partners/Sen_InArSo_logo_hoch_RGB.jpg",
+      "img": "img/partners/senat.jpg"
     },
     {
       "name": "Stiftung Pfefferwerk",
       "id": "pfefferwork",
-      "img": "img/partners/Stiftung_Pfefferwerk.jpg",
+      "img": "img/partners/pfefferwerk.jpg"
     }
   ]
 }
