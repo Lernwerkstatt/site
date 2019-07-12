@@ -1,15 +1,16 @@
-{{> main/title title="Partner" subtitle="Wir sind Die Lernwerkstatt"}}
+{{> main/title title="Unsere Partner"}}
 <div class="container">
   <div class="d-flex flex-wrap justify-content-center">
-    <p>
-    Wir bedanken uns herzlich bei unseren bisherigen Förderpartnern: Stiftung Pfefferwerk; Quartiermeister; Stiftung Deutsche Klassenlotterie Berlin; Der Paritätische Berlin; Senatsverwaltung für Gesundheit und Soziales; Senatsverwaltung für Integration, Arbeit und Soziales; Berliner Projektfonds Kulturelle Bildung; Bundesvereinigung Kulturelle Kinder- und Jugendbildung e.V.; Bundesministerium für Bildung und Forschung.
-    </p>
-
-    <div class="col" id="partners">
-      {{#each partner}}
-      <div>foobarrr</div>
+    <h3>Wir bedanken uns herzlich bei unseren bisherigen Förderpartnern: </h3>
+    <h5>Stiftung Pfefferwerk; Quartiermeister; Stiftung
+      Deutsche Klassenlotterie Berlin; Der Paritätische Berlin; Senatsverwaltung für Gesundheit und Soziales;
+      Senatsverwaltung für Integration, Arbeit und Soziales; Berliner Projektfonds Kulturelle Bildung;
+      Bundesvereinigung
+      Kulturelle Kinder- und Jugendbildung e.V.; Bundesministerium für Bildung und Forschung.</h5>
+    <div class="col" id="team">
+      {{#each partners}}
+      {{> partners/partner this}}
       {{/each}}
     </div>
-
   </div>
 </div>
