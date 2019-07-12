@@ -1,12 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`card.hbs should match the snapshot 1`] = `
-"<div class=\\"card mb-3 easy cursor-pointer\\">
+"<div class=\\"card mb-3 easy cursor-pointer position-relative\\">
   <a href=\\"\\"
     class=\\"home-card card-body d-flex flex-column align-items-center justify-content-end text-decoration-none\\"
     style=\\"background-image: url()\\">
     <p class=\\"h3 d-inline-block p-2 text-light bg-dark\\">Aktuelles</p>
     <p class=\\"h6 d-inline-block p-2 text-light bg-dark\\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint laboriosam voluptates.</p>
+    <span class=\\"home-card-badge badge badge-light position-absolute\\"></span>
   </a>
 </div>
 "
