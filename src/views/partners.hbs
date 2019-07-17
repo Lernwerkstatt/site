@@ -2,12 +2,12 @@
 <div class="container">
   <div class="d-flex flex-wrap justify-content-center">
     <h3>Wir bedanken uns herzlich bei unseren bisherigen Förderpartnern: </h3>
-    <ul style="list-style-type:none;">
+    <ul id="partner-names">
       {{#each partners}}
       <li>{{name}}</li>
       {{/each}}
     </ul>
-    <div class="col" id="team">
+    <div class="row" id="partner-logos">
       {{#each partners}}
       {{> partners/partner this}}
       {{/each}}
