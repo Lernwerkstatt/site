@@ -32,13 +32,13 @@
     },
     {
       "name": "Senatsverwaltung für Gesundheit und Soziales",
-      "id": "seninarso",
-      "img": "img/partners/senat.jpg"
+      "id": null,
+      "img": null
     },
     {
       "name": "Senatsverwaltung für Integration, Arbeit und Soziales",
-      "id": null,
-      "img": null
+      "id": "seninarso",
+      "img": "img/partners/senat.jpg"
     },
     {
       "name": "Stiftung Pfefferwerk",
