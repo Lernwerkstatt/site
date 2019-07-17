@@ -1,32 +1,32 @@
 {
   "partners": [
     {
-      "name": "BKJ Kultur Macht Stark",
+      "name": "Bundesvereinigung Kulturelle Kinder- und Jugendbildung e.V., Bundesministerium für Bildung und Forschung",
       "id": "bkj",
       "img": "img/partners/bkj.png"
     },
     {
-      "name": "KPB Projektfonds Kulturelle Bildung",
+      "name": "Berliner Projektfonds Kulturelle Bildung",
       "id": "kpb",
       "img": "img/partners/kpb.jpg"
     },
     {
-      "name": "LottoStiftung",
+      "name": "Stiftung Deutsche Klassenlotterie Berlin",
       "id": "lotto",
       "img": "img/partners/lotto.jpg"
     },
     {
-      "name": "Paritaet",
+      "name": "Der Paritätische Berlin",
       "id": "paritaet",
       "img": "img/partners/paritaet.jpg"
     },
     {
-      "name": "QM Berlin Wortmarke",
+      "name": "Quartiermeister",
       "id": "qm",
       "img": "img/partners/qm.jpg"
     },
     {
-      "name": "Sen InArSo",
+      "name": "Senatsverwaltung für Gesundheit und Soziales, Senatsverwaltung für Integration, Arbeit und Soziales",
       "id": "seninarso",
       "img": "img/partners/senat.jpg"
     },

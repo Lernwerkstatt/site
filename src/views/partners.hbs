@@ -2,11 +2,11 @@
 <div class="container">
   <div class="d-flex flex-wrap justify-content-center">
     <h3>Wir bedanken uns herzlich bei unseren bisherigen Förderpartnern: </h3>
-    <h5>Stiftung Pfefferwerk; Quartiermeister; Stiftung
-      Deutsche Klassenlotterie Berlin; Der Paritätische Berlin; Senatsverwaltung für Gesundheit und Soziales;
-      Senatsverwaltung für Integration, Arbeit und Soziales; Berliner Projektfonds Kulturelle Bildung;
-      Bundesvereinigung
-      Kulturelle Kinder- und Jugendbildung e.V.; Bundesministerium für Bildung und Forschung.</h5>
+    <ul>
+      {{#each partners}}
+      <li>{{name}}</li>
+      {{/each}}
+    </ul>
     <div class="col" id="team">
       {{#each partners}}
       {{> partners/partner this}}
