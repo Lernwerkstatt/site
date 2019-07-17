@@ -7,6 +7,11 @@
     },
     {
       "name": "Bundesministerium für Bildung und Forschung",
+      "id": "bbf",
+      "img": "img/partners/bbf.png"
+    },
+    {
+      "name": "Bundesministerium für Bildung und Forschung",
       "id": null,
       "img": null
     },
