@@ -1,9 +1,14 @@
 {
   "partners": [
     {
-      "name": "Bundesvereinigung Kulturelle Kinder- und Jugendbildung e.V., Bundesministerium für Bildung und Forschung",
+      "name": "Bundesvereinigung Kulturelle Kinder- und Jugendbildung e.V.",
       "id": "bkj",
       "img": "img/partners/bkj.png"
+    },
+    {
+      "name": "Bundesministerium für Bildung und Forschung",
+      "id": null,
+      "img": null
     },
     {
       "name": "Berliner Projektfonds Kulturelle Bildung",
@@ -26,9 +31,14 @@
       "img": "img/partners/qm.jpg"
     },
     {
-      "name": "Senatsverwaltung für Gesundheit und Soziales, Senatsverwaltung für Integration, Arbeit und Soziales",
+      "name": "Senatsverwaltung für Gesundheit und Soziales",
       "id": "seninarso",
       "img": "img/partners/senat.jpg"
+    },
+    {
+      "name": "Senatsverwaltung für Integration, Arbeit und Soziales",
+      "id": null,
+      "img": null
     },
     {
       "name": "Stiftung Pfefferwerk",
