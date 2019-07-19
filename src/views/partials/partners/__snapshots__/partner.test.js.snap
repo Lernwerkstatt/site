@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`partner.hbs should match the snapshot 1`] = `
-"<div class=\\"row w-50\\">
-  <img src=\\"img/logo.png\\" class=\\"card-img\\" alt=\\"Partner X\\">
+"<div class=\\"col-sm-4 align-self-center\\">
+  <img src=\\"img/logo.png\\" class=\\"partner-img\\" alt=\\"Partner X\\">
 </div>
 "
 `;
