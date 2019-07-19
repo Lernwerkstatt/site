@@ -13,6 +13,7 @@ const getIndex = async (req, res) => {
     const card = [
       // First static block
       {
+        badge: "Über Uns",
         title: "Lorem Ipsum 1",
         text: "Doler sit amet.",
         link: "/404"
@@ -20,6 +21,7 @@ const getIndex = async (req, res) => {
       },
       // Second facebook block
       {
+        badge: "Termin",
         title: calendar[0].name,
         text: calendar[0].date,
         link: calendar[0].link,
@@ -27,6 +29,7 @@ const getIndex = async (req, res) => {
       },
       // Third blog block
       {
+        badge: "Blog",
         title: latestPost.title,
         text: `${latestPost.date} | ${latestPost.author}`,
         // eslint-disable-next-line no-underscore-dangle
