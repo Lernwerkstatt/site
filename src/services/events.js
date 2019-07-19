@@ -13,8 +13,8 @@ FB.setAccessToken(process.env.FB_TOKEN);
 const getEventImage = id =>
   new Promise((resolve, reject) => {
     FB.api(`/${id}?fields=cover`, res => {
+      console.log(res);
       if (!res || res.error) {
-        console.log(!res ? "error occurred" : res.error);
         reject(res);
       }
       resolve(res.cover.source);
@@ -29,7 +29,6 @@ const getEvents = () =>
       { time_filter: "upcoming" },
       res => {
         if (!res || res.error) {
-          console.log(!res ? "error occurred" : res.error);
           reject(res);
         }
 
