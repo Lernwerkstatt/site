@@ -171,3 +171,18 @@ main {
   top: 0;
   right: 0;
 }
+
+.partner-img {
+  width: 80%;
+  height: auto;
+  margin-bottom: 10%
+}
+
+.two-columns {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+}
