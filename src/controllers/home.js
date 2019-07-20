@@ -13,10 +13,10 @@ const getIndex = async (req, res) => {
       // First static block
       {
         badge: "Über Uns",
-        title: "Lorem Ipsum 1",
-        text: "Doler sit amet.",
-        link: "/404"
-        // image: latestPost.imagelink
+        title: "Unsere Werte",
+        text: "Dafür steht die Lernwerkstatt.",
+        link: "/values",
+        image: "img/home/pencils.png"
       },
       // Second facebook block
       {
