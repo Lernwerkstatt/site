@@ -12,7 +12,7 @@ exports[`header.hbs should match the snapshot 1`] = `
       <div class=\\"collapse navbar-collapse\\" id=\\"navbar\\">
         <ul class=\\"navbar-nav mr-auto\\">
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" href=\\"/learn\\">Lernen</a>
+            <a class=\\"nav-link text-light\\" href=\\"/values\\">Unsere Werte</a>
           </li>
           <li class=\\"nav-item\\">
             <a class=\\"nav-link text-light\\" href=\\"/projects\\">Projekte</a>
