@@ -9,8 +9,9 @@
 - [New(developing) website](https://lernwerkstatt-site.azurewebsites.net/)
 
 ## Development
-
-1. Create `.env` and populate it with needed data.
+1. Install [node](https://nodejs.org/en/)
+2. Install [npm](https://www.npmjs.com/)
+3. Create an `.env` file in `site/` and ask a teammate for the required keys.
 
 ```
 DB_HOST=XXX
@@ -18,10 +19,10 @@ FB_TOKEN=XXX
 FB_PAGE_ID=XXX
 ```
 
-2. Install dependencies with `npm install`
-3. Run development server `npm start`
+4. Install dependencies with `npm install`
+5. Run the development server with `npm start`
 
-### Change Bootsrtap style
+### Change Bootstrap style
 
 1. Import `/static/css/_variables.scss` to [Boostrap.build](https://bootstrap.build/app)
 2. Change style.
