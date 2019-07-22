@@ -10,6 +10,17 @@ const {
 const FB = new fb.Facebook({ version: "v3.3" });
 FB.setAccessToken(process.env.FB_TOKEN);
 
+const getEventImage = id =>
+  new Promise((resolve, reject) => {
+    FB.api(`/${id}?fields=cover`, res => {
+      console.log(res);
+      if (!res || res.error) {
+        reject(res);
+      }
+      resolve(res.cover.source);
+    });
+  });
+
 const getEvents = () =>
   new Promise((resolve, reject) => {
     FB.api(
@@ -18,20 +29,28 @@ const getEvents = () =>
       { time_filter: "upcoming" },
       res => {
         if (!res || res.error) {
-          console.log(!res ? "error occurred" : res.error);
           reject(res);
         }
 
         const result = [];
 
-        res.data.forEach(event => {
-          const { name, description } = event;
-          const nearestDate = extractNearestDate(event);
-          const date = stringifyEventDate(nearestDate);
-          const link = createEventLink(nearestDate.id);
+        if (res.data) {
+          res.data.forEach(event => {
+            const { id, name, description } = event;
+            const nearestDate = extractNearestDate(event);
+            const date = stringifyEventDate(nearestDate);
+            const link = createEventLink(nearestDate.id);
 
-          result.push({ name, nearestDate, date, link, description });
-        });
+            result.push({
+              id,
+              name,
+              nearestDate,
+              date,
+              link,
+              description
+            });
+          });
+        }
 
         result.sort(
           (a, b) =>
@@ -44,5 +63,6 @@ const getEvents = () =>
   });
 
 module.exports = {
-  getEvents
+  getEvents,
+  getEventImage
 };

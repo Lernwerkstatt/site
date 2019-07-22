@@ -6,24 +6,20 @@ mongoose.connect(
   { useNewUrlParser: true }
 );
 
-const allPosts = Blogposts.find({})
-  .then(blogposts => {
-    const addObject = { blogs: blogposts };
-    return addObject;
-  })
-  .catch(err => console.log(err));
+const allPosts = Blogposts.find({}).then(blogposts => {
+  const addObject = { blogs: blogposts };
+  return addObject;
+});
 
 const singlePost = paramsId =>
-  Blogposts.find({ _id: paramsId })
-    .then(result => result)
-    .catch(err => console.log(err));
+  Blogposts.find({ _id: paramsId }).then(result => result);
 
 const newPost = convertedPost => {
   try {
     const createPost = Blogposts.create(convertedPost);
     return createPost;
   } catch (err) {
-    console.log(err);
+    // console.log(err);
   }
 };
 
