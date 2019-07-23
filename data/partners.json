@@ -1,0 +1,49 @@
+{
+  "partners": [
+    {
+      "name": "Bundesvereinigung Kulturelle Kinder- und Jugendbildung e.V.",
+      "id": "bkj",
+      "img": "img/partners/bkj.png"
+    },
+    {
+      "name": "Bundesministerium für Bildung und Forschung",
+      "id": "bbf",
+      "img": "img/partners/bbf.png"
+    },
+    {
+      "name": "Berliner Projektfonds Kulturelle Bildung",
+      "id": "kpb",
+      "img": "img/partners/kpb.jpg"
+    },
+    {
+      "name": "Stiftung Deutsche Klassenlotterie Berlin",
+      "id": "lotto",
+      "img": "img/partners/lotto.jpg"
+    },
+    {
+      "name": "Der Paritätische Berlin",
+      "id": "paritaet",
+      "img": "img/partners/paritaet.jpg"
+    },
+    {
+      "name": "Quartiermeister",
+      "id": "qm",
+      "img": "img/partners/qm.jpg"
+    },
+    {
+      "name": "Senatsverwaltung für Gesundheit und Soziales",
+      "id": null,
+      "img": null
+    },
+    {
+      "name": "Senatsverwaltung für Integration, Arbeit und Soziales",
+      "id": "seninarso",
+      "img": "img/partners/senat.jpg"
+    },
+    {
+      "name": "Stiftung Pfefferwerk",
+      "id": "pfefferwork",
+      "img": "img/partners/pfefferwerk.jpg"
+    }
+  ]
+}

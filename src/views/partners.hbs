@@ -1,0 +1,18 @@
+{{> main/title title="Unsere Partner"}}
+<div class="container">
+  <div class="d-flex flex-wrap">
+    <h3 class="mb-3">Wir bedanken uns herzlich bei unseren bisherigen Förderpartnern: </h3>
+    <ul id="partner-names" class="two-columns p-0" style="list-style-type:none;">
+      {{#each partners}}
+      <li class="mb-1">
+        {{name}}
+      </li>
+      {{/each}}
+    </ul>
+    <div class="row" id="partner-logos">
+      {{#each partners}}
+      {{> partners/partner this}}
+      {{/each}}
+    </div>
+  </div>
+</div>
