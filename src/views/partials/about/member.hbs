@@ -1,18 +1,33 @@
-<div class="d-inline-block mr-3 pb-3 cursor-pointer" data-toggle="collapse" data-target="#{{id}}">
+<div class="d-inline-block mr-3 pb-3 cursor-pointer" data-toggle="modal" data-target="#{{id}}">
   <img src="{{img}}" alt="{{name}}" class="img-fluid" style="height: 160px; width: 160px;">
   <p class="lead text-center">{{name}}</p>
 </div>
-<div id="{{id}}" class="collapse position-absolute" data-parent="#team">
-  <div class="card">
-    <div class="row no-gutters">
-      <div class="col-md-2">
-        <img src="{{img}}" class="card-img" alt="{{name}}">
+<div id="{{id}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="{{id}}Label" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title" id="{{id}}Label">{{name}}</h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
       </div>
-      <div class="col-md-10">
-        <div class="card-body">
-          <h5 class="card-title">{{name}}</h5>
-          <p class="card-text">{{description}}</p>
+      <div class="modal-body">
+        <div class="row mt-3 mb-3">
+          <div class="col-sm-3 pr-0 text-center mb-3">
+            <img src="{{img}}" alt="{{name}}" class="" style="width: 100%; height: auto; max-width: 160px">
+          </div>
+          <!-- left align text for desktop -->
+          <div class="col-sm-9 text-left d-none d-sm-block">
+            {{description}}
+          </div>
+          <!-- center align text for mobile -->
+          <div class="col-sm-9 text-center d-sm-none">
+            {{description}}
+          </div>
         </div>
+      </div>
+      <div class="modal-footer justify-content-around d-sm-none">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
       </div>
     </div>
   </div>

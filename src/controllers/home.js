@@ -8,23 +8,24 @@ const getIndex = async (req, res) => {
     let calendar = await events.getEvents();
     calendar = facebook.addCalendarIcon(calendar);
     const latestPost = await posts.getLatestPost();
+    const facebookImage = await events.getEventImage(calendar[0].id);
 
     const card = [
       // First static block
       {
         badge: "Über Uns",
-        title: "Lorem Ipsum 1",
-        text: "Doler sit amet.",
-        link: "/404"
-        // image: latestPost.imagelink
+        title: "Unsere Werte",
+        text: "Dafür steht die Lernwerkstatt.",
+        link: "/values",
+        image: "img/home/pencils.png"
       },
       // Second facebook block
       {
         badge: "Termin",
         title: calendar[0].name,
         text: calendar[0].date,
-        link: calendar[0].link
-        // image: latestPost.imagelink
+        link: calendar[0].link,
+        image: facebookImage
       },
       // Third blog block
       {
