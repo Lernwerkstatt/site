@@ -138,7 +138,6 @@ describe("function should get right icon from date", () => {
       date: "13.12.2018",
       time: "18:00-20:00",
       link: "https://www.facebook.com/events/1246693872156189",
-      id: "id1246693872156189",
       dayicon: "img/calendar/thursday.png"
     }
   ];
@@ -149,7 +148,6 @@ describe("function should get right icon from date", () => {
       date: "13.12.2018",
       time: "18:00-20:00",
       link: "https://www.facebook.com/events/1246693872156189",
-      id: "id1246693872156189",
       dayicon: "img/calendar/sunday.png"
     }
   ];
