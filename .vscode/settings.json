@@ -9,19 +9,6 @@
   "eslint.options": {
     "configFile": "./config/.eslintrc.json"
   },
-  "editor.formatOnSave": true,
-  "workbench.colorCustomizations": {
-    "activityBar.background": "#d76490",
-    "activityBar.foreground": "#15202b",
-    "activityBar.inactiveForeground": "#15202b99",
-    "activityBarBadge.background": "#92d867",
-    "activityBarBadge.foreground": "#15202b",
-    "titleBar.activeBackground": "#cc3c73",
-    "titleBar.inactiveBackground": "#cc3c7399",
-    "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.inactiveForeground": "#e7e7e799",
-    "statusBar.background": "#cc3c73",
-    "statusBarItem.hoverBackground": "#d76490",
-    "statusBar.foreground": "#e7e7e7"
+  "editor.formatOnSave": true
   }
 }
