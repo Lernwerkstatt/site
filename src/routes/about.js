@@ -1,16 +1,10 @@
 const express = require("express");
-const path = require("path");
-const fs = require("fs");
+const team = require("../../data/team.json");
 
 const router = express.Router();
 
-const teamPath = path.join(__dirname, "../../data/team.json");
-
 router.get("/about", (req, res) => {
-  fs.readFile(teamPath, (err, data) => {
-    if (err) throw err;
-    res.render("about", JSON.parse(data));
-  });
+  res.render("about", team);
 });
 
 module.exports = router;
