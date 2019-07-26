@@ -52,6 +52,8 @@ const addCalendarIcon = data => {
       .format("dddd")
       .toLowerCase();
     element.dayicon = `img/calendar/${weekday}.png`;
+    element.tag = "tag";
+    element.tag += element.link.slice(32, 48);
   });
   return data;
 };
