@@ -7,13 +7,14 @@ const {
   createEventLink
 } = require("../utilities/facebook");
 
-const FB = new fb.Facebook({ version: "v3.3" });
+const FB = new fb.Facebook({
+  version: "v3.3"
+});
 FB.setAccessToken(process.env.FB_TOKEN);
 
 const getEventImage = id =>
   new Promise((resolve, reject) => {
     FB.api(`/${id}?fields=cover`, res => {
-      console.log(res);
       if (!res || res.error) {
         reject(res);
       }
@@ -24,30 +25,33 @@ const getEventImage = id =>
 const getEvents = () =>
   new Promise((resolve, reject) => {
     FB.api(
-      `/${process.env.FB_PAGE_ID}/events`,
+      `/${
+        process.env.FB_PAGE_ID
+      }/events?fields=id,cover,name,description,start_time,end_time`,
       "get",
-      { time_filter: "upcoming" },
+      {
+        time_filter: "upcoming"
+      },
       res => {
         if (!res || res.error) {
           reject(res);
         }
 
         const result = [];
-
         if (res.data) {
           res.data.forEach(event => {
-            const { id, name, description } = event;
+            const { id, name, description, cover } = event;
             const nearestDate = extractNearestDate(event);
             const date = stringifyEventDate(nearestDate);
             const link = createEventLink(nearestDate.id);
-
             result.push({
               id,
               name,
+              description,
               nearestDate,
               date,
               link,
-              description
+              cover
             });
           });
         }
