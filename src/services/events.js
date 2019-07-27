@@ -8,7 +8,9 @@ const {
   createEventLink
 } = require("../utilities/facebook");
 
-const converter = new showdown.Converter();
+const converter = new showdown.Converter({
+  simplifiedAutoLink: true
+});
 
 const FB = new fb.Facebook({
   version: "v3.3"
