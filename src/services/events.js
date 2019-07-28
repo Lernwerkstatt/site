@@ -1,11 +1,16 @@
 /* eslint camelcase: "off" */
 
 const fb = require("fb");
+const showdown = require("showdown");
 const {
   extractNearestDate,
   stringifyEventDate,
   createEventLink
 } = require("../utilities/facebook");
+
+const converter = new showdown.Converter({
+  simplifiedAutoLink: true
+});
 
 const FB = new fb.Facebook({
   version: "v3.3"
@@ -44,6 +49,8 @@ const getEvents = () =>
             const nearestDate = extractNearestDate(event);
             const date = stringifyEventDate(nearestDate);
             const link = createEventLink(nearestDate.id);
+            const htmlDescription = converter.makeHtml(description);
+
             result.push({
               id,
               name,
@@ -51,7 +58,8 @@ const getEvents = () =>
               nearestDate,
               date,
               link,
-              cover
+              cover,
+              htmlDescription
             });
           });
         }

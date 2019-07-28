@@ -1,16 +1,10 @@
 const express = require("express");
-const path = require("path");
-const fs = require("fs");
+const contact = require("../../data/contact.json");
 
 const router = express.Router();
 
-const contactPath = path.join(__dirname, "../../data/contact.json");
-
 router.get("/contact", (req, res) => {
-  fs.readFile(contactPath, (err, data) => {
-    if (err) throw err;
-    res.render("contact", JSON.parse(data));
-  });
+  res.render("contact", contact);
 });
 
 module.exports = router;
