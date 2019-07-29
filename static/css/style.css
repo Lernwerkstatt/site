@@ -186,3 +186,8 @@ main {
   -moz-column-gap: 40px;
   column-gap: 40px;
 }
+
+.modal-body {
+  max-height: calc(100vh - 180px);
+  overflow-y: auto;
+}
