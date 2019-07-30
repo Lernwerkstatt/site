@@ -69,6 +69,8 @@ main {
 }
 
 .error-page {
+  max-height: calc(100vh - 93px);
+  min-height: calc(100vh - 93px);
   position: relative;
   text-align: center;
   color: white;
