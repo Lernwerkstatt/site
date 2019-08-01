@@ -5,13 +5,12 @@ exports[`modal.hbs should match the snapshot 1`] = `
   <div class=\\"modal-dialog modal-dialog-scrollable\\" role=\\"document\\">
     <div class=\\"modal-content\\">
       <div class=\\"modal-header\\">
-        <h5 class=\\"modal-title\\" id=\\"testModal\\">eltit</h5>
+        <h5 class=\\"modal-title\\" id=\\"testModal\\"></h5>
         <button type=\\"button\\" class=\\"close\\" data-dismiss=\\"modal\\" aria-label=\\"Close\\">
           <span aria-hidden=\\"true\\">&times;</span>
         </button>
       </div>
       <div class=\\"modal-body\\">
-        <p>I&#x27;m a headline</p>
         <pre style=\\"white-space: pre-wrap;\\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint laboriosam voluptates.</pre>
       </div>
       <div class=\\"modal-footer\\">
