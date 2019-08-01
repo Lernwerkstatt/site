@@ -15,7 +15,7 @@ const getIndex = async (req, res) => {
       {
         badge: "Über Uns",
         title: "Unsere Werte",
-        text: "Dafür steht die Lernwerkstatt.",
+        text: "Dafür steht Die Lernwerkstatt.",
         link: "/values",
         image: "img/home/pencils.png"
       },

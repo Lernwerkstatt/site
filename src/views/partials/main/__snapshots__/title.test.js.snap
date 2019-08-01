@@ -1,12 +1,11 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`title.hbs should match the snapshot 1`] = `
-"<div class=\\"container mb-2\\">
+"<div class=\\"container mb-4\\">
   <div class=\\"row\\">
-    <div class=\\"col-12\\">
-      <p class=\\"h1 font-italic my-4\\"></p>
+    <div class=\\"col border-bottom\\">
+      <p class=\\"h1 mt-4\\"></p>
       <p class=\\"lead\\"></p>
-      <hr>
     </div>
   </div>
 </div>
