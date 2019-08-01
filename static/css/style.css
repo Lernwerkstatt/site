@@ -1,6 +1,13 @@
+@font-face{
+  font-family:"Museo Slab W01_500";
+  src:url("../MuseoSlab.eot?#iefix");
+  src:url("../MuseoSlab.eot?#iefix") format("eot"),url("../MuseoSlab.woff2") format("woff2"),url("../MuseoSlab.woff") format("woff"),url("../MuseoSlab.ttf") format("truetype");
+}
+
 html,
 body {
   height: 100%;
+  font-family: 'Museo Slab', serif;
 }
 body {
   display: flex;
@@ -36,7 +43,6 @@ main {
 }
 
 .home-logo {
-  font-family: 'Roboto Slab', serif;
   line-height: 1;
   font-size: 60px;
   font-weight: 300;
@@ -47,7 +53,6 @@ main {
   height: 210px;
 }
 .home-subtitle {
-  font-family: 'Roboto Slab', serif;
   font-size: 18px;
   max-width: 5 00px;
 }
@@ -64,6 +69,8 @@ main {
 }
 
 .error-page {
+  max-height: calc(100vh - 93px);
+  min-height: calc(100vh - 93px);
   position: relative;
   text-align: center;
   color: white;
