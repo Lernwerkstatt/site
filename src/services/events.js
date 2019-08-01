@@ -32,7 +32,7 @@ const getEvents = () =>
     FB.api(
       `/${
         process.env.FB_PAGE_ID
-      }/events?fields=id,cover,name,description,start_time,end_time`,
+      }/events?fields=cover,description,end_time,id,name,start_time`,
       "get",
       {
         time_filter: "upcoming"
@@ -45,21 +45,21 @@ const getEvents = () =>
         const result = [];
         if (res.data) {
           res.data.forEach(event => {
-            const { id, name, description, cover } = event;
+            const { cover, description, id, name } = event;
             const nearestDate = extractNearestDate(event);
             const date = stringifyEventDate(nearestDate);
             const link = createEventLink(nearestDate.id);
             const htmlDescription = converter.makeHtml(description);
 
             result.push({
-              id,
-              name,
-              description,
-              nearestDate,
-              date,
-              link,
               cover,
-              htmlDescription
+              date,
+              description,
+              htmlDescription,
+              id,
+              link,
+              name,
+              nearestDate
             });
           });
         }
