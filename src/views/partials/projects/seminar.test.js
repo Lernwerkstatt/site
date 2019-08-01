@@ -5,12 +5,8 @@ describe("seminar.hbs", () => {
     expect(
       workshop({
         name: "Workshop",
-        description: "This is a workshop",
-        mainLink: "http://www.die-lernwerkstatt.org/",
-        link1: "http://www.die-lernwerkstatt.org/",
-        link2: "http://www.die-lernwerkstatt.org/",
-        link3: "http://www.die-lernwerkstatt.org/",
-        additional: "More information"
+        link: "http://www.die-lernwerkstatt.org/",
+        text: "This is a workshop",
       })
     ).toMatchSnapshot();
   });

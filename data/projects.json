@@ -1,31 +1,29 @@
 {
   "projects": [
     {
-      "name": "Ich bin hier!",
-      "description": "Ich bin hier! ist ein neues Projekt, an dem die Lernwerkstatt als einer von drei Partnervereinen beteiligt ist (mit Loesje e.V. und SanaD e.V.) Es richtet sich an junge Menschen zwischen 13 und 18 Jahren, die sich für Medien & Kultur interessieren. Bis Ende 2019 wird es eine Reihe von Workshops geben - die ersten Termine sind online! \n Unsere Partner:",
-      "mainLink": "https://www.ich-bin-hier.berlin/",
-      "link1": "http://www.loesje.org/berlin",
-      "link2": "https://www.sanad-ev.org/",
-      "link3": "",
-      "additional": ""
+      "name": "Ich Bin Hier!",
+      "link": "http://www.ich-bin-hier.berlin",
+      "text": "Ich bin hier! ist ein neues Projekt, an dem die Lernwerkstatt als einer von drei Partnervereinen beteiligt ist (mit <a href='https://www.loesje.org/berlin'>Loesje e.V.</a> und <a href='https://www.sanad-ev.org'>SanaD e.V.</a>) Es richtet sich an junge Menschen zwischen 6 und 18 Jahren, die sich für Medien & Kultur interessieren. Bis Ende 2019 wird es eine Reihe von Workshops geben - die ersten Termine sind online!"
     },
     {
-      "name": "Freilerner/schulfrei Berlin Treffen",
-      "description": "Frei lernende und daran interessierte Menschen begegnen sich, lernen sich kennen, stellen Fragen und spielen miteinander. Keine Kosten; Spenden an die mitwirkenden Vereine sind gern gesehen:",
-      "mainLink": "http://freisichbilden.strikingly.com/",
-      "link1": "http://www.die-lernwerkstatt.org/",
-      "link2": "http://www.bvnl.de/",
-      "link3": "http://www.schulfrei-bewegung.de/",
-      "additional": ""
+      "name": "Freilerner Berlin Treffen",
+      "link": "http://freisichbilden.strikingly.com",
+      "text": "Frei lernende und daran interessierte Menschen begegnen sich, lernen sich kennen, stellen Fragen und spielen miteinander. Die Teilnahme ist kostenfrei. Spenden an die mitwirkenden Vereine sind gern gesehen: <ul><li><a href='http://www.die-lernwerkstatt.org'>Die Lernwerkstatt</a></li> <li><a href='https://www.bvnl.de'>BVNL</a></li> <li><a href='https://www.schulfrei-bewegung.de'>Schulfrei Bewegung</a></li>"
     },
     {
       "name": "Mathe x Kunst Projekt",
-      "description": "Das Ziel des Projekts liegt darin, Formate für Workshops und Schulen zu entwickeln, die sich am Schnittpunkt von Mathe/NaWi und Kunst bewegen. Wir wollen einen spielerischen, sinnlichen und anschaulichen Zugang zu den scheinbar trockenen und ungeliebten „Fächern“ Mathematik und Naturwissenschaften wagen.",
-      "mainLink": "https://www.mathe-x-kunst.de/",
-      "link1": "",
-      "link2": "",
-      "link3": "",
-      "additional": "Wir suchen momentan weitere WorkshopleiterInnen...hast du Lust mitzumachen? Dann melde dich bei uns: info@mathe-x-kunst.de!"
+      "link": "https://www.mathe-x-kunst.de",
+      "text": "Das Ziel des Projekts liegt darin, Formate für Workshops und Schulen zu entwickeln, die sich am Schnittpunkt von Mathe/NaWi und Kunst bewegen. Wir wollen einen spielerischen, sinnlichen und anschaulichen Zugang zu den scheinbar trockenen und ungeliebten „Fächern“ Mathematik und Naturwissenschaften wagen.<br>Wir suchen momentan weitere WorkshopleiterInnen. Hast du Lust mitzumachen? Dann melde dich bei uns: <a href='mailto:info@mathe-x-kunst.de'>info@mathe-x-kunst.de</a>!"
+    },
+    {
+      "name": "Bildungscampus Treptow-Nord",
+      "link": "https://www.bildungscampus-treptow.org/",
+      "text": "Der Bildungscampus Treptow-Nord (BCTN) ist ein Netzwerk aus VertreterInnen von Schulen, Kindertagesstätten, und freien Trägern der Bildungs- und Jugendarbeit im Norden des Bezirkes Treptow-Köpenick. Zu den Zielen des BCTN zählen die altersübergreifende Vernetzung von schulischen und außerschulischen Sozial- und Bildungsangeboten, und das Wecken von bürgerlichem Engagement. Unser Verein ist mittendrin und koordiniert sogar den gesamten BCTN!"
+    },
+    {
+      "name": "Lernbegleitung",
+      "link": "mailto:info@die-lernwerkstatt.org?subject=Anfrage Lernbegleitung",
+      "text": "Lernbegleitung ist unser schulbegleitendes Angebot. In altersgemischten Kleingruppen von maximal 7 Lernenden werden wöchentlich Inhalte aus der Schule in einer spielerischen und aktiven Lernatmosphäre aufbereitet. Im Fokus steht nicht nur eine Notenverbesserung, sondern vor allem die Begleitung des individuellen Lernprozesses."
     }
   ]
 }
