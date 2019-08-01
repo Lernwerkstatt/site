@@ -2,14 +2,17 @@
 
 exports[`modal.hbs should match the snapshot 1`] = `
 "<div class=\\"modal fade\\" id=\\"\\" tabindex=\\"-1\\" role=\\"dialog\\" aria-labelledby=\\"\\" aria-hidden=\\"true\\">
-  <div class=\\"modal-dialog\\" role=\\"document\\">
+  <div class=\\"modal-dialog modal-dialog-scrollable\\" role=\\"document\\">
     <div class=\\"modal-content\\">
       <div class=\\"modal-header\\">
-        <h5 class=\\"modal-title text-dark\\" id=\\"\\">
-          
-        </h5>
+        <a href=\\"\\" target=\\"_blank\\">
+          <img class=\\"mw-100\\" src=\\"\\" alt=\\"\\">
+        </a>
       </div>
       <div class=\\"modal-body text-dark\\">
+        <h4 class=\\"mb-3\\" id=\\"\\">
+          
+        </h4>
         <p>
            Uhr
         </p>

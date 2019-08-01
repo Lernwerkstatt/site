@@ -1,30 +1,48 @@
-@font-face{
-  font-family:"Museo Slab W01_500";
-  src:url("../MuseoSlab.eot?#iefix");
-  src:url("../MuseoSlab.eot?#iefix") format("eot"),url("../MuseoSlab.woff2") format("woff2"),url("../MuseoSlab.woff") format("woff"),url("../MuseoSlab.ttf") format("truetype");
+@font-face {
+  font-family: "Museo Slab";
+  font-display: swap;
+  src: url("/fonts/MuseoSlab.eot?#iefix");
+  src: url("/fonts/MuseoSlab.eot?#iefix") format("eot"),
+    url("/fonts/MuseoSlab.woff2") format("woff2"),
+    url("/fonts/MuseoSlab.woff") format("woff"),
+    url("/fonts/MuseoSlab.ttf") format("truetype");
 }
 
 html,
 body {
   height: 100%;
-  font-family: 'Museo Slab', serif;
+  font-family: "Museo Slab", serif;
 }
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 55px;
 }
 
 main {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .home-bg {
   min-height: 100%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .home-bg:after {
@@ -80,15 +98,21 @@ main {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .easy {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .easy:hover {
-  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
   border: 1px solid gray;
 }
 
@@ -109,8 +133,8 @@ main {
 }
 
 .img-singlepost {
-   width: 23rem;
-   height: auto;
+  width: 23rem;
+  height: auto;
 }
 
 .overflow-hidden {
@@ -129,7 +153,8 @@ main {
   cursor: pointer;
 }
 
-.buttonlink, .buttonlink:hover {
+.buttonlink,
+.buttonlink:hover {
   text-decoration: none;
   color: white;
 }
@@ -140,18 +165,20 @@ main {
   line-height: 1.2em;
   max-height: 3.6em;
   text-align: justify;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 .blog-content:after {
-  content: '…';
+  content: "…";
   position: absolute;
   right: 0;
   bottom: 0;
 }
 
 .blog-content:before {
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   bottom: 0;
@@ -159,20 +186,39 @@ main {
   height: 1em;
   margin-top: 0.2em;
   background: white;
-  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgb(255, 255, 255) 50%);
+  background: -webkit-gradient(
+    linear,
+    left top, right top,
+    from(rgba(255, 255, 255, 0)),
+    color-stop(50%, rgb(255, 255, 255))
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(255, 255, 255, 0) 0%,
+    rgb(255, 255, 255) 50%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgb(255, 255, 255) 50%
+  );
 }
 
 .home-card {
   min-height: 250px;
   background-size: cover;
 }
-.home-card:hover .text-light {
+.home-card:hover .text-dark {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  color: #373a3c !important;
+  color: #f8f9fa !important;
 }
-.home-card:hover .bg-dark {
+.home-card:hover .bg-light {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #f8f9fa !important;
+  background-color: #373a3c !important;
 }
 .home-card-badge {
   top: 0;
@@ -182,7 +228,7 @@ main {
 .partner-img {
   width: 80%;
   height: auto;
-  margin-bottom: 10%
+  margin-bottom: 10%;
 }
 
 .two-columns {

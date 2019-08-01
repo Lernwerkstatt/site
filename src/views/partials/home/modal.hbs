@@ -1,12 +1,15 @@
 <div class="modal fade" id="{{ tag }}" tabindex="-1" role="dialog" aria-labelledby="{{ name }}" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title text-dark" id="{{ tag }}">
-          {{ name }}
-        </h5>
+        <a href="{{link}}" target="_blank">
+          <img class="mw-100" src="{{cover.source}}" alt="{{name}}">
+        </a>
       </div>
       <div class="modal-body text-dark">
+        <h4 class="mb-3" id="{{ tag }}">
+          {{ name }}
+        </h4>
         <p>
           {{ date }} Uhr
         </p>
