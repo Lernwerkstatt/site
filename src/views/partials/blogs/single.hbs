@@ -1,5 +1,8 @@
-<img src="{{ imagelink }}" alt="{{ title }}" class="img-fluid mt-4 mb-4 img-singlepost">
-<h3>{{ title }}</h3>
-<p>{{ author }}, {{ date }}</p>
-
-<article>{{{ content }}}</article>
+<article class="pb-4 mb-4">
+  <img src="{{ imagelink }}" alt="{{ title }}" class="img-fluid w-100 mb-4">
+  <div class="px-4">
+    <h1>{{ title }}</h1>
+    <p class="text-muted"><small>{{ author }}, {{ date }}</small></p>
+    {{{ content }}}
+  </div>
+</article>
