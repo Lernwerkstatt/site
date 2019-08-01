@@ -37,17 +37,5 @@ app.use((req, res) => {
 });
 
 app.listen(port, () => {
-  if (app.get("env") === "development") {
-    const browserSync = require("browser-sync"); // eslint-disable-line
-    browserSync({
-      files: [
-        `${__dirname}/../static/css/*.css`,
-        `${__dirname}/views/**/*.hbs`
-      ],
-      online: false,
-      port: port + 1,
-      proxy: `localhost:${port}`,
-      ui: false
-    });
-  }
+  console.log(`Express server listening on port ${port}`);
 });
