@@ -44,6 +44,11 @@
       "name": "Stiftung Pfefferwerk",
       "id": "pfefferwork",
       "img": "img/partners/pfefferwerk.jpg"
+    },
+    {
+      "name": "Paul IT-Service GmbH",
+      "id": "paul",
+      "img": "img/partners/paul.png"
     }
   ]
 }
