@@ -10,7 +10,7 @@ const router = express.Router();
 router.route("/blogs").get((req, res) => {
   posts
     .getAllPosts()
-    .then(data => data.blogs.reverse())
+    .then(data => data.blogs)
     .then(blogs => {
       const result = {
         blogs
