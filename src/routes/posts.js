@@ -21,7 +21,7 @@ const getSinglePost = async id => {
 const getLatestPost = async () => {
   try {
     const allPosts = await getAllPosts();
-    return allPosts.blogs[allPosts.blogs.length - 1];
+    return allPosts.blogs[0];
   } catch (error) {
     // console.log({ message: "Can not read data", error });
   }

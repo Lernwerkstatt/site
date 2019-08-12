@@ -6,7 +6,25 @@ mongoose.connect(
   { useNewUrlParser: true }
 );
 
-const allPosts = Blogposts.find({}).then(blogposts => {
+const allPosts = Blogposts.aggregate([
+  {
+    $project: {
+      _id: 1,
+      author: 1,
+      content: 1,
+      date: 1,
+      dateString: {
+        $dateFromString: {
+          dateString: "$date"
+        }
+      },
+      id: 1,
+      imagelink: 1,
+      title: 1
+    }
+  },
+  { $sort: { dateString: -1 } }
+]).then(blogposts => {
   const addObject = { blogs: blogposts };
   return addObject;
 });
