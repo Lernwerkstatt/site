@@ -1,7 +1,7 @@
 const moment = require("moment");
 
 const extractNearestDate = event => {
-  const result = {
+  let result = {
     start_time: event.start_time,
     end_time: event.end_time,
     id: event.id
@@ -10,20 +10,10 @@ const extractNearestDate = event => {
   if (event.event_times) {
     const allEvents = [...event.event_times, result];
     const upcoming = allEvents.filter(t => new Date(t.start_time) > new Date());
-    const sorted = upcoming.sort((a, b) => {
-      const first = new Date(a.start_time);
-      const second = new Date(b.start_time);
 
-      if (first === second) {
-        return 0;
-      }
+    upcoming.sort((a, b) => moment(a.start_time).diff(moment(b.start_time)));
 
-      return first > second ? 1 : -1;
-    });
-
-    result.start_time = sorted[0].start_time;
-    result.end_time = sorted[0].end_time;
-    result.id = sorted[0].id;
+    result = { ...upcoming[0] };
   }
 
   return result;

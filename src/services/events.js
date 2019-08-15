@@ -67,13 +67,13 @@ const getEvents = () => {
               nearestDate
             });
           });
+          result.sort(
+            (a, b) =>
+              new Date(a.nearestDate.start_time) -
+              new Date(b.nearestDate.start_time)
+          );
         }
 
-        result.sort(
-          (a, b) =>
-            new Date(a.nearestDate.start_time) -
-            new Date(b.nearestDate.start_time)
-        );
         resolve(result);
       }
     );
