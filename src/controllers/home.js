@@ -14,7 +14,7 @@ const getIndex = async (req, res) => {
         title: "Unsere Werte",
         text: "Dafür steht Die Lernwerkstatt.",
         link: "/values",
-        image: "img/home/notebook.jpg"
+        image: "img/home/notebook.png"
       },
       // Second facebook block
       {

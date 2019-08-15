@@ -6,9 +6,10 @@
 > People of all ages are welcome to join us!
 
 - [Current(legacy) website](http://en-die-lernwerkstatt.strikingly.com/)
-- [New(developing) website](https://lernwerkstatt-site.azurewebsites.net/)
+- [New(developing) website](https://die-lernwerkstatt.azurewebsites.net)
 
 ## Development
+
 1. Install [node](https://nodejs.org/en/)
 2. Install [npm](https://www.npmjs.com/)
 3. Create an `.env` file in `site/` and ask a teammate for the required keys.
