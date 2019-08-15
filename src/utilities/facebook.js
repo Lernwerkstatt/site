@@ -7,9 +7,11 @@ const extractNearestDate = event => {
     id: event.id
   };
 
+  const today = new Date();
+
   if (event.event_times) {
     const allEvents = [...event.event_times, result];
-    const upcoming = allEvents.filter(t => new Date(t.start_time) > new Date());
+    const upcoming = allEvents.filter(t => new Date(t.start_time) > today);
 
     upcoming.sort((a, b) => moment(a.start_time).diff(moment(b.start_time)));
 
@@ -24,7 +26,7 @@ const stringifyEventDate = eventDate => {
   const start = moment.parseZone(eventDate.start_time);
   const end = moment.parseZone(eventDate.end_time);
 
-  if (start.diff(end, "days") === 0) {
+  if (start.isSame(end, "day")) {
     result = `${start.format("DD.MM.YYYY HH:mm")} - ${end.format("HH:mm")}`;
   } else {
     result = `${start.format("DD.MM.YYYY HH:mm")} - ${end.format(

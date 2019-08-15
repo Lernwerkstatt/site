@@ -37,7 +37,7 @@ const getEvents = () => {
     FB.api(
       `/${
         process.env.FB_PAGE_ID
-      }/events?fields=cover,description,end_time,id,name,start_time`,
+      }/events?fields=cover,description,end_time,id,name,start_time,event_times`,
       "get",
       {
         time_filter: "upcoming"
