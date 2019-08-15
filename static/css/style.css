@@ -69,6 +69,7 @@ main {
 
 .home-logo-img {
   height: 210px;
+  max-width: 100%;
 }
 .home-subtitle {
   font-size: 18px;
