@@ -5,7 +5,8 @@ const showdown = require("showdown");
 const {
   extractNearestDate,
   stringifyEventDate,
-  createEventLink
+  createEventLink,
+  addCalendarIcon
 } = require("../utilities/facebook");
 
 const converter = new showdown.Converter({
@@ -55,6 +56,7 @@ const getEvents = () => {
             const date = stringifyEventDate(nearestDate);
             const link = createEventLink(nearestDate.id);
             const htmlDescription = converter.makeHtml(description);
+            const { dayicon, tag } = addCalendarIcon({ link, date });
 
             result.push({
               cover,
@@ -64,9 +66,12 @@ const getEvents = () => {
               id,
               link,
               name,
-              nearestDate
+              nearestDate,
+              tag,
+              dayicon
             });
           });
+
           result.sort(
             (a, b) =>
               new Date(a.nearestDate.start_time) -
