@@ -12,13 +12,15 @@ const converter = new showdown.Converter({
   simplifiedAutoLink: true
 });
 
-const FB = new fb.Facebook({
-  version: "v3.3"
-});
-FB.setAccessToken(process.env.FB_TOKEN);
+const options = {
+  version: "v3.3",
+  accessToken: process.env.FB_TOKEN
+};
 
-const getEventImage = id =>
-  new Promise((resolve, reject) => {
+const getEventImage = id => {
+  const FB = new fb.Facebook(options);
+
+  return new Promise((resolve, reject) => {
     FB.api(`/${id}?fields=cover`, res => {
       if (!res || res.error) {
         reject(res);
@@ -26,9 +28,12 @@ const getEventImage = id =>
       resolve(res.cover.source);
     });
   });
+};
 
-const getEvents = () =>
-  new Promise((resolve, reject) => {
+const getEvents = () => {
+  const FB = new fb.Facebook(options);
+
+  return new Promise((resolve, reject) => {
     FB.api(
       `/${
         process.env.FB_PAGE_ID
@@ -73,6 +78,7 @@ const getEvents = () =>
       }
     );
   });
+};
 
 module.exports = {
   getEvents,
