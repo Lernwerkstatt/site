@@ -2,12 +2,17 @@
 
 exports[`modal.hbs should match the snapshot 1`] = `
 "<div class=\\"modal fade\\" id=\\"\\" tabindex=\\"-1\\" role=\\"dialog\\" aria-labelledby=\\"\\" aria-hidden=\\"true\\">
-  <div class=\\"modal-dialog modal-dialog-scrollable\\" role=\\"document\\">
+  <div class=\\"modal-dialog\\" role=\\"document\\">
     <div class=\\"modal-content\\">
       <div class=\\"modal-header\\">
-        <a href=\\"\\" target=\\"_blank\\">
-          <img class=\\"mw-100\\" src=\\"\\" alt=\\"\\">
-        </a>
+        <div>
+          <button type=\\"button\\" class=\\"close mt-n4 d-sm-none\\" data-dismiss=\\"modal\\" aria-label=\\"Close\\">
+            <span aria-hidden=\\"true\\">&times;</span>
+          </button>
+          <a href=\\"\\" target=\\"_blank\\">
+            <img class=\\"mw-100 pt-2\\" src=\\"\\" alt=\\"\\">
+          </a>
+        </div>
       </div>
       <div class=\\"modal-body text-dark\\">
         <h4 class=\\"mb-3\\" id=\\"\\">
@@ -21,8 +26,11 @@ exports[`modal.hbs should match the snapshot 1`] = `
         </p>
       </div>
       <div class=\\"modal-footer\\">
-        <button type=\\"button\\" class=\\"btn btn-secondary\\"><a class=\\"buttonlink\\" href=\\"\\" target=\\"_blank\\">
-            Mehr Infos auf Facebook</a></button>
+        <button type=\\"button\\" class=\\"btn btn-secondary\\">
+          <a class=\\"buttonlink\\" href=\\"\\" target=\\"_blank\\">
+            Mehr Infos auf Facebook
+          </a>
+        </button>
         <button type=\\"button\\" class=\\"btn btn-secondary\\" data-dismiss=\\"modal\\">Schließen</button>
       </div>
     </div>
