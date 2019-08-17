@@ -1,29 +1,21 @@
 const moment = require("moment");
 
 const extractNearestDate = event => {
-  const result = {
+  let result = {
     start_time: event.start_time,
     end_time: event.end_time,
     id: event.id
   };
 
+  const today = new Date();
+
   if (event.event_times) {
     const allEvents = [...event.event_times, result];
-    const upcoming = allEvents.filter(t => new Date(t.start_time) > new Date());
-    const sorted = upcoming.sort((a, b) => {
-      const first = new Date(a.start_time);
-      const second = new Date(b.start_time);
+    const upcoming = allEvents.filter(t => new Date(t.start_time) > today);
 
-      if (first === second) {
-        return 0;
-      }
+    upcoming.sort((a, b) => moment(a.start_time).diff(moment(b.start_time)));
 
-      return first > second ? 1 : -1;
-    });
-
-    result.start_time = sorted[0].start_time;
-    result.end_time = sorted[0].end_time;
-    result.id = sorted[0].id;
+    result = { ...upcoming[0] };
   }
 
   return result;
@@ -34,7 +26,7 @@ const stringifyEventDate = eventDate => {
   const start = moment.parseZone(eventDate.start_time);
   const end = moment.parseZone(eventDate.end_time);
 
-  if (start.diff(end, "days") === 0) {
+  if (start.isSame(end, "day")) {
     result = `${start.format("DD.MM.YYYY HH:mm")} - ${end.format("HH:mm")}`;
   } else {
     result = `${start.format("DD.MM.YYYY HH:mm")} - ${end.format(
@@ -46,16 +38,14 @@ const stringifyEventDate = eventDate => {
 
 const createEventLink = id => `https://www.facebook.com/events/${id}`;
 
-const addCalendarIcon = data => {
-  data.forEach(element => {
-    const weekday = moment(element.date, "DD.MM.YYYY")
-      .format("dddd")
-      .toLowerCase();
-    element.dayicon = `img/calendar/${weekday}.png`;
-    element.tag = "tag";
-    element.tag += element.link.slice(32, 48);
-  });
-  return data;
+const addCalendarIcon = element => {
+  const weekday = moment(element.date, "DD.MM.YYYY")
+    .format("dddd")
+    .toLowerCase();
+  return {
+    dayicon: `img/calendar/${weekday}.png`,
+    tag: `tag${element.link.slice(32, 48)}`
+  };
 };
 
 module.exports = {

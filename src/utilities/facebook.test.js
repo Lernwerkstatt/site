@@ -123,36 +123,20 @@ describe("Create link", () => {
 });
 
 describe("function should get right icon from date", () => {
-  const originalData = [
-    {
-      name: "Webkurs",
-      date: "13.12.2018",
-      time: "18:00-20:00",
-      link: "https://www.facebook.com/events/1246693872156189"
-    }
-  ];
+  const originalData = {
+    date: "13.12.2018",
+    link: "https://www.facebook.com/events/1246693872156189"
+  };
 
-  const expectedData = [
-    {
-      name: "Webkurs",
-      date: "13.12.2018",
-      time: "18:00-20:00",
-      link: "https://www.facebook.com/events/1246693872156189",
-      tag: "tag1246693872156189",
-      dayicon: "img/calendar/thursday.png"
-    }
-  ];
+  const expectedData = {
+    tag: "tag1246693872156189",
+    dayicon: "img/calendar/thursday.png"
+  };
 
-  const falseData = [
-    {
-      name: "Webkurs",
-      date: "13.12.2018",
-      time: "18:00-20:00",
-      link: "https://www.facebook.com/events/1246693872156189",
-      tag: "tag1246693872156189",
-      dayicon: "img/calendar/sunday.png"
-    }
-  ];
+  const falseData = {
+    tag: "tag1246693872156189",
+    dayicon: "img/calendar/sunday.png"
+  };
 
   test("check dayicon", () => {
     expect(facebook.addCalendarIcon(originalData)).toEqual(expectedData);

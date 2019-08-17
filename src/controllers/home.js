@@ -1,12 +1,9 @@
 const posts = require("../routes/posts");
 const events = require("../services/events");
 
-const facebook = require("../utilities/facebook");
-
 const getIndex = async (req, res) => {
   try {
-    let calendar = await events.getEvents();
-    calendar = facebook.addCalendarIcon(calendar);
+    const calendar = await events.getEvents();
     const latestPost = await posts.getLatestPost();
     const facebookImage = await events.getEventImage(calendar[0].id);
 
