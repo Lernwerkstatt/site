@@ -23,13 +23,6 @@ const latestPost = () => allPosts().then(result => result[0]);
 
 const singlePost = id => Blogposts.findOne({ id }).then(result => result);
 
-const newPost = convertedPost => {
-  try {
-    const createPost = Blogposts.create(convertedPost);
-    return createPost;
-  } catch (err) {
-    // console.log(err);
-  }
-};
+const newPost = post => Blogposts.create(post);
 
 module.exports = { allPosts, singlePost, newPost, latestPost };

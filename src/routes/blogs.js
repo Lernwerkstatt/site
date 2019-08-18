@@ -14,19 +14,14 @@ router
   .route("/blogs/create")
   .get((req, res) => res.render("blogform"))
   .post((req, res) => {
-    database
-      .newPost({
-        id: uuidv4(),
-        title: req.body.title,
-        date: moment().format("DD.MM.YYYY"),
-        author: req.body.author,
-        content: converter.convertPost(req.body.content),
-        imagelink: "/img/blogs/Platzhalter.jpg"
-      })
-      .then(newBlogpost => {
-        res.setHeader("Content-Type", "application/json");
-        res.json(newBlogpost);
-      });
+    database.newPost({
+      id: uuidv4(),
+      title: req.body.title,
+      date: moment().format("DD.MM.YYYY"),
+      author: req.body.author,
+      content: converter.convertPost(req.body.content),
+      imagelink: "/img/blogs/Platzhalter.jpg"
+    });
     res.redirect("/blogs");
   });
 
