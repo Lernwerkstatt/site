@@ -1,32 +1,27 @@
 const Blogposts = require("../models/blogposts");
 
-const allPosts = Blogposts.aggregate([
-  {
-    $project: {
-      _id: 1,
-      author: 1,
-      content: 1,
-      date: 1,
-      dateString: {
-        $dateFromString: {
-          dateString: "$date"
-        }
-      },
-      id: 1,
-      imagelink: 1,
-      title: 1
-    }
-  },
-  { $sort: { dateString: -1 } }
-]).then(posts => posts);
+const allPosts = () =>
+  Blogposts.aggregate([
+    {
+      $project: {
+        author: 1,
+        date: 1,
+        dateString: {
+          $dateFromString: {
+            dateString: "$date"
+          }
+        },
+        id: 1,
+        imagelink: 1,
+        title: 1
+      }
+    },
+    { $sort: { dateString: -1 } }
+  ]).then(posts => posts);
 
-const latestPost = () =>
-  Blogposts.findOne({})
-    .sort({ date: -1 })
-    .then(result => result);
+const latestPost = () => allPosts().then(result => result[0]);
 
-const singlePost = paramsId =>
-  Blogposts.findOne({ _id: paramsId }).then(result => result);
+const singlePost = id => Blogposts.findOne({ id }).then(result => result);
 
 const newPost = convertedPost => {
   try {

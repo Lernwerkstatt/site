@@ -29,8 +29,7 @@ const getIndex = async (req, res) => {
         badge: "Blog",
         title: latestPost.title,
         text: `${latestPost.date} | ${latestPost.author}`,
-        // eslint-disable-next-line no-underscore-dangle
-        link: `/blogs/${latestPost._id}`,
+        link: `/blogs/${latestPost.id}`,
         image: latestPost.imagelink
       }
     ];

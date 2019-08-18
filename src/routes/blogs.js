@@ -7,19 +7,12 @@ const database = require("../services/database");
 const router = express.Router();
 
 router.route("/blogs").get((req, res) => {
-  database.allPosts.then(blogs => {
-    const result = {
-      blogs
-    };
-    res.render("blogs", result);
-  });
+  database.allPosts().then(blogs => res.render("blogs", { blogs }));
 });
 
 router
   .route("/blogs/create")
-  .get((req, res) => {
-    res.render("blogform");
-  })
+  .get((req, res) => res.render("blogform"))
   .post((req, res) => {
     database
       .newPost({
