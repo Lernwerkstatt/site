@@ -1,4 +1,4 @@
-<div class="modal fade" id="{{ tag }}" tabindex="-1" role="dialog" aria-labelledby="{{ name }}" aria-hidden="true">
+<div class="modal fade" id="{{ tag }}" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="modal-body text-dark">
-        <h4 class="mb-3" id="{{ tag }}">
+        <h4 class="mb-3">
           {{ name }}
         </h4>
         <p>
@@ -23,11 +23,9 @@
         </p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary">
-          <a class="buttonlink" href="{{ link }}" target="_blank">
-            Mehr Infos auf Facebook
-          </a>
-        </button>
+        <a class="btn btn-secondary buttonlink" href="{{ link }}" target="_blank">
+          Mehr Infos auf Facebook
+        </a>
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
       </div>
     </div>
