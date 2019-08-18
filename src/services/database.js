@@ -20,6 +20,11 @@ const allPosts = Blogposts.aggregate([
   { $sort: { dateString: -1 } }
 ]).then(posts => posts);
 
+const latestPost = () =>
+  Blogposts.findOne({})
+    .sort({ date: -1 })
+    .then(result => result);
+
 const singlePost = paramsId =>
   Blogposts.findOne({ _id: paramsId }).then(result => result);
 
@@ -32,4 +37,4 @@ const newPost = convertedPost => {
   }
 };
 
-module.exports = { allPosts, singlePost, newPost };
+module.exports = { allPosts, singlePost, newPost, latestPost };

@@ -4,7 +4,7 @@ const events = require("../services/events");
 const getIndex = async (req, res) => {
   try {
     const calendar = await events.getEvents();
-    const [latestPost] = await database.allPosts;
+    const latestPost = await database.latestPost();
     const facebookImage = await events.getEventImage(calendar[0].id);
 
     const card = [
