@@ -1,6 +1,11 @@
-# Die Lernwerkstatt [![Build Status](https://travis-ci.org/Lernwerkstatt/site.svg?branch=master)](https://travis-ci.org/Lernwerkstatt/site)
+# Die Lernwerkstatt
 
-![Die Lernwerkstatt Logo](http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/v1/253787/Zeichenfla%CC%88che_2_Kopie_170_qemx0s.png)
+[![Build Status](https://travis-ci.org/Lernwerkstatt/site.svg?branch=master)](https://travis-ci.org/Lernwerkstatt/site)
+[![LGTM](https://badgen.net/badge/icon/lgtm?icon=lgtm&label&color=green)](https://www.youtube.com/watch?v=COUaNmm53VA)
+[![Node](https://badgen.net/badge/icon/Node.js?icon=https://simpleicons.now.sh/node-dot-js/026e00&label&color=green)](https://nodejs.org)
+[![Mongo](https://badgen.net/badge/icon/mongoDB?icon=https://simpleicons.now.sh/mongodb/13aa52&label&color=green)](https://www.mongodb.com/)
+
+![Die Lernwerkstatt Logo](https://bbb.wandelwoche.org/wp-content/uploads/2019/06/lernwerkstatt.png)
 
 > „Die Lernwerkstatt“ (Learning Workshop) is a space where learning is a collaborative, creative and self-determined activity.
 > People of all ages are welcome to join us!
