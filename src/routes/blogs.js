@@ -1,22 +1,18 @@
 const express = require("express");
 const uuidv1 = require("uuid/v1");
 const moment = require("moment");
-const posts = require("./posts");
 const converter = require("../services/converter");
 const database = require("../services/database");
 
 const router = express.Router();
 
 router.route("/blogs").get((req, res) => {
-  posts
-    .getAllPosts()
-    .then(data => data.blogs)
-    .then(blogs => {
-      const result = {
-        blogs
-      };
-      res.render("blogs", result);
-    });
+  database.allPosts.then(blogs => {
+    const result = {
+      blogs
+    };
+    res.render("blogs", result);
+  });
 });
 
 router
@@ -42,7 +38,7 @@ router
   });
 
 router.route("/blogs/:id").get((req, res) => {
-  posts.getSinglePost(req.params.id).then(data => res.render("blogs", data));
+  database.singlePost(req.params.id).then(post => res.render("blogs", post));
 });
 
 module.exports = router;

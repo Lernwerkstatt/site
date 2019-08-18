@@ -1,10 +1,4 @@
-const mongoose = require("mongoose");
 const Blogposts = require("../models/blogposts");
-
-mongoose.connect(
-  process.env.DB_HOST,
-  { useNewUrlParser: true }
-);
 
 const allPosts = Blogposts.aggregate([
   {
@@ -24,13 +18,10 @@ const allPosts = Blogposts.aggregate([
     }
   },
   { $sort: { dateString: -1 } }
-]).then(blogposts => {
-  const addObject = { blogs: blogposts };
-  return addObject;
-});
+]).then(posts => posts);
 
 const singlePost = paramsId =>
-  Blogposts.find({ _id: paramsId }).then(result => result);
+  Blogposts.findOne({ _id: paramsId }).then(result => result);
 
 const newPost = convertedPost => {
   try {
