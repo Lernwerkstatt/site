@@ -1,5 +1,5 @@
 const express = require("express");
-const uuidv1 = require("uuid/v1");
+const uuidv4 = require("uuid/v4");
 const moment = require("moment");
 const converter = require("../services/converter");
 const database = require("../services/database");
@@ -23,7 +23,7 @@ router
   .post((req, res) => {
     database
       .newPost({
-        id: uuidv1(),
+        id: uuidv4(),
         title: req.body.title,
         date: moment().format("DD.MM.YYYY"),
         author: req.body.author,
