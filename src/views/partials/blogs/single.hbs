@@ -1,11 +1,9 @@
 <div class="d-flex justify-content-center">
-  <article class="col-xs-12 col-md-10 col-lg-8 mt-3 mb-5">
+  <article class="col-xs-12 col-md-10 col-lg-8 mt-3 mb-5 mx-3">
     <img src="{{ imagelink }}" alt="{{ title }}" class="img-fluid w-100 mb-5"
       style="max-height: 16rem; object-fit: cover;">
-    <div class="mx-4">
-      <h1 style="overflow-wrap: normal">{{ title }}</h1>
-      <p class="text-muted"><small>{{ author }}, {{ date }}</small></p>
-      {{{ content }}}
-    </div>
+    <h1 style="overflow-wrap: normal">{{ title }}</h1>
+    <p class="text-muted"><small>{{ author }}, {{ date }}</small></p>
+    {{{ content }}}
   </article>
 </div>
