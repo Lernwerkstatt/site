@@ -17,7 +17,7 @@ exports[`member.hbs should match the snapshot 1`] = `
       <div class=\\"modal-body\\">
         <div class=\\"row mt-3 mb-3\\">
           <div class=\\"col-sm-3 pr-0 text-center mb-3\\">
-            <img src=\\"img/logo.png\\" alt=\\"Max Muster\\" class=\\"\\" style=\\"width: 100%; height: auto; max-width: 160px\\">
+            <img src=\\"img/logo.png\\" alt=\\"Max Muster\\" style=\\"width: 100%; height: auto; max-width: 160px\\" />
           </div>
           <!-- left align text for desktop -->
           <div class=\\"col-sm-9 text-left d-none d-sm-block\\">
@@ -30,7 +30,7 @@ exports[`member.hbs should match the snapshot 1`] = `
         </div>
       </div>
       <div class=\\"modal-footer justify-content-around d-sm-none\\">
-        <button type=\\"button\\" class=\\"btn btn-primary\\" data-dismiss=\\"modal\\">Close</button>
+        <button type=\\"button\\" class=\\"btn btn-primary\\" data-dismiss=\\"modal\\">Schließen</button>
       </div>
     </div>
   </div>
