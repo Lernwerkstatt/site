@@ -1,5 +1,10 @@
 const mongoose = require("mongoose");
 
+mongoose.connect(
+  process.env.DB_HOST,
+  { useCreateIndex: true, useNewUrlParser: true }
+);
+
 const blogpostSchema = new mongoose.Schema(
   {
     id: {
