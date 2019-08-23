@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`member.hbs should match the snapshot 1`] = `
-"<div class=\\"d-inline-block mr-3 pb-3 cursor-pointer\\" data-toggle=\\"modal\\" data-target=\\"#max\\">
+"<div class=\\"d-inline-block cursor-pointer align-top mr-3 mb-3\\" data-toggle=\\"modal\\" data-target=\\"#max\\" style=\\"max-width: 160px\\">
   <img src=\\"img/logo.png\\" alt=\\"Max Muster\\" class=\\"img-fluid\\" style=\\"height: 160px; width: 160px;\\">
-  <p class=\\"lead text-center\\">Max Muster</p>
+  <div class=\\"lead text-center\\">Max Muster</div>
 </div>
 <div id=\\"max\\" class=\\"modal fade\\" tabindex=\\"-1\\" role=\\"dialog\\" aria-labelledby=\\"maxLabel\\" aria-hidden=\\"true\\">
   <div class=\\"modal-dialog modal-lg\\" role=\\"document\\">
