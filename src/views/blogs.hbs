@@ -1,14 +1,12 @@
 {{> main/title title="Blog"}}
 <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-sm-12 col-md-10 col-lg-6 mt-4">
-      {{#if blogs}}
-      {{#each blogs}}
-      {{> blogs/posts}}
-      {{/each}}
-      {{else}}
-      {{> blogs/single this}}
-      {{/if}}
-    </div>
+  <div class="row">
+    {{#if blogs}}
+    {{#each blogs}}
+    {{> blogs/posts}}
+    {{/each}}
+    {{else}}
+    {{> blogs/single this}}
+    {{/if}}
   </div>
 </div>
