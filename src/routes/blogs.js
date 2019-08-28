@@ -20,7 +20,7 @@ router
       date: moment().format("DD.MM.YYYY"),
       author: req.body.author,
       content: converter.convertPost(req.body.content),
-      imagelink: "/img/blogs/Platzhalter.jpg"
+      imagelink: req.body.imagelink || "/img/blogs/default.jpg"
     });
     res.redirect("/blogs");
   });
