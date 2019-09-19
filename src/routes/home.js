@@ -17,7 +17,7 @@ const event = calendar => ({
   title: calendar[0].name,
   text: calendar[0].date,
   image: calendar[0].cover.source,
-  tag: calendar[0].tag
+  id: calendar[0].tag
 });
 
 const blog = latestPost => ({
