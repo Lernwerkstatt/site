@@ -4,7 +4,7 @@ const convertPost = rawPost => {
   try {
     return new showdown.Converter().makeHtml(rawPost);
   } catch (err) {
-    // console.log(err);
+    return new Error(err);
   }
 };
 
