@@ -33,3 +33,7 @@ FB_PAGE_ID=XXX
 1. Import `/static/css/_variables.scss` to [Boostrap.build](https://bootstrap.build/app)
 2. Change style.
 3. Export everything to `/static/css` folder.
+
+### Additional info
+
+- To force pulling new events from facebook add `?refresh` to main page url.
