@@ -3,7 +3,8 @@ const events = require("../services/events");
 
 const getIndex = async (req, res) => {
   try {
-    const calendar = await events.getEvents();
+    const refreshEvents = req.query.refresh === "";
+    const calendar = await events.getEvents(refreshEvents);
     const latestPost = await database.latestPost();
 
     const card = [
