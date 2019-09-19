@@ -4,6 +4,30 @@ const events = require("../services/events");
 
 const router = express.Router();
 
+const ourValues = () => ({
+  badge: "Über Uns",
+  title: "Unsere Werte",
+  text: "Dafür steht Die Lernwerkstatt.",
+  link: "/values",
+  image: "img/home/notebook.png"
+});
+
+const event = (calendar, facebookImage) => ({
+  badge: "Termin",
+  title: calendar[0].name,
+  text: calendar[0].date,
+  link: calendar[0].link,
+  image: facebookImage
+});
+
+const blog = latestPost => ({
+  badge: "Blog",
+  title: latestPost.title,
+  text: `${latestPost.date} | ${latestPost.author}`,
+  link: `/blogs/${latestPost.id}`,
+  image: latestPost.imagelink
+});
+
 router.get("/", async (req, res) => {
   try {
     const calendar = await events.getEvents();
@@ -12,29 +36,11 @@ router.get("/", async (req, res) => {
 
     const cards = [
       // First static block
-      {
-        badge: "Über Uns",
-        title: "Unsere Werte",
-        text: "Dafür steht Die Lernwerkstatt.",
-        link: "/values",
-        image: "img/home/notebook.png"
-      },
+      ourValues(),
       // Second facebook block
-      {
-        badge: "Termin",
-        title: calendar[0].name,
-        text: calendar[0].date,
-        link: calendar[0].link,
-        image: facebookImage
-      },
+      event(calendar, facebookImage),
       // Third blog block
-      {
-        badge: "Blog",
-        title: latestPost.title,
-        text: `${latestPost.date} | ${latestPost.author}`,
-        link: `/blogs/${latestPost.id}`,
-        image: latestPost.imagelink
-      }
+      blog(latestPost)
     ];
 
     const result = {
