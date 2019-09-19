@@ -18,19 +18,6 @@ const options = {
   accessToken: process.env.FB_TOKEN
 };
 
-const getEventImage = id => {
-  const FB = new fb.Facebook(options);
-
-  return new Promise((resolve, reject) => {
-    FB.api(`/${id}?fields=cover`, res => {
-      if (!res || res.error) {
-        reject(res);
-      }
-      resolve(res.cover.source);
-    });
-  });
-};
-
 const getEvents = () => {
   const FB = new fb.Facebook(options);
 
@@ -86,6 +73,5 @@ const getEvents = () => {
 };
 
 module.exports = {
-  getEvents,
-  getEventImage
+  getEvents
 };

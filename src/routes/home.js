@@ -12,12 +12,12 @@ const ourValues = () => ({
   image: "img/home/notebook.png"
 });
 
-const event = (calendar, facebookImage) => ({
+const event = calendar => ({
   badge: "Termin",
   title: calendar[0].name,
   text: calendar[0].date,
   link: calendar[0].link,
-  image: facebookImage
+  image: calendar[0].cover.source
 });
 
 const blog = latestPost => ({
@@ -32,13 +32,12 @@ router.get("/", async (req, res) => {
   try {
     const calendar = await events.getEvents();
     const latestPost = await database.latestPost();
-    const facebookImage = await events.getEventImage(calendar[0].id);
 
     const cards = [
       // First static block
       ourValues(),
       // Second facebook block
-      event(calendar, facebookImage),
+      event(calendar),
       // Third blog block
       blog(latestPost)
     ];
