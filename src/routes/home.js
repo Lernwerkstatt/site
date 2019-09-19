@@ -16,8 +16,8 @@ const event = calendar => ({
   badge: "Termin",
   title: calendar[0].name,
   text: calendar[0].date,
-  link: calendar[0].link,
-  image: calendar[0].cover.source
+  image: calendar[0].cover.source,
+  tag: calendar[0].tag
 });
 
 const blog = latestPost => ({
@@ -33,18 +33,11 @@ router.get("/", async (req, res) => {
     const calendar = await events.getEvents();
     const latestPost = await database.latestPost();
 
-    const cards = [
-      // First static block
-      ourValues(),
-      // Second facebook block
-      event(calendar),
-      // Third blog block
-      blog(latestPost)
-    ];
-
     const result = {
       calendar,
-      cards
+      ourValues: ourValues(),
+      event: event(calendar),
+      blog: blog(latestPost)
     };
     res.render("home", result);
   } catch (error) {
