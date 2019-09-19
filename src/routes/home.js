@@ -29,6 +29,8 @@ const blog = latestPost => ({
 });
 
 router.get("/", async (req, res) => {
+  const refresh = req.query.refresh === "";
+
   let calendar = [
     {
       name: "Alle Events",
@@ -43,7 +45,7 @@ router.get("/", async (req, res) => {
 
   try {
     latestPost = await database.latestPost();
-    calendar = await events.getEvents();
+    calendar = await events.getEvents(refresh);
   } catch (error) {
     console.log({ message: "Can not read data", error });
   }
