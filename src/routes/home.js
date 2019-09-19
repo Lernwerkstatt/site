@@ -10,7 +10,7 @@ router.get("/", async (req, res) => {
     const latestPost = await database.latestPost();
     const facebookImage = await events.getEventImage(calendar[0].id);
 
-    const card = [
+    const cards = [
       // First static block
       {
         badge: "Über Uns",
@@ -39,7 +39,7 @@ router.get("/", async (req, res) => {
 
     const result = {
       calendar,
-      card
+      cards
     };
     res.render("home", result);
   } catch (error) {
