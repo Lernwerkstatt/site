@@ -5,7 +5,6 @@ const getIndex = async (req, res) => {
   try {
     const calendar = await events.getEvents();
     const latestPost = await database.latestPost();
-    const facebookImage = await events.getEventImage(calendar[0].id);
 
     const card = [
       // First static block
@@ -22,7 +21,7 @@ const getIndex = async (req, res) => {
         title: calendar[0].name,
         text: calendar[0].date,
         link: calendar[0].link,
-        image: facebookImage
+        image: calendar[0].cover.source
       },
       // Third blog block
       {
