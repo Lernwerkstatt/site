@@ -29,28 +29,41 @@ const blog = latestPost => ({
 });
 
 router.get("/", async (req, res) => {
+  const refresh = req.query.refresh === "";
+
+  let calendar = [
+    {
+      name: "Alle Events",
+      date: "Rund um die Uhr",
+      link: "https://www.facebook.com/dielernwerkstatt/events",
+      cover: {
+        source: "img/home/no_facebook.png"
+      }
+    }
+  ];
+  let latestPost;
+
   try {
-    const refreshEvents = req.query.refresh === "";
-    const calendar = await events.getEvents(refreshEvents);
-    const latestPost = await database.latestPost();
-
-    const cards = [
-      // First static block
-      ourValues(),
-      // Second facebook block
-      event(calendar),
-      // Third blog block
-      blog(latestPost)
-    ];
-
-    const result = {
-      calendar,
-      cards
-    };
-    res.render("home", result);
+    latestPost = await database.latestPost();
+    calendar = await events.getEvents(refresh);
   } catch (error) {
-    res.status(500).send({ message: "Can not read data", error });
+    console.log({ message: "Can not read data", error });
   }
+
+  const cards = [
+    // First static block
+    ourValues(),
+    // Second facebook block
+    event(calendar),
+    // Third blog block
+    blog(latestPost)
+  ];
+
+  const result = {
+    calendar,
+    cards
+  };
+  res.render("home", result);
 });
 
 module.exports = { router };
