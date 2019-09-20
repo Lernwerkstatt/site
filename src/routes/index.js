@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 
 const homeRouter = require("./home.js");
-const aboutRouter = require("./about.js");
+const teamRouter = require("./team.js");
 const blogsRouter = require("./blogs.js");
 const contactRouter = require("./contact.js");
 const partnersRouter = require("./partners.js");
@@ -13,7 +13,7 @@ const projectsRouter = require("./projects.js");
 const subscribeRouter = require("./subscribe.js");
 
 router.use(homeRouter.router);
-router.use(aboutRouter);
+router.use(teamRouter);
 router.use(blogsRouter);
 router.use(contactRouter);
 router.use(partnersRouter);
