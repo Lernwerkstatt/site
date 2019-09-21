@@ -25,6 +25,9 @@ exports[`header.hbs should match the snapshot 1`] = `
           <li class=\\"nav-item\\">
             <a class=\\"nav-link text-light\\" href=\\"/team\\">Menschen</a>
           </li>
+          <li class=\\"nav-item\\">
+            <a class=\\"nav-link text-light\\" href=\\"/gallery\\">Galerie</a>
+          </li>
         </ul>
         <form class=\\"form-inline my-2 my-lg-0\\" action=\\"https://duckduckgo.com/\\">
           <div class=\\"form-group\\">
