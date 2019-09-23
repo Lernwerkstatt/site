@@ -6,7 +6,7 @@ const router = express.Router();
 
 const ourValues = () => ({
   badge: "Über Uns",
-  title: "Unsere Werte",
+  title: "Unsere Werte / Our Values",
   text: "Dafür steht Die Lernwerkstatt.",
   link: "/values",
   image: "img/home/notebook.png"
