@@ -4,6 +4,7 @@ const router = express.Router();
 
 const blogsRouter = require("./blogs.js");
 const contactRouter = require("./contact.js");
+const friendsRouter = require("./friends.js");
 const galleryRouter = require("./gallery.js");
 const homeRouter = require("./home.js");
 const partnersRouter = require("./partners.js");
@@ -15,6 +16,7 @@ const valuesRouter = require("./values.js");
 
 router.use(blogsRouter);
 router.use(contactRouter);
+router.use(friendsRouter);
 router.use(galleryRouter);
 router.use(homeRouter.router);
 router.use(partnersRouter);
