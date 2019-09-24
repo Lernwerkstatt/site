@@ -1,17 +1,15 @@
 {{> main/title title="Befreundete Initiativen"}}
 <div class="container">
   <p class="h2 mb-3">Wir teilen uns das Büro mit...</p>
-  <div class="mb-4">
-    <p class="lead"><a href="https://www.loesje.org/berlin" target="_blank">Loesje Berlin</a></p>
-    <p class="">Ziel von Loesje ist es, Ideen und Meinungen auszutauschen. Loesje organisiert internationale
-      Schreibworkshops für
-      Ihre Mitglieder und andere Organisationen, arbeitet mit kulturellen und sozialen
-      Organisationen zusammen und organisiert internationale Austauschprogramme und Projekte.</p>
+  <div class="card-columns mb-4 d-inline-block">
+    {{#each organizations.roomies}}
+    {{> friends/initiatives this}}
+    {{/each}}
   </div>
-  <div class="mb-4">
-    <p class="lead"><a href="https://lakunabi.wordpress.com/" target="_blank">LaKunaBi</a></p>
-    <p>Das Labor für Kunst und nachhaltige Bildung - der Ort, wo Kreativität, Nachhaltigkeit und Bildung sich treffen...
-      mit Bibliothek und Infopool, Workshops und Vorträgen, Netzwerktreffen und mehr. Wenn ihr wissen wollt, was in der
-      Stadt in Sachen Urban Gardening, Upcycling, Nachhaltigem Wirtschaften etc. gerade los ist, fragt Carla!</p>
+  <p class="h2 mb-3">Weitere Befreundete Initiativen...</p>
+  <div class="card-columns mb-3 d-inline-block">
+    {{#each organizations.friends}}
+    {{> friends/initiatives this}}
+    {{/each}}
   </div>
 </div>
