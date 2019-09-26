@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`initiatives.hbs should match the snapshot 1`] = `
+"<div class=\\"card\\">
+  <div class=\\"card-body\\">
+    <a href=\\"http://www.die-lernwerkstatt.org/\\" target=\\"_blank\\">
+      <h5 class=\\"card-title\\">Initiative</h5>
+    </a>
+    <p class=\\"card-text\\">This is an initiative</p>
+  </div>
+</div>
+"
+`;

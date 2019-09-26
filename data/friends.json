@@ -1,0 +1,68 @@
+{
+  "organizations": {
+    "roomies": [
+      {
+        "name": "Loesje Berlin",
+        "link": "https://www.loesje.org/berlin",
+        "text": "Ziel von Loesje ist es, Ideen und Meinungen auszutauschen. Loesje organisiert internationale Schreibworkshops für ihre Mitglieder und andere Organisationen, arbeitet mit kulturellen und sozialen Organisationen zusammen und organisiert internationale Austauschprogramme und Projekte."
+      },
+      {
+        "name": "LaKunaBi",
+        "link": "https://lakunabi.wordpress.com/",
+        "text": "Das Labor für Kunst und nachhaltige Bildung - der Ort, wo Kreativität, Nachhaltigkeit und Bildung sich treffen...mit Bibliothek und Infopool, Workshops und Vorträgen, Netzwerktreffen und mehr. Wenn ihr wissen wollt, was in der Stadt in Sachen Urban Gardening, Upcycling, Nachhaltigem Wirtschaften etc. gerade los ist, fragt Carla!"
+      }
+    ],
+    "friends": [
+      {
+        "name": "Alliance for Self-Directed Education",
+        "link": "https://www.self-directed.org/",
+        "text": "Die ASDE ist eine englisch-sprachige non-profit Organisation mit dem Ziel, Menschen über die Vorteile von und Methoden für selbstbestimmtes Lernen zu informieren. Wir freuen uns, mit unseren zweimal monatlich stattfindenden Freilerner-Treffen Teil der Bewegung zu sein. Ihr findet uns auch unter \"Self Directed Education Communities\" in der Ressourcensammlung der ASDE."
+      },
+      {
+        "name": "Bildungscampus Treptow-Nord",
+        "link": "https://www.bildungscampus-treptow.org/",
+        "text": "Der Bildungscampus Treptow-Nord (BCTN) ist ein Netzwerk aus VertreterInnen von Schulen, Kindertagesstätten, und freien Trägern der Bildungs- und Jugendarbeit im Norden des Bezirkes Treptow-Köpenick. Zu den Zielen des BCTN zählen die altersübergreifende Vernetzung von schulischen und außerschulischen Sozial- und Bildungsangeboten, und das Wecken von bürgerlichem Engagement. Unser Verein ist mittendrin und koordiniert sogar den gesamten BCTN!"
+      },
+      {
+        "name": "Bundesverband Natürlich Lernen! e.V.",
+        "link": "https://bvnl.de/",
+        "text": "Der BVNL ist ein Zusammenschluss von Familien, Einzelpersonen und Gruppen, denen natürliches, selbstbestimmtes Lernen in partnerschaftlichen und sozialen Zusammenhängen am Herzen liegt. Er setzt sich für die Vielfalt und Freiheit der Bildungswege ein."
+      },
+      {
+        "name": "Spielfilm CaRabA #LebenohneSchule",
+        "link": "https://www.caraba.de/",
+        "text": "Ein Leben ohne Schule. Wie sieht das aus? Wie lernen junge Menschen frei? Der Spielfilm CaRabA erzählt die Geschichte von fünf jungen Menschen, die sich auf ihre Art und Weise bilden. Ihre Lernorte sind ein Taxi, ein Eiswagen, ein Kunstmuseum, ein Labor."
+      },
+      {
+        "name": "HandlungsSpielRaum",
+        "link": "https://www.handlungsspielraum-berlin.de/",
+        "text": "Der HandlungsSpielRaum in Berlin-Neukölln war ein Ort, an dem Menschen ihren ureigenen Fragen nachgehen und ihre tiefen Anliegen zum Lebensmittelpunkt machen konnten."
+      },
+      {
+        "name": "For the Love of Learning - Voices of the Alternative Education Movement",
+        "link": "http://fortheloveoflearningshow.com/",
+        "text": "Ein englisch-sprachiger Podcast, der wöchentlich ein Gespräch unter einem besonderen Aspekt alternative Bildung mit Menschen aus der ganzen Welt führt. André von der Lernwerkstatt war zu Gast in der Folge zu \"Learning Communities\"."
+      },
+      {
+        "name": "Openki",
+        "link": "https://openki.net/",
+        "text": "Openki ist eine interaktive Web-Plattform in Entwicklung mit dem Ziel, einen hürdenfreien Zugang zu Bildung für alle zu ermöglichen. Die Web-Plattform ist ein einfaches Open-Source Werkzeug für den lokalen, selbstorganisierten Wissensaustausch: Als Basis zur Vermittlung von unkommerziellen Bildungsangeboten, als Schnittstelle zwischen Menschen, die sich für ähnliche Themen begeistern und als Instrument, welches die Organisation von “peer-to-peer”-Wissensaustausch vereinfacht. Die Plattform ermöglicht sämtliche Prozesse von der Themenfindung über die Organisation und Durchführung von Kursen bis zur Dokumentation des Lernmaterials."
+      },
+      {
+        "name": "Polly & Bob",
+        "link": "http://www.pollyandbob.com/?lang=de",
+        "text": "Polly & Bob machen Nachbarschaft wieder lebendig. Mit tollen Veranstaltungen wie Hinterhofflohmärkten, Tauschbörsen, nicht-kommerziellen Sport-, Lern- und anderen Gruppen, Familientreffen und vielem mehr."
+      },
+      {
+        "name": "SanaD e.V.",
+        "link": "https://www.sanad-ev.org/",
+        "text": "SanaD ist eine gemeinnützige Organisation, die finanzielle Unterstützung für Syrien leistet und ehrenamtlich Integrationsarbeit für Menschen mit Migrationshintergrund in Deutschland fördert. Einige Mitglieder dieses jungen Vereins haben sich in der Lernwerkstatt kennen gelernt."
+      },
+      {
+        "name": "Sprach- und Kulturbörse (SKB)",
+        "link": "http://www.skb.tu-berlin.de/contao/index.php/en/",
+        "text": "Die SKB ist eine Einrichtung der TU Berlin, in der Studierende aus aller Welt zusammen arbeiten. Ihr Anliegen ist die Förderung von kulturellem und sprachlichem Austausch in Berlin. Wir bieten für alle Studierende und Mitarbeiter der Berliner Hochschulen sowie Alumni der TU Berlin Veranstaltungen und Bildungsmöglichkeiten im Bereich Kultur und Sprache an."
+      }
+    ]
+  }
+}

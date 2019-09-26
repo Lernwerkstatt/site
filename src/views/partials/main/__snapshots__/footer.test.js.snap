@@ -18,6 +18,9 @@ exports[`footer.hbs should match the snapshot 1`] = `
           <li class=\\"nav-item\\">
             <a href=\\"/partners\\" class=\\"nav-link text-light\\">Partner</a>
           </li>
+          <li class=\\"nav-item\\">
+            <a href=\\"/friends\\" class=\\"nav-link text-light\\">Freunde</a>
+          </li>
         </ul>
       </div>
       <div class=\\"col-md-6\\">

@@ -1,0 +1,15 @@
+{{> main/title title="Befreundete Initiativen"}}
+<div class="container">
+  <p class="h2 mb-3">Wir teilen uns das Büro mit...</p>
+  <div class="card-columns mb-4 d-inline-block">
+    {{#each organizations.roomies}}
+    {{> friends/initiatives this}}
+    {{/each}}
+  </div>
+  <p class="h2 mb-3">Weitere Befreundete Initiativen...</p>
+  <div class="card-columns mb-3 d-inline-block">
+    {{#each organizations.friends}}
+    {{> friends/initiatives this}}
+    {{/each}}
+  </div>
+</div>
