@@ -1,6 +1,5 @@
 User-agent: *
 Disallow: /blog/create
-Crawl-delay: 8
 
 #    .__________________________.
 #    | .___________________. |==|
