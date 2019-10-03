@@ -3,6 +3,9 @@ const morgan = require("morgan");
 const hbs = require("express-handlebars");
 const favicon = require("serve-favicon");
 const bodyParser = require("body-parser");
+const i18n = require("i18n");
+const cookieParser = require('cookie-parser');
+
 const helmet = require("./middlewares/helmet.js");
 
 const routes = require("./routes");
@@ -13,6 +16,7 @@ const app = express();
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cookieParser());
 app.use(helmet);
 
 app.set("view engine", "hbs");
@@ -23,11 +27,36 @@ app.engine(
     extname: "hbs",
     defaultLayout: "main",
     partialsDir: `${__dirname}/views/partials/`,
-    layoutsDir: `${__dirname}/views/layouts/`
+    layoutsDir: `${__dirname}/views/layouts/`,
+    helpers: {
+      __: function() { return i18n.__.apply(this, arguments); },
+      __n: function() { return i18n.__n.apply(this, arguments); }
+    }
   })
 );
 
+i18n.configure({
+  locales:['en', 'de'],
+  directory: `${__dirname}/locales`,
+  defaultLocale: 'de',
+  cookie: 'locale',
+  queryParameter: 'lang',
+  api: {
+    '__': '__',
+    '__n': '__n'
+  }
+});
+app.use(i18n.init)
+
 app.use(express.static(`${__dirname}/../static`));
+app.get('/de', function (req, res) {
+  res.cookie('locale', 'de', { maxAge: 900000, httpOnly: true });
+  res.redirect('back');
+});
+app.get('/en', function (req, res) {
+  res.cookie('locale', 'en', { maxAge: 900000, httpOnly: true });
+  res.redirect('back');
+});
 app.use(favicon(`${__dirname}/../static/img/favicon.ico`));
 
 app.use(routes);

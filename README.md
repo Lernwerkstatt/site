@@ -30,7 +30,7 @@ PIXLEE_INSTAGRAM_WIDGET_ID=XXX
 4. Install dependencies with `npm install`
 5. Run the development server with `npm start`
 
-### Changing the Bootstrap style
+## Changing the Bootstrap style
 
 1. Import `/static/css/_variables.scss` to [Boostrap.build](https://bootstrap.build/app)
 2. Change style.
@@ -56,3 +56,14 @@ The `apiKey` will be sent unencrypted to the client. This does not seem to be a 
 We cache our Facebook events every hour, to speed up the site load time.
 
 **To force pulling new events from facebook add `?refresh` to main page url.**
+
+### TODO
+
+Fix handlebars snapshot testing and return code below to `package.json`
+
+```json
+    "*.{hbs}": [
+      "git add",
+      "jest --config config/jest.json --bail --findRelatedTests"
+    ]
+```

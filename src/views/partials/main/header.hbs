@@ -2,34 +2,34 @@
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-primary">
     <div class="container">
       <a class="navbar-brand header-logo" href="/">
-        <img height="24" alt="Logo" src="/img/navbar_logo.png" />Die Lernwerkstatt
+        <img height="24" alt="Logo" src="/img/navbar_logo.png" />{{{__ 'header_title'}}}
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
-        aria-expanded="false" aria-label="Toggle navigation">
+        aria-expanded="false" aria-label="{{{__ 'header_toggle'}}}">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item">
-            <a class="nav-link text-light" href="/values">Unsere Werte</a>
+            <a class="nav-link text-light" href="/values">{{{__ 'header_values'}}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="/projects">Projekte</a>
+            <a class="nav-link text-light" href="/projects">{{{__ 'header_projects'}}}</a>
           </li>
           <li class="nav-item">
-            <a href="/blogs" class="nav-link text-light">Blog</a>
+            <a href="/blogs" class="nav-link text-light">{{{__ 'header_blogs'}}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="/team">Menschen</a>
+            <a class="nav-link text-light" href="/team">{{{__ 'header_team'}}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-light" href="/gallery">Galerie</a>
+            <a class="nav-link text-light" href="/gallery">{{{__ 'header_gallery'}}}</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" action="https://duckduckgo.com/">
           <div class="form-group">
             <div class="input-group">
-              <input type="search" class="form-control mr-sm-2" placeholder="Suche" name="q">
+              <input type="search" class="form-control mr-sm-2" placeholder="{{{__ 'header_search'}}}" name="q">
               <input type="hidden" value="https://lernwerkstatt-site.azurewebsites.net/" name="sites">
               <input type="hidden" value="1" name="kh">
               <input type="hidden" value="1" name="kn">
@@ -41,6 +41,8 @@
               </span>
             </div>
           </div>
+          <a class="nav-link text-light font-weight-{{{__ 'active_de'}}}" href="/de">DE</a>
+          <a class="nav-link text-light font-weight-{{{__ 'active_en'}}}" href="/en">EN</a>
         </form>
       </div>
     </div>
