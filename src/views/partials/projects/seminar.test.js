@@ -6,7 +6,7 @@ describe("seminar.hbs", () => {
       workshop({
         name: "Workshop",
         link: "http://www.die-lernwerkstatt.org/",
-        text: "This is a workshop",
+        text: "This is a workshop"
       })
     ).toMatchSnapshot();
   });

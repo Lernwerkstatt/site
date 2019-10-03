@@ -29,11 +29,11 @@ exports[`header.hbs should match the snapshot 1`] = `
             <a class=\\"nav-link text-light\\" href=\\"/gallery\\">Galerie</a>
           </li>
         </ul>
-        <form class=\\"form-inline my-2 my-lg-0\\" action=\\"https://duckduckgo.com/\\">
+        <form class=\\"form-inline my-2 my-lg-0\\" action=\\"https://duckduckgo.com/\\" target=\\"_blank\\">
           <div class=\\"form-group\\">
             <div class=\\"input-group\\">
               <input type=\\"search\\" class=\\"form-control mr-sm-2\\" placeholder=\\"Suche\\" name=\\"q\\">
-              <input type=\\"hidden\\" value=\\"https://lernwerkstatt-site.azurewebsites.net/\\" name=\\"sites\\">
+              <input type=\\"hidden\\" value=\\"https://die-lernwerkstatt.org\\" name=\\"sites\\">
               <input type=\\"hidden\\" value=\\"1\\" name=\\"kh\\">
               <input type=\\"hidden\\" value=\\"1\\" name=\\"kn\\">
               <input type=\\"hidden\\" value=\\"1\\" name=\\"kac\\">
