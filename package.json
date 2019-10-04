@@ -43,7 +43,6 @@
   },
   "dependencies": {
     "body-parser": "^1.19.0",
-    "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
     "fb": "^2.0.0",
@@ -52,13 +51,13 @@
     "mongodb": "^3.3.2",
     "mongoose": "^5.7.3",
     "morgan": "^1.9.1",
-    "npm-run-all": "^4.1.5",
     "serve-favicon": "^2.5.0",
     "showdown": "^1.9.0",
     "uuid": "^3.3.3"
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
+    "dotenv": "^8.1.0",
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.3.0",
@@ -68,6 +67,7 @@
     "jest": "^24.9.0",
     "lint-staged": "^9.4.1",
     "nodemon": "^1.19.3",
+    "npm-run-all": "^4.1.5",
     "prettier": "^1.18.2",
     "prettier-eslint": "^9.0.0",
     "stylelint": "^11.0.0",
