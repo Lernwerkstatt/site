@@ -7,6 +7,7 @@ const helmet = require("./middlewares/helmet.js");
 
 const routes = require("./routes");
 
+const letsEncryptReponse = process.env.CERTBOT_RESPONSE;
 const port = process.env.PORT || 3000;
 const app = express();
 
@@ -34,6 +35,10 @@ app.use(routes);
 
 app.use((req, res) => {
   res.status(404).render("error");
+});
+
+app.get("/.well-known/acme-challenge/:content", (req, res) => {
+  res.send(letsEncryptReponse);
 });
 
 app.listen(port, () => {
