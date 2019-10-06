@@ -31,3 +31,7 @@ series [How to Contribute to an Open Source Project on GitHub][egghead]
 Please make sure to run the tests before you commit your changes. You can run
 `npm run test:update` which will update any snapshots that need updating. Make
 sure to include those changes (if they exist) in your commit.
+
+
+[egghead]:
+  https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
