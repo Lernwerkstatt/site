@@ -4,12 +4,13 @@ const hbs = require("express-handlebars");
 const favicon = require("serve-favicon");
 const bodyParser = require("body-parser");
 const i18n = require("i18n");
-const cookieParser = require('cookie-parser');
+const cookieParser = require("cookie-parser");
 
 const helmet = require("./middlewares/helmet.js");
 
 const routes = require("./routes");
 
+const letsEncryptReponse = process.env.CERTBOT_RESPONSE;
 const port = process.env.PORT || 3000;
 const app = express();
 
@@ -18,6 +19,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cookieParser());
 app.use(helmet);
+
+app.get("/.well-known/acme-challenge/:content", (req, res) => {
+  res.send(letsEncryptReponse);
+});
 
 app.set("view engine", "hbs");
 app.set("views", `${__dirname}/views/`);
@@ -29,33 +34,42 @@ app.engine(
     partialsDir: `${__dirname}/views/partials/`,
     layoutsDir: `${__dirname}/views/layouts/`,
     helpers: {
-      __: function() { return i18n.__.apply(this, arguments); },
-      __n: function() { return i18n.__n.apply(this, arguments); }
+      __() {
+        return i18n.__.apply(this, arguments);
+      },
+      __n() {
+        return i18n.__n.apply(this, arguments);
+      },
+      section(name, options) {
+        if (!this._sections) this._sections = {};
+        this._sections[name] = options.fn(this);
+        return null;
+      }
     }
   })
 );
 
 i18n.configure({
-  locales:['en', 'de'],
+  locales: ["en", "de"],
   directory: `${__dirname}/locales`,
-  defaultLocale: 'de',
-  cookie: 'locale',
-  queryParameter: 'lang',
+  defaultLocale: "de",
+  cookie: "locale",
+  queryParameter: "lang",
   api: {
-    '__': '__',
-    '__n': '__n'
+    __: "__",
+    __n: "__n"
   }
 });
-app.use(i18n.init)
+app.use(i18n.init);
 
 app.use(express.static(`${__dirname}/../static`));
-app.get('/de', function (req, res) {
-  res.cookie('locale', 'de', { maxAge: 900000, httpOnly: true });
-  res.redirect('back');
+app.get("/de", function(req, res) {
+  res.cookie("locale", "de", { maxAge: 900000, httpOnly: true });
+  res.redirect("back");
 });
-app.get('/en', function (req, res) {
-  res.cookie('locale', 'en', { maxAge: 900000, httpOnly: true });
-  res.redirect('back');
+app.get("/en", function(req, res) {
+  res.cookie("locale", "en", { maxAge: 900000, httpOnly: true });
+  res.redirect("back");
 });
 app.use(favicon(`${__dirname}/../static/img/favicon.ico`));
 
