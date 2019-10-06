@@ -1,54 +1,37 @@
 {{#section "head"}}
-<title>Unsere Werte - Die Lernwerkstatt</title>
+<title>{{{__ "values_title"}}} – {{{__ "header_title"}}}</title>
 {{/section}}
-{{> main/title title="Unsere Werte"}}
+{{#section "title"}}
+<div class="container my-4">
+  <div class="row">
+    <div class="col border-bottom">
+      <p class="h1">{{{__ "values_title"}}}</p>
+    </div>
+  </div>
+</div>
+{{/section}}
+
 <div class="container">
   <div class="card-columns">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Selbstbestimmt</h3>
-        <img style="display:block;margin:0 auto" src="img/values/selfdetermined.png" alt="Selbstbestimmt" />
-        <p class="card-text mb-5">Selbstbestimmtes Lernen ist uns ein Herzensanliegen. Du bestimmst, was, wann, wo und
-          mit wem du (aktiv) lernst. Es liegt in deiner Hand, wohin dein Lernprozess dich führt, welche Ziele du dir
-          setzt, welchen Themen und Interessen du folgst und mit welchen Methoden du das tust. Wir sind lediglich
-          Begleiter*innen in diesem Prozess und stehen dir mit Rat und Tat zur Seite.</p>
-        <hr>
-        <h3 class="card-title mt-3" style="font-style:italic">Self-directed</h3>
-        <p class="card-text" style="font-style:italic">Self-directed learning is a matter close to our hearts. You
-          determine what, when, where and with whom you (actively) learn. It is up to you where your learning process
-          takes you, what goals you set yourself, what topics and interests you follow and what methods you use to do
-          this. We are only companions in this process and are at your side with words and deeds.</p>
+        <h3 class="card-title">{{{__ 'values1_title'}}}</h3>
+        <img class="mx-auto d-block" src="img/values/selfdetermined.png" alt="{{{__ 'values1_title'}}}" />
+        <p class="card-text mb-5">{{{__ 'values1_description'}}}</p>
       </div>
     </div>
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Gemeinschaftlich</h3>
-        <img style="display:block;margin:0 auto" src="img/values/collaborative.png" alt="Gemeinschaftlich" />
-        <p class="card-text mb-5">Die Lernwerkstatt ist eine wachsende Gemeinschaft von Lernenden – jungen Menschen, die
-          sich in oder außerhalb der Schule bilden und Erwachsenen, die sich zu ihren Interessen austauschen,
-          (weiter-)bilden und Neues entdecken. Lernen wird zu einem ko-konstruktiven Prozess, wenn Menschen ihre jeweils
-          eigene Sichtweise, ihre Erfahrungen und Fähigkeiten auf allen Ebenen der Lernwerkstatt einbringen können.</p>
-        <hr>
-        <h3 class="card-title mt-3" style="font-style:italic">Collaborative</h3>
-        <p class="card-text" style="font-style:italic">The learning workshop (Lernwerkstatt) is a growing community of
-          learners - young people who are educating themselves in or outside of school and adults who share their
-          interests with others, learn more and discover new topics. Learning becomes a co-constructive process when
-          people can bring their own perspectives, experiences and skills to all levels of the learning workshop.
-        </p>
+        <h3 class="card-title">{{{__ 'values2_title'}}}</h3>
+        <img class="mx-auto d-block" src="img/values/collaborative.png" alt="{{{__ 'values2_title'}}}" />
+        <p class="card-text mb-5">{{{__ 'values2_description'}}}</p>
       </div>
     </div>
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Kreativ</h3>
-        <img style="display:block;margin:0 auto" src="img/values/creative.png" alt="Kreativ" />
-        <p class="card-text mb-5">Kreativ sind bei uns die Methoden, die Mittel und die Denkprozesse. Lernende und
-          Lernbegleiter*innen haben in der Lernwerkstatt Raum, schöpferisch Lernprozesse zu gestalten. Vielfalt braucht
-          Freiheit und Erfindungsreichtum – beides findest du in der Lernwerkstatt vor.</p>
-        <hr>
-        <h3 class="card-title mt-3" style="font-style:italic">Creative</h3>
-        <p class="card-text" style="font-style:italic">Our methods, means and thought processes are creative. In the
-          learning workshop, learners and learning guides have the space to creatively design learning processes.
-          Diversity needs freedom and inventiveness - you will find both in the learning workshop.</p>
+        <h3 class="card-title">{{{__ 'values3_title'}}}</h3>
+        <img class="mx-auto d-block" src="img/values/creative.png" alt="{{{__ 'values3_title'}}}" />
+        <p class="card-text mb-5">{{{__ 'values3_description'}}}</p>
       </div>
     </div>
   </div>
