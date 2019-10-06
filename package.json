@@ -15,7 +15,7 @@
     "url": "git+https://github.com/Lernwerkstatt/site.git"
   },
   "author": "Team Die Lernwerkstatt",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Lernwerkstatt/site/issues"
   },
