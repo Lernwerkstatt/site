@@ -28,7 +28,14 @@ app.engine(
     extname: "hbs",
     defaultLayout: "main",
     partialsDir: `${__dirname}/views/partials/`,
-    layoutsDir: `${__dirname}/views/layouts/`
+    layoutsDir: `${__dirname}/views/layouts/`,
+    helpers: {
+      section: function(name, options) {
+        if (!this._sections) this._sections = {};
+        this._sections[name] = options.fn(this);
+        return null;
+      }
+    }
   })
 );
 
