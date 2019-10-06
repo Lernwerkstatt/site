@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "jest --config config/jest.json",
-    "prod": "node index.js",
+    "prod": "node src/index.js",
     "start": "npm-run-all -p nodemon browser-sync",
     "nodemon": "nodemon --exec node -r dotenv/config src/index.js",
     "browser-sync": "./browserSync.sh"
