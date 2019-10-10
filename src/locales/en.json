@@ -33,5 +33,6 @@
 	"common_required": "common_required",
 	"common_name": "common_name",
 	"common_surname": "common_surname",
-	"subscribe_button": "subscribe_button"
+	"subscribe_button": "subscribe_button",
+	"projects_title": "projects_title"
 }
