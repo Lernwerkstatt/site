@@ -34,6 +34,7 @@ app.engine(
     partialsDir: `${__dirname}/views/partials/`,
     layoutsDir: `${__dirname}/views/layouts/`,
     helpers: {
+      /* eslint-disable */
       __() {
         return i18n.__.apply(this, arguments);
       },
@@ -45,6 +46,7 @@ app.engine(
         this._sections[name] = options.fn(this);
         return null;
       }
+      /* eslint-enable */
     }
   })
 );
@@ -63,11 +65,11 @@ i18n.configure({
 app.use(i18n.init);
 
 app.use(express.static(`${__dirname}/../static`));
-app.get("/de", function(req, res) {
+app.get("/de", (req, res) => {
   res.cookie("locale", "de", { maxAge: 900000, httpOnly: true });
   res.redirect("back");
 });
-app.get("/en", function(req, res) {
+app.get("/en", (req, res) => {
   res.cookie("locale", "en", { maxAge: 900000, httpOnly: true });
   res.redirect("back");
 });
