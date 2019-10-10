@@ -34,5 +34,17 @@
 	"common_name": "common_name",
 	"common_surname": "common_surname",
 	"subscribe_button": "subscribe_button",
-	"projects_title": "projects_title"
+	"projects_title": "projects_title",
+	"projects1_link": "projects1_link",
+	"projects1_name": "projects1_name",
+	"projects1_text": "projects1_text",
+	"projects2_link": "projects2_link",
+	"projects2_name": "projects2_name",
+	"projects2_text": "projects2_text",
+	"projects3_link": "projects3_link",
+	"projects3_name": "projects3_name",
+	"projects3_text": "projects3_text",
+	"projects4_link": "projects4_link",
+	"projects4_name": "projects4_name",
+	"projects4_text": "projects4_text"
 }
