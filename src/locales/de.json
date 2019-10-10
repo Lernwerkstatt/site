@@ -6,6 +6,7 @@
   "common_required": "erforderliche Angabe",
   "common_name": "Vorname",
   "common_surname": "Nachname",
+  "common_error": "Page Not Found",
   "common_close": "Schließen",
   "common_calendar": "Kalender",
   "common_day": "Kalendertag",
