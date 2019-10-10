@@ -1,15 +1,25 @@
 {{#section "head"}}
-<title>Befreundete Initiativen - Die Lernwerkstatt</title>
+<title>{{{__ "friends_title"}}} – {{{__ "common_title"}}}</title>
 {{/section}}
-{{> main/title title="Befreundete Initiativen"}}
+
+{{#section "title"}}
+<div class="container my-4">
+  <div class="row">
+    <div class="col border-bottom">
+      <h1 class="h1">{{{__ "friends_title"}}}</h1>
+    </div>
+  </div>
+</div>
+{{/section}}
+
 <div class="container">
-  <p class="h2 mb-3">Wir teilen uns das Büro mit...</p>
+  <p class="h2 mb-3">{{{__ "friends_roomies"}}}</p>
   <div class="card-columns mb-4 d-inline-block">
     {{#each organizations.roomies}}
     {{> friends/initiatives this}}
     {{/each}}
   </div>
-  <p class="h2 mb-3">Weitere Befreundete Initiativen...</p>
+  <p class="h2 mb-3">{{{__ "friends_friends"}}}</p>
   <div class="card-columns mb-3 d-inline-block">
     {{#each organizations.friends}}
     {{> friends/initiatives this}}
