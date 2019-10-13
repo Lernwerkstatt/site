@@ -7,9 +7,6 @@ this project (found in the CODE_OF_CONDUCT.md file).
 Also, please make sure you're familiar with and follow the instructions in the
 contributing guidelines (found in the CONTRIBUTING.md file).
 
-If you're new to contributing to open source projects, you might find this free
-video course helpful: http://kcd.im/pull-request
-
 Please fill out the information below to expedite the review and (hopefully)
 merge of your pull request!
 -->

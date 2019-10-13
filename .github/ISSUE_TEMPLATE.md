@@ -5,10 +5,6 @@ this project (found in the CODE_OF_CONDUCT.md file).
 
 Please fill out this template with all the relevant information so we can
 understand what's going on and fix the issue.
-
-If this is an issue with the documentation, please file an issue in the docs repo:
-https://github.com/alexkrolick/testing-library-docs
-
 -->
 
 - `node` version:
@@ -16,7 +12,8 @@ https://github.com/alexkrolick/testing-library-docs
 
 Relevant code or config
 
-```javascript
+```js
+const your => (code) => here;
 ```
 
 What you did:
