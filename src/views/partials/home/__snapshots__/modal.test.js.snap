@@ -9,7 +9,7 @@ exports[`modal.hbs should match the snapshot 1`] = `
           <button type=\\"button\\" class=\\"close mt-n4 d-sm-none\\" data-dismiss=\\"modal\\" aria-label=\\"Close\\">
             <span aria-hidden=\\"true\\">&times;</span>
           </button>
-          <a href=\\"\\" target=\\"_blank\\">
+          <a href=\\"\\" target=\\"_blank\\" rel=\\"noopener\\">
             <img class=\\"mw-100 pt-2\\" src=\\"\\" alt=\\"\\" />
           </a>
         </div>
@@ -26,7 +26,7 @@ exports[`modal.hbs should match the snapshot 1`] = `
         </p>
       </div>
       <div class=\\"modal-footer\\">
-        <a class=\\"btn btn-secondary buttonlink\\" href=\\"\\" target=\\"_blank\\">
+        <a class=\\"btn btn-secondary buttonlink\\" href=\\"\\" target=\\"_blank\\" rel=\\"noopener\\">
           Mehr Infos auf Facebook
         </a>
         <button type=\\"button\\" class=\\"btn btn-secondary\\" data-dismiss=\\"modal\\">Schließen</button>
