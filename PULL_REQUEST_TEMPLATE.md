@@ -35,7 +35,7 @@ merge of your pull request!
 <!-- to check an item, place an "x" in the box like so: "- [x] Documentation" -->
 
 - [ ] Documentation added to the
-      [docs site](https://github.com/alexkrolick/testing-library-docs)
+      [README](https://github.com/Lernwerkstatt/site/blob/master/README.md)
 - [ ] Tests
 - [ ] Ready to be merged
       <!-- In your opinion, is this ready to be merged as soon as it's reviewed? -->
