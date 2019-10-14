@@ -1,16 +1,11 @@
-const fs = require("fs");
-const moment = require("moment");
 const fb = require("fb");
 const showdown = require("showdown");
-
 const {
   extractNearestDate,
   stringifyEventDate,
   createEventLink,
   addCalendarIcon
 } = require("../utilities/facebook");
-
-const fileData = require("../../data/events.json");
 
 const converter = new showdown.Converter({
   simplifiedAutoLink: true
@@ -21,26 +16,24 @@ const fbOptions = {
   accessToken: process.env.FB_TOKEN
 };
 
-const getEvents = refresh =>
+const getEvents = () =>
   new Promise((resolve, reject) => {
-    if (!refresh && moment(fileData.date).isSame(moment(), "hour")) {
-      resolve(fileData.events);
-    } else {
-      const FB = new fb.Facebook(fbOptions);
-      FB.api(
-        `/${process.env.FB_PAGE_ID}/events?fields=cover,description,end_time,id,name,start_time,event_times`,
-        "get",
-        {
-          time_filter: "upcoming"
-        },
-        res => {
-          if (!res || res.error) {
-            reject(res);
-          }
+    const FB = new fb.Facebook(fbOptions);
+    FB.api(
+      `/${process.env.FB_PAGE_ID}/events?fields=cover,description,end_time,id,name,start_time,event_times`,
+      "get",
+      {
+        time_filter: "upcoming"
+      },
+      res => {
+        if (!res || res.error) {
+          reject(res);
+        }
 
-          const result = [];
-          if (res.data) {
-            res.data.forEach(event => {
+        let result = [];
+        if (res.data) {
+          result = res.data
+            .map(event => {
               const { cover, description, id, name } = event;
               const nearestDate = extractNearestDate(event);
               const date = stringifyEventDate(nearestDate);
@@ -48,7 +41,7 @@ const getEvents = refresh =>
               const htmlDescription = converter.makeHtml(description);
               const { dayicon, tag } = addCalendarIcon({ link, date });
 
-              result.push({
+              return {
                 cover,
                 date,
                 description,
@@ -59,34 +52,18 @@ const getEvents = refresh =>
                 nearestDate,
                 tag,
                 dayicon
-              });
-            });
-
-            result.sort(
+              };
+            })
+            .sort(
               (a, b) =>
                 new Date(a.nearestDate.start_time) -
                 new Date(b.nearestDate.start_time)
             );
-          }
-
-          const jsonContent = JSON.stringify({
-            date: moment().format(),
-            events: result
-          });
-
-          fs.writeFile(
-            `${__dirname}/../../data/events.json`,
-            jsonContent,
-            "utf8",
-            err => {
-              reject(err);
-            }
-          );
-
-          resolve(result);
         }
-      );
-    }
+
+        resolve(result);
+      }
+    );
   });
 
 module.exports = {
