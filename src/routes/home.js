@@ -1,8 +1,10 @@
 const express = require("express");
 const database = require("../services/database");
 const events = require("../services/events");
+const cache = require("../middlewares/cache");
 
 const router = express.Router();
+cache.init();
 
 const ourValues = () => ({
   badge: "Über Uns",
@@ -29,26 +31,8 @@ const blog = latestPost => ({
 });
 
 router.get("/", async (req, res) => {
-  const refresh = req.query.refresh === "";
-
-  let calendar = [
-    {
-      name: "Alle Events",
-      date: "Rund um die Uhr",
-      link: "https://www.facebook.com/dielernwerkstatt/events",
-      cover: {
-        source: "img/home/no_facebook.png"
-      }
-    }
-  ];
-  let latestPost;
-
-  try {
-    latestPost = await database.latestPost();
-    calendar = await events.getEvents(refresh);
-  } catch (error) {
-    console.log({ message: "Can not read data", error });
-  }
+  const calendar = await cache.get("events.json", events.getEvents);
+  const latestPost = await cache.get("blogs.json", database.latestPost);
 
   const result = {
     calendar,

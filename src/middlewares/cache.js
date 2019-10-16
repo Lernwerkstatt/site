@@ -2,8 +2,9 @@ const fs = require("fs");
 const moment = require("moment");
 
 const fsp = fs.promises;
+const directory = `${__dirname}/../../cache`;
 
-const isOutdated = cache => !moment(cache.date).isSame(moment(), "minute");
+const isOutdated = cache => !moment(cache.date).isSame(moment(), "hour");
 
 const createCache = async callback => {
   const date = moment();
@@ -21,17 +22,20 @@ const createCache = async callback => {
   };
 };
 
+const init = async () => {
+  if (!fs.existsSync(directory)) {
+    fs.mkdir(directory, console.error);
+  }
+};
+
 const get = async (filename, callback) => {
   let result;
+  let handle;
 
-  const directory = `${__dirname}/../../cache`;
-  if (!fs.existsSync(directory)) {
-    await fsp.mkdir(directory);
-  }
   const path = `${directory}/${filename}`;
 
   try {
-    const handle = await fsp.open(path, "r+");
+    handle = await fsp.open(path, "r+");
 
     const buffer = Buffer.alloc(500000);
     const file = await handle.read(buffer, 0, buffer.length, 0);
@@ -44,34 +48,33 @@ const get = async (filename, callback) => {
       if (isOutdated(cache)) {
         const newCache = await createCache(callback);
         result = newCache.value;
-        handle.writeFile(JSON.stringify(newCache));
+        await handle.writeFile(JSON.stringify(newCache));
       } else {
         result = cache.value;
       }
     } else {
       const newCache = await createCache(callback);
       result = newCache.value;
-      handle.writeFile(JSON.stringify(newCache));
+      await handle.writeFile(JSON.stringify(newCache));
     }
-
-    // Close the opened file.
-    await handle.close();
   } catch (noDirectoryOrNoFileOrFileCorrupted) {
     const newCache = await createCache(callback);
     result = newCache.value;
 
     try {
-      await fsp.writeFile(path, JSON.stringify(newCache), "utf8");
+      await fsp.writeFile(path, JSON.stringify(newCache));
     } catch (catastrophe) {
       console.error(catastrophe);
     }
+  } finally {
+    // Close the opened file.
+    if (handle) await handle.close();
   }
 
   return result;
 };
 
 const invalidate = async (filename, callback) => {
-  const directory = `${__dirname}/../../cache`;
   if (!fs.existsSync(directory)) {
     await fsp.mkdir(directory);
   }
@@ -87,6 +90,7 @@ const invalidate = async (filename, callback) => {
 };
 
 module.exports = {
+  init,
   get,
   invalidate
 };
