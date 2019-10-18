@@ -18,7 +18,7 @@ exports[`member.hbs should match the snapshot 1`] = `
       <div class=\\"modal-body\\">
         <div class=\\"row mt-3 mb-3\\">
           <div class=\\"col-sm-3 pr-0 text-center mb-3\\">
-            <img src=\\"img/logo.png\\" alt=\\"Max Muster\\" style=\\"width: 100%; height: auto; max-width: 160px\\" />
+            <img src=\\"img/logo.png\\" alt=\\"\\" style=\\"width: 100%; height: auto; max-width: 160px\\" />
           </div>
           <div class=\\"col-sm-9 text-left\\">
             Lorem ipsum.

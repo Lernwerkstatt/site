@@ -14,26 +14,26 @@ exports[`header.hbs should match the snapshot 1`] = `
       <div class=\\"collapse navbar-collapse\\" id=\\"navbar\\">
         <ul class=\\"navbar-nav mr-auto\\">
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" aria-label=\\"Unsere Werte\\" href=\\"/values\\">Unsere Werte</a>
+            <a class=\\"nav-link text-light\\" href=\\"/values\\">Unsere Werte</a>
           </li>
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" aria-label=\\"Unsere Projekte\\" href=\\"/projects\\">Projekte</a>
+            <a class=\\"nav-link text-light\\" href=\\"/projects\\">Projekte</a>
           </li>
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" aria-label=\\"Unser Blog\\" href=\\"/blogs\\">Blog</a>
+            <a class=\\"nav-link text-light\\" href=\\"/blogs\\">Blog</a>
           </li>
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" aria-label=\\"Unser Team\\" href=\\"/team\\">Menschen</a>
+            <a class=\\"nav-link text-light\\" href=\\"/team\\">Menschen</a>
           </li>
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" aria-label=\\"Unsere Galerie\\" href=\\"/gallery\\">Galerie</a>
+            <a class=\\"nav-link text-light\\" href=\\"/gallery\\">Galerie</a>
           </li>
         </ul>
         <form class=\\"form-inline my-2 my-lg-0\\" action=\\"https://duckduckgo.com/\\" target=\\"_blank\\"
           aria-label=\\"Durchsuche unsere Seite\\">
           <div class=\\"form-group\\">
             <div class=\\"input-group\\">
-              <input type=\\"search\\" class=\\"form-control mr-sm-2\\" placeholder=\\"Suche\\" name=\\"q\\" aria-label=\\"Suche\\">
+              <input type=\\"search\\" class=\\"form-control mr-sm-2\\" placeholder=\\"Suche\\" name=\\"q\\">
               <input type=\\"hidden\\" value=\\"https://die-lernwerkstatt.org/\\" name=\\"sites\\">
               <input type=\\"hidden\\" value=\\"1\\" name=\\"kh\\">
               <input type=\\"hidden\\" value=\\"1\\" name=\\"kn\\">
