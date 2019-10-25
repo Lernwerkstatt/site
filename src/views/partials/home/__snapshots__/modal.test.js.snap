@@ -6,7 +6,7 @@ exports[`modal.hbs should match the snapshot 1`] = `
     <div class=\\"modal-content\\">
       <div class=\\"modal-header\\">
         <div>
-          <button type=\\"button\\" class=\\"close mt-n4 d-sm-none\\" data-dismiss=\\"modal\\" aria-label=\\"Close\\">
+          <button type=\\"button\\" class=\\"close mt-n4 d-sm-none\\" data-dismiss=\\"modal\\" aria-label=\\"i18n\\">
             <span aria-hidden=\\"true\\">&times;</span>
           </button>
           <a href=\\"\\" target=\\"_blank\\" rel=\\"noopener\\">
@@ -19,7 +19,7 @@ exports[`modal.hbs should match the snapshot 1`] = `
           
         </h4>
         <p>
-           Uhr
+           i18n
         </p>
         <p>
           
@@ -27,9 +27,9 @@ exports[`modal.hbs should match the snapshot 1`] = `
       </div>
       <div class=\\"modal-footer\\">
         <a class=\\"btn btn-secondary buttonlink\\" href=\\"\\" target=\\"_blank\\" rel=\\"noopener\\">
-          Mehr Infos auf Facebook
+          i18n
         </a>
-        <button type=\\"button\\" class=\\"btn btn-secondary\\" data-dismiss=\\"modal\\">Schließen</button>
+        <button type=\\"button\\" class=\\"btn btn-secondary\\" data-dismiss=\\"modal\\">i18n</button>
       </div>
     </div>
   </div>

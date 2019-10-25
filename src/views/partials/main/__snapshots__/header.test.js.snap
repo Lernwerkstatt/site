@@ -5,34 +5,34 @@ exports[`header.hbs should match the snapshot 1`] = `
   <nav class=\\"navbar fixed-top navbar-expand-lg navbar-light bg-primary\\">
     <div class=\\"container\\">
       <a class=\\"navbar-brand header-logo\\" href=\\"/\\">
-        <img height=\\"24\\" alt=\\"Logo\\" src=\\"/img/navbar_logo.png\\" />Die Lernwerkstatt
+        <img height=\\"24\\" alt=\\"Logo\\" src=\\"/img/navbar_logo.png\\" />i18n
       </a>
       <button class=\\"navbar-toggler\\" type=\\"button\\" data-toggle=\\"collapse\\" data-target=\\"#navbar\\" aria-controls=\\"navbar\\"
-        aria-expanded=\\"false\\" aria-label=\\"Toggle navigation\\">
+        aria-expanded=\\"false\\" aria-label=\\"i18n\\">
         <span class=\\"navbar-toggler-icon\\"></span>
       </button>
       <div class=\\"collapse navbar-collapse\\" id=\\"navbar\\">
         <ul class=\\"navbar-nav mr-auto\\">
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" href=\\"/values\\">Unsere Werte</a>
+            <a class=\\"nav-link text-light\\" href=\\"/values\\">i18n</a>
           </li>
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" href=\\"/projects\\">Projekte</a>
+            <a class=\\"nav-link text-light\\" href=\\"/projects\\">i18n</a>
           </li>
           <li class=\\"nav-item\\">
-            <a href=\\"/blogs\\" class=\\"nav-link text-light\\">Blog</a>
+            <a href=\\"/blogs\\" class=\\"nav-link text-light\\">i18n</a>
           </li>
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" href=\\"/team\\">Menschen</a>
+            <a class=\\"nav-link text-light\\" href=\\"/team\\">i18n</a>
           </li>
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" href=\\"/gallery\\">Galerie</a>
+            <a class=\\"nav-link text-light\\" href=\\"/gallery\\">i18n</a>
           </li>
         </ul>
         <form class=\\"form-inline my-2 my-lg-0\\" action=\\"https://duckduckgo.com/\\" target=\\"_blank\\">
           <div class=\\"form-group\\">
             <div class=\\"input-group\\">
-              <input type=\\"search\\" class=\\"form-control mr-sm-2\\" placeholder=\\"Suche\\" name=\\"q\\">
+              <input type=\\"search\\" class=\\"form-control mr-sm-2\\" placeholder=\\"i18n\\" name=\\"q\\">
               <input type=\\"hidden\\" value=\\"https://die-lernwerkstatt.org\\" name=\\"sites\\">
               <input type=\\"hidden\\" value=\\"1\\" name=\\"kh\\">
               <input type=\\"hidden\\" value=\\"1\\" name=\\"kn\\">
@@ -44,6 +44,8 @@ exports[`header.hbs should match the snapshot 1`] = `
               </span>
             </div>
           </div>
+          <a class=\\"nav-link text-light font-weight-i18n\\" href=\\"/de\\">DE</a>
+          <a class=\\"nav-link text-light font-weight-i18n\\" href=\\"/en\\">EN</a>
         </form>
       </div>
     </div>
