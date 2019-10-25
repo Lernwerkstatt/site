@@ -34,6 +34,10 @@
     "*.{css}": [
       "stylelint --fix --config ./config/.stylelintrc.json",
       "git add"
+    ],
+    "*.{hbs}": [
+      "git add",
+      "jest --config config/jest.json --bail --findRelatedTests"
     ]
   },
   "dependencies": {

@@ -56,14 +56,3 @@ The `apiKey` will be sent unencrypted to the client. This does not seem to be a 
 We cache our Facebook events every hour to speed up the site load time.
 
 **To force pull new events from facebook add `?refresh` to the main page url.**
-
-### TODO
-
-Fix handlebars snapshot testing and return code below to `package.json`
-
-```json
-    "*.{hbs}": [
-      "git add",
-      "jest --config config/jest.json --bail --findRelatedTests"
-    ]
-```
