@@ -3,52 +3,62 @@
     {
       "name": "Bundesvereinigung Kulturelle Kinder- und Jugendbildung e.V.",
       "id": "bkj",
-      "img": "img/partners/bkj.png"
+      "img": "img/partners/bkj.png",
+      "link": "https://www.bkj.de/"
     },
     {
       "name": "Bundesministerium für Bildung und Forschung",
       "id": "bbf",
-      "img": "img/partners/bbf.png"
+      "img": "img/partners/bbf.png",
+      "link": "https://www.bmbf.de"
     },
     {
       "name": "Berliner Projektfonds Kulturelle Bildung",
       "id": "kpb",
-      "img": "img/partners/kpb.jpg"
+      "img": "img/partners/kpb.jpg",
+      "link": "https://www.kubinaut.de/de/berliner-projektfonds-kulturelle-bildung/"
     },
     {
       "name": "Stiftung Deutsche Klassenlotterie Berlin",
       "id": "lotto",
-      "img": "img/partners/lotto.jpg"
+      "img": "img/partners/lotto.jpg",
+      "link": "http://www.lotto-stiftung-berlin.de/"
     },
     {
       "name": "Der Paritätische Berlin",
       "id": "paritaet",
-      "img": "img/partners/paritaet.jpg"
+      "img": "img/partners/paritaet.jpg",
+      "link": "https://www.paritaet-berlin.de/"
     },
     {
       "name": "Quartiermeister",
       "id": "qm",
-      "img": "img/partners/qm.jpg"
+      "img": "img/partners/qm.jpg",
+      "link": "https://quartiermeister.org/de/"
     },
     {
-      "name": "Senatsverwaltung für Gesundheit und Soziales",
-      "id": null,
-      "img": null
+      "name": "Senatsverwaltung für Gesundheit, Pflege und Gleichstellung",
+      "id": "sengpg",
+      "img": "img/partners/senat2.jpg",
+      "link": "https://www.berlin.de/sen/gpg/"
     },
     {
       "name": "Senatsverwaltung für Integration, Arbeit und Soziales",
       "id": "seninarso",
-      "img": "img/partners/senat.jpg"
+      "img": "img/partners/senat.jpg",
+      "link": "https://www.berlin.de/sen/ias/"
     },
     {
       "name": "Stiftung Pfefferwerk",
       "id": "pfefferwork",
-      "img": "img/partners/pfefferwerk.jpg"
+      "img": "img/partners/pfefferwerk.jpg",
+      "link": "https://www.stpw.org/"
     },
     {
       "name": "Paul IT-Service GmbH",
       "id": "paul",
-      "img": "img/partners/paul.png"
+      "img": "img/partners/paul.png",
+      "link": "https://paul-it-service.de/index.php/de/home/"
     }
   ]
 }

@@ -53,9 +53,9 @@ The `apiKey` will be sent unencrypted to the client. This does not seem to be a 
 
 ## Facebook Events
 
-We cache our Facebook events every hour, to speed up the site load time.
+We cache our Facebook events every hour to speed up the site load time.
 
-**To force pulling new events from facebook add `?refresh` to main page url.**
+**To force pull new events from facebook add `?refresh` to the main page url.**
 
 ### TODO
 

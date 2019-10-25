@@ -14,17 +14,7 @@
 
 <div class="container">
   <div class="d-flex flex-wrap">
-    <h2 class="mb-3">{{{__ "partners_subtitle"}}}</h2>
-    <ul id="partner-names" class="two-columns p-0 d-none d-sm-block" style="list-style-type:none;">
-      {{#each partners}}
-      <li class="mb-1"> {{name}} </li>
-      {{/each}}
-    </ul>
-    <div id="partner-names" class="d-sm-none" style="list-style-type:none;">
-      {{#each partners}}
-      <div class="mb-2"> {{name}} </div>
-      {{/each}}
-    </div>
+    <h2 class="mb-4">{{{__ "partners_subtitle"}}}</h2>
     <div class="row" id="partner-logos">
       {{#each partners}}
       {{> partners/partner this}}

@@ -2,7 +2,9 @@
 
 exports[`partner.hbs should match the snapshot 1`] = `
 "<div class=\\"col-sm-4 align-self-center\\">
-  <img src=\\"img/logo.png\\" class=\\"partner-img\\" alt=\\"Partner X\\" />
+  <a href=\\"\\" aria-label=\\"Partner X\\" target=\\"_blank\\" rel=\\"noopener\\">
+    <img src=\\"img/logo.png\\" class=\\"partner-img\\" alt=\\"Partner X\\" />
+  </a>
 </div>
 "
 `;
