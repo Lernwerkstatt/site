@@ -4,6 +4,7 @@
 [![LGTM](https://badgen.net/badge/icon/lgtm?icon=lgtm&label&color=green)](https://www.youtube.com/watch?v=COUaNmm53VA)
 [![Node](https://badgen.net/badge/icon/Node.js?icon=https://simpleicons.now.sh/node-dot-js/026e00&label&color=green)](https://nodejs.org)
 [![Mongo](https://badgen.net/badge/icon/mongoDB?icon=https://simpleicons.now.sh/mongodb/13aa52&label&color=green)](https://www.mongodb.com/)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 ![Die Lernwerkstatt Logo](https://bbb.wandelwoche.org/wp-content/uploads/2019/06/lernwerkstatt.png)
 
@@ -53,6 +54,6 @@ The `apiKey` will be sent unencrypted to the client. This does not seem to be a 
 
 ## Facebook Events
 
-We cache our Facebook events every hour, to speed up the site load time.
+We cache our Facebook events every hour to speed up the site load time.
 
-**To force pulling new events from facebook add `?refresh` to main page url.**
+**To force pull new events from facebook add `?refresh` to the main page url.**

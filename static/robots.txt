@@ -1,6 +1,8 @@
 User-agent: *
 Disallow: /blog/create
 
+Sitemap: https://die-lernwerkstatt.org/sitemap.xml
+
 #    .__________________________.
 #    | .___________________. |==|
 #    | | ................. | |  |
