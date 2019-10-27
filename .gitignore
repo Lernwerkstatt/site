@@ -84,3 +84,6 @@ secrets.js
 
 # MacOS files
 .DS_Store
+
+# Local cache
+cache/

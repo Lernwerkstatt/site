@@ -1,5 +1,5 @@
 #!/bin/bash
-sleep .5
+sleep 2.5s
 browser-sync start \
     --no-online \
     --no-ui \
