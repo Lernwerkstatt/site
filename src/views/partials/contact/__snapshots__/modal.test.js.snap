@@ -6,7 +6,7 @@ exports[`modal.hbs should match the snapshot 1`] = `
     <div class=\\"modal-content\\">
       <div class=\\"modal-header\\">
         <h5 class=\\"modal-title\\" id=\\"testModal\\">eltit</h5>
-        <button type=\\"button\\" class=\\"close\\" data-dismiss=\\"modal\\" aria-label=\\"Close\\">
+        <button type=\\"button\\" class=\\"close\\" data-dismiss=\\"modal\\" aria-label=\\"i18n\\">
           <span aria-hidden=\\"true\\">&times;</span>
         </button>
       </div>
@@ -14,7 +14,7 @@ exports[`modal.hbs should match the snapshot 1`] = `
         <pre style=\\"white-space: pre-wrap;\\">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea consequatur quibusdam sint laboriosam voluptates.</pre>
       </div>
       <div class=\\"modal-footer\\">
-        <button type=\\"button\\" class=\\"btn btn-secondary\\" data-dismiss=\\"modal\\">Schließen</button>
+        <button type=\\"button\\" class=\\"btn btn-secondary\\" data-dismiss=\\"modal\\">i18n</button>
       </div>
     </div>
   </div>

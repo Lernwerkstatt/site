@@ -1,11 +1,50 @@
 {{#section "head"}}
-<title>Projekte - Die Lernwerkstatt</title>
+<title>{{{__ "projects_title"}}} – {{{__ "common_title"}}}</title>
 {{/section}}
-{{> main/title title="Projekte"}}
+
+{{#section "title"}}
+<div class="container my-4">
+  <div class="row">
+    <div class="col border-bottom">
+      <h1 class="h1">{{{__ "projects_title"}}}</h1>
+    </div>
+  </div>
+</div>
+{{/section}}
+
 <div class="container">
   <div class="card-columns">
-    {{#each projects}}
-    {{> projects/seminar this}}
-    {{/each}}
+    <div class="card">
+      <div class="card-body">
+        <a rel="noopener" href="{{{__ "projects1_link"}}}" target="_blank">
+          <h5 class="card-title">{{{__ "projects1_name"}}}</h5>
+        </a>
+        <p class="card-text">{{{__ "projects1_text"}}}</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <a rel="noopener" href="{{{__ "projects2_link"}}}" target="_blank">
+          <h5 class="card-title">{{{__ "projects2_name"}}}</h5>
+        </a>
+        <p class="card-text">{{{__ "projects2_text"}}}</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <a rel="noopener" href="{{{__ "projects3_link"}}}" target="_blank">
+          <h5 class="card-title">{{{__ "projects3_name"}}}</h5>
+        </a>
+        <p class="card-text">{{{__ "projects3_text"}}}</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body">
+        <a rel="noopener" href="{{{__ "projects4_link"}}}" target="_blank">
+          <h5 class="card-title">{{{__ "projects4_name"}}}</h5>
+        </a>
+        <p class="card-text">{{{__ "projects4_text"}}}</p>
+      </div>
+    </div>
   </div>
 </div>

@@ -31,7 +31,7 @@ PIXLEE_INSTAGRAM_WIDGET_ID=XXX
 4. Install dependencies with `npm install`
 5. Run the development server with `npm start`
 
-### Changing the Bootstrap style
+## Changing the Bootstrap style
 
 1. Import `/static/css/_variables.scss` to [Boostrap.build](https://bootstrap.build/app)
 2. Change style.

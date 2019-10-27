@@ -1,10 +1,20 @@
 {{#section "head"}}
-<title>Partner - Die Lernwerkstatt</title>
+<title>{{{__ "partners_title"}}} – {{{__ "common_title"}}}</title>
 {{/section}}
-{{> main/title title="Partner"}}
+
+{{#section "title"}}
+<div class="container my-4">
+  <div class="row">
+    <div class="col border-bottom">
+      <h1 class="h1">{{{__ "partners_title"}}}</h1>
+    </div>
+  </div>
+</div>
+{{/section}}
+
 <div class="container">
   <div class="d-flex flex-wrap">
-    <h2 class="mb-4">Wir bedanken uns herzlich bei unseren Förderpartnern: </h2>
+    <h2 class="mb-4">{{{__ "partners_subtitle"}}}</h2>
     <div class="row" id="partner-logos">
       {{#each partners}}
       {{> partners/partner this}}

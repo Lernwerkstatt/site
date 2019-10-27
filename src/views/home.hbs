@@ -1,23 +1,23 @@
 {{#section "head"}}
-<title>Die Lernwerkstatt</title>
+<title>{{{__ "common_title"}}} – {{{__ "common_title"}}}</title>
 {{/section}}
+
 <div class="home-bg">
   <div class="jumbotron-fluid">
     <div class="container py-2">
       <div class="row">
         <div class="col-sm-8">
           <h1 class="home-logo">
-            <img class="home-logo-img" alt="Die Lernwerkstatt" src="/img/home/fulllogo.png" />
+            <img class="home-logo-img" alt="{{{__ "common_title"}}}" src="/img/home/fulllogo.png" />
           </h1>
           <p class="home-subtitle">
-            Die Lernwerkstatt ist ein altersübergreifender Lernort für Lernende
-            in, außerhalb oder neben der Schule.
+            {{{__ "common_subtitle"}}}
           </p>
         </div>
         <div class="col-sm-4">
           <div class="card bg-primary text-black overflow-hidden">
             <h5 class="card-header text-center text-light">
-              Kalender
+              {{{__ "common_calendar"}}}
             </h5>
             <ul class="list-group list-group-flush overflow-auto calendar-list">
               {{#each calendar}}
