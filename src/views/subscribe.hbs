@@ -1,24 +1,29 @@
 {{#section "head"}}
-<title>Abonnieren - Die Lernwerkstatt</title>
+<title>{{{__ "subscribe_title"}}} – {{{__ "common_title"}}}</title>
 {{/section}}
-{{> main/title title="Abonnieren"}}
+
+{{#section "title"}}
+<div class="container my-4">
+  <div class="row">
+    <div class="col border-bottom">
+      <h1 class="h1">{{{__ "subscribe_title"}}}</h1>
+    </div>
+  </div>
+</div>
+{{/section}}
+
 <div class="container">
   <div class="row pb-4">
     <div class="col-md-8">
-      <h2>Auf dem Laufenden bleiben</h2>
+      <h2>{{{__ "subscribe_title"}}}</h2>
       <div class="mb-3">
-        <p>Trag dich in unseren Newsletter ein! Wir verschicken ihn ca. 4 mal pro Jahr.</p>
-        So sehen sie aus:
+        {{{__ "subscribe_text"}}}
         <script language="javascript"
           src="//die-lernwerkstatt.us10.list-manage.com/generate-js/?u=63598878eb7adee616350bca7&fid=16745&show=3"
           type="text/javascript"></script>
       </div>
       <p>
-        Hier kommst du zum <a rel="noopener" target="_blank"
-          href="https://us10.campaign-archive.com/home/?u=63598878eb7adee616350bca7&id=9367cfd8d5">Newsletter-Archiv
-          seit Mai 2018</a> und hier kannst du die <a rel="noopener" target="_blank"
-          href="http://us10.campaign-archive1.com/home/?u=63598878eb7adee616350bca7&amp;id=9457fbbf4c">Newsletter seit
-          Gründung der Lernwerkstatt</a> nachlesen.
+        {{{__ "subscribe_archive"}}}
       </p>
     </div>
     <div class="col-md-4">

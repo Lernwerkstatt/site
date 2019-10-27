@@ -3,7 +3,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <div>
-          <button type="button" class="close mt-n4 d-sm-none" data-dismiss="modal" aria-label="Close">
+          <button type="button" class="close mt-n4 d-sm-none" data-dismiss="modal" aria-label="{{{__ "common_close"}}}">
             <span aria-hidden="true">&times;</span>
           </button>
           <a href="{{link}}" target="_blank" rel="noopener">
@@ -16,7 +16,7 @@
           {{ name }}
         </h4>
         <p>
-          {{ date }} Uhr
+          {{ date }} {{{__ "common_hour"}}}
         </p>
         <p>
           {{{ htmlDescription }}}
@@ -24,9 +24,9 @@
       </div>
       <div class="modal-footer">
         <a class="btn btn-secondary buttonlink" href="{{ link }}" target="_blank" rel="noopener">
-          Mehr Infos auf Facebook
+          {{{__ "facebook_more"}}}
         </a>
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Schließen</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">{{{__ "common_close"}}}</button>
       </div>
     </div>
   </div>
