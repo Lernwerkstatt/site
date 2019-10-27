@@ -75,11 +75,9 @@ const get = async (filename, callback) => {
 };
 
 const invalidate = async (filename, callback) => {
-  if (!fs.existsSync(directory)) {
-    await fsp.mkdir(directory);
-  }
-  const path = `${directory}/${filename}`;
+  await init();
 
+  const path = `${directory}/${filename}`;
   const newCache = await createCache(callback);
 
   try {

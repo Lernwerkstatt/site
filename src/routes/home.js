@@ -43,4 +43,11 @@ router.get("/", async (req, res) => {
   res.render("home", result);
 });
 
+router.get("/invalidate", async (req, res) => {
+  await cache.invalidate("events.json", events.getEvents);
+  await cache.invalidate("blogs.json", database.latestPost);
+
+  res.redirect("/");
+});
+
 module.exports = { router };
