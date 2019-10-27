@@ -4,7 +4,7 @@ exports[`footer.hbs should match the snapshot 1`] = `
 "<footer class=\\"bg-secondary\\">
   <div class=\\"container\\">
     <div class=\\"row\\">
-      <div class=\\"col-md-6\\">
+      <div class=\\"col-md-8\\">
         <ul class=\\"nav flex-column flex-sm-row\\">
           <li class=\\"nav-item\\">
             <a href=\\"/support\\" class=\\"nav-link text-light\\">i18n</a>
@@ -21,9 +21,12 @@ exports[`footer.hbs should match the snapshot 1`] = `
           <li class=\\"nav-item\\">
             <a href=\\"/friends\\" class=\\"nav-link text-light\\">i18n</a>
           </li>
+          <li class=\\"nav-item\\">
+            <a href=\\"/impressum\\" class=\\"nav-link text-light\\">i18n</a>
+          </li>
         </ul>
       </div>
-      <div class=\\"col-md-6\\">
+      <div class=\\"col-md-4\\">
         <ul class=\\"nav justify-content-end\\">
           <li class=\\"nav-item\\">
             <a href=\\"https://www.facebook.com/dielernwerkstatt/\\" aria-label=\\"Unsere Facebook Seite\\"
