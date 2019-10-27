@@ -25,6 +25,8 @@ merge of your pull request!
 
 <!-- Have you done all of these things?  -->
 
+<!-- Do you have a screenshot?  -->
+
 **Checklist**:
 
 <!-- add "N/A" to the end of each line that's irrelevant to your changes -->
