@@ -14,7 +14,7 @@
           <small class="text-muted d-inline-block mb-2"><sup>*</sup> {{{__ "common_required"}}}</small>
         </div>
       </div>
-      <div class="form-row">
+      <div class="form-row mb-2">
         <div class="col">
           <label for="mce-FNAME">{{{__ "common_name"}}} </label>
           <input type="text" value="" name="FNAME" class="form-control" id="mce-FNAME">
@@ -23,6 +23,14 @@
           <label for="mce-LNAME">{{{__ "common_surname"}}} </label>
           <input type="text" value="" name="LNAME" class="form-control" id="mce-LNAME">
         </div>
+      </div>
+      <div class="col mb-2">
+        <input type="checkbox" class="form-check-input" id="contact-check" aria-required="true">
+        <label class="form-check-label" for="contact-check">
+          Hiermit bestätige ich meine Übereinstimmung mit dem <a href="#" data-toggle="modal"
+            data-target="#termsModal">Urheberrecht</a> und der <a href="#" data-toggle="modal"
+            data-target="#privacyModal">Datenschutzerklärung</a>.
+        </label>
       </div>
       <div id="mce-responses" class="clearfix mb-4">
         <div class="response" id="mce-error-response" style="display:none"></div>
