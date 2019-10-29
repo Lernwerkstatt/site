@@ -1,5 +1,6 @@
 User-agent: *
 Disallow: /blog/create
+Disallow: /invalidate
 
 Sitemap: https://die-lernwerkstatt.org/sitemap.xml
 
