@@ -1,17 +1,26 @@
-name: CI
+name: Deploy
 
-on: 
+on:
   push:
     branches:
-    - master
+      - master
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: azure/appservice-actions/webapp@master
-      with: 
-        app-name: die-lernwerkstatt
-        publish-profile: ${{ secrets.azure }}
+      - uses: actions/checkout@v1
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+      - name: npm install
+        run: npm install
+
+      - name: Deploy to Azure
+      - uses: Azure/webapps-deploy@v1
+        with:
+          app-name: die-lernwerkstatt
+          publish-profile: ${{ secrets.azure }}
