@@ -1,2 +1,12 @@
 „Die Lernwerkstatt“ (Learning Workshop) is a space where learning is a collaborative, creative and self-determined activity.
 People of all ages are welcome to join us!
+
+/* DEVELOPER-TEAM */
+Olzhas Askar
+olzhas.askar@gmail.com
+
+Zharzhan Kulmyrza
+zharzhan@gmail.com
+
+Daniel Streif
+dan.streif@gmail.com
