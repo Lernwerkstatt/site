@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: "Checkout Github Action"
-      - uses: actions/checkout@master
+        uses: actions/checkout@master
 
       - name: "Use Node.js 12.x"
         uses: actions/setup-node@v1
@@ -21,7 +21,7 @@ jobs:
         run: npm install
 
       - name: "Deploy to Azure"
-      - uses: Azure/webapps-deploy@v1
+        uses: Azure/webapps-deploy@v1
         with:
           app-name: die-lernwerkstatt
           publish-profile: ${{ secrets.azure }}
