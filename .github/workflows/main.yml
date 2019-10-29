@@ -10,15 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v1
-      - name: Use Node.js 12.x
+      - name: "Checkout Github Action"
+      - uses: actions/checkout@master
+
+      - name: "Use Node.js 12.x"
         uses: actions/setup-node@v1
         with:
-          node-version: 12.x
-      - name: npm install
+          node-version: "12.x"
+      - name: "Install dependencies"
         run: npm install
 
-      - name: Deploy to Azure
+      - name: "Deploy to Azure"
       - uses: Azure/webapps-deploy@v1
         with:
           app-name: die-lernwerkstatt
