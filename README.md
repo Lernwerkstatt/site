@@ -11,9 +11,6 @@
 > „Die Lernwerkstatt“ (Learning Workshop) is a space where learning is a collaborative, creative and self-determined activity.
 > People of all ages are welcome to join us!
 
-- [Current(legacy) website](http://en-die-lernwerkstatt.strikingly.com/)
-- [New(developing) website](https://die-lernwerkstatt.azurewebsites.net)
-
 ## Development Setup
 
 1. Install [node](https://nodejs.org/en/)
@@ -52,8 +49,8 @@ The `apiKey` will be sent unencrypted to the client. This does not seem to be a 
 
 > We use both a public key and a private key in our API. The key which you have linked to is the public key which may be shared with anyone without any concern for access to private or secure data. It is simply used by our system to verify that the widget Id is for the correct account so that it may properly return the corresponding gallery.
 
-## Facebook Events
+## Caching Events
 
-We cache our Facebook events every hour to speed up the site load time.
+We cache our Facebook events and blog entries from MongoDB every hour to speed up the site load time.
 
-**To force pull new events from facebook add `?refresh` to the main page url.**
+**To invalidate the cache use `/invalidate` endpoint. It will refetch events and blog posts and redirect to the main page.**

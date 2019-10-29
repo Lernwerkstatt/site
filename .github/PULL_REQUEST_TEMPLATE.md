@@ -25,6 +25,8 @@ merge of your pull request!
 
 <!-- Have you done all of these things?  -->
 
+<!-- Do you have a screenshot?  -->
+
 **Checklist**:
 
 <!-- add "N/A" to the end of each line that's irrelevant to your changes -->
@@ -36,5 +38,7 @@ merge of your pull request!
 - [ ] Tests
 - [ ] Ready to be merged
       <!-- In your opinion, is this ready to be merged as soon as it's reviewed? -->
+
+Fixes <!-- # number of the issue -->
 
 <!-- feel free to add additional comments -->
