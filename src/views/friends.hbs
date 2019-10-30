@@ -13,13 +13,13 @@
 {{/section}}
 
 <div class="container">
-  <p class="h2 mb-3">{{{__ "friends_roomies"}}}</p>
+  <h2 class="mb-3">{{{__ "friends_roomies"}}}</h2>
   <div class="card-columns mb-4 d-inline-block">
     {{#each organizations.roomies}}
     {{> friends/initiatives this}}
     {{/each}}
   </div>
-  <p class="h2 mb-3">{{{__ "friends_friends"}}}</p>
+  <h2 class="mb-3">{{{__ "friends_friends"}}}</h2>
   <div class="card-columns mb-3 d-inline-block">
     {{#each organizations.friends}}
     {{> friends/initiatives this}}

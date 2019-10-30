@@ -15,9 +15,9 @@ exports[`modal.hbs should match the snapshot 1`] = `
         </div>
       </div>
       <div class=\\"modal-body text-dark\\">
-        <h4 class=\\"mb-3\\">
+        <p class=\\"h3 mb-3\\">
           
-        </h4>
+        </>
         <p>
            i18n
         </p>
