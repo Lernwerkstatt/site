@@ -28,22 +28,20 @@
         </ul>
         <form class="form-inline my-2 my-lg-0" action="https://duckduckgo.com/" target="_blank"
           aria-label="Durchsuche unsere Seite">
-          <div class="form-group">
-            <div class="input-group">
-              <input type="search" class="form-control mr-sm-2" placeholder="{{{__ 'header_search'}}}" name="q">
-              <input type="hidden" value="https://die-lernwerkstatt.org/" name="sites">
-              <input type="hidden" value="1" name="kh">
-              <input type="hidden" value="1" name="kn">
-              <input type="hidden" value="1" name="kac">
-              <span class="input-group-btn">
-                <button class="btn btn-secondary" type="submit">
-                  <i class="fa fa-search" aria-hidden="true"></i>
-                </button>
-              </span>
-            </div>
+          <div class="form-inline">
+            <input type="hidden" value="https://die-lernwerkstatt.org/" name="sites">
+            <input type="hidden" value="1" name="kh">
+            <input type="hidden" value="1" name="kn">
+            <input type="hidden" value="1" name="kac">
+            <input type="search" class="form-control mr-sm-2" placeholder="{{{__ 'header_search'}}}" name="q">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
           </div>
-          <a class="nav-link text-light font-weight-{{{__ 'active_de'}}}" href="/de">DE</a>
-          <a class="nav-link text-light font-weight-{{{__ 'active_en'}}}" href="/en">EN</a>
+          <div class="btn-group ml-2">
+            <a class="btn btn-sm btn-info {{{__ 'active_de'}}}" href="/de">DE</a>
+            <a class="btn btn-sm btn-info {{{__ 'active_en'}}}" href="/en">EN</a>
+          </div>
         </form>
       </div>
     </div>

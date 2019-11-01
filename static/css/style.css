@@ -19,15 +19,15 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding-top: 55px;
 }
 
 main {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .home-bg {
@@ -38,11 +38,11 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .home-bg:after {
@@ -100,8 +100,8 @@ main {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .easy {
@@ -112,8 +112,8 @@ main {
 
 .easy:hover {
   -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
   border: 1px solid gray;
 }
 
@@ -154,8 +154,8 @@ main {
   max-height: 3.6em;
   text-align: justify;
   -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .blog-content:after {
@@ -176,7 +176,8 @@ main {
   background: white;
   background: -webkit-gradient(
     linear,
-    left top, right top,
+    left top,
+    right top,
     from(rgba(255, 255, 255, 0)),
     color-stop(50%, rgb(255, 255, 255))
   );
@@ -226,4 +227,8 @@ main {
   -webkit-column-gap: 40px;
   -moz-column-gap: 40px;
   column-gap: 40px;
+}
+
+.lh-sm {
+  line-height: 1.2;
 }
