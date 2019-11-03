@@ -6,7 +6,7 @@ exports[`posts.hbs should match the snapshot 1`] = `
     <img class=\\"card-img-top\\" style=\\"height: 14rem; object-fit: cover;\\" src=\\"/img/logo.png\\" alt=\\"Blogpost\\">
     <div class=\\"card-body\\">
       <h2 class=\\"card-title\\" style=\\"overflow-wrap: normal\\"><a href=\\"/blogs/\\">Blogpost</a></h2>
-      <p class=\\"card-text\\"><small class=\\"text-muted\\">unknown, 01.01.2000</small></p>
+      <p class=\\"card-text\\"><small>unknown, 01.01.2000</small></p>
     </div>
   </div>
 </div>

@@ -68,7 +68,6 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #888;
   text-align: left;
   background-color: #fff;
 }
@@ -166,12 +165,10 @@ sup {
 }
 
 a {
-  color: #78c2ad;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #4aa48a;
   text-decoration: underline;
 }
 
@@ -388,7 +385,6 @@ h6,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
   line-height: 1.2;
-  color: #5a5a5a;
 }
 
 h1,
@@ -1685,7 +1681,6 @@ pre code {
 }
 
 .table .thead-light th {
-  color: #5a5a5a;
   background-color: #f7f7f9;
   border-color: rgba(0, 0, 0, 0.05);
 }
@@ -1776,7 +1771,6 @@ pre code {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #5a5a5a;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -1793,7 +1787,6 @@ pre code {
   border: 0;
 }
 .form-control:focus {
-  color: #5a5a5a;
   background-color: #fff;
   border-color: #d0eae2;
   outline: 0;
@@ -1810,7 +1803,6 @@ pre code {
 }
 
 select.form-control:focus::-ms-value {
-  color: #5a5a5a;
   background-color: #fff;
 }
 
@@ -3386,7 +3378,6 @@ input[type="button"].btn-block {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #5a5a5a;
   text-align: center;
   white-space: nowrap;
   background-color: #f7f7f9;
@@ -3620,7 +3611,6 @@ input[type="button"].btn-block {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #5a5a5a;
   vertical-align: middle;
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e")
     no-repeat right 0.75rem center/8px 10px;
@@ -3635,7 +3625,6 @@ input[type="button"].btn-block {
   box-shadow: 0 0 0 0.2rem rgba(120, 194, 173, 0.25);
 }
 .custom-select:focus::-ms-value {
-  color: #5a5a5a;
   background-color: #fff;
 }
 .custom-select[multiple],
@@ -3708,7 +3697,6 @@ input[type="button"].btn-block {
   padding: 0.375rem 0.75rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #5a5a5a;
   background-color: #fff;
   border: 1px solid #ced4da;
   border-radius: 0.4rem;
@@ -3723,7 +3711,6 @@ input[type="button"].btn-block {
   height: calc(1.5em + 0.75rem);
   padding: 0.375rem 0.75rem;
   line-height: 1.5;
-  color: #5a5a5a;
   content: "Browse";
   background-color: #f7f7f9;
   border-left: inherit;
@@ -3920,7 +3907,6 @@ input[type="button"].btn-block {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #5a5a5a;
   background-color: #fff;
   border-color: #eceeef #eceeef #fff;
 }
@@ -5018,13 +5004,11 @@ a.badge-dark.focus {
 
 .list-group-item-action {
   width: 100%;
-  color: #5a5a5a;
   text-align: inherit;
 }
 .list-group-item-action:hover,
 .list-group-item-action:focus {
   z-index: 1;
-  color: #5a5a5a;
   text-decoration: none;
   background-color: #f8f9fa;
 }
@@ -5828,7 +5812,6 @@ a.close.disabled {
   padding: 0.5rem 0.75rem;
   margin-bottom: 0;
   font-size: 1rem;
-  color: #5a5a5a;
   background-color: #f7f7f7;
   border-bottom: 1px solid #ebebeb;
   border-top-left-radius: calc(0.6rem - 1px);
