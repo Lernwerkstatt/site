@@ -227,3 +227,15 @@ main {
   -moz-column-gap: 40px;
   column-gap: 40px;
 }
+
+h1, .h1 {
+  font-size: 2.14375rem; }
+
+h2, .h2 {
+  font-size: 1.64062rem; }
+
+h3, .h3 {
+  font-size: 1.40625rem; }
+
+h4, .h4 {
+  font-size: 1.17188rem; }
