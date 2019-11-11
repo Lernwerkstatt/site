@@ -83,6 +83,12 @@
       "id": "sameer",
       "img": "img/team/placeholder.png",
       "description": "Sameer Al Bateen kommt aus Dneprodzershinsk in der Ukraine. Er ist Physiotherapeut (Bachelor) und Lehrer für Arabisch. In der Lernwerkstatt begleitet er wöchentlich am Montagabend den Arabisch-Abend. Er arbeitet gern mit Menschen und gibt sein Wissen an alle weiter, die sich für die arabische Sprache interessieren."
+    },
+    {
+      "name": "Max",
+      "id": "max",
+      "img": "img/team/max.png",
+      "description": "Max entwickelt Visionen interkulturellen Lernens und interreligiöser Kommunikation. Ausgehend von der klassischen Bildung ist es ihm ein Hauptanliegen die Verwirklichung des sich bildenden Menschen in der Würde seiner eigenen Begabungen zu ermöglichen. Als Mathematikstudent baut er seine Kenntnisse mathematischer Zusammenhänge weiter aus und ist darauf bedacht, diese für den Entwurf von Problemlösungsstrategien einzusetzen. In der Lernbegleitung fördert er die Medienkompetenz von Schülern und unterstützt sie bei der Verfeinerung ihrer Arbeitsweisen und der Aneignung und Vertiefung umfangreicher Kenntnisse, die auch über die schulischen Themen hinaus gehen."
     }
   ]
 }
