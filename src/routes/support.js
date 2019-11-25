@@ -1,10 +1,10 @@
 const express = require("express");
-const contact = require("../../data/contact.json");
+const policy = require("../../data/policy.json");
 
 const router = express.Router();
 
 router.get("/support", (req, res) => {
-  res.render("support", contact);
+  res.render("support", policy);
 });
 
 module.exports = router;
