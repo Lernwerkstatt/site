@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`footer.hbs should match the snapshot 1`] = `
-"<footer class=\\"bg-secondary\\">
+"<footer class=\\"bg-primary\\">
   <div class=\\"container\\">
     <div class=\\"row\\">
       <div class=\\"col-md-8\\">
@@ -44,6 +44,15 @@ exports[`footer.hbs should match the snapshot 1`] = `
             <a href=\\"mailto:info@die-lernwerkstatt.org\\" aria-label=\\"Schreib uns eine Email\\" class=\\"nav-link text-dark\\">
               <span class=\\"far fa-envelope\\"></span>
             </a>
+          </li>
+          <li class=\\"nav-item\\">
+            <span class=\\"nav-link text-dark disabled\\">|</span>
+          </li>
+          <li class=\\"nav-item\\">
+            <a class=\\"nav-link text-dark i18n\\" href=\\"/de\\">DE</a>
+          </li>
+          <li class=\\"nav-item\\">
+            <a class=\\"nav-link text-dark i18n\\" href=\\"/en\\">EN</a>
           </li>
         </ul>
       </div>

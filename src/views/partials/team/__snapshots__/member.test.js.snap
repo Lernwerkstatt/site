@@ -26,7 +26,7 @@ exports[`member.hbs should match the snapshot 1`] = `
         </div>
       </div>
       <div class=\\"modal-footer justify-content-around d-sm-none\\">
-        <button type=\\"button\\" class=\\"btn btn-primary\\" data-dismiss=\\"modal\\">Schließen</button>
+        <button type=\\"button\\" class=\\"btn btn-secondary\\" data-dismiss=\\"modal\\">Schließen</button>
       </div>
     </div>
   </div>
