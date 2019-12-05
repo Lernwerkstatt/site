@@ -165,6 +165,7 @@ sup {
 }
 
 a {
+  color: #f3969a;
   text-decoration: none;
   background-color: transparent;
 }
@@ -9440,11 +9441,6 @@ a.text-dark:focus {
   }
 }
 
-.navbar {
-  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
 .bg-dark {
   background-color: #f3969a !important;
 }
@@ -9453,10 +9449,6 @@ a.text-dark:focus {
   border-color: #f3969a !important;
 }
 
-.btn {
-  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
 .btn,
 .btn:hover {
   color: #fff;
@@ -9617,11 +9609,6 @@ a.text-dark:focus {
 .table .thead-dark th {
   background-color: #78c2ad;
   border-color: rgba(0, 0, 0, 0.05);
-  font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-legend {
   font-family: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
