@@ -15,7 +15,7 @@
   --gray: #888;
   --gray-dark: #343a40;
   --primary: #78c2ad;
-  --secondary: #f3969a;
+  --secondary: #ec666a;
   --success: #56cc9d;
   --info: #6cc3d5;
   --warning: #ffce67;
@@ -165,7 +165,7 @@ sup {
 }
 
 a {
-  color: #f3969a;
+  color: #ec666a;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2361,8 +2361,8 @@ fieldset:disabled a.btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #f3969a;
-  border-color: #f3969a;
+  background-color: #ec666a;
+  border-color: #ec666a;
 }
 .btn-secondary:hover {
   color: #fff;
@@ -2376,8 +2376,8 @@ fieldset:disabled a.btn {
 .btn-secondary.disabled,
 .btn-secondary:disabled {
   color: #fff;
-  background-color: #f3969a;
-  border-color: #f3969a;
+  background-color: #ec666a;
+  border-color: #ec666a;
 }
 .btn-secondary:not(:disabled):not(.disabled):active,
 .btn-secondary:not(:disabled):not(.disabled).active,
@@ -2622,13 +2622,13 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-secondary {
-  color: #f3969a;
-  border-color: #f3969a;
+  color: #ec666a;
+  border-color: #ec666a;
 }
 .btn-outline-secondary:hover {
   color: #fff;
-  background-color: #f3969a;
-  border-color: #f3969a;
+  background-color: #ec666a;
+  border-color: #ec666a;
 }
 .btn-outline-secondary:focus,
 .btn-outline-secondary.focus {
@@ -2636,15 +2636,15 @@ fieldset:disabled a.btn {
 }
 .btn-outline-secondary.disabled,
 .btn-outline-secondary:disabled {
-  color: #f3969a;
+  color: #ec666a;
   background-color: transparent;
 }
 .btn-outline-secondary:not(:disabled):not(.disabled):active,
 .btn-outline-secondary:not(:disabled):not(.disabled).active,
 .show > .btn-outline-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #f3969a;
-  border-color: #f3969a;
+  background-color: #ec666a;
+  border-color: #ec666a;
 }
 .btn-outline-secondary:not(:disabled):not(.disabled):active:focus,
 .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
@@ -3131,7 +3131,7 @@ input[type="button"].btn-block {
 .dropdown-item:focus {
   color: #fff;
   text-decoration: none;
-  background-color: #f3969a;
+  background-color: #ec666a;
 }
 .dropdown-item.active,
 .dropdown-item:active {
@@ -4565,8 +4565,8 @@ input[type="button"].btn-block {
   z-index: 2;
   color: #fff;
   text-decoration: none;
-  background-color: #f3969a;
-  border-color: #f3969a;
+  background-color: #ec666a;
+  border-color: #ec666a;
 }
 .page-link:focus {
   z-index: 2;
@@ -4588,8 +4588,8 @@ input[type="button"].btn-block {
 .page-item.active .page-link {
   z-index: 1;
   color: #fff;
-  background-color: #f3969a;
-  border-color: #f3969a;
+  background-color: #ec666a;
+  border-color: #ec666a;
 }
 
 .page-item.disabled .page-link {
@@ -4686,7 +4686,7 @@ a.badge-primary.focus {
 
 .badge-secondary {
   color: #fff;
-  background-color: #f3969a;
+  background-color: #ec666a;
 }
 a.badge-secondary:hover,
 a.badge-secondary:focus {
@@ -6092,7 +6092,7 @@ button.bg-primary:focus {
 }
 
 .bg-secondary {
-  background-color: #f3969a !important;
+  background-color: #ec666a !important;
 }
 
 a.bg-secondary:hover,
@@ -6221,7 +6221,7 @@ button.bg-dark:focus {
 }
 
 .border-secondary {
-  border-color: #f3969a !important;
+  border-color: #ec666a !important;
 }
 
 .border-success {
@@ -9255,7 +9255,7 @@ a.text-primary:focus {
 }
 
 .text-secondary {
-  color: #f3969a !important;
+  color: #ec666a !important;
 }
 
 a.text-secondary:hover,
@@ -9442,11 +9442,11 @@ a.text-dark:focus {
 }
 
 .bg-dark {
-  background-color: #f3969a !important;
+  background-color: #ec666a !important;
 }
 
 .border-dark {
-  border-color: #f3969a !important;
+  border-color: #ec666a !important;
 }
 
 .btn,
@@ -9468,7 +9468,7 @@ a.text-dark:focus {
   color: #78c2ad;
 }
 .btn-outline-secondary {
-  color: #f3969a;
+  color: #ec666a;
 }
 .btn-outline-success {
   color: #56cc9d;
@@ -9507,7 +9507,7 @@ a.text-dark:focus {
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  background-color: #f3969a;
+  background-color: #ec666a;
 }
 
 .table-light,
@@ -9651,7 +9651,7 @@ a.text-dark:focus {
 .alert-secondary,
 .alert-secondary > th,
 .alert-secondary > td {
-  background-color: #f3969a;
+  background-color: #ec666a;
 }
 .alert-success,
 .alert-success > th,

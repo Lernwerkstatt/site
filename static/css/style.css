@@ -206,11 +206,12 @@ main {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #373a3c !important;
+  background-color: #ec666a !important;
 }
 .home-card-badge {
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: -1px;
+  border-top-right-radius: 0;
 }
 
 .partner-img {
