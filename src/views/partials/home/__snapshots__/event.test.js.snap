@@ -8,7 +8,7 @@ exports[`event.hbs should match the snapshot 1`] = `
       <a class=\\"d-block lh-sm lead\\" href=\\"#\\" data-toggle=\\"modal\\" data-target=\\"#\\">
         Webkurs
       </a>
-      <small class=\\"mb-0\\">13.12.2018 i18n</small>
+      <p class=\\"h6 text-muted mb-0\\">13.12.2018</p>
     </div>
   </div>
 </li>
