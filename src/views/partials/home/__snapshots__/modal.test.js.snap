@@ -10,7 +10,7 @@ exports[`modal.hbs should match the snapshot 1`] = `
             <span aria-hidden=\\"true\\">&times;</span>
           </button>
           <a href=\\"\\" target=\\"_blank\\" rel=\\"noopener\\">
-            <img class=\\"mw-100 pt-2\\" src=\\"\\" alt=\\"\\" />
+            <img class=\\"lazy mw-100 pt-2\\" src=\\"img/team/placeholder.png\\" data-src=\\"\\" alt=\\"\\" />
           </a>
         </div>
       </div>
