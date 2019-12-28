@@ -19,15 +19,15 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding-top: 55px;
 }
 
 main {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 
 .home-bg {
@@ -38,11 +38,11 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+  -ms-flex-flow: column;
+  flex-flow: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .home-bg:after {
@@ -72,8 +72,7 @@ main {
   max-width: 100%;
 }
 .home-subtitle {
-  font-size: 18px;
-  max-width: 5 00px;
+  max-width: 500px;
 }
 
 .calendar-list {
@@ -100,8 +99,8 @@ main {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .easy {
@@ -112,8 +111,8 @@ main {
 
 .easy:hover {
   -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-          transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
   border: 1px solid gray;
 }
 
@@ -154,8 +153,8 @@ main {
   max-height: 3.6em;
   text-align: justify;
   -webkit-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 .blog-content:after {
@@ -176,7 +175,8 @@ main {
   background: white;
   background: -webkit-gradient(
     linear,
-    left top, right top,
+    left top,
+    right top,
     from(rgba(255, 255, 255, 0)),
     color-stop(50%, rgb(255, 255, 255))
   );
@@ -206,11 +206,12 @@ main {
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #373a3c !important;
+  background-color: #ec666a !important;
 }
 .home-card-badge {
-  top: 0;
-  right: 0;
+  top: -1px;
+  right: -1px;
+  border-top-right-radius: 0;
 }
 
 .partner-img {
@@ -228,14 +229,25 @@ main {
   column-gap: 40px;
 }
 
-h1, .h1 {
-  font-size: 2.14375rem; }
+.lh-sm {
+  line-height: 1.2;
+}
+h1,
+.h1 {
+  font-size: 2.14375rem;
+}
 
-h2, .h2 {
-  font-size: 1.64062rem; }
+h2,
+.h2 {
+  font-size: 1.64062rem;
+}
 
-h3, .h3 {
-  font-size: 1.40625rem; }
+h3,
+.h3 {
+  font-size: 1.40625rem;
+}
 
-h4, .h4 {
-  font-size: 1.17188rem; }
+h4,
+.h4 {
+  font-size: 1.17188rem;
+}

@@ -2,7 +2,7 @@
 
 exports[`header.hbs should match the snapshot 1`] = `
 "<header>
-  <nav class=\\"navbar fixed-top navbar-expand-lg navbar-light bg-primary\\">
+  <nav class=\\"navbar fixed-top navbar-expand-lg bg-primary\\">
     <div class=\\"container\\">
       <a class=\\"navbar-brand header-logo\\" href=\\"/\\">
         <img height=\\"24\\" alt=\\"Logo\\" src=\\"/img/navbar_logo.png\\" />i18n
@@ -14,39 +14,33 @@ exports[`header.hbs should match the snapshot 1`] = `
       <div class=\\"collapse navbar-collapse\\" id=\\"navbar\\">
         <ul class=\\"navbar-nav mr-auto\\">
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" href=\\"/values\\">i18n</a>
+            <a class=\\"nav-link text-dark\\" href=\\"/values\\">i18n</a>
           </li>
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" href=\\"/projects\\">i18n</a>
+            <a class=\\"nav-link text-dark\\" href=\\"/projects\\">i18n</a>
           </li>
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" href=\\"/blogs\\">i18n</a>
+            <a class=\\"nav-link text-dark\\" href=\\"/blogs\\">i18n</a>
           </li>
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" href=\\"/team\\">i18n</a>
+            <a class=\\"nav-link text-dark\\" href=\\"/team\\">i18n</a>
           </li>
           <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-light\\" href=\\"/gallery\\">i18n</a>
+            <a class=\\"nav-link text-dark\\" href=\\"/gallery\\">i18n</a>
           </li>
         </ul>
         <form class=\\"form-inline my-2 my-lg-0\\" action=\\"https://duckduckgo.com/\\" target=\\"_blank\\"
           aria-label=\\"Durchsuche unsere Seite\\">
-          <div class=\\"form-group\\">
-            <div class=\\"input-group\\">
-              <input type=\\"search\\" class=\\"form-control mr-sm-2\\" placeholder=\\"i18n\\" name=\\"q\\">
-              <input type=\\"hidden\\" value=\\"https://die-lernwerkstatt.org/\\" name=\\"sites\\">
-              <input type=\\"hidden\\" value=\\"1\\" name=\\"kh\\">
-              <input type=\\"hidden\\" value=\\"1\\" name=\\"kn\\">
-              <input type=\\"hidden\\" value=\\"1\\" name=\\"kac\\">
-              <span class=\\"input-group-btn\\">
-                <button class=\\"btn btn-secondary\\" type=\\"submit\\">
-                  <i class=\\"fa fa-search\\" aria-hidden=\\"true\\"></i>
-                </button>
-              </span>
-            </div>
+          <div class=\\"form-inline\\">
+            <input type=\\"hidden\\" value=\\"https://die-lernwerkstatt.org/\\" name=\\"sites\\">
+            <input type=\\"hidden\\" value=\\"1\\" name=\\"kh\\">
+            <input type=\\"hidden\\" value=\\"1\\" name=\\"kn\\">
+            <input type=\\"hidden\\" value=\\"1\\" name=\\"kac\\">
+            <input type=\\"search\\" class=\\"form-control mr-sm-2\\" placeholder=\\"i18n\\" name=\\"q\\">
+            <button class=\\"btn btn-secondary my-2 my-sm-0\\" type=\\"submit\\">
+              <i class=\\"fa fa-search\\" aria-hidden=\\"true\\"></i>
+            </button>
           </div>
-          <a class=\\"nav-link text-light font-weight-i18n\\" href=\\"/de\\">DE</a>
-          <a class=\\"nav-link text-light font-weight-i18n\\" href=\\"/en\\">EN</a>
         </form>
       </div>
     </div>
