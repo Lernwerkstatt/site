@@ -2,12 +2,12 @@
 
 exports[`header.hbs should match the snapshot 1`] = `
 "<header>
-  <nav class=\\"navbar fixed-top navbar-expand-lg bg-primary\\">
+  <nav class=\\"navbar navbar-light fixed-top navbar-expand-lg bg-primary\\">
     <div class=\\"container\\">
       <a class=\\"navbar-brand header-logo\\" href=\\"/\\">
         <img height=\\"24\\" alt=\\"Logo\\" src=\\"/img/navbar_logo.png\\" />i18n
       </a>
-      <button class=\\"navbar-toggler\\" type=\\"button\\" data-toggle=\\"collapse\\" data-target=\\"#navbar\\" aria-controls=\\"navbar\\"
+      <button class=\\"navbar-toggler custom-toggler\\" type=\\"button\\" data-toggle=\\"collapse\\" data-target=\\"#navbar\\" aria-controls=\\"navbar\\"
         aria-expanded=\\"false\\" aria-label=\\"i18n\\">
         <span class=\\"navbar-toggler-icon\\"></span>
       </button>
