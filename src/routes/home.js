@@ -61,4 +61,4 @@ router.get("/invalidate", async (req, res) => {
   res.redirect("/");
 });
 
-module.exports = { router };
+module.exports = router;
