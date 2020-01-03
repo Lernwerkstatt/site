@@ -11,7 +11,7 @@ function ourValues(locale) {
     return {
       badge: "About us",
       title: "Our Values",
-      text: "What Die Lernwerkstatt represents.",
+      text: "What Die Lernwerkstatt represents",
       link: "/values",
       image: "img/home/notebook.png"
     };
@@ -19,7 +19,7 @@ function ourValues(locale) {
   return {
     badge: "Über Uns",
     title: "Unsere Werte",
-    text: "Dafür steht Die Lernwerkstatt.",
+    text: "Dafür steht Die Lernwerkstatt",
     link: "/values",
     image: "img/home/notebook.png"
   };
@@ -61,4 +61,4 @@ router.get("/invalidate", async (req, res) => {
   res.redirect("/");
 });
 
-module.exports = { router };
+module.exports = router;
