@@ -2,7 +2,6 @@ const express = require("express");
 const database = require("../services/database");
 const events = require("../services/events");
 const cache = require("../middlewares/cache");
-const observer = require("../services/observer");
 
 const router = express.Router();
 cache.init();
@@ -51,4 +50,4 @@ router.get("/invalidate", async (req, res) => {
   res.redirect("/");
 });
 
-module.exports = { router, observer };
+module.exports = { router };

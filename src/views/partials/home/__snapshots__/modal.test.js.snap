@@ -10,7 +10,7 @@ exports[`modal.hbs should match the snapshot 1`] = `
             <span aria-hidden=\\"true\\">&times;</span>
           </button>
           <a href=\\"\\" target=\\"_blank\\" rel=\\"noopener\\">
-            <img class=\\"lazy mw-100 pt-2\\" src=\\"img/team/placeholder.png\\" data-src=\\"\\" alt=\\"\\" />
+            <img class=\\"lazyload mw-100 pt-2\\" loading=\\"lazy\\" data-src=\\"\\" alt=\\"\\" />
           </a>
         </div>
       </div>
@@ -34,5 +34,20 @@ exports[`modal.hbs should match the snapshot 1`] = `
     </div>
   </div>
 </div>
+
+<script>
+  if ('loading' in HTMLImageElement.prototype) {
+    const images = document.querySelectorAll(\\"img.lazyload\\");
+    images.forEach(img => {
+      img.src = img.dataset.src;
+    });
+  } else {
+    let script = document.createElement(\\"script\\");
+    script.async = true;
+    script.src =
+      \\"https://cdnjs.cloudflare.com/ajax/libs/lazysizes/4.1.8/lazysizes.min.js\\";
+    document.body.appendChild(script);
+  }
+</script>
 "
 `;
