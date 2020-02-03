@@ -6,13 +6,24 @@ const cache = require("../middlewares/cache");
 const router = express.Router();
 cache.init();
 
-const ourValues = () => ({
-  badge: "Über Uns",
-  title: "Unsere Werte / Our Values",
-  text: "Dafür steht Die Lernwerkstatt.",
-  link: "/values",
-  image: "img/home/notebook.png"
-});
+function ourValues(locale) {
+  if (locale === "en") {
+    return {
+      badge: "About us",
+      title: "Our Values",
+      text: "What Die Lernwerkstatt represents",
+      link: "/values",
+      image: "img/home/notebook.png"
+    };
+  }
+  return {
+    badge: "Über Uns",
+    title: "Unsere Werte",
+    text: "Dafür steht Die Lernwerkstatt",
+    link: "/values",
+    image: "img/home/notebook.png"
+  };
+}
 
 const event = calendar => ({
   badge: "Termin",
@@ -36,7 +47,7 @@ router.get("/", async (req, res) => {
 
   const result = {
     calendar,
-    ourValues: ourValues(),
+    ourValues: ourValues(req.cookies.locale),
     event: event(calendar),
     blog: blog(latestPost)
   };
@@ -50,4 +61,4 @@ router.get("/invalidate", async (req, res) => {
   res.redirect("/");
 });
 
-module.exports = { router };
+module.exports = router;

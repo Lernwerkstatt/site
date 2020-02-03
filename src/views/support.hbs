@@ -13,12 +13,37 @@
 {{/section}}
 
 <div class="container">
-  <div class="col-sm-8 ml-n3 mb-5">
-    <h2>{{{__ "support_subtitle"}}}</h2>
-    {{{__ "support_text"}}}
-  </div>
-</div>
+  <div class="row">
+    <div class="col-lg-6">
+      <h2>{{{__ "support_subtitle"}}}</h2>
+      {{{__ "support_text"}}}
+    </div>
 
-{{#each agreements}}
-{{> terms/modal this}}
-{{/each}}
+    {{#each agreements}}
+    {{> terms/modal this}}
+    {{/each}}
+
+    <div class="col-lg-6 mb-3">
+      <p>{{{__ "betterplace_text"}}}</p>
+      <script type="text/javascript">
+        /* Configure at https://www.betterplace.org/de/projects/74137-unterstutze-die-lernwerkstatt-lernen-und-lernen-lassen-e-v/manage/iframe_donation_form/new */
+        var _bp_iframe = _bp_iframe || {};
+        _bp_iframe.project_id = 74137; /* REQUIRED */
+        _bp_iframe.lang = '{{{__ "locale"}}}'; /* Language of the form */
+        _bp_iframe.width = 600; /* Custom iframe-tag-width, integer */
+        _bp_iframe.color = '87C7C0'; /* Button and banderole color, hex without "#" */
+        _bp_iframe.background_color = 'ffffff'; /* Background-color, hex without "#" */
+        _bp_iframe.default_amount = 10; /* Donation-amount, integer 1-99 */
+        _bp_iframe.recurring_interval = 'monthly'; /* Interval for recurring donations, string out of ["single", "monthly", "quarter_yearly", "half_yearly", "yearly"] */
+        _bp_iframe.bottom_logo = false;
+        (function () {
+          var bp = document.createElement('script'); bp.type = 'text/javascript'; bp.async = true;
+          bp.src = 'https://betterplace-assets.betterplace.org/assets/load_donation_iframe.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(bp, s);
+        })();
+      </script>
+      <div class="mt-3" id="betterplace_donation_iframe"
+        style="background: transparent url('https://www.betterplace.org/assets/new_spinner.gif') 275px 20px no-repeat;">
+      </div>
+    </div>
+  </div>
