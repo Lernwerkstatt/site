@@ -1,6 +1,7 @@
 {
   "active_de": "",
   "active_en": "font-weight-bold disabled",
+  "annual_report": "Here you find the <a href=\"/download/Jahresbericht_16_17.pdf\" download><strong>annual report</strong></a> (in German) with a detailed description of our work.",
   "betterplace_text": "<strong>Donate now for <a rel=\"noopener\" target=\"_blank\" href=\"https://www.betterplace.org/en/donate/platform/projects/74137-unterstutze-die-lernwerkstatt-lernen-und-lernen-lassen-e-v\">„Unterstütze Die Lernwerkstatt - lernen und lernen lassen e.V.“<a> with our partner betterplace.org.<br>",
   "blogpost_author": "Author",
   "blogpost_content": "Content",
@@ -20,7 +21,7 @@
   "common_subtitle": "Die Lernwerkstatt is a learning platform independent of age for learners in, out, or alongside school.",
   "common_surname": "Surname",
   "common_title": "Die Lernwerkstatt",
-  "contact_policy":"I approve my consent with the <a href=\"#\" data-toggle=\"modal\" data-target=\"#termsModal\">copyright regulations</a> and the <a href=\"#\" data-toggle=\"modal\" data-target=\"#privacyModal\">privacy policy</a>.",
+  "contact_policy": "I approve my consent with the <a href=\"#\" data-toggle=\"modal\" data-target=\"#termsModal\">copyright regulations</a> and the <a href=\"#\" data-toggle=\"modal\" data-target=\"#privacyModal\">privacy policy</a>.",
   "contact_subtitle": "Contact us",
   "contact_title": "Contact",
   "contactmap_subtitle": "Getting here by bus:",
