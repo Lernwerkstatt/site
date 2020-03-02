@@ -4,5 +4,6 @@
     "\\.hbs$": "<rootDir>/config/handlebarsLoader.js"
   },
   "testEnvironment": "node",
-  "setupFiles": ["<rootDir>/config/jestGlobals.js"]
+  "setupFiles": ["<rootDir>/config/jestGlobals.js"],
+  "testPathIgnorePatterns": ["<rootDir>/cypress/", "<rootDir>/node_modules/"]
 }
