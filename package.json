@@ -8,7 +8,8 @@
     "prod": "node src/index.js",
     "start": "npm-run-all -p nodemon browser-sync",
     "nodemon": "nodemon --exec node -r dotenv/config src/index.js",
-    "browser-sync": "./browserSync.sh"
+    "browser-sync": "./browserSync.sh",
+    "cypress": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -58,10 +59,12 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.7",
+    "cypress": "^4.1.0",
     "dotenv": "^8.1.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-cypress": "^2.10.3",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-prettier": "^3.1.2",
     "husky": "^3.1.0",
