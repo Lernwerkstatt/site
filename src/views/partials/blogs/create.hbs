@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="https://unpkg.com/simplemde@1.11.2/dist/simplemde.min.css">
+<script src="https://unpkg.com/simplemde@1.11.2/dist/simplemde.min.js"></script>
+
 <form action="/blogs/create" method="post" autocomplete="off" enctype="application/json">
   <div class="form-group col-md-6">
     <label>{{{__ "blogpost_title"}}}:</label>
@@ -13,10 +16,16 @@
   </div>
   <div class="form-group col-md-6">
     <label>{{{__ "blogpost_content"}}}:</label>
-    <textarea name="content" class="form-control" rows="10" required></textarea>
+    <textarea name="content" id="main-content" class="form-control" rows="10"></textarea>
   </div>
   <div class="col-md-6">
     <input type="submit" value="{{{__ "common_submit"}}}">
     <input type="reset">
   </div>
 </form>
+
+<script>
+  var simplemde = new SimpleMDE({
+    element: document.getElementById("main-content")
+  });
+</script>
