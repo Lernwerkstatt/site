@@ -5,6 +5,7 @@ const favicon = require("serve-favicon");
 const bodyParser = require("body-parser");
 const i18n = require("i18n");
 const cookieParser = require("cookie-parser");
+const compression = require("compression");
 
 const helmet = require("./middlewares/helmet.js");
 const routes = require("./routes");
@@ -12,17 +13,8 @@ const routes = require("./routes");
 const port = process.env.PORT || 3000;
 const app = express();
 
-i18n.configure({
-  locales: ["en", "de"],
-  directory: `${__dirname}/locales`,
-  defaultLocale: "de",
-  cookie: "locale",
-  queryParameter: "lang",
-  api: {
-    __: "__",
-    __n: "__n"
-  }
-});
+// Enable gzip compression
+app.use(compression());
 
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -31,8 +23,22 @@ app.use(cookieParser());
 app.use(helmet);
 app.use(express.static(`${__dirname}/../static`));
 app.use(favicon(`${__dirname}/../static/img/favicon.ico`));
+
+// Set up i18n
+i18n.configure({
+  locales: ["en", "de"],
+  directory: `${__dirname}/locales`,
+  defaultLocale: "de",
+  cookie: "locale",
+  queryParameter: "lang",
+  api: {
+    __: "__",
+    __n: "__n",
+  },
+});
 app.use(i18n.init);
 
+// Handlebars for templating
 app.set("view engine", "hbs");
 app.set("views", `${__dirname}/views/`);
 app.engine(
@@ -54,12 +60,13 @@ app.engine(
         if (!this._sections) this._sections = {};
         this._sections[name] = options.fn(this);
         return null;
-      }
+      },
       /* eslint-enable */
-    }
+    },
   })
 );
 
+// Routes
 app.use(routes);
 
 app.listen(port, () => {
