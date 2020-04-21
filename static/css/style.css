@@ -54,7 +54,7 @@ main {
   position: absolute;
   z-index: -1;
   opacity: 0.3;
-  background-image: url(../img/home/bg.png);
+  background-image: url(../img/home/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -254,4 +254,8 @@ h4,
 
 .custom-toggler.navbar-toggler {
   border-color: rgb(52, 58, 64);
+}
+
+.footer-nav {
+  font-size: 0.9em;
 }

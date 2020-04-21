@@ -29,15 +29,12 @@
   "lint-staged": {
     "*.{js}": [
       "prettier --write",
-      "eslint --fix --config ./config/.eslintrc.json",
-      "git add"
+      "eslint --fix --config ./config/.eslintrc.json"
     ],
     "*.{css}": [
-      "stylelint --fix --config ./config/.stylelintrc.json",
-      "git add"
+      "stylelint --fix --config ./config/.stylelintrc.json"
     ],
     "*.{hbs}": [
-      "git add",
       "jest --config config/jest.json --bail --findRelatedTests"
     ]
   },

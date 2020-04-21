@@ -3,7 +3,7 @@
 exports[`member.hbs should match the snapshot 1`] = `
 "<div class=\\"d-inline-block cursor-pointer align-top mr-3 mb-3\\" data-toggle=\\"modal\\" data-target=\\"#max\\"
   style=\\"max-width: 160px\\">
-  <img src=\\"img/logo.png\\" alt=\\"Max Muster\\" class=\\"img-fluid\\" style=\\"height: 160px; width: 160px;\\">
+  <img src=\\"img/logo.png\\" loading=\\"lazy\\" alt=\\"Max Muster\\" class=\\"img-fluid\\" style=\\"height: 160px; width: 160px;\\">
   <div class=\\"lead text-center\\">Max Muster</div>
 </div>
 <div id=\\"max\\" class=\\"modal fade\\" tabindex=\\"-1\\" role=\\"dialog\\" aria-labelledby=\\"maxLabel\\" aria-hidden=\\"true\\">
@@ -18,7 +18,7 @@ exports[`member.hbs should match the snapshot 1`] = `
       <div class=\\"modal-body\\">
         <div class=\\"row mt-3 mb-3\\">
           <div class=\\"col-sm-3 pr-0 text-center mb-3\\">
-            <img src=\\"img/logo.png\\" alt=\\"\\" style=\\"width: 100%; height: auto; max-width: 160px\\" />
+            <img src=\\"img/logo.png\\" loading=\\"lazy\\" alt=\\"Max Muster\\" style=\\"width: 100%; height: auto; max-width: 160px\\" />
           </div>
           <div class=\\"col-sm-9 text-left\\">
             Lorem ipsum.

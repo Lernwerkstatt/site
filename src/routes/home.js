@@ -13,7 +13,7 @@ function ourValues(locale) {
       title: "Our Values",
       text: "What Die Lernwerkstatt represents",
       link: "/values",
-      image: "img/home/notebook.png"
+      image: "img/home/notebook.jpg"
     };
   }
   return {
@@ -21,7 +21,7 @@ function ourValues(locale) {
     title: "Unsere Werte",
     text: "Dafür steht Die Lernwerkstatt",
     link: "/values",
-    image: "img/home/notebook.png"
+    image: "img/home/notebook.jpg"
   };
 }
 
