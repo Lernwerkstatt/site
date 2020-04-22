@@ -24,6 +24,8 @@
   "contact_policy": "I approve my consent with the <a href=\"#\" data-toggle=\"modal\" data-target=\"#termsModal\">copyright regulations</a> and the <a href=\"#\" data-toggle=\"modal\" data-target=\"#privacyModal\">privacy policy</a>.",
   "contact_subtitle": "Contact us",
   "contact_title": "Contact",
+  "contact_verification": "Verification",
+  "contact_verify": "Enter the word <code>send</code> &#42;",
   "contactmap_subtitle": "Getting here by bus:",
   "contactmap_text": "From S-Bahn Treptower Park or U-Bahn Hermannplatz take bus 194 to Bouchéstraße.<br>Or take bus 104 to Heidelberger Straße and walk for 5 minutes.",
   "contactmap_title": "In Alt-Treptow",

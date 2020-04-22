@@ -24,6 +24,8 @@
   "contact_policy": "Hiermit bestätige ich meine Übereinstimmung mit dem <a href=\"#\" data-toggle=\"modal\" data-target=\"#termsModal\">Urheberrecht</a> und der <a href=\"#\" data-toggle=\"modal\" data-target=\"#privacyModal\">Datenschutzerklärung</a>.",
   "contact_subtitle": "Kontaktiere uns",
   "contact_title": "Kontakt",
+  "contact_verification": "Verifizierung",
+  "contact_verify": "Gib das Wort <code>send</code> &#42; ein",
   "contactmap_subtitle": "Anreise mit dem Bus:",
   "contactmap_text": "Von S-Bahn Treptower Park oder von U-Bahn Hermannplatz den Bus 194 bis Bouchéstraße nehmen.<br>Oder den Bus 104 bis Heidelberger Straße und dann 5 Minuten Fußweg.",
   "contactmap_title": "Vor Ort in Alt-Treptow",
