@@ -13,7 +13,7 @@ function ourValues(locale) {
       title: "Our Values",
       text: "What Die Lernwerkstatt represents",
       link: "/values",
-      image: "img/home/notebook.jpg"
+      image: "img/home/notebook.jpg",
     };
   }
   return {
@@ -21,24 +21,37 @@ function ourValues(locale) {
     title: "Unsere Werte",
     text: "Dafür steht Die Lernwerkstatt",
     link: "/values",
-    image: "img/home/notebook.jpg"
+    image: "img/home/notebook.jpg",
   };
 }
 
-const event = calendar => ({
-  badge: "Termin",
-  title: calendar[0].name,
-  text: calendar[0].date,
-  image: calendar[0].cover.source,
-  id: calendar[0].tag
-});
+const event = (calendar) => {
+  let result = {
+    badge: "Termin",
+    title: "",
+    text: "",
+    image: "",
+    id: "",
+  };
 
-const blog = latestPost => ({
+  if (calendar && calendar.length > 0) {
+    result = {
+      badge: "Termin",
+      title: calendar[0].name,
+      text: calendar[0].date,
+      image: calendar[0].cover.source,
+      id: calendar[0].tag,
+    };
+  }
+  return result;
+};
+
+const blog = (latestPost) => ({
   badge: "Blog",
   title: latestPost.title,
   text: `${latestPost.date} | ${latestPost.author}`,
   link: `/blogs/${latestPost.id}`,
-  image: latestPost.imagelink
+  image: latestPost.imagelink,
 });
 
 router.get("/", async (req, res) => {
@@ -49,7 +62,7 @@ router.get("/", async (req, res) => {
     calendar,
     ourValues: ourValues(req.cookies.locale),
     event: event(calendar),
-    blog: blog(latestPost)
+    blog: blog(latestPost),
   };
   res.render("home", result);
 });
