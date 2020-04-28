@@ -1,12 +1,8 @@
 const express = require("express");
 const nodemailer = require("nodemailer");
-const bodyParser = require("body-parser");
 const policy = require("../../data/policy.json");
 
-const app = express();
 const router = express.Router();
-
-app.use(bodyParser.urlencoded({ extended: true }));
 
 router
   .route("/contact")
