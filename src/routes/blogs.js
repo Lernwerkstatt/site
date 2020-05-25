@@ -1,5 +1,5 @@
 const express = require("express");
-const uuidv4 = require("uuid/v4");
+const { v4: uuidv4 } = require("uuid");
 const moment = require("moment");
 const converter = require("../services/converter");
 const database = require("../services/database");
@@ -7,7 +7,7 @@ const database = require("../services/database");
 const router = express.Router();
 
 router.route("/blogs").get((req, res) => {
-  database.allPosts().then(blogs => res.render("blogs", { blogs }));
+  database.allPosts().then((blogs) => res.render("blogs", { blogs }));
 });
 
 router
@@ -20,13 +20,13 @@ router
       date: moment().format("DD.MM.YYYY"),
       author: req.body.author,
       content: converter.convertPost(req.body.content),
-      imagelink: req.body.imagelink || "/img/blogs/default.jpg"
+      imagelink: req.body.imagelink || "/img/blogs/default.jpg",
     });
     res.redirect("/blogs");
   });
 
 router.route("/blogs/:id").get((req, res) => {
-  database.singlePost(req.params.id).then(post => res.render("blogs", post));
+  database.singlePost(req.params.id).then((post) => res.render("blogs", post));
 });
 
 module.exports = router;
