@@ -59,6 +59,12 @@
       "id": "paul",
       "img": "img/partners/paul.png",
       "link": "https://paul-it-service.de/index.php/de/home/"
+    },
+    {
+      "name": "Deutsche Postcode Lotterie",
+      "id": "dpl",
+      "img": "img/partners/dpl.png",
+      "link": "https://www.postcode-lotterie.de/"
     }
   ]
 }
