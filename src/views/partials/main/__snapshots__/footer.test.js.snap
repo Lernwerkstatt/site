@@ -21,9 +21,11 @@ exports[`footer.hbs should match the snapshot 1`] = `
           <li class=\\"nav-item\\">
             <a href=\\"/friends\\" class=\\"nav-link text-dark\\">i18n</a>
           </li>
+          <!--
           <li class=\\"nav-item\\">
             <a href=\\"/openki\\" class=\\"nav-link text-dark\\">i18n</a>
           </li>
+          -->
           <li class=\\"nav-item\\">
             <a href=\\"/imprint\\" class=\\"nav-link text-dark\\">i18n</a>
           </li>
