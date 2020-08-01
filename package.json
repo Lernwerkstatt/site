@@ -49,7 +49,7 @@
     "i18n": "^0.10.0",
     "moment": "^2.27.0",
     "mongodb": "^3.5.9",
-    "mongoose": "^5.9.20",
+    "mongoose": "^5.9.27",
     "morgan": "^1.10.0",
     "nodemailer": "^6.4.10",
     "serve-favicon": "^2.5.0",
