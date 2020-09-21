@@ -23,6 +23,9 @@ exports[`header.hbs should match the snapshot 1`] = `
             <a class=\\"nav-link text-dark\\" href=\\"/blogs\\">i18n</a>
           </li>
           <li class=\\"nav-item\\">
+            <a class=\\"nav-link text-dark\\" href=\\"/podcasts\\">i18n</a>
+          </li>
+          <li class=\\"nav-item\\">
             <a class=\\"nav-link text-dark\\" href=\\"/team\\">i18n</a>
           </li>
           <!--
