@@ -1,10 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`create.hbs should match the snapshot 1`] = `
-"<link rel=\\"stylesheet\\" href=\\"https://unpkg.com/simplemde@1.11.2/dist/simplemde.min.css\\">
-<script src=\\"https://unpkg.com/simplemde@1.11.2/dist/simplemde.min.js\\"></script>
-
-<form action=\\"/podcasts/create\\" method=\\"post\\" autocomplete=\\"off\\" enctype=\\"application/json\\">
+"<form action=\\"/podcasts/create\\" method=\\"post\\" autocomplete=\\"off\\" enctype=\\"application/json\\">
   <div class=\\"form-group col-md-6\\">
     <label>i18n:</label>
     <input type=\\"text\\" class=\\"form-control\\" name=\\"title\\" required>
@@ -22,11 +19,5 @@ exports[`create.hbs should match the snapshot 1`] = `
     <input type=\\"reset\\">
   </div>
 </form>
-
-<script>
-  var simplemde = new SimpleMDE({
-    element: document.getElementById(\\"main-content\\")
-  });
-</script>
 "
 `;
