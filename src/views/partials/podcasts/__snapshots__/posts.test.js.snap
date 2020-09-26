@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`posts.hbs should match the snapshot 1`] = `
+"<div class=\\"col-xs-8 col-md-6 col-lg-4\\">
+  <div class=\\"card mt-3 mb-5\\" style=\\"height: 22rem; max-width: 100%\\">
+    <img class=\\"card-img-top\\" loading=\\"lazy\\" style=\\"height: 14rem; object-fit: cover;\\" src=\\"https://img.youtube.com/vi/xyz/0.jpg\\"
+      alt=\\"Post\\">
+    <div class=\\"card-body\\">
+      <h2 class=\\"card-title\\" style=\\"overflow-wrap: normal\\"><a href=\\"/podcasts/\\">Post</a></h2>
+      <p class=\\"card-text\\"><small>unknown, 01.01.2000</small></p>
+    </div>
+  </div>
+</div>
+"
+`;
