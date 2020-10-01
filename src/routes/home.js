@@ -54,15 +54,28 @@ const blog = (latestPost) => ({
   image: latestPost.imagelink,
 });
 
+const podcast = (latestVideoPost) => ({
+  badge: "Podcast",
+  title: latestVideoPost.title,
+  text: `${latestVideoPost.date} | ${latestVideoPost.author}`,
+  link: `/podcasts/${latestVideoPost.id}`,
+  image: `https://img.youtube.com/vi/${latestVideoPost.video_id}/0.jpg`,
+});
+
 router.get("/", async (req, res) => {
   const calendar = await cache.get("events.json", events.getEvents);
   const latestPost = await cache.get("blogs.json", database.latestPost);
+  const latestVideoPost = await cache.get(
+    "videos.json",
+    database.latestVideoPost
+  );
 
   const result = {
     calendar,
     ourValues: ourValues(req.cookies.locale),
     event: event(calendar),
     blog: blog(latestPost),
+    podcast: podcast(latestVideoPost),
   };
   res.render("home", result);
 });
@@ -70,6 +83,7 @@ router.get("/", async (req, res) => {
 router.get("/invalidate", async (req, res) => {
   await cache.invalidate("events.json", events.getEvents);
   await cache.invalidate("blogs.json", database.latestPost);
+  await cache.invalidate("videos.json", database.latestVideoPost);
 
   res.redirect("/");
 });
