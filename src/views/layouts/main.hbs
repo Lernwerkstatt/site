@@ -21,6 +21,7 @@
   <link rel="preconnect" href="https://unpkg.com" crossorigin>
 
   <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   <link rel="stylesheet" href="/css/bootstrap.css">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -40,6 +41,29 @@
   <script src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js"></script>
   <script src="https://unpkg.com/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://unpkg.com/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+  <script>
+    window.cookieconsent.initialise({
+      container: document.getElementById("cookieconsent"),
+      position: "top",
+      theme: "classic",
+      secure: true,
+      revokable: true,
+      onStatusChange: function (status) {
+        console.log(this.hasConsented() ?
+        'enable cookies' : 'disable cookies');
+      },
+      palette: {
+        popup: { background: "#ef7479" },
+        button: { background: "#e0e0e0" },
+      },
+      content: {
+        "message": "{{{__ "cookie_message"}}}",
+        "link": "{{{__ "cookie_link"}}}",
+        "dismiss": "{{{__ "cookie_dismiss"}}}",
+      }
+    });
+  </script>
 </body>
 
 </html>
