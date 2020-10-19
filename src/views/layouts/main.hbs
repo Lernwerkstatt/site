@@ -47,6 +47,7 @@
       container: document.getElementById("cookieconsent"),
       position: "top",
       theme: "classic",
+      type: "opt-in",
       secure: true,
       revokable: true,
       onStatusChange: function (status) {
@@ -61,6 +62,8 @@
         "message": "{{{__ "cookie_message"}}}",
         "link": "{{{__ "cookie_link"}}}",
         "dismiss": "{{{__ "cookie_dismiss"}}}",
+        "allow": "{{{__ "cookie_allow"}}}",
+        "deny": "{{{__ "cookie_deny"}}}",
       }
     });
   </script>
