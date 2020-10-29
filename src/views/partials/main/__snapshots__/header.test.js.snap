@@ -2,8 +2,6 @@
 
 exports[`header.hbs should match the snapshot 1`] = `
 "<header>
-  <script src=\\"https://cmp.osano.com/AzZcuXSEBI1Of1uH1/0c5d1ce0-9759-4e8b-9c4e-272cbbd3de9a/osano.js\\"></script>
-  
   <nav class=\\"navbar navbar-light fixed-top navbar-expand-lg bg-primary\\">
     <div class=\\"container\\">
       <a class=\\"navbar-brand header-logo\\" href=\\"/\\">
