@@ -54,7 +54,7 @@
     "nodemailer": "^6.4.12",
     "serve-favicon": "^2.5.0",
     "showdown": "^1.9.1",
-    "uuid": "^8.3.0"
+    "uuid": "^8.3.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.13",
