@@ -259,3 +259,16 @@ h4,
 .footer-nav {
   font-size: 0.9em;
 }
+
+#ev-iframe {
+  border:none;
+  width: 100%;
+  min-height: 800px;
+}
+
+#ev-text {
+  text-decoration: none;
+  color: #878787;
+  font-family: "Museo Slab", serif;
+  color: black;
+}
