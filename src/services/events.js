@@ -4,28 +4,28 @@ const {
   extractNearestDate,
   stringifyEventDate,
   createEventLink,
-  addCalendarIcon
+  addCalendarIcon,
 } = require("../utilities/facebook");
 
 const converter = new showdown.Converter({
-  simplifiedAutoLink: true
+  simplifiedAutoLink: true,
 });
 
 const fbOptions = {
-  version: "v3.3",
-  accessToken: process.env.FB_TOKEN
+  version: "v9.0",
+  accessToken: process.env.FB_TOKEN,
 };
 
+const FB = new fb.Facebook(fbOptions);
 const getEvents = () =>
   new Promise((resolve, reject) => {
-    const FB = new fb.Facebook(fbOptions);
     FB.api(
       `/${process.env.FB_PAGE_ID}/events?fields=cover,description,end_time,id,name,start_time,event_times`,
       "get",
       {
-        time_filter: "upcoming"
+        time_filter: "upcoming",
       },
-      res => {
+      (res) => {
         if (!res || res.error) {
           reject(res);
         }
@@ -33,7 +33,7 @@ const getEvents = () =>
         let result = [];
         if (res.data) {
           result = res.data
-            .map(event => {
+            .map((event) => {
               const { cover, description, id, name } = event;
               const nearestDate = extractNearestDate(event);
               const date = stringifyEventDate(nearestDate);
@@ -51,7 +51,7 @@ const getEvents = () =>
                 name,
                 nearestDate,
                 tag,
-                dayicon
+                dayicon,
               };
             })
             .sort(
@@ -67,5 +67,5 @@ const getEvents = () =>
   });
 
 module.exports = {
-  getEvents
+  getEvents,
 };
