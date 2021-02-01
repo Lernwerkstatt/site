@@ -9,40 +9,38 @@ describe("Footer links", () => {
     {
       link: "Mitmachen",
       href: "support",
-      title: "Mitmachen"
+      title: "Mitmachen",
     },
     {
       link: "Kontakt",
       href: "contact",
-      title: "Kontakt"
+      title: "Kontakt",
     },
     {
       link: "Abonnieren",
       href: "subscribe",
-      title: "Abonnieren"
+      title: "Abonnieren",
     },
     {
       link: "Partner",
       href: "partners",
-      title: "Partner"
+      title: "Partner",
     },
     {
       link: "Freunde",
       href: "friends",
-      title: "Befreundete Initiativen"
+      title: "Befreundete Initiativen",
     },
     {
       link: "Impressum",
       href: "imprint",
-      title: "Impressum"
-    }
+      title: "Impressum",
+    },
   ];
 
-  pages.forEach(page => {
+  pages.forEach((page) => {
     it(`should go to ${page.link}`, () => {
-      cy.get("footer .nav-link")
-        .contains(page.link)
-        .click();
+      cy.get("footer .nav-link").contains(page.link).click();
 
       cy.location("pathname").should("include", page.href);
 
