@@ -1,26 +1,10 @@
 /// <reference types="cypress" />
 
-function closeCookieBanner() {
-  cy.get(".osano-cm-window").contains("Accept").click();
-}
-
-describe("Cookie banner", () => {
-  beforeEach(() => {
-    cy.visit("/");
-  });
-
-it(`should save the cookie preferences`, () => {
-    closeCookieBanner();
-
-    cy.get(".osano-cm-window").should("not.be.visible");
-  });
-});
-
 describe("Header links", () => {
   beforeEach(() => {
     cy.visit("/").setCookie("locale", "de");
 
-    closeCookieBanner();
+    cy.get(".osano-cm-window").contains("Accept").click();
   });
 
   const pages = [
