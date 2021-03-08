@@ -1,5 +1,4 @@
-const Blogposts = require("../models/blogposts");
-const Videoposts = require("../models/videoposts");
+const { Blogposts, Videoposts } = require("../models/blogposts");
 
 const allPosts = () =>
   Blogposts.aggregate([
