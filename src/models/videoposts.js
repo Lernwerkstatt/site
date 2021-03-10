@@ -1,11 +1,5 @@
 const mongoose = require("mongoose");
 
-mongoose.connect(process.env.DB_HOST, {
-  useCreateIndex: true,
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
-
 const videopostSchema = new mongoose.Schema(
   {
     id: {

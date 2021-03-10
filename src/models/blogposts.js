@@ -1,41 +1,35 @@
 const mongoose = require("mongoose");
 
-mongoose.connect(process.env.DB_HOST, {
-  useCreateIndex: true,
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
-
 const blogpostSchema = new mongoose.Schema(
   {
     id: {
       type: String,
       required: true,
-      unique: true
+      unique: true,
     },
     title: {
       type: String,
-      required: true
+      required: true,
     },
     date: {
       type: String,
-      required: true
+      required: true,
     },
     author: {
       type: String,
-      required: true
+      required: true,
     },
     content: {
       type: String,
-      required: true
+      required: true,
     },
     imagelink: {
       type: String,
-      required: false
-    }
+      required: false,
+    },
   },
   {
-    timestamps: true
+    timestamps: true,
   }
 );
 
