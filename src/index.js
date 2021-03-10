@@ -6,6 +6,7 @@ const bodyParser = require("body-parser");
 const i18n = require("i18n");
 const cookieParser = require("cookie-parser");
 const compression = require("compression");
+const mongoose = require("mongoose");
 
 const helmet = require("./middlewares/helmet.js");
 const routes = require("./routes");
@@ -37,6 +38,13 @@ i18n.configure({
   },
 });
 app.use(i18n.init);
+
+// Connect to database
+mongoose.connect(process.env.DB_HOST, {
+  useCreateIndex: true,
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 
 // Handlebars for templating
 app.set("view engine", "hbs");

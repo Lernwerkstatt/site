@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const blogpostSchema = new mongoose.Schema(
+const videopostSchema = new mongoose.Schema(
   {
     id: {
       type: String,
@@ -19,11 +19,7 @@ const blogpostSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    content: {
-      type: String,
-      required: true,
-    },
-    imagelink: {
+    video_id: {
       type: String,
       required: false,
     },
@@ -33,6 +29,6 @@ const blogpostSchema = new mongoose.Schema(
   }
 );
 
-const Blogposts = mongoose.model("Blogpost", blogpostSchema);
+const Videoposts = mongoose.model("Videopost", videopostSchema);
 
-module.exports = Blogposts;
+module.exports = Videoposts;
