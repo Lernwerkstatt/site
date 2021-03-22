@@ -65,6 +65,12 @@
       "id": "dpl",
       "img": "img/partners/dpl.png",
       "link": "https://www.postcode-lotterie.de/"
+    },
+    {
+      "name": "EasyVerein",
+      "id": "easy",
+      "img": "img/partners/easy.png",
+      "link": "https://easyverein.com"
     }
   ]
 }
