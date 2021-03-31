@@ -2,6 +2,7 @@ const express = require("express");
 
 const router = express.Router();
 
+const agsbRouter = require("./agsb.js");
 const blogsRouter = require("./blogs.js");
 const contactRouter = require("./contact.js");
 const friendsRouter = require("./friends.js");
@@ -19,6 +20,7 @@ const teamRouter = require("./team.js");
 const valuesRouter = require("./values.js");
 const serviceRouter = require("./service.js");
 
+router.use(agsbRouter);
 router.use(blogsRouter);
 router.use(contactRouter);
 router.use(friendsRouter);
