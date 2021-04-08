@@ -44,6 +44,12 @@ exports[`footer.hbs should match the snapshot 1`] = `
             </a>
           </li>
           <li class=\\"nav-item\\">
+            <a href=\\"https://www.meetup.com/lernwerkstatt/\\" aria-label=\\"Unsere Meetup Seite\\"
+              class=\\"nav-link text-dark\\">
+              <span class=\\"fab fa-meetup\\"></span>
+            </a>
+          </li>
+          <li class=\\"nav-item\\">
             <a href=\\"mailto:info@die-lernwerkstatt.org\\" aria-label=\\"Schreib uns eine Email\\" class=\\"nav-link text-dark\\">
               <span class=\\"far fa-envelope\\"></span>
             </a>
