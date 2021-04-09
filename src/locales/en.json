@@ -1,7 +1,6 @@
 {
   "active_de": "",
   "active_en": "font-weight-bold disabled",
-  "agsb_title": "Selbstbestimmte Bildung gleichberechtigt zur Beschulung anerkennen",
   "annual_report": "Here you find the <a href=\"/download/Jahresbericht_16_17.pdf\" download><strong>annual report</strong></a> (in German) with a detailed description of our work.",
   "betterplace_text": "<strong>Donate now for <a rel=\"noopener\" target=\"_blank\" href=\"https://www.betterplace.org/en/donate/platform/projects/74137-unterstutze-die-lernwerkstatt-lernen-und-lernen-lassen-e-v\">„Unterstütze Die Lernwerkstatt - lernen und lernen lassen e.V.“<a> with our partner betterplace.org. You can also transfer money directly to our account. The bank details are available in our <a rel=\"noopener\" target=\"_blank\" href=\"https://easyverein.com/public/LW/applicationform/\">membership form</a>.",
   "blogform_title": "Add a blogpost",
@@ -32,7 +31,6 @@
   "contactmap_text": "From S-Bahn Treptower Park or U-Bahn Hermannplatz take bus 194 to Bouchéstraße.<br>Or take bus 104 to Heidelberger Straße and walk for 5 minutes.",
   "contactmap_title": "In Alt-Treptow",
   "facebook_more": "More on Facebook",
-  "footer_agsb": "AGSB",
   "footer_contact": "Contact",
   "footer_friends": "Friends",
   "footer_imprint": "Imprint",
@@ -58,6 +56,7 @@
   "mailchimp_gdpr": "<p>We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href=\"https://mailchimp.com/legal/\" target=\"_blank\">Learn more about Mailchimp's privacy practices here.</a></p>",
   "mailchimp_info": "<label>Approval for marketing</label><p>Die Lernwerkstatt will use the information submitted in this form to stay in contact with you and to send updates and marketing-information. Please let us know how you want to hear from us:</p>",
   "mailchimp_policy": "<p>You can change your mind anytime by clicking on the unsubscribe-link included in the footer of every email you receive from us, or by contacting us at <a href=\"mailto:info@die-lernwerkstatt.org\">info@die-lernwerkstatt.org</a>. We will handle your information with care and respect. Further information to our data protection practices can be found on our website. By clicking below to subscribe you agree with the use of your information according to the stated terms.</p>",
+  "manifesto_title": "Selbstbestimmte Bildung gleichberechtigt zur Beschulung anerkennen",
   "openki_title": "Openki",
   "partners_subtitle": "We are very grateful for our partners:",
   "partners_title": "Partners",
