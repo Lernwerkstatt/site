@@ -21,6 +21,11 @@
     "url": "https://github.com/Lernwerkstatt/site/issues"
   },
   "homepage": "https://github.com/Lernwerkstatt/site#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "lint-staged": {
     "*.{js}": [
       "prettier --write",
@@ -32,11 +37,6 @@
     "*.{hbs}": [
       "jest --config config/jest.json --bail --findRelatedTests"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "dependencies": {
     "body-parser": "^1.19.0",
