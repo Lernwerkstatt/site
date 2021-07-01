@@ -9,8 +9,7 @@
     "start": "npm-run-all -p nodemon browser-sync",
     "nodemon": "nodemon --exec node -r dotenv/config src/index.js",
     "browser-sync": "./browserSync.sh",
-    "cypress": "cypress open",
-    "prepare": "husky install"
+    "cypress": "cypress open"
   },
   "repository": {
     "type": "git",
@@ -33,6 +32,11 @@
     "*.{hbs}": [
       "jest --config config/jest.json --bail --findRelatedTests"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "dependencies": {
     "body-parser": "^1.19.0",
