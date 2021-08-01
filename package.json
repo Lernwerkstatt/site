@@ -51,7 +51,7 @@
     "mongodb": "^3.6.10",
     "mongoose": "^5.13.0",
     "morgan": "^1.10.0",
-    "nodemailer": "^6.6.2",
+    "nodemailer": "^6.6.3",
     "serve-favicon": "^2.5.0",
     "showdown": "^1.9.1",
     "uuid": "^8.3.2"
