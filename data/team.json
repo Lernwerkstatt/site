@@ -53,6 +53,24 @@
       "id": "max",
       "img": "img/team/max.png",
       "description": "Max entwickelt Visionen interkulturellen Lernens und interreligiöser Kommunikation. Ausgehend von der klassischen Bildung ist es ihm ein Hauptanliegen die Verwirklichung des sich bildenden Menschen in der Würde seiner eigenen Begabungen zu ermöglichen. Als Mathematikstudent baut er seine Kenntnisse mathematischer Zusammenhänge weiter aus und ist darauf bedacht, diese für den Entwurf von Problemlösungsstrategien einzusetzen. In der Lernbegleitung fördert er die Medienkompetenz von Schülern und unterstützt sie bei der Verfeinerung ihrer Arbeitsweisen und der Aneignung und Vertiefung umfangreicher Kenntnisse, die auch über die schulischen Themen hinaus gehen."
+    },
+    {
+      "name": "Bianca",
+      "id": "biancaK",
+      "img": "img/team/biancaK.jpg",
+      "description": "Bianca Koch ist selbstständige Opernsängerin und beschäftigt sich schon seit Ihrem Studium damit, junge Menschen für die Kultur zu begeistern, indem sie gerade junge Menschen bei Backstage-Führungen hinter die Kulisse der Bregenzer Seebühne (crossculture - Bregenzer Festspielen von 2005-2012) führte. Selbstbestimmte Bildung ist für sie eine Herzensangelegenheit. Seit Herbst 2020 setzt sie sich intensiv für die <a href='/agsb'>AG Selbstbestimmte Bildung</a> ein und gestaltet zusammen mit Bianca Geburek den Berliner Stammtisch für Selbstbestimmte Bildung."
+    },
+    {
+      "name": "Alaa",
+      "id": "alaa",
+      "img": "img/team/alaa.png",
+      "description": "Alaa Alfahel studierte Publizistik und Journalismus an der Universität Damaskus. Zurzeit ist sie bei einer Jugendredaktion tätig. Bei unserem Projekt <a href='https://ichbinhier.mystrikingly.com/' target='_blank' rel='noopener'>Ich bin hier!</a> kümmert sie sich um die Filmbearbeitung und begleitet junge Menschen bei vielfältigen Workshops durch die Stadt."
+    },
+    {
+      "name": "Jabr",
+      "id": "jabr",
+      "img": "img/team/jabr.png",
+      "description": "Jabr Zahr Aldeen hat über ein Deutsch-Frühstück 2016 zu uns gefunden und ist mittlerweile Organisator zahlreicher Workshops für das Projekt <a href='https://ichbinhier.mystrikingly.com/' target='_blank' rel='noopener'>Ich bin hier!</a> Er unser arabischer Ansprechpartner vom Verein <a href='https://www.sanad-ev.org/' target='_blank' rel='noopener'>SanaD e.V.</a> und hilft bei allen Übersetzungsfragen und dem Kontakt zu jungen Menschen, insbesondere Geflüchteten."
     }
   ]
 }
