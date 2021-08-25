@@ -25,18 +25,6 @@
       "description": "Alejandro Reyes kommt aus Costa Rica. Nach Abschluss seines Masterstudiums in Menschenrechten und Friedenserziehung sammelte er mehr als 5 Jahre Erfahrung als Sprachenlehrer und NGO-Consultant. Seine Motivation erwächst daraus neue Methoden zum alternativen Denken und zur Selbstentwicklung zu konzipieren, welche in Trainings und Coachings der Lernwerkstatt zur Anwendung kommen. Er ist davon überzeugt, dass konventionelle Lernmethoden die geistige Entwicklung einschränken. Die Lernwerkstatt stellt ihn nicht nur selbst vor zahlreiche Herausforderungen, sondern gibt ihm die Möglichkeit engagierte Freilerner kennenzulernen und gemeinsam neue Konzepte und Techniken auszuprobieren."
     },
     {
-      "name": "Miriam",
-      "id": "miriam",
-      "img": "img/team/miriam.jpg",
-      "description": "Miriam Haerer beschäftigt sich mit den Themen Bildungsfreiheit/frei sich bilden. Das Thema Lernen begleitet sich schon ihr ganzes Leben. Sie ist von Natur aus ein neugieriger und lernbegeisterter Mensch, der Lernen schon immer als Bereicherung empfunden hat. Bildung hat für sie nichts mit Institutionen zu tun, sondern ist ein ganz natürlicher Bestandteil des menschlichen Seins. Deshalb setzt sie sich auch aktiv für alternative Bildungsformen wie das Freilernen ein. Sie veranstaltet zusammen mit Bianca die monatlichen Freilernertreffen und den Freilernerstammtisch."
-    },
-    {
-      "name": "Ihab",
-      "id": "ihab",
-      "img": "img/team/ihab.jpg",
-      "description": "Ihab Al-Sabbah kommt aus Palästina und ist Computertechniker. Seit 2013 arbeitet er als Jugendarbeiter und -trainer für Erasmus+ in lokalen und internationalen Projekten. Seit 2016 ist er Projektkoordinator bei Loesje Berlin und organisiert interkulturelle und andere Events für die Lernwerkstatt. Er ist Mitgründer des M.E.N.A. Clubs und begeistert mit seinen Tanzabenden \"Yallah, Dabka!\"."
-    },
-    {
       "name": "Olzhas",
       "id": "olzhas",
       "img": "img/team/olzhas.jpg",
@@ -61,40 +49,28 @@
       "description": "Sabine ist seit 2013 in Berlin und moderiert seit 2017 mit Vergnügen die Französisch-Konversationskurse jeden Dienstag in der Lernwerkstatt. Sie hat BWL und Französisch als Fremdsprache studiert und findet es macht immer Spaß, mit unterschiedlichen Schüler*innen über alle mögliche Themen zu reden!"
     },
     {
-      "name": "Fabian",
-      "id": "fabian",
-      "img": "img/team/fabian.jpg",
-      "description": "Fabian hat an der Technischen Uni Berlin Physik mit dem Schwerpunkt theoretische Physik studiert und sich in diesem Rahmen sowohl viel mit Mathe auseinandergesetzt als auch wissenschaftliches Programmieren gelernt. Für Die Lernwerkstatt ist er in der Lernbegleitung tätig und unterstützt junge Menschen ihren Interessen zu folgen. <br />Fabian zu seiner Motivation, bei uns mitzumachen: „Auf der Ausbruch!-Messe 2018 in Berlin habe ich die Lernwerkstatt und das Freilernen kennengelernt. Wie die meisten etablierten Systeme in unserer Gesellschaft, nehme ich auch das momentane Bildungswesen als etwas sehr gewaltsames wahr, in dessen Konsequenz sowohl die Lehrer*innen als auch die Schüler*innen frustriert und überfordert sind, weil sie nicht ihren intrinsischen Interessen folgen können. Ich möchte deshalb mit der Lernwerkstatt einen anderen liebevollen Weg zeigen und gehen, auf dem Bildung und Lernen nicht mit Leistungsdruck, erzwungener Disziplin und starren Strukturen assoziiert wird, sondern Lernen als ein lebendiger interessengetriebener Wachstumsprozess, der uns allen eigen ist, mit Freude und Selbstbestimmung praktiziert wird.“"
-    },
-    {
-      "name": "Caroline",
-      "id": "caroline",
-      "img": "img/team/caroline.jpg",
-      "description": "Caroline Knöfel ist Kulturwissenschaftlerin und Montessoripädagogin, Kinder- und Jugendcoach. Gemeinsam mit Inna begleitet sie einmal im Monat den Spieleabend Deutsch für Menschen, die schon einen kleinen Grundwortschatz erworben haben und in entspannter, spielerisch leichter Atmosphäre Deutsch praktizieren möchten. <br />„Für mich ist die Lernwerkstatt ein spannendes Projekt, weil hier sehr offene, interessierte Menschen aus unterschiedlichen Kulturen mit unterschiedlichen Hintergründen zusammen kommen. Ich liebe es, das wir uns gemeinsam, selbstbestimmt und in familiär, wertschätzender Umgebung auf den Weg machen, Neues zu entdecken und uns weiter zu entwickeln.“"
-    },
-    {
-      "name": "Akash",
-      "id": "akash",
-      "img": "img/team/akash.jpg",
-      "description": "Akash Hulihalli ist für sein Masterstudium in Business Administration and Engineering aus Indien nach Berlin gekommen. Sein Engagement bei der Lernwerkstatt begann im August 2019, er arbeitet ehrenamtlich u.a. an unserem Marketing. <br />Akash über seine Arbeit: „Dies ist meine erste Erfahrung mit Deutschland, die Menschen in der Lernwerkstatt haben mich dazu gebracht, mich wie zu Hause zu fühlen und immer willkommen zu sein. Während meiner Arbeit kommuniziere ich gerne auf Deutsch und es ist die perfekte Mischung für mich, um an meinen Deutschkenntnissen zu arbeiten und meine Kenntnisse im Bereich Marketing weiterzugeben. Die Veranstaltungen, die hier stattfinden, sind einzigartig, von Fremdsprachen bis hin zu Computersoftwarekursen, vom Kochen bis hin zur Fahrradreparatur, die Vielseitigkeit und das Ziel, mehr Menschen mit den unterschiedlichsten Interessen zusammenzubringen, haben mich dazu gebracht, die Organisation mehr zu mögen. Wöchentliche Veranstaltungen, monatliche Veranstaltungen finden reibungslos statt, alle hier haben das Motto, der Gemeinschaft etwas Wertvolles zu geben. Ich schätze mich glücklich, denn ich bin seit meinen ersten Tagen in Berlin Teil der Lernwerkstatt und ich freue mich, noch lange ein Teil dieser schönen Familie zu sein.“"
-    },
-    {
-      "name": "Sameer",
-      "id": "sameer",
-      "img": "img/team/placeholder.png",
-      "description": "Sameer Al Bateen kommt aus Dneprodzershinsk in der Ukraine. Er ist Physiotherapeut (Bachelor) und Lehrer für Arabisch. In der Lernwerkstatt begleitet er wöchentlich am Montagabend den Arabisch-Abend. Er arbeitet gern mit Menschen und gibt sein Wissen an alle weiter, die sich für die arabische Sprache interessieren."
-    },
-    {
       "name": "Max",
       "id": "max",
       "img": "img/team/max.png",
       "description": "Max entwickelt Visionen interkulturellen Lernens und interreligiöser Kommunikation. Ausgehend von der klassischen Bildung ist es ihm ein Hauptanliegen die Verwirklichung des sich bildenden Menschen in der Würde seiner eigenen Begabungen zu ermöglichen. Als Mathematikstudent baut er seine Kenntnisse mathematischer Zusammenhänge weiter aus und ist darauf bedacht, diese für den Entwurf von Problemlösungsstrategien einzusetzen. In der Lernbegleitung fördert er die Medienkompetenz von Schülern und unterstützt sie bei der Verfeinerung ihrer Arbeitsweisen und der Aneignung und Vertiefung umfangreicher Kenntnisse, die auch über die schulischen Themen hinaus gehen."
     },
     {
-      "name": "Inna",
-      "id": "inna",
-      "img": "img/team/inna.png",
-      "description": "Inna Baronow begleitet das Sprach-Café für Deutsch in der Lernwerkstatt jeden letzten Mittwoch im Monat seit bereits über drei Jahren. Mit ihrer offenen und stets herzlichen Art, fühlt sich Jeder willkommen.<br />Sie liebt es, neue Menschen kennen zu lernen, ihre (Lebens-)Geschichten zu hören und den Austausch zwischen den Menschen, deren Erfahrungen und Kulturen zu fördern.<br />Sie ist Mutter zweier Söhne, Geisteswissenschaftlerin, ausgebildetet Diversity Management Trainerin und seit neustem zertifizierter Kinder- und Jugend-Coach.<br />Geboren ist Inna in der GUS, spricht daher auch fließend Russisch, aber auch Spanisch, Portugiesisch, Englisch und natürlich auch Deutsch.<br />In ihrer Freizeit geht sie gerne mit ihrer Hündin Lia durch die Wälder oder an den Seen Brandenburgs spazieren, widmet sich ihren Kindern oder werkelt im Haus/Garten."
+      "name": "Bianca",
+      "id": "biancaK",
+      "img": "img/team/biancaK.jpg",
+      "description": "Bianca Koch ist selbstständige Opernsängerin und beschäftigt sich schon seit Ihrem Studium damit, junge Menschen für die Kultur zu begeistern, indem sie gerade junge Menschen bei Backstage-Führungen hinter die Kulisse der Bregenzer Seebühne (crossculture - Bregenzer Festspielen von 2005-2012) führte. Selbstbestimmte Bildung ist für sie eine Herzensangelegenheit. Seit Herbst 2020 setzt sie sich intensiv für die <a href='/agsb'>AG Selbstbestimmte Bildung</a> ein und gestaltet zusammen mit Bianca Geburek den Berliner Stammtisch für Selbstbestimmte Bildung."
+    },
+    {
+      "name": "Alaa",
+      "id": "alaa",
+      "img": "img/team/alaa.png",
+      "description": "Alaa Alfahel studierte Publizistik und Journalismus an der Universität Damaskus. Zurzeit ist sie bei einer Jugendredaktion tätig. Bei unserem Projekt <a href='https://ichbinhier.mystrikingly.com/' target='_blank' rel='noopener'>Ich bin hier!</a> kümmert sie sich um die Filmbearbeitung und begleitet junge Menschen bei vielfältigen Workshops durch die Stadt."
+    },
+    {
+      "name": "Jabr",
+      "id": "jabr",
+      "img": "img/team/jabr.png",
+      "description": "Jabr Zahr Aldeen hat über ein Deutsch-Frühstück 2016 zu uns gefunden und ist mittlerweile Organisator zahlreicher Workshops für das Projekt <a href='https://ichbinhier.mystrikingly.com/' target='_blank' rel='noopener'>Ich bin hier!</a> Er unser arabischer Ansprechpartner vom Verein <a href='https://www.sanad-ev.org/' target='_blank' rel='noopener'>SanaD e.V.</a> und hilft bei allen Übersetzungsfragen und dem Kontakt zu jungen Menschen, insbesondere Geflüchteten."
     }
   ]
 }
