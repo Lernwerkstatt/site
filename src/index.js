@@ -40,11 +40,7 @@ i18n.configure({
 app.use(i18n.init);
 
 // Connect to database
-mongoose.connect(process.env.DB_HOST, {
-  useCreateIndex: true,
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(process.env.DB_HOST);
 
 // Handlebars for templating
 app.set("view engine", "hbs");
