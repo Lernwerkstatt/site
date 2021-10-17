@@ -1,16 +1,11 @@
 <div class="modal fade" id="{{ tag }}" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <div>
-          <button type="button" class="close mt-n4 d-sm-none" data-dismiss="modal" aria-label="{{{__ "common_close"}}}">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <a href="{{link}}" target="_blank" rel="noopener">
-            <img class="lazy mw-100 pt-2" src="" data-src="{{cover.source}}" data-srcset="{{cover.source}}"
-              alt="{{name}}" />
-          </a>
-        </div>
+        <a href="{{link}}" class="w-100" style="height: 30vh;" target="_blank" rel="noopener">
+          <img class="lazy w-100 h-100" style="object-fit: cover;" src="" data-src="{{cover.source}}" data-srcset="{{cover.source}}"
+            alt="{{name}}" />
+        </a>
       </div>
       <div class="modal-body text-dark">
         <p class="h3 mb-3">
