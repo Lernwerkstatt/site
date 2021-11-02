@@ -9,7 +9,8 @@
     "start": "npm-run-all -p nodemon browser-sync",
     "nodemon": "nodemon --exec node -r dotenv/config src/index.js",
     "browser-sync": "./browserSync.sh",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
