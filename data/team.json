@@ -28,7 +28,7 @@
       "name": "Olzhas",
       "id": "olzhas",
       "img": "img/team/olzhas.jpg",
-      "description": "Olzhas Askar kommt aus Kasachstan und ist nun in einem Berliner Startup als Software Engineer tätig. Die Lernwerkstatt entdeckte er, als er die Einladung zu den Arabischkursen von Ihab und Basel sah. Ihab und seine Freunde interessierten sich für das Programmieren und so ist \"Programming for Job Seekers\" entstanden."
+      "description": "Olzhas Askar (er) kommt aus Kasachstan und ist nun in einem Berliner Startup als Software Engineer tätig. Die Lernwerkstatt entdeckte er, als er die Einladung zu den Arabischkursen von Ihab und Basel sah. Ihab und seine Freunde interessierten sich für das Programmieren und so ist \"Programming for Job Seekers\" entstanden."
     },
     {
       "name": "Julia",
@@ -57,20 +57,26 @@
     {
       "name": "Alaa",
       "id": "alaa",
-      "img": "img/team/alaa.png",
-      "description": "Alaa Alfahel studierte Publizistik und Journalismus an der Universität Damaskus. Zurzeit ist sie bei einer Jugendredaktion tätig. Bei unserem Projekt <a href='https://ichbinhier.mystrikingly.com/' target='_blank' rel='noopener'>Ich bin hier!</a> kümmert sie sich um die Filmbearbeitung und begleitet junge Menschen bei vielfältigen Workshops durch die Stadt."
+      "img": "img/team/alaa.jpg",
+      "description": "Alaa Alfahel (sie) studierte Publizistik und Journalismus an der Universität Damaskus. Zurzeit ist sie als Social Media Editor und Sozialarbeiterin tätig. Bei unserem Projekt <a href='https://ichbinhier.mystrikingly.com/' target='_blank' rel='noopener'>Ich bin hier!</a> kümmert sie sich um die Filmbearbeitung und begleitet junge Menschen bei vielfältigen Workshops durch die Stadt."
     },
     {
       "name": "Jabr",
       "id": "jabr",
       "img": "img/team/jabr.png",
-      "description": "Jabr Zahr Aldeen hat über ein Deutsch-Frühstück 2016 zu uns gefunden und ist mittlerweile Organisator zahlreicher Workshops für das Projekt <a href='https://ichbinhier.mystrikingly.com/' target='_blank' rel='noopener'>Ich bin hier!</a> Er unser arabischer Ansprechpartner vom Verein <a href='https://www.sanad-ev.org/' target='_blank' rel='noopener'>SanaD e.V.</a> und hilft bei allen Übersetzungsfragen und dem Kontakt zu jungen Menschen, insbesondere Geflüchteten."
+      "description": "Jabr Zahr Aldeen (er) hat über ein Deutsch-Frühstück 2016 zu uns gefunden und ist mittlerweile Organisator zahlreicher Workshops für das Projekt <a href='https://ichbinhier.mystrikingly.com/' target='_blank' rel='noopener'>Ich bin hier!</a> Er ist unser arabischer Ansprechpartner vom Verein <a href='https://www.sanad-ev.org/' target='_blank' rel='noopener'>SanaD e.V.</a> und hilft bei allen Übersetzungsfragen und dem Kontakt zu jungen Menschen, insbesondere Geflüchteten."
     },
     {
       "name": "Josephine",
       "id": "josephine",
       "img": "img/team/josephine.jpg",
       "description": "Josephine Herrmann (sie/er) arbeitet als Bundesfreiwilliger bei uns. Sie ist durch ein Praktikum zu uns gekommen. Josephine ist gelernte Modenäherin. Mit seinen vielfältigen Interessen unterstützt er uns bei der Projektarbeit und setzt eigene Workshops um."
+    },
+    {
+      "name": "Corvin",
+      "id": "corvin",
+      "img": "img/team/corvin.jpg",
+      "description": "Corvin (er) fand als Teilnehmer des Französisch-Konversationskurses zur Lernwerkstatt. Mittlerweile ist er in der Lernwerkstatt auch hinter den Kulissen tätig und kümmert sich u.a. um die Mitgliederverwaltung und Vereins-Cloud."
     }
   ]
 }
