@@ -10,7 +10,7 @@
       "name": "Bianca",
       "id": "bianca",
       "img": "img/team/bianca.jpg",
-      "description": "Bianca Geburek unterrichtet seit 2011 freiberuflich Deutsch als Fremd- und Zweitsprache. Lernen beschäftigt sie aus zwei Perspektiven: in Reflexion ihrer eigenen Schul-, Studien- und Selbstlernerfahrungen, sowie im Hinblick auf die Zukunft des Lernens und sich-bildens ihrer kleinen Tochter. Die Lernwerkstatt ist ihr eine Herzensangelegenheit. Sie wünscht sich einen Ort des Ausprobierens alternativer Lern- und Lehrkonzepte, der Menschen mitreißt und zusammenbringt. Nach ihrem Motto \"Lasst uns die Freude am Lernen teilen\" kümmert sich Bianca um die Bereiche Deutsch lernen, Bildungsfreiheit/frei sich bilden sowie die allgemeine Projektkoordination."
+      "description": "Bianca Geburek (sie) beschäftigt sich mit Selbstbestimmter Bildung auf vielen verschiedenen Ebenen. Mit André gemeinsam hat sie die Lernwerkstatt 2015 gegründet, um einen Raum zu schaffen, an dem unterschiedliche Lern- und Begegnungsformen möglich sind, für Menschen jeden Alters und unabhängig von ihrer Herkunft, Schulstatus usw. Sie ist Mutter einer Tochter (*2012), die sich selbstbestimmt (auch) an einer demokratischen Schule bildet und unterstützt Familien auf alternativen Bildungswegen bei <a href='https://herzton.click/' target='_blank' rel='noopener'>Herzton</a>. In der Lernwerkstatt kümmert sie sich um Organisatorisches, Netzwerkpflege und die Weiterentwicklung des Konzepts."
     },
     {
       "name": "Ursula",
@@ -40,7 +40,7 @@
       "name": "Sabine",
       "id": "sabine",
       "img": "img/team/sabine.jpg",
-      "description": "Sabine ist seit 2013 in Berlin und moderiert seit 2017 mit Vergnügen die Französisch-Konversationskurse jeden Dienstag in der Lernwerkstatt. Sie hat BWL und Französisch als Fremdsprache studiert und findet es macht immer Spaß, mit unterschiedlichen Schüler*innen über alle mögliche Themen zu reden!"
+      "description": "Sabine (sie) ist seit 2013 in Berlin und moderiert seit 2017 mit Vergnügen die Französisch-Konversationskurse jeden Dienstag in der Lernwerkstatt. Sie hat BWL und Französisch als Fremdsprache studiert und findet es macht immer Spaß, mit unterschiedlichen Schüler*innen über alle mögliche Themen zu reden!"
     },
     {
       "name": "Max",
@@ -63,7 +63,7 @@
     {
       "name": "Jabr",
       "id": "jabr",
-      "img": "img/team/jabr.png",
+      "img": "img/team/jabr.jpg",
       "description": "Jabr Zahr Aldeen (er) hat über ein Deutsch-Frühstück 2016 zu uns gefunden und ist mittlerweile Organisator zahlreicher Workshops für das Projekt <a href='https://ichbinhier.mystrikingly.com/' target='_blank' rel='noopener'>Ich bin hier!</a> Er ist unser arabischer Ansprechpartner vom Verein <a href='https://www.sanad-ev.org/' target='_blank' rel='noopener'>SanaD e.V.</a> und hilft bei allen Übersetzungsfragen und dem Kontakt zu jungen Menschen, insbesondere Geflüchteten."
     },
     {
@@ -77,6 +77,12 @@
       "id": "corvin",
       "img": "img/team/corvin.jpg",
       "description": "Corvin (er) fand als Teilnehmer des Französisch-Konversationskurses zur Lernwerkstatt. Mittlerweile ist er in der Lernwerkstatt auch hinter den Kulissen tätig und kümmert sich u.a. um die Mitgliederverwaltung und Vereins-Cloud."
+    },
+    {
+      "name": "Teresa",
+      "id": "teresa",
+      "img": "img/team/teresa.jpg",
+      "description": "Teresa (sie) wohnt seit 2019 in Berlin, kommt ursprünglich aus München und freut sich, in der Lernwerkstatt den Kiez aktiv mitzugestalten. Sie arbeitet gerne als Lernbegleiterin, begleitet Workshops, interessiert sich fürs Freilernen & generell freiheitliche Ideen. Außerdem ist sie gerne unterwegs (vor allem draußen), macht & gibt Yoga, meditiert, spielt gerne, tanzt, und ist für jede (verrückte) Idee zu haben."
     }
   ]
 }
