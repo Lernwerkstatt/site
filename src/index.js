@@ -1,6 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
-const hbs = require("express-handlebars");
+const { engine } = require("express-handlebars");
 const favicon = require("serve-favicon");
 const bodyParser = require("body-parser");
 const i18n = require("i18n");
@@ -47,7 +47,7 @@ app.set("view engine", "hbs");
 app.set("views", `${__dirname}/views/`);
 app.engine(
   "hbs",
-  hbs({
+  engine({
     extname: "hbs",
     defaultLayout: "main",
     partialsDir: `${__dirname}/views/partials/`,
