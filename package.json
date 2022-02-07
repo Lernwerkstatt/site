@@ -46,7 +46,7 @@
     "express": "^4.17.2",
     "express-handlebars": "^6.0.2",
     "fb": "^2.0.0",
-    "helmet": "^4.6.0",
+    "helmet": "^5.0.2",
     "i18n": "^0.13.3",
     "moment": "^2.29.1",
     "mongodb": "^4.3.1",
