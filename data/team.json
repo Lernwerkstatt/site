@@ -83,6 +83,12 @@
       "id": "teresa",
       "img": "img/team/teresa.jpg",
       "description": "Teresa (sie) wohnt seit 2019 in Berlin, kommt ursprünglich aus München und freut sich, in der Lernwerkstatt den Kiez aktiv mitzugestalten. Sie arbeitet gerne als Lernbegleiterin, begleitet Workshops, interessiert sich fürs Freilernen & generell freiheitliche Ideen. Außerdem ist sie gerne unterwegs (vor allem draußen), macht & gibt Yoga, meditiert, spielt gerne, tanzt, und ist für jede (verrückte) Idee zu haben."
+    },
+    {
+      "name": "Miriam",
+      "id": "miriam",
+      "img": "img/team/miriam.jpg",
+      "description": "Miriam Rosas (sie) ist unsere neue Sprachbegeisterte mit mehr als 30 Jahren Erfahrung in der spanischen Sprache."
     }
   ]
 }
