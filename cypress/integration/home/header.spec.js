@@ -14,6 +14,11 @@ describe("Header links", () => {
       title: "Unsere Werte",
     },
     {
+      link: "Mitmachen",
+      href: "support",
+      title: "Mitmachen",
+    },
+    {
       link: "Projekte",
       href: "projects",
       title: "Projekte",

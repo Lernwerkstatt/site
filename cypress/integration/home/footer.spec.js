@@ -7,11 +7,6 @@ describe("Footer links", () => {
 
   const pages = [
     {
-      link: "Mitmachen",
-      href: "support",
-      title: "Mitmachen",
-    },
-    {
       link: "Kontakt",
       href: "contact",
       title: "Kontakt",
