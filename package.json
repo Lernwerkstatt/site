@@ -44,7 +44,7 @@
     "compression": "^1.7.4",
     "cookie-parser": "^1.4.6",
     "express": "^4.17.2",
-    "express-handlebars": "^6.0.2",
+    "express-handlebars": "^6.0.3",
     "fb": "^2.0.0",
     "helmet": "^5.0.2",
     "i18n": "^0.14.2",
