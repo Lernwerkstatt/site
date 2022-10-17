@@ -1,7 +1,0 @@
-{
-  "baseUrl": "https://die-lernwerkstatt.org",
-  "supportFile": false,
-  "pluginsFile": false,
-  "fixturesFolder": false,
-  "chromeWebSecurity": false
-}
