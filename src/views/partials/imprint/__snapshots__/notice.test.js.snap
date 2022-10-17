@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`notice.hbs should match the snapshot 1`] = `
-"<div class=\\"container\\">
-  <div class=\\"col-sm-8 ml-n3 mb-5\\">
+"<div class="container">
+  <div class="col-sm-8 ml-n3 mb-5">
     i18n
   </div>
 </div>

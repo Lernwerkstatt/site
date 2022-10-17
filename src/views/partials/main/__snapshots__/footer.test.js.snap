@@ -1,64 +1,64 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`footer.hbs should match the snapshot 1`] = `
-"<footer class=\\"bg-primary\\">
-  <div class=\\"container\\">
-    <div class=\\"row\\">
-      <div class=\\"col-md-8\\">
-        <ul class=\\"nav footer-nav flex-column flex-sm-row\\">
-          <li class=\\"nav-item\\">
-            <a href=\\"/contact\\" class=\\"nav-link text-dark\\">i18n</a>
+"<footer class="bg-primary">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <ul class="nav footer-nav flex-column flex-sm-row">
+          <li class="nav-item">
+            <a href="/contact" class="nav-link text-dark">i18n</a>
           </li>
-          <li class=\\"nav-item\\">
-            <a href=\\"/subscribe\\" class=\\"nav-link text-dark\\">i18n</a>
+          <li class="nav-item">
+            <a href="/subscribe" class="nav-link text-dark">i18n</a>
           </li>
-          <li class=\\"nav-item\\">
-            <a href=\\"/partners\\" class=\\"nav-link text-dark\\">i18n</a>
+          <li class="nav-item">
+            <a href="/partners" class="nav-link text-dark">i18n</a>
           </li>
-          <li class=\\"nav-item\\">
-            <a href=\\"/friends\\" class=\\"nav-link text-dark\\">i18n</a>
+          <li class="nav-item">
+            <a href="/friends" class="nav-link text-dark">i18n</a>
           </li>
-          <li class=\\"nav-item\\">
-            <a href=\\"/openki\\" class=\\"nav-link text-dark\\">i18n</a>
+          <li class="nav-item">
+            <a href="/openki" class="nav-link text-dark">i18n</a>
           </li>
-          <li class=\\"nav-item\\">
-            <a href=\\"/imprint\\" class=\\"nav-link text-dark\\">i18n</a>
+          <li class="nav-item">
+            <a href="/imprint" class="nav-link text-dark">i18n</a>
           </li>
         </ul>
       </div>
-      <div class=\\"col-md-4\\">
-        <ul class=\\"nav justify-content-end\\">
-          <li class=\\"nav-item\\">
-            <a href=\\"https://www.facebook.com/dielernwerkstatt/\\" aria-label=\\"Unsere Facebook Seite\\"
-              class=\\"nav-link text-dark\\">
-              <span class=\\"fab fa-facebook\\"></span>
+      <div class="col-md-4">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a href="https://www.facebook.com/dielernwerkstatt/" aria-label="Unsere Facebook Seite"
+              class="nav-link text-dark">
+              <span class="fab fa-facebook"></span>
             </a>
           </li>
-          <li class=\\"nav-item\\">
-            <a href=\\"https://www.instagram.com/die_lernwerkstatt\\" aria-label=\\"Unser Instagram Feed\\"
-              class=\\"nav-link text-dark\\">
-              <span class=\\"fab fa-instagram\\"></span>
+          <li class="nav-item">
+            <a href="https://www.instagram.com/die_lernwerkstatt" aria-label="Unser Instagram Feed"
+              class="nav-link text-dark">
+              <span class="fab fa-instagram"></span>
             </a>
           </li>
-          <li class=\\"nav-item\\">
-            <a href=\\"https://www.meetup.com/lernwerkstatt/\\" aria-label=\\"Unsere Meetup Seite\\"
-              class=\\"nav-link text-dark\\">
-              <span class=\\"fab fa-meetup\\"></span>
+          <li class="nav-item">
+            <a href="https://www.meetup.com/lernwerkstatt/" aria-label="Unsere Meetup Seite"
+              class="nav-link text-dark">
+              <span class="fab fa-meetup"></span>
             </a>
           </li>
-          <li class=\\"nav-item\\">
-            <a href=\\"mailto:info@die-lernwerkstatt.org\\" aria-label=\\"Schreib uns eine Email\\" class=\\"nav-link text-dark\\">
-              <span class=\\"far fa-envelope\\"></span>
+          <li class="nav-item">
+            <a href="mailto:info@die-lernwerkstatt.org" aria-label="Schreib uns eine Email" class="nav-link text-dark">
+              <span class="far fa-envelope"></span>
             </a>
           </li>
-          <li class=\\"nav-item\\">
-            <span class=\\"nav-link text-dark disabled\\">|</span>
+          <li class="nav-item">
+            <span class="nav-link text-dark disabled">|</span>
           </li>
-          <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-dark i18n\\" href=\\"/de\\">DE</a>
+          <li class="nav-item">
+            <a class="nav-link text-dark i18n" href="/de">DE</a>
           </li>
-          <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-dark i18n\\" href=\\"/en\\">EN</a>
+          <li class="nav-item">
+            <a class="nav-link text-dark i18n" href="/en">EN</a>
           </li>
         </ul>
       </div>
