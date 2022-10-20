@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`event.hbs should match the snapshot 1`] = `
-"<li class=\\"list-group-item\\">
-  <div class=\\"media\\">
-    <img class=\\"align-self-center mr-2\\" loading=\\"lazy\\" alt=\\"i18n\\" src=\\"img/calendar/sunday.png\\" />
-    <div class=\\"media-body\\">
-      <a class=\\"d-block lh-sm lead\\" href=\\"#\\" data-toggle=\\"modal\\" data-target=\\"#\\">
+"<li class="list-group-item">
+  <div class="media">
+    <img class="align-self-center mr-2" loading="lazy" alt="i18n" src="img/calendar/sunday.png" />
+    <div class="media-body">
+      <a class="d-block lh-sm lead" href="#" data-toggle="modal" data-target="#">
         Webkurs
       </a>
-      <p class=\\"h6 text-muted mb-0\\">13.12.2018</p>
+      <p class="h6 text-muted mb-0">13.12.2018</p>
     </div>
   </div>
 </li>

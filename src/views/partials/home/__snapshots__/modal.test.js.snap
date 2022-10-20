@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`modal.hbs should match the snapshot 1`] = `
-"<div class=\\"modal fade\\" id=\\"\\" tabindex=\\"-1\\" role=\\"dialog\\" aria-hidden=\\"true\\">
-  <div class=\\"modal-dialog modal-lg modal-dialog-scrollable\\" role=\\"document\\">
-    <div class=\\"modal-content\\">
-      <div class=\\"modal-header\\">
-        <a href=\\"\\" class=\\"w-100\\" style=\\"height: 30vh;\\" target=\\"_blank\\" rel=\\"noopener\\">
-          <img class=\\"lazy w-100 h-100\\" style=\\"object-fit: cover;\\" src=\\"\\" data-src=\\"\\" data-srcset=\\"\\"
-            alt=\\"\\" />
+"<div class="modal fade" id="" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <a href="" class="w-100" style="height: 30vh;" target="_blank" rel="noopener">
+          <img class="lazy w-100 h-100" style="object-fit: cover;" src="" data-src="" data-srcset=""
+            alt="" />
         </a>
       </div>
-      <div class=\\"modal-body text-dark\\">
-        <p class=\\"h3 mb-3\\">
+      <div class="modal-body text-dark">
+        <p class="h3 mb-3">
           
         </p>
         <p>
@@ -21,29 +21,29 @@ exports[`modal.hbs should match the snapshot 1`] = `
           
         </p>
       </div>
-      <div class=\\"modal-footer\\">
-        <a class=\\"btn btn-secondary buttonlink\\" href=\\"\\" target=\\"_blank\\" rel=\\"noopener\\">
+      <div class="modal-footer">
+        <a class="btn btn-secondary buttonlink" href="" target="_blank" rel="noopener">
           i18n
         </a>
-        <button type=\\"button\\" class=\\"btn btn-secondary\\" data-dismiss=\\"modal\\">i18n</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">i18n</button>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-  document.addEventListener(\\"DOMContentLoaded\\", function () {
-    let lazyImages = [].slice.call(document.querySelectorAll(\\"img.lazy\\"));
+  document.addEventListener("DOMContentLoaded", function () {
+    let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
     let active = false;
 
-    if (\\"IntersectionObserver\\" in window) {
+    if ("IntersectionObserver" in window) {
       let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
         entries.forEach(function (entry) {
           if (entry.isIntersecting) {
             let lazyImage = entry.target;
             lazyImage.src = lazyImage.dataset.src;
             lazyImage.srcset = lazyImage.dataset.srcset;
-            lazyImage.classList.remove(\\"lazy\\");
+            lazyImage.classList.remove("lazy");
             lazyImageObserver.unobserve(lazyImage);
           }
         });
@@ -59,17 +59,17 @@ exports[`modal.hbs should match the snapshot 1`] = `
 
           setTimeout(function () {
             lazyImages.forEach(function (lazyImage) {
-              if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== \\"none\\") {
+              if ((lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) && getComputedStyle(lazyImage).display !== "none") {
                 lazyImage.src = lazyImage.dataset.src;
                 lazyImage.srcset = lazyImage.dataset.srcset;
-                lazyImage.classList.remove(\\"lazy\\");
+                lazyImage.classList.remove("lazy");
 
                 lazyImages = lazyImages.filter(function (image) {
                   return image !== lazyImage;
                 });
 
                 if (lazyImages.length === 0) {
-                  window.removeEventListener(\\"show.bs.modal\\", lazyLoad);
+                  window.removeEventListener("show.bs.modal", lazyLoad);
                 }
               }
             });
@@ -79,7 +79,7 @@ exports[`modal.hbs should match the snapshot 1`] = `
         }
       };
 
-      window.addEventListener(\\"show.bs.modal\\", lazyLoad);
+      window.addEventListener("show.bs.modal", lazyLoad);
     }
   });
 </script>

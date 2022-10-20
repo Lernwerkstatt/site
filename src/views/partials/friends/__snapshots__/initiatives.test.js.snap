@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`initiatives.hbs should match the snapshot 1`] = `
-"<div class=\\"card\\">
-  <div class=\\"card-body\\">
-    <a rel=\\"noopener\\" href=\\"http://www.die-lernwerkstatt.org/\\" target=\\"_blank\\">
-      <h3 class=\\"card-title\\">Initiative</h3>
+"<div class="card">
+  <div class="card-body">
+    <a rel="noopener" href="http://www.die-lernwerkstatt.org/" target="_blank">
+      <h3 class="card-title">Initiative</h3>
     </a>
-    <p class=\\"card-text\\">This is an initiative</p>
+    <p class="card-text">This is an initiative</p>
   </div>
 </div>
 "

@@ -2,49 +2,49 @@
 
 exports[`header.hbs should match the snapshot 1`] = `
 "<header>
-  <nav class=\\"navbar navbar-light fixed-top navbar-expand-lg bg-primary\\">
-    <div class=\\"container\\">
-      <a class=\\"navbar-brand header-logo\\" href=\\"/\\">
-        <img height=\\"24\\" alt=\\"Logo\\" src=\\"/img/navbar_logo.png\\" />i18n
+  <nav class="navbar navbar-light fixed-top navbar-expand-lg bg-primary">
+    <div class="container">
+      <a class="navbar-brand header-logo" href="/">
+        <img height="24" alt="Logo" src="/img/navbar_logo.png" />i18n
       </a>
-      <button class=\\"navbar-toggler custom-toggler\\" type=\\"button\\" data-toggle=\\"collapse\\" data-target=\\"#navbar\\" aria-controls=\\"navbar\\"
-        aria-expanded=\\"false\\" aria-label=\\"i18n\\">
-        <span class=\\"navbar-toggler-icon\\"></span>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+        aria-expanded="false" aria-label="i18n">
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class=\\"collapse navbar-collapse\\" id=\\"navbar\\">
-        <ul class=\\"navbar-nav mr-auto\\">
-          <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-dark\\" href=\\"/values\\">i18n</a>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/values">i18n</a>
           </li>
-          <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-dark\\" href=\\"/support\\">i18n</a>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/support">i18n</a>
           </li>
-          <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-dark\\" href=\\"/projects\\">i18n</a>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/projects">i18n</a>
           </li>
-          <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-dark\\" href=\\"/blogs\\">i18n</a>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/blogs">i18n</a>
           </li>
-          <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-dark\\" href=\\"/podcasts\\">i18n</a>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/podcasts">i18n</a>
           </li>
-          <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-dark\\" href=\\"/team\\">i18n</a>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/team">i18n</a>
           </li>
-          <li class=\\"nav-item\\">
-            <a class=\\"nav-link text-dark\\" href=\\"/gallery\\">i18n</a>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/gallery">i18n</a>
           </li>
         </ul>
-        <form class=\\"form-inline my-2 my-lg-0\\" action=\\"https://duckduckgo.com/\\" target=\\"_blank\\"
-          aria-label=\\"Durchsuche unsere Seite\\">
-          <div class=\\"form-inline\\">
-            <input type=\\"hidden\\" value=\\"https://die-lernwerkstatt.org/\\" name=\\"sites\\">
-            <input type=\\"hidden\\" value=\\"1\\" name=\\"kh\\">
-            <input type=\\"hidden\\" value=\\"1\\" name=\\"kn\\">
-            <input type=\\"hidden\\" value=\\"1\\" name=\\"kac\\">
-            <input type=\\"search\\" class=\\"form-control mr-sm-2\\" placeholder=\\"i18n\\" name=\\"q\\">
-            <button class=\\"btn btn-secondary my-2 my-sm-0\\" type=\\"submit\\">
-              <i class=\\"fa fa-search\\" aria-hidden=\\"true\\"></i>
+        <form class="form-inline my-2 my-lg-0" action="https://duckduckgo.com/" target="_blank"
+          aria-label="Durchsuche unsere Seite">
+          <div class="form-inline">
+            <input type="hidden" value="https://die-lernwerkstatt.org/" name="sites">
+            <input type="hidden" value="1" name="kh">
+            <input type="hidden" value="1" name="kn">
+            <input type="hidden" value="1" name="kac">
+            <input type="search" class="form-control mr-sm-2" placeholder="i18n" name="q">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">
+              <i class="fa fa-search" aria-hidden="true"></i>
             </button>
           </div>
         </form>

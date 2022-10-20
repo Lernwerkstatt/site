@@ -1,35 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`create.hbs should match the snapshot 1`] = `
-"<link rel=\\"stylesheet\\" href=\\"https://unpkg.com/simplemde@1.11.2/dist/simplemde.min.css\\">
-<script src=\\"https://unpkg.com/simplemde@1.11.2/dist/simplemde.min.js\\"></script>
+"<link rel="stylesheet" href="https://unpkg.com/simplemde@1.11.2/dist/simplemde.min.css">
+<script src="https://unpkg.com/simplemde@1.11.2/dist/simplemde.min.js"></script>
 
-<form action=\\"/blogs/create\\" method=\\"post\\" autocomplete=\\"off\\" enctype=\\"application/json\\">
-  <div class=\\"form-group col-md-6\\">
+<form action="/blogs/create" method="post" autocomplete="off" enctype="application/json">
+  <div class="form-group col-md-6">
     <label>i18n:</label>
-    <input type=\\"text\\" class=\\"form-control\\" name=\\"title\\" required>
+    <input type="text" class="form-control" name="title" required>
   </div>
-  <div class=\\"form-group col-md-6\\">
+  <div class="form-group col-md-6">
     <label>i18n:</label>
-    <input type=\\"text\\" class=\\"form-control\\" name=\\"author\\" required>
+    <input type="text" class="form-control" name="author" required>
   </div>
-  <div class=\\"form-group col-md-6\\">
+  <div class="form-group col-md-6">
     <label>i18n:</label>
-    <input type=\\"url\\" class=\\"form-control\\" name=\\"imagelink\\">
+    <input type="url" class="form-control" name="imagelink">
   </div>
-  <div class=\\"form-group col-md-6\\">
+  <div class="form-group col-md-6">
     <label>i18n:</label>
-    <textarea name=\\"content\\" id=\\"main-content\\" class=\\"form-control\\" rows=\\"10\\"></textarea>
+    <textarea name="content" id="main-content" class="form-control" rows="10"></textarea>
   </div>
-  <div class=\\"col-md-6\\">
-    <input type=\\"submit\\" value=\\"i18n\\">
-    <input type=\\"reset\\">
+  <div class="col-md-6">
+    <input type="submit" value="i18n">
+    <input type="reset">
   </div>
 </form>
 
 <script>
   var simplemde = new SimpleMDE({
-    element: document.getElementById(\\"main-content\\")
+    element: document.getElementById("main-content")
   });
 </script>
 "
