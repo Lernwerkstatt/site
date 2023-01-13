@@ -4,7 +4,7 @@
       "name": "André",
       "id": "andre",
       "img": "img/team/andre.jpg",
-      "description": "André Brötz unterrichtet seit 2009 hauptsächlich Mathe, Physik und Englisch. Er hat schon Menschen allen Alters unterrichtet und war in verschiedenen Ländern tätig. Lernen ist seine große Leidenschaft. Er interessiert sich für beinahe alles und glaubt fest daran, dass mit der richtigen Einstellung und den richtigen Lernmethoden nichts unmöglich ist. <br />Die Lernwerkstatt ist für ihn eine Chance, seine Freude am Lernen und am Ausprobieren mit anderen Menschen zu teilen. Er wünscht sich einen Ort, an dem eine aktive Lerngemeinde entsteht und an dem offen und ehrlich miteinander umgegangen wird. André betreut die Lernbegleitung, den Bereich Mathe und Naturwissenschaften, die Projektfinanzierung sowie die allgemeine Projektkoordination."
+      "description": "André Brötz begleitet schon seit 2009 das Lernen von Menschen allen Alters, u.a. in den Bereichen Mathe, Naturwissenschaften und Englisch. Er war damit bereits in verschiedenen Ländern tätig, z.B. Türkei und Malaysia. Lernen ist seine große Leidenschaft. Er interessiert sich für beinahe alles und glaubt fest daran, dass mit der richtigen Einstellung und den richtigen Lernmethoden nichts unmöglich ist. Die Lernwerkstatt ist für ihn eine Chance, seine Freude am Lernen und am Ausprobieren mit anderen Menschen zu teilen. Er wünscht sich einen Ort, an dem eine aktive Lerngemeinde entsteht und an dem offen und ehrlich miteinander umgegangen wird. André betreut die Lernbegleitung, mehrere Projekte wie z.B. Mathe x Kunst, die Projektfinanzierung sowie die allgemeine Projektkoordination."
     },
     {
       "name": "Bianca",
@@ -89,6 +89,12 @@
       "id": "miriam",
       "img": "img/team/miriam.jpg",
       "description": "Miriam Rosas (sie) ist unsere neue Sprachbegeisterte mit mehr als 30 Jahren Erfahrung in der spanischen Sprache."
+    },
+    {
+      "name": "Olli",
+      "id": "olli",
+      "img": "img/team/olli.jpg",
+      "description": "Olli ist Unternehmer und unterstütze mit seiner Online Marketing Agentur neben der Lernwerkstatt auch andere Vereine. Mit ihm haben wir die Verwaltungssoftware Gibbon in die Lernwerkstatt eingeführt. Er selbst hilft den Lernenden bei Ihren Aufgaben im Rahmen der Lernbegleitung sofern es ihm zeitlich möglich ist. Er ist nicht immer in Berlin, da er beruflich und privat gerne reist. Oft tut er dies mit seinem Campervan \"Ben\". Wenn er in der Lernwerkstatt ist macht es ihm großen Spaß den Kindern zu helfen und einen positiven Einfluss auf ihr Leben zu nehmen. Da Olli in Unmittelbarer Nähe der Lernwerkstatt wohnt kann er auch spontan einspringen, wenn es nötig ist. "
     }
   ]
 }

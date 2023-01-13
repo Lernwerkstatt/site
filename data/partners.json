@@ -71,6 +71,12 @@
       "id": "easy",
       "img": "img/partners/easy.png",
       "link": "https://easyverein.com"
+    },
+    {
+      "name": "schoenegge.io",
+      "id": "schoenegge",
+      "img": "img/partners/schoenegge.png",
+      "link": "https://schoenegge.io/"
     }
   ]
 }
