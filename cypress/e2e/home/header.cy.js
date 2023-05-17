@@ -4,7 +4,8 @@ describe("Header links", () => {
   beforeEach(() => {
     cy.visit("/").setCookie("locale", "de");
 
-    cy.get(".osano-cm-window").contains("Accept").click();
+    cy.get(".osano-cm-window").contains("Manage Preferences").click();
+    cy.get(".osano-cm-save").contains("Save").click();
   });
 
   const pages = [
