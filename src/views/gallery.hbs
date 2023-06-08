@@ -13,12 +13,13 @@
 {{/section}}
 
 <div class="container">
-  <div id="pixlee_container"></div>
-  <script type="text/javascript">
-    window.PixleeAsyncInit = function () {
-      Pixlee.init({ apiKey: "{{apiKey}}" });
-      Pixlee.addSimpleWidget({ widgetId: "{{widgetID}}" });
-    };
-  </script>
-  <script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
+  <!-- LightWidget WIDGET -->
+  <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+  <iframe
+    src="//lightwidget.com/widgets/9b5634db3e5d524199482ddd1fa9da48.html"
+    scrolling="true"
+    allowtransparency="true"
+    class="lightwidget-widget"
+    style="width:100%;height:600px;border:0;overflow:hidden;">
+  </iframe>
 </div>
