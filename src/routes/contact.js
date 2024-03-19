@@ -27,6 +27,7 @@ router
     if (req.body && req.body.verification && req.body.verification === "send")
       transporter.sendMail(mailOptions, (error) => {
         if (error) {
+          console.log(error);
           console.log("Failed contact form attempt: ");
           console.log(mailOptions);
           res.redirect("contact");
