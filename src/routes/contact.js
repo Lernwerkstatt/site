@@ -20,6 +20,7 @@ router
     const mailOptions = {
       from: process.env.CONTACT_USER,
       to: process.env.CONTACT_RECEIVE,
+      replyTo: `${req.body.name} <${req.body.email}>`,
       subject: `Anfrage via Kontaktformular von ${req.body.name}`,
       text: `${req.body.name} (${req.body.email}) schreibt: ${req.body.message}`,
     };
