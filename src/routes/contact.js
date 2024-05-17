@@ -12,14 +12,15 @@ router
       host: process.env.CONTACT_HOST,
       port: process.env.CONTACT_PORT,
       auth: {
-        user: process.env.CONTACT_USER,
+        user: process.env.CONTACT_SENDER,
         pass: process.env.CONTACT_PASS,
       },
     });
 
     const mailOptions = {
-      from: `${req.body.name} <${req.body.email}>`,
+      from: process.env.CONTACT_USER,
       to: process.env.CONTACT_RECEIVE,
+      replyTo: `${req.body.name} <${req.body.email}>`,
       subject: `Anfrage via Kontaktformular von ${req.body.name}`,
       text: `${req.body.name} (${req.body.email}) schreibt: ${req.body.message}`,
     };
